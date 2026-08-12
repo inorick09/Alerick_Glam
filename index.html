@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alerick Glam — Maquillaje y Bisutería</title>
+<meta name="description" content="Alerick Glam: maquillaje y bisutería que resalta tu brillo natural. Pide por WhatsApp.">
+
+<!-- Fuentes: Fraunces (display, con personalidad editorial/glam) + Manrope (texto, limpia y moderna) + DM Mono (precios y etiquetas) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="wordmark">Alerick <em>Glam</em></a>
+
+    <nav class="nav" id="nav">
+      <a href="#maquillaje">Maquillaje</a>
+      <a href="#bisuteria">Bisutería</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="https://wa.me/573001234567?text=Hola%20Alerick%20Glam%2C%20quiero%20saber%20m%C3%A1s%20de%20sus%20productos"
+       class="btn btn--ghost header__cta" target="_blank" rel="noopener">
+      Escríbenos
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Maquillaje &amp; bisutería · Bogotá</p>
+        <h1 class="hero__title">Brilla con tu<br><em>propio</em> glam</h1>
+        <p class="hero__sub">
+          Piezas y tonos elegidos a mano para que tu color, tu piel y tu estilo
+          se vean —y se sientan— como tuyos. Sin fórmulas genéricas.
+        </p>
+        <div class="hero__actions">
+          <a href="#destacados" class="btn btn--primary">Ver catálogo</a>
+          <a href="https://wa.me/573001234567?text=Hola%20Alerick%20Glam%2C%20quiero%20hacer%20un%20pedido"
+             class="btn btn--outline" target="_blank" rel="noopener">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__gallery" aria-hidden="true">
+        <div class="hero__frame hero__frame--main">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="">
+        </div>
+        <div class="hero__frame hero__frame--accent">
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Elemento distintivo: la "franja de tonos", como una carta de swatches de maquillaje -->
+    <div class="shade-strip" role="presentation">
+      <span style="--c:#C2416B"></span><span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span>
+      <span style="--c:#E8D5B5"></span><span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span>
+      <span style="--c:#8E2F52"></span><span style="--c:#F3D9CF"></span><span style="--c:#C2416B"></span>
+      <span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span><span style="--c:#E8D5B5"></span>
+      <span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span><span style="--c:#8E2F52"></span>
+      <span style="--c:#F3D9CF"></span>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS ===== -->
+  <section class="categories container">
+    <a href="#maquillaje" class="category-card reveal">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&q=80" alt="Maquillaje">
+      <div class="category-card__label">
+        <span class="eyebrow eyebrow--light">Categoría</span>
+        <h3>Maquillaje</h3>
+      </div>
+    </a>
+    <a href="#bisuteria" class="category-card reveal">
+      <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=700&q=80" alt="Bisutería">
+      <div class="category-card__label">
+        <span class="eyebrow eyebrow--light">Categoría</span>
+        <h3>Bisutería</h3>
+      </div>
+    </a>
+  </section>
+
+  <div class="shade-strip shade-strip--small" role="presentation">
+    <span style="--c:#C2416B"></span><span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span>
+    <span style="--c:#E8D5B5"></span><span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span>
+    <span style="--c:#8E2F52"></span><span style="--c:#F3D9CF"></span>
+  </div>
+
+  <!-- ===== PRODUCTOS DESTACADOS ===== -->
+  <section class="section" id="destacados">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Selección</p>
+        <h2>Lo más pedido</h2>
+      </div>
+
+      <div class="products-grid">
+
+        <article class="product-card reveal" id="maquillaje" data-cat="maquillaje">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600&q=80" alt="Labial líquido Velvet Rose">
+            <span class="tag">Maquillaje</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Labial líquido Velvet Rose</h3>
+            <p>Acabado mate aterciopelado, larga duración.</p>
+            <div class="product-card__foot">
+              <span class="price">$35.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20el%20Labial%20l%C3%ADquido%20Velvet%20Rose">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-cat="maquillaje">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80" alt="Paleta de sombras Golden Hour">
+            <span class="tag">Maquillaje</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Paleta de sombras Golden Hour</h3>
+            <p>12 tonos cálidos, de mate a shimmer dorado.</p>
+            <div class="product-card__foot">
+              <span class="price">$58.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20la%20Paleta%20de%20sombras%20Golden%20Hour">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-cat="maquillaje">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=600&q=80" alt="Base de maquillaje Second Skin">
+            <span class="tag">Maquillaje</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Base Second Skin</h3>
+            <p>Cobertura media, efecto piel natural todo el día.</p>
+            <div class="product-card__foot">
+              <span class="price">$62.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20la%20Base%20Second%20Skin">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="bisuteria" data-cat="bisuteria">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Collar Aguamarina Drop">
+            <span class="tag tag--aqua">Bisutería</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Collar Aguamarina Drop</h3>
+            <p>Baño en oro 18k, dije de piedra aguamarina.</p>
+            <div class="product-card__foot">
+              <span class="price">$45.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20el%20Collar%20Aguamarina%20Drop">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-cat="bisuteria">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Aretes Gota Dorada">
+            <span class="tag tag--aqua">Bisutería</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Aretes Gota Dorada</h3>
+            <p>Acero quirúrgico, no manchan ni oxidan.</p>
+            <div class="product-card__foot">
+              <span class="price">$28.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesan%20los%20Aretes%20Gota%20Dorada">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-cat="bisuteria">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&q=80" alt="Pulsera Perlas & Oro">
+            <span class="tag tag--aqua">Bisutería</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Pulsera Perlas &amp; Oro</h3>
+            <p>Perlas de río naturales con detalles dorados.</p>
+            <div class="product-card__foot">
+              <span class="price">$32.000</span>
+              <a class="btn-wa" target="_blank" rel="noopener"
+                 href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20la%20Pulsera%20Perlas%20y%20Oro">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="about" id="nosotros">
+    <div class="container about__inner">
+      <div class="about__img">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=700&q=80" alt="Alerick Glam">
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>Un emprendimiento hecho con las manos</h2>
+        <p>
+          Alerick Glam nació de algo simple: las ganas de ayudar a cada persona
+          a sentirse segura con lo que lleva puesto, ya sea un labial o un
+          par de aretes. Escogemos cada producto pensando en calidad real,
+          no en modas pasajeras.
+        </p>
+        <ul class="about__list">
+          <li><strong>Calidad verificada</strong> — probamos antes de vender.</li>
+          <li><strong>Atención cercana</strong> — te asesoramos por WhatsApp.</li>
+          <li><strong>Envíos a todo el país</strong> — pedidos coordinados contigo.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER / CONTACTO ===== -->
+<footer class="footer" id="contacto">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#inicio" class="wordmark wordmark--light">Alerick <em>Glam</em></a>
+      <p>Maquillaje y bisutería con carácter propio.</p>
+    </div>
+
+    <div class="footer__contact">
+      <p class="eyebrow eyebrow--light">Contacto</p>
+      <a href="https://wa.me/573001234567" target="_blank" rel="noopener">WhatsApp: +57 300 123 4567</a>
+      <a href="https://instagram.com/alerickglam" target="_blank" rel="noopener">@alerickglam</a>
+      <span>Bogotá, Colombia</span>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> Alerick Glam. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
