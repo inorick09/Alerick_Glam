@@ -189,6 +189,14 @@ em {
   margin-bottom: 2em;
 }
 
+.hero__note {
+  max-width: 460px;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  margin-top: -1.4em;
+  margin-bottom: 2em;
+}
+
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .hero__gallery {
