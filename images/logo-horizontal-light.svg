@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alerick Glam">
+<title>Alerick Glam</title>
+
+<circle cx="75" cy="80" r="60" fill="none" stroke="#D9B98A" stroke-width="2.5"/>
+<circle cx="75" cy="80" r="52" fill="#0F0A0B"/>
+<text x="79" y="97" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#E8D5B5">A</text>
+<text x="71" y="97" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#F0B8CE">G</text>
+
+<text x="155" y="100" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="54" fill="#F5EEEA">Alerick</text>
+<text x="365" y="100" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="54" fill="#F0A8C4">Glam</text>
+
+<line x1="155" y1="120" x2="500" y2="120" stroke="#D9B98A" stroke-width="2"/>
+<polygon points="500,113 508,120 500,127 492,120" fill="#D9B98A"/>
+</svg>

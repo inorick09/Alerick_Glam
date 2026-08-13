@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alerick Glam">
+<title>Alerick Glam</title>
+
+<circle cx="200" cy="200" r="190" fill="none" stroke="#B8935A" stroke-width="3"/>
+<circle cx="200" cy="200" r="178" fill="#1B1315"/>
+<circle cx="200" cy="200" r="163" fill="none" stroke="#D4497A" stroke-width="1.2" opacity="0.55"/>
+
+<line x1="170" y1="95" x2="230" y2="95" stroke="#B8935A" stroke-width="1"/>
+<circle cx="200" cy="95" r="2.5" fill="#B8935A"/>
+
+<text x="205" y="222" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#D9B98A">A</text>
+<text x="196" y="222" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#E38FAE">G</text>
+
+<line x1="150" y1="253" x2="250" y2="253" stroke="#B8935A" stroke-width="1.2"/>
+<rect x="196" y="249" width="8" height="8" fill="#1B1315" stroke="#B8935A" stroke-width="1" transform="rotate(45 200 253)"/>
+
+<text x="200" y="277" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="3.5" fill="#B8935A">Alerick Glam</text>
+
+<rect x="117" y="296" width="26" height="34" rx="3" fill="#B8935A"/>
+<rect x="117" y="290" width="26" height="7" fill="#0F0A0B"/>
+<path d="M117,290 L143,290 L136,260 Q130,250 124,260 Z" fill="#D4497A"/>
+
+<circle cx="270" cy="278" r="8" fill="none" stroke="#B8935A" stroke-width="2.5"/>
+<line x1="270" y1="286" x2="270" y2="300" stroke="#B8935A" stroke-width="1.5"/>
+<polygon points="270,300 281,313 270,328 259,313" fill="#D4497A"/>
+<line x1="259" y1="313" x2="281" y2="313" stroke="#0F0A0B" stroke-width="1" opacity="0.4"/>
+<line x1="270" y1="300" x2="270" y2="328" stroke="#0F0A0B" stroke-width="1" opacity="0.3"/>
+
+<polygon points="200,290 206,299 200,308 194,299" fill="#B8935A"/>
+</svg>
