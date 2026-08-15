@@ -250,6 +250,7 @@ em {
 .steps__item {
   flex: 1 1 220px;
   max-width: 260px;
+  list-style: none;
   background: var(--color-card);
   border: 1px solid rgba(184, 147, 90, 0.25);
   border-radius: var(--radius);
@@ -257,6 +258,7 @@ em {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.steps__item::marker { content: none; }
 .steps__item:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 36px -20px rgba(43, 22, 32, 0.3);
