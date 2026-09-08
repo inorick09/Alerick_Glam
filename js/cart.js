@@ -5,10 +5,24 @@
 //         data-id="id-unico" data-name="Nombre" data-price="35000" data-image="ruta/imagen.jpg">
 //   Agregar
 // </button>
+// (Los productos del catálogo se agregan editando js/products.js,
+// no hace falta tocar botones a mano — ver ese archivo.)
+//
+// El botón "Enviar pedido" del carrito manda el pedido a una hoja
+// de Google Sheets (para que quede registrado) usando la URL de
+// ORDER_ENDPOINT de abajo. Instrucciones para crear y conectar esa
+// hoja: ver GOOGLE_SHEETS_SETUP.md en la raíz del repositorio.
 // ============================================
 
 const CART_KEY = 'alerickglam-cart';
 const WHATSAPP_NUMBER = '573112894267';
+
+// Pega aquí la URL que te da Google al desplegar el Apps Script
+// como aplicación web (termina en /exec). Mientras diga
+// "PENDIENTE_CONFIGURAR", el pedido no se podrá enviar solo y el
+// formulario le ofrecerá al cliente el enlace de WhatsApp como
+// alternativa.
+const ORDER_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxoHtXUzr_4CMtDpmZeh_C2wM7B--BwysGsn5-fqpf2QxGSWoYVGEdx94phqTmVkvLYFg/exec';
 
 function getCart() {
   try {
@@ -61,12 +75,24 @@ function removeFromCart(id) {
   renderCart();
 }
 
+function buildWhatsAppMessage(cart, customer) {
+  const lines = cart.map(i => `• ${i.qty}x ${i.name} — ${formatPrice(i.price * i.qty)}`).join('\n');
+  const datos = customer
+    ? `\n\nMis datos:\nNombre: ${customer.nombre}\nTeléfono: ${customer.telefono}\nCiudad/dirección: ${customer.ciudad}${customer.notas ? `\nNotas: ${customer.notas}` : ''}`
+    : '';
+  return `Hola Alerick Glam, quiero pedir:\n${lines}\n\nTotal: ${formatPrice(cartTotal(cart))}${datos}`;
+}
+
+function whatsAppLink(cart, customer) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppMessage(cart, customer))}`;
+}
+
 function renderCart() {
   const cart = getCart();
   const body = document.getElementById('cartBody');
   const totalEl = document.getElementById('cartTotal');
   const badge = document.getElementById('cartBadge');
-  const checkout = document.getElementById('cartCheckout');
+  const submitBtn = document.getElementById('cartCheckout');
   if (!body) return;
 
   const count = cartCount(cart);
@@ -96,18 +122,7 @@ function renderCart() {
   }
 
   if (totalEl) totalEl.textContent = formatPrice(cartTotal(cart));
-
-  if (checkout) {
-    if (cart.length === 0) {
-      checkout.setAttribute('aria-disabled', 'true');
-      checkout.href = '#';
-    } else {
-      checkout.removeAttribute('aria-disabled');
-      const lines = cart.map(i => `• ${i.qty}x ${i.name} — ${formatPrice(i.price * i.qty)}`).join('\n');
-      const message = `Hola Alerick Glam, quiero pedir:\n${lines}\n\nTotal: ${formatPrice(cartTotal(cart))}`;
-      checkout.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    }
-  }
+  if (submitBtn) submitBtn.disabled = cart.length === 0;
 }
 
 function openCart() {
@@ -128,6 +143,37 @@ function closeCart() {
   setTimeout(() => document.getElementById('cartOverlay')?.setAttribute('hidden', ''), 300);
 }
 
+function setCheckoutStatus(message, kind) {
+  const el = document.getElementById('checkoutStatus');
+  if (!el) return;
+  el.textContent = message || '';
+  el.className = 'checkout-status' + (kind ? ` checkout-status--${kind}` : '');
+}
+
+async function submitOrder(customer) {
+  const cart = getCart();
+  const payload = {
+    nombre: customer.nombre,
+    telefono: customer.telefono,
+    ciudad: customer.ciudad,
+    notas: customer.notas || '',
+    productos: cart.map(i => ({ nombre: i.name, cantidad: i.qty, precio: i.price })),
+    total: cartTotal(cart)
+  };
+
+  if (!ORDER_ENDPOINT || ORDER_ENDPOINT === 'PENDIENTE_CONFIGURAR') {
+    throw new Error('endpoint-no-configurado');
+  }
+
+  const res = await fetch(ORDER_ENDPOINT, {
+    method: 'POST',
+    // text/plain evita el preflight CORS que Google Apps Script no responde bien.
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  });
+  if (!res.ok) throw new Error('respuesta-no-ok');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderCart();
 
@@ -135,10 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('cartClose')?.addEventListener('click', closeCart);
   document.getElementById('cartOverlay')?.addEventListener('click', closeCart);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCart(); });
-
-  document.getElementById('cartCheckout')?.addEventListener('click', e => {
-    if (e.currentTarget.getAttribute('aria-disabled') === 'true') e.preventDefault();
-  });
 
   document.querySelectorAll('.btn-cart').forEach(btn => {
     if (btn.disabled) return;
@@ -160,5 +202,43 @@ document.addEventListener('DOMContentLoaded', () => {
     if (actionBtn.dataset.action === 'inc') changeQty(id, 1);
     if (actionBtn.dataset.action === 'dec') changeQty(id, -1);
     if (actionBtn.dataset.action === 'remove') removeFromCart(id);
+  });
+
+  const form = document.getElementById('checkoutForm');
+  form?.addEventListener('submit', async e => {
+    e.preventDefault();
+    const cart = getCart();
+    if (cart.length === 0) return;
+
+    const customer = {
+      nombre: form.nombre.value.trim(),
+      telefono: form.telefono.value.trim(),
+      ciudad: form.ciudad.value.trim(),
+      notas: form.notas.value.trim()
+    };
+
+    const submitBtn = document.getElementById('cartCheckout');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    setCheckoutStatus('', null);
+
+    try {
+      await submitOrder(customer);
+      setCheckoutStatus('¡Pedido enviado! Te contactaremos pronto por WhatsApp para confirmar. 💌', 'ok');
+      saveCart([]);
+      form.reset();
+      renderCart();
+    } catch (err) {
+      const link = whatsAppLink(cart, customer);
+      setCheckoutStatus('', null);
+      const el = document.getElementById('checkoutStatus');
+      if (el) {
+        el.className = 'checkout-status checkout-status--error';
+        el.innerHTML = `No pudimos enviar tu pedido automáticamente. <a href="${link}" target="_blank" rel="noopener">Envíalo por WhatsApp</a> y lo confirmamos igual.`;
+      }
+    } finally {
+      submitBtn.textContent = 'Enviar pedido';
+      submitBtn.disabled = getCart().length === 0;
+    }
   });
 });
