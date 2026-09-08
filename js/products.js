@@ -36,5 +36,12 @@ const PRODUCTS = [
   //   image: "images/productos/labial-rosa-nude.jpg",
   //   description: "Acabado mate de larga duración, tono rosado nude."
   // },
-
+{
+  id: "SET2168",              // texto único, sin espacios
+  category: "maquillaje",              // "maquillaje" o "bisuteria"
+  name: "Serum Facial Encanto",
+  price: 15000,                        // solo el número, sin puntos ni $
+  image: "images/productos/SET2168.png",
+  description: "Un básico para incluir en tu rutina de cuidado facial. Su textura ligera y fácil de aplicar lo hacen perfecto para usar diariamente y darle a tu piel ese toque de cuidado que se merece."
+},
 ];
