@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bisutería — Alerick Glam</title>
+<meta name="description" content="Alerick Glam: catálogo de bisutería mayorista. Collares, aretes y pulseras. Pide por WhatsApp.">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" href="images/favicon-512.png" sizes="512x512" type="image/png">
+<meta name="theme-color" content="#14100F">
+
+<!-- Fuentes: Fraunces (display, con personalidad editorial/glam) + Manrope (texto, limpia y moderna) + DM Mono (precios y etiquetas) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html#inicio" class="wordmark">
+      <span class="wordmark__text">Alerick <em>Glam</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="maquillaje.html">Maquillaje</a>
+      <a href="bisuteria.html" aria-current="page">Bisutería</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="https://wa.me/573112894267?text=Hola%20Alerick%20Glam%2C%20quiero%20saber%20m%C3%A1s%20de%20bisuter%C3%ADa"
+       class="btn btn--ghost header__cta" target="_blank" rel="noopener">
+      Escríbenos
+    </a>
+
+    <button type="button" class="cart-toggle" id="cartToggle" aria-label="Ver carrito de compras">
+      🛒
+      <span class="cart-badge" id="cartBadge" hidden>0</span>
+    </button>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== CARRITO ===== -->
+<div class="cart-overlay" id="cartOverlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Carrito de compras">
+  <div class="cart-drawer__head">
+    <h2>Tu carrito</h2>
+    <button type="button" class="cart-drawer__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-drawer__body" id="cartBody"></div>
+  <div class="cart-drawer__foot">
+    <div class="cart-drawer__total">
+      <span>Total</span>
+      <span id="cartTotal">$0</span>
+    </div>
+    <a href="#" id="cartCheckout" class="btn btn--primary cart-drawer__checkout" target="_blank" rel="noopener" aria-disabled="true">
+      Finalizar por WhatsApp
+    </a>
+  </div>
+</aside>
+
+<main>
+
+  <!-- ===== INTRO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Categoría</p>
+      <h1>Bisutería</h1>
+      <p>
+        Collares, aretes y pulseras que resaltan tu brillo natural. Estamos armando
+        nuestro propio catálogo de bisutería — mientras tanto puedes explorar las
+        opciones disponibles.
+      </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/573112894267?text=Hola%20Alerick%20Glam%2C%20quiero%20saber%20m%C3%A1s%20de%20bisuter%C3%ADa"
+           class="btn btn--primary" target="_blank" rel="noopener">
+          Pedir por WhatsApp
+        </a>
+        <a href="index.html" class="btn btn--outline">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Muy pronto</p>
+        <h2>Catálogo de bisutería</h2>
+        <p>Estamos preparando nuestro catálogo propio de bisutería. Mientras tanto, puedes ver esta opción:</p>
+      </div>
+
+      <div class="products-grid">
+
+        <a class="catalog-card reveal"
+           href="https://ruta54mayoristas.com/catalogos/catalogo.php?categ_b=25&categ_n=Accesorio%20para%20hombre&tecnica_id=1&tecnica_n=BISUTER%C3%8DA"
+           target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&q=80" alt="Catálogo Bisutería">
+          <div class="catalog-card__label">
+            <span class="eyebrow eyebrow--light">Accesorios</span>
+            <h3>Bisutería</h3>
+            <p>Collares, aretes y pulseras — haz clic para ver el catálogo completo.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER / CONTACTO ===== -->
+<footer class="footer" id="contacto">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p>Maquillaje y bisutería con carácter propio.</p>
+      <span class="footer__location">Bogotá, Colombia</span>
+    </div>
+
+    <div class="footer__row">
+    <div class="footer__contact">
+      <p class="eyebrow eyebrow--light">Contacto</p>
+
+      <ul class="footer__links">
+        <li>
+          <a href="https://wa.me/573112894267" target="_blank" rel="noopener" class="footer__link">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16.02 2.67c-7.35 0-13.32 5.97-13.32 13.32 0 2.35.62 4.64 1.79 6.66L2.67 29.33l6.83-1.79a13.27 13.27 0 0 0 6.52 1.71h.01c7.35 0 13.32-5.97 13.32-13.32S23.37 2.67 16.02 2.67Zm0 24.36h-.01a11.06 11.06 0 0 1-5.63-1.54l-.4-.24-4.05 1.06 1.08-3.95-.26-.4a11.04 11.04 0 0 1-1.69-5.9c0-6.1 4.96-11.06 11.07-11.06 2.96 0 5.74 1.15 7.83 3.24a11 11 0 0 1 3.24 7.83c0 6.1-4.97 11.06-11.18 10.96Zm6.07-8.29c-.33-.17-1.96-.97-2.27-1.08-.3-.11-.53-.17-.75.17s-.86 1.08-1.06 1.3c-.19.22-.39.25-.72.08-.33-.17-1.4-.52-2.66-1.65-.98-.88-1.65-1.96-1.84-2.29-.19-.33-.02-.51.15-.68.15-.15.33-.39.5-.58.17-.2.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.81-1.03-2.48-.27-.65-.55-.56-.75-.57h-.64c-.22 0-.58.08-.88.42-.3.33-1.15 1.13-1.15 2.75s1.18 3.18 1.34 3.4c.17.22 2.32 3.55 5.62 4.98.79.34 1.4.54 1.88.7.79.25 1.51.21 2.08.13.63-.1 1.96-.8 2.24-1.58.28-.77.28-1.44.19-1.58-.08-.14-.3-.22-.63-.39Z"/>
+              </svg>
+            </span>
+            WhatsApp
+          </a>
+        </li>
+        <li>
+          <a href="mailto:alerickglam@gmail.com" class="footer__link">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
+            </span>
+            alerickglam@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/alerickglam/" target="_blank" rel="noopener" class="footer__link">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M11.56 2.67h8.88c4.91 0 8.89 3.98 8.89 8.89v8.88c0 4.91-3.98 8.89-8.89 8.89h-8.88c-4.91 0-8.89-3.98-8.89-8.89v-8.88c0-4.91 3.98-8.89 8.89-8.89Zm-.22 2.67a6 6 0 0 0-6 6v8.44a6 6 0 0 0 6 6h9.32a6 6 0 0 0 6-6v-8.44a6 6 0 0 0-6-6h-9.32ZM16 9.61A6.39 6.39 0 1 1 9.61 16 6.4 6.4 0 0 1 16 9.61Zm0 2.67A3.72 3.72 0 1 0 19.72 16 3.72 3.72 0 0 0 16 12.28Zm6.65-4.7a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5Z"/>
+              </svg>
+            </span>
+            Síguenos en Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__hours-block">
+      <p class="eyebrow eyebrow--light">Horarios de atención</p>
+      <p class="footer__hours">
+        <strong>Por WhatsApp</strong><br>
+        Lunes a Domingo de 8:00 a.m. a 6:00 p.m.
+      </p>
+    </div>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> Alerick Glam. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
