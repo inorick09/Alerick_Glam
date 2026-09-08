@@ -11,6 +11,7 @@
   --color-bg-alt:     #F6E2DA; /* blush más profundo para secciones alternas */
   --color-ink:        #2B1620; /* casi negro con base ciruela, para texto */
   --color-ink-soft:    #6B4C56;
+  --color-black:       #14100F; /* negro real, para acentos de contraste */
   --color-rose:       #C2416B;
   --color-rose-deep:   #8E2F52;
   --color-gold:        #B8935A;
@@ -98,11 +99,11 @@ em {
 .btn:hover { transform: translateY(-2px); }
 .btn:focus-visible { outline: 3px solid var(--color-aqua); outline-offset: 2px; }
 
-.btn--primary { background: var(--color-rose); color: #fff; }
+.btn--primary { background: var(--color-rose); color: #fff; border-color: var(--color-gold); }
 .btn--primary:hover { background: var(--color-rose-deep); }
 
-.btn--outline { border-color: var(--color-ink); color: var(--color-ink); }
-.btn--outline:hover { background: var(--color-ink); color: var(--color-bg); }
+.btn--outline { border-color: var(--color-black); color: var(--color-black); }
+.btn--outline:hover { background: var(--color-black); color: var(--color-bg); }
 
 .btn--ghost { border-color: var(--color-gold); color: var(--color-rose-deep); font-size: 0.85rem; padding: 0.65em 1.4em; }
 .btn--ghost:hover { background: var(--color-gold); color: #fff; }
@@ -114,7 +115,7 @@ em {
   z-index: 50;
   background: rgba(251, 240, 236, 0.88);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(184, 147, 90, 0.25);
+  border-bottom: 1px solid rgba(184, 147, 90, 0.4);
 }
 
 .header__inner {
@@ -160,7 +161,7 @@ em {
   cursor: pointer;
   padding: 6px;
 }
-.nav-toggle span { width: 24px; height: 2px; background: var(--color-ink); border-radius: 2px; }
+.nav-toggle span { width: 24px; height: 2px; background: var(--color-black); border-radius: 2px; }
 
 /* ---------- 4. Hero ---------- */
 .hero { padding-top: 64px; overflow: hidden; }
@@ -202,7 +203,7 @@ em {
   position: absolute;
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 24px 48px -16px rgba(43, 22, 32, 0.35);
+  box-shadow: 0 24px 48px -16px rgba(20, 16, 15, 0.35);
 }
 .hero__frame img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -261,7 +262,7 @@ em {
 .steps__item::marker { content: none; }
 .steps__item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 36px -20px rgba(43, 22, 32, 0.3);
+  box-shadow: 0 20px 36px -20px rgba(20, 16, 15, 0.3);
 }
 
 .steps__num {
@@ -350,7 +351,7 @@ em {
 }
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 36px -20px rgba(43, 22, 32, 0.3);
+  box-shadow: 0 20px 36px -20px rgba(20, 16, 15, 0.3);
 }
 
 .catalog-card {
@@ -364,7 +365,7 @@ em {
 }
 .catalog-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 36px -20px rgba(43, 22, 32, 0.3);
+  box-shadow: 0 20px 36px -20px rgba(20, 16, 15, 0.3);
 }
 .catalog-card img {
   width: 100%; height: 100%; object-fit: cover;
@@ -376,7 +377,7 @@ em {
   position: absolute;
   inset: auto 0 0 0;
   padding: 28px;
-  background: linear-gradient(0deg, rgba(43,22,32,0.85), transparent);
+  background: linear-gradient(0deg, rgba(20,16,15,0.85), transparent);
   color: #fff;
 }
 .catalog-card__label h3 { color: #fff; margin: 0 0 0.3em; }
@@ -465,7 +466,7 @@ em {
 .about__list strong { color: var(--color-ink); }
 
 /* ---------- 9. Footer ---------- */
-.footer { background: var(--color-ink); color: #EADFDD; padding: 64px 0 0; }
+.footer { background: var(--color-black); color: #EADFDD; padding: 64px 0 0; }
 
 .footer__inner {
   display: flex;

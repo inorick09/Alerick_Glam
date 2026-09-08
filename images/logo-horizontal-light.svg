@@ -2,9 +2,9 @@
 <title>Alerick Glam</title>
 
 <circle cx="75" cy="80" r="60" fill="none" stroke="#D9B98A" stroke-width="2.5"/>
-<circle cx="75" cy="80" r="52" fill="#0F0A0B"/>
+<circle cx="75" cy="80" r="52" fill="#14100F"/>
 <text x="79" y="97" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#E8D5B5">A</text>
-<text x="71" y="97" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#F0B8CE">G</text>
+<text x="71" y="97" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#F0B8CE">R</text>
 
 <text x="155" y="100" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="54" fill="#F5EEEA">Alerick</text>
 <text x="365" y="100" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="54" fill="#F0A8C4">Glam</text>
