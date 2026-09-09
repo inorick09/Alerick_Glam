@@ -17,6 +17,11 @@
 //      página aparece)
 //    - price: solo el número, sin puntos ni signo de pesos
 //      (ej: 35000 para $35.000)
+//    - subcategory (solo para category: "maquillaje"): activa el
+//      filtro por tipo en la página de Maquillaje. Usa exactamente
+//      uno de estos textos:
+//      "Rostro", "Labios", "Cejas", "Ojos", "Colaboraciones",
+//      "Cuidado Facial", "Capilar", "Corporal", "Accesorios", "Brochas"
 // 4. Guarda el archivo y sube los cambios a GitHub — listo,
 //    ya aparece en la página con su botón "Agregar" funcionando.
 //
@@ -39,6 +44,7 @@ const PRODUCTS = [
 {
   id: "SET2168",              // texto único, sin espacios
   category: "maquillaje",              // "maquillaje" o "bisuteria"
+  subcategory: "Cuidado Facial",       // ver lista de tipos arriba
   name: "Serum Facial Encanto",
   price: 15000,                        // solo el número, sin puntos ni $
   image: "images/productos/SET2168.png",

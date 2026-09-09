@@ -389,6 +389,29 @@ em {
 .section__head p { color: var(--color-ink-soft); font-size: 1rem; margin: 0.6em 0 0; }
 
 /* ---------- 7. Productos ---------- */
+.catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 40px;
+}
+
+.filter-chip {
+  border: 1.5px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-rose-deep);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.55em 1.3em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.filter-chip:hover { border-color: var(--color-rose); color: var(--color-rose); }
+.filter-chip.is-active { background: var(--color-rose); border-color: var(--color-rose); color: #fff; }
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
