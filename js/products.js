@@ -7,8 +7,9 @@
 // maquillaje.html ni bisuteria.html para agregar un producto.
 //
 // CÓMO AGREGAR UN PRODUCTO NUEVO:
-// 1. Guarda la foto del producto dentro de images/productos/
-//    (por ejemplo: images/productos/labial-rosa.jpg)
+// 1. Guarda la foto del producto dentro de images/productos/, en la
+//    subcarpeta de su categoría y luego la de su tipo (subcategory)
+//    (por ejemplo: images/productos/Maquillaje/Labios/labial-rosa.jpg)
 // 2. Copia uno de los bloques { ... } de abajo y pégalo
 //    dentro del arreglo (respetando la coma entre productos).
 // 3. Cambia id, category, name, price, image y description.
@@ -17,11 +18,14 @@
 //      página aparece)
 //    - price: solo el número, sin puntos ni signo de pesos
 //      (ej: 35000 para $35.000)
-//    - subcategory (solo para category: "maquillaje"): activa el
-//      filtro por tipo en la página de Maquillaje. Usa exactamente
-//      uno de estos textos:
-//      "Rostro", "Labios", "Cejas", "Ojos", "Colaboraciones",
-//      "Cuidado Facial", "Capilar", "Corporal", "Accesorios", "Brochas"
+//    - subcategory: activa el filtro por tipo en la página de la
+//      categoría correspondiente. Usa exactamente uno de estos textos:
+//      · category "maquillaje": "Rostro", "Labios", "Cejas", "Ojos",
+//        "Colaboraciones", "Cuidado Facial", "Capilar", "Corporal",
+//        "Accesorios", "Brochas"
+//      · category "bisuteria": "Anillos", "Aretes", "Collares",
+//        "Conjuntos", "Dijes", "Earcuff", "Empaques", "Pulseras",
+//        "Rosarios", "Tobilleras"
 // 4. Guarda el archivo y sube los cambios a GitHub — listo,
 //    ya aparece en la página con su botón "Agregar" funcionando.
 //
@@ -38,7 +42,7 @@ const PRODUCTS = [
   //   category: "maquillaje",
   //   name: "Labial mate Rosa Nude",
   //   price: 35000,
-  //   image: "images/productos/labial-rosa-nude.jpg",
+  //   image: "images/productos/Maquillaje/Labios/labial-rosa-nude.jpg",
   //   description: "Acabado mate de larga duración, tono rosado nude."
   // },
 {
@@ -47,7 +51,7 @@ const PRODUCTS = [
   subcategory: "Cuidado Facial",       // ver lista de tipos arriba
   name: "Serum Facial Encanto",
   price: 15000,                        // solo el número, sin puntos ni $
-  image: "images/productos/SET2168.png",
+  image: "images/productos/Maquillaje/Cuidado_Facial/SET2168.png",
   description: "Un básico para incluir en tu rutina de cuidado facial. Su textura ligera y fácil de aplicar lo hacen perfecto para usar diariamente y darle a tu piel ese toque de cuidado que se merece."
 },
 {
@@ -56,7 +60,7 @@ const PRODUCTS = [
   subcategory: "Rostro",
   name: "Base Aqua Cobertura Media",
   price: 30000,
-  image: "images/productos/BAQ584.png",
+  image: "images/productos/Maquillaje/Rostro/BAQ584.png",
   description: "La Base Aqua realza tu belleza natural con un acabado luminoso, fresco y sin peso, se funde perfectamente con la piel."
 },
 {
@@ -65,7 +69,7 @@ const PRODUCTS = [
   subcategory: "Accesorios",
   name: "Baul Mediano Negro",
   price: 40000,
-  image: "images/productos/BMT1666.png",
+  image: "images/productos/Maquillaje/Accesorios/BMT1666.png",
   description: "Organiza los productos favoritos de maquillaje y cuidado facial con la nueva cosmetiquera Trendy. Es muy amplia e incluye varios compartimentos internos en donde puedes organizar productos pequeños. Viene con separador para una organización óptima de los productos y separadores para organizar las brochas de maquillaje."
 },
 ];

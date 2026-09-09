@@ -6,18 +6,24 @@
 // Si todavía no hay productos en esa categoría, no toca nada y
 // se queda visible el bloque "Muy pronto" que ya está en el HTML.
 //
-// En Maquillaje, además, si existe #catalogFilters en el HTML,
-// arma los chips de filtro por tipo (subcategory) a partir de los
-// productos que sí tienen ese campo — solo aparecen los tipos que
-// ya tienen productos cargados.
+// Si además existe #catalogFilters en el HTML, arma los chips de
+// filtro por tipo (subcategory) a partir de los productos que sí
+// tienen ese campo — solo aparecen los tipos que ya tienen
+// productos cargados.
 // ============================================
 
-// Orden fijo en el que deben aparecer los chips de filtro cuando existan
-// productos de ese tipo.
-const MAKEUP_SUBCATEGORIES = [
-  'Rostro', 'Labios', 'Cejas', 'Ojos', 'Colaboraciones',
-  'Cuidado Facial', 'Capilar', 'Corporal', 'Accesorios', 'Brochas'
-];
+// Orden fijo en el que deben aparecer los chips de filtro, por
+// categoría, cuando existan productos de ese tipo.
+const SUBCATEGORY_ORDER = {
+  maquillaje: [
+    'Rostro', 'Labios', 'Cejas', 'Ojos', 'Colaboraciones',
+    'Cuidado Facial', 'Capilar', 'Corporal', 'Accesorios', 'Brochas'
+  ],
+  bisuteria: [
+    'Anillos', 'Aretes', 'Collares', 'Conjuntos', 'Dijes',
+    'Earcuff', 'Empaques', 'Pulseras', 'Rosarios', 'Tobilleras'
+  ]
+};
 
 function formatPriceCOP(value) {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
@@ -62,8 +68,9 @@ function renderProductCards(grid, items) {
   });
 }
 
-function setupCatalogFilters(filtersEl, grid, items) {
-  const present = MAKEUP_SUBCATEGORIES.filter(sub => items.some(p => p.subcategory === sub));
+function setupCatalogFilters(filtersEl, grid, items, category) {
+  const order = SUBCATEGORY_ORDER[category] || [];
+  const present = order.filter(sub => items.some(p => p.subcategory === sub));
   if (present.length === 0) {
     filtersEl.hidden = true;
     return;
@@ -100,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProductCards(grid, items);
 
   const filtersEl = document.getElementById('catalogFilters');
-  if (filtersEl) setupCatalogFilters(filtersEl, grid, items);
+  if (filtersEl) setupCatalogFilters(filtersEl, grid, items, category);
 
   // el encabezado de la sección ya no dice "Muy pronto"
   const head = grid.closest('section')?.querySelector('.section__head');
