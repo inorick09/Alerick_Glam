@@ -7,9 +7,10 @@
 // se queda visible el bloque "Muy pronto" que ya está en el HTML.
 //
 // Si además existe #catalogFilters en el HTML, arma los chips de
-// filtro por tipo (subcategory) a partir de los productos que sí
-// tienen ese campo — solo aparecen los tipos que ya tienen
-// productos cargados.
+// categoría (subcategory) a partir de los productos que sí tienen
+// ese campo — solo aparecen los tipos que ya tienen productos
+// cargados. Mientras haya categorías, el catálogo empieza sin
+// productos visibles: solo se muestran al elegir una categoría.
 // ============================================
 
 // Orden fijo en el que deben aparecer los chips de filtro, por
@@ -68,17 +69,23 @@ function renderProductCards(grid, items) {
   });
 }
 
+function renderCatalogPlaceholder(grid) {
+  grid.innerHTML = '<p class="catalog-placeholder">Elige una categoría para ver sus productos.</p>';
+}
+
 function setupCatalogFilters(filtersEl, grid, items, category) {
   const order = SUBCATEGORY_ORDER[category] || [];
   const present = order.filter(sub => items.some(p => p.subcategory === sub));
   if (present.length === 0) {
     filtersEl.hidden = true;
-    return;
+    return false;
   }
 
   filtersEl.hidden = false;
-  filtersEl.innerHTML = ['Todos', ...present].map((label, i) => `
-    <button type="button" class="filter-chip${i === 0 ? ' is-active' : ''}" data-filter="${label === 'Todos' ? '' : label}">
+  // Ningún chip empieza activo: el catálogo solo muestra las categorías
+  // hasta que el usuario elige una.
+  filtersEl.innerHTML = present.map(label => `
+    <button type="button" class="filter-chip" data-filter="${label}">
       ${label}
     </button>
   `).join('');
@@ -90,10 +97,11 @@ function setupCatalogFilters(filtersEl, grid, items, category) {
     filtersEl.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('is-active'));
     chip.classList.add('is-active');
 
-    const filter = chip.dataset.filter;
-    const filtered = filter ? items.filter(p => p.subcategory === filter) : items;
+    const filtered = items.filter(p => p.subcategory === chip.dataset.filter);
     renderProductCards(grid, filtered);
   });
+
+  return true;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -104,10 +112,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const items = PRODUCTS.filter(p => p.category === category);
   if (items.length === 0) return; // se queda el "Muy pronto" que ya está en el HTML
 
-  renderProductCards(grid, items);
-
   const filtersEl = document.getElementById('catalogFilters');
-  if (filtersEl) setupCatalogFilters(filtersEl, grid, items, category);
+  const hasCategories = filtersEl && setupCatalogFilters(filtersEl, grid, items, category);
+
+  // Si hay categorías (subcategory) solo se muestran los chips y el
+  // usuario elige una para ver sus productos. Si no hay ese dato,
+  // no hay nada que elegir y se muestran todos los productos ya mismo.
+  if (hasCategories) {
+    renderCatalogPlaceholder(grid);
+  } else {
+    renderProductCards(grid, items);
+  }
 
   // el encabezado de la sección ya no dice "Muy pronto"
   const head = grid.closest('section')?.querySelector('.section__head');

@@ -418,6 +418,14 @@ em {
   gap: 28px;
 }
 
+.catalog-placeholder {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+  padding: 24px 0;
+}
+
 .product-card {
   background: var(--color-card);
   border-radius: var(--radius);
