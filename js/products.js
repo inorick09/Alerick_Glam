@@ -81,4 +81,337 @@ const PRODUCTS = [
   image: "images/productos/Bisuteria/Anillos/LL590.png",
   description: "Material: Rodio"
 },
+{
+  id: "LL588",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo cirón rojo Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL588.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL586",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo cirón cristal Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL586.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL585",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo circón verde Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL585.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL584",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo cadena Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL584.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL581",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo circón cristal Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL581.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX445",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Ajustable mariposa tornasol",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX445.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX444",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Ajustable mariposa verde",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX444.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX443",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Ajustable mariposa roja",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX443.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO158",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Maxi Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO158.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO157",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Maxi Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO157.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO156",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Maxi Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO156.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO155",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Maxi Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO155.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "NP515",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Flor y Perla Ajustable",
+  price: 30000,
+  image: "images/productos/Bisuteria/Anillos/NP515.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "MC934",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Maxi Flor y Perla Ajustable",
+  price: 27000,
+  image: "images/productos/Bisuteria/Anillos/MC934.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "NP514",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Flor Maxi Ajustable",
+  price: 30000,
+  image: "images/productos/Bisuteria/Anillos/NP514.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO145",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Corazones Rojos Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO145.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO144",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Corazones blancos Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO144.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "RO143",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Corazones Rojos Ajustable",
+  price: 24000,
+  image: "images/productos/Bisuteria/Anillos/RO143.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "NP513",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Blanco Ajustable",
+  price: 30000,
+  image: "images/productos/Bisuteria/Anillos/NP513.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL565",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Cadena Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL565.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL564",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Doble Mariposa Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL564.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL567",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Solitario Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL567.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL569",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo circones Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL569.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX426",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Corazón Maxi Ajustable",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX426.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LR477",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Estrella Ajustable",
+  price: 19900,
+  image: "images/productos/Bisuteria/Anillos/LR477.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "CB703",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Circones Cristal Ajustable",
+  price: 15500,
+  image: "images/productos/Bisuteria/Anillos/CB703.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL540",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Corazón Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL540.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LL538",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Circones Ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL538.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX422",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Concha Ajustable",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX422.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX417",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Circón Fucsia Ajustable",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX417.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "MC925",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Sol y Luna Ajustable",
+  price: 27000,
+  image: "images/productos/Bisuteria/Anillos/MC925.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LM855",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Cubano Ajustable",
+  price: 21000,
+  image: "images/productos/Bisuteria/Anillos/LM855.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "OX398",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Nota musical Ajustable",
+  price: 18000,
+  image: "images/productos/Bisuteria/Anillos/OX398.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "PG428",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Ovalos Ajustable",
+  price: 11900,
+  image: "images/productos/Bisuteria/Anillos/PG428.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "PG424",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Balin Ajustable",
+  price: 11900,
+  image: "images/productos/Bisuteria/Anillos/PG424.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "LM839",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo Sol y Luna Ajustable",
+  price: 21000,
+  image: "images/productos/Bisuteria/Anillos/LM839.png",
+  description: "Anillo Ajustable en Rodio"
+},
+{
+  id: "MC784",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo cuadrado circones",
+  price: 27000,
+  image: "images/productos/Bisuteria/Anillos/MC784.png",
+  description: "Anillo Ajustable en Rodio"
+},
 ];
