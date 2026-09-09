@@ -50,4 +50,22 @@ const PRODUCTS = [
   image: "images/productos/SET2168.png",
   description: "Un básico para incluir en tu rutina de cuidado facial. Su textura ligera y fácil de aplicar lo hacen perfecto para usar diariamente y darle a tu piel ese toque de cuidado que se merece."
 },
+{
+  id: "BAQ584",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Base Aqua Cobertura Media",
+  price: 30000,
+  image: "images/productos/BAQ584.png",
+  description: "La Base Aqua realza tu belleza natural con un acabado luminoso, fresco y sin peso, se funde perfectamente con la piel."
+},
+{
+  id: "BMT1666",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Baul Mediano Negro",
+  price: 40000,
+  image: "images/productos/BMT1666.png",
+  description: "Organiza los productos favoritos de maquillaje y cuidado facial con la nueva cosmetiquera Trendy. Es muy amplia e incluye varios compartimentos internos en donde puedes organizar productos pequeños. Viene con separador para una organización óptima de los productos y separadores para organizar las brochas de maquillaje."
+},
 ];
