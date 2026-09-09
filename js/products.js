@@ -72,4 +72,13 @@ const PRODUCTS = [
   image: "images/productos/Maquillaje/Accesorios/BMT1666.png",
   description: "Organiza los productos favoritos de maquillaje y cuidado facial con la nueva cosmetiquera Trendy. Es muy amplia e incluye varios compartimentos internos en donde puedes organizar productos pequeños. Viene con separador para una organización óptima de los productos y separadores para organizar las brochas de maquillaje."
 },
+{
+  id: "LL590",
+  category: "bisuteria",
+  subcategory: "Anillos",
+  name: "Anillo corazón con alas ajustable",
+  price: 13900,
+  image: "images/productos/Bisuteria/Anillos/LL590.png",
+  description: "Material: Rodio"
+},
 ];
