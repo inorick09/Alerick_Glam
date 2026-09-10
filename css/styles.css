@@ -426,6 +426,35 @@ em {
   padding: 24px 0;
 }
 
+.catalog-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.pager-btn {
+  border: 1.5px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-rose-deep);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.55em 1.3em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.pager-btn:hover:not(:disabled) { border-color: var(--color-rose); color: var(--color-rose); }
+.pager-btn:disabled { opacity: 0.35; cursor: default; }
+
+.pager-info {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+}
+
 .product-card {
   background: var(--color-card);
   border-radius: var(--radius);

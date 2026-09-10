@@ -73,7 +73,39 @@ function renderCatalogPlaceholder(grid) {
   grid.innerHTML = '<p class="catalog-placeholder">Elige una categoría para ver sus productos.</p>';
 }
 
-function setupCatalogFilters(filtersEl, grid, items, category) {
+// Máximo de productos por página, para no cargar todo el catálogo de una vez.
+const PAGE_SIZE = 15;
+
+function renderPager(pagerEl, items, page, onPageChange) {
+  const totalPages = Math.ceil(items.length / PAGE_SIZE);
+  if (totalPages <= 1) {
+    pagerEl.hidden = true;
+    pagerEl.innerHTML = '';
+    return;
+  }
+
+  pagerEl.hidden = false;
+  pagerEl.innerHTML = `
+    <button type="button" class="pager-btn" data-page="${page - 1}" ${page <= 1 ? 'disabled' : ''}>← Anterior</button>
+    <span class="pager-info">Página ${page} de ${totalPages}</span>
+    <button type="button" class="pager-btn" data-page="${page + 1}" ${page >= totalPages ? 'disabled' : ''}>Siguiente →</button>
+  `;
+
+  pagerEl.querySelectorAll('.pager-btn:not(:disabled)').forEach(btn => {
+    btn.addEventListener('click', () => onPageChange(Number(btn.dataset.page)));
+  });
+}
+
+function renderPage(grid, pagerEl, items, page) {
+  const start = (page - 1) * PAGE_SIZE;
+  renderProductCards(grid, items.slice(start, start + PAGE_SIZE));
+  renderPager(pagerEl, items, page, newPage => {
+    renderPage(grid, pagerEl, items, newPage);
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
+function setupCatalogFilters(filtersEl, grid, pagerEl, items, category) {
   const order = SUBCATEGORY_ORDER[category] || [];
   const present = order.filter(sub => items.some(p => p.subcategory === sub));
   if (present.length === 0) {
@@ -98,7 +130,7 @@ function setupCatalogFilters(filtersEl, grid, items, category) {
     chip.classList.add('is-active');
 
     const filtered = items.filter(p => p.subcategory === chip.dataset.filter);
-    renderProductCards(grid, filtered);
+    renderPage(grid, pagerEl, filtered, 1);
   });
 
   return true;
@@ -112,16 +144,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const items = PRODUCTS.filter(p => p.category === category);
   if (items.length === 0) return; // se queda el "Muy pronto" que ya está en el HTML
 
+  const pagerEl = document.createElement('div');
+  pagerEl.className = 'catalog-pager';
+  pagerEl.hidden = true;
+  grid.insertAdjacentElement('afterend', pagerEl);
+
   const filtersEl = document.getElementById('catalogFilters');
-  const hasCategories = filtersEl && setupCatalogFilters(filtersEl, grid, items, category);
+  const hasCategories = filtersEl && setupCatalogFilters(filtersEl, grid, pagerEl, items, category);
 
   // Si hay categorías (subcategory) solo se muestran los chips y el
   // usuario elige una para ver sus productos. Si no hay ese dato,
-  // no hay nada que elegir y se muestran todos los productos ya mismo.
+  // no hay nada que elegir y se muestran todos los productos ya mismo
+  // (paginados de a PAGE_SIZE).
   if (hasCategories) {
     renderCatalogPlaceholder(grid);
   } else {
-    renderProductCards(grid, items);
+    renderPage(grid, pagerEl, items, 1);
   }
 
   // el encabezado de la sección ya no dice "Muy pronto"
