@@ -839,11 +839,30 @@ em {
 
 .checkout-form { display: flex; flex-direction: column; gap: 12px; }
 .checkout-form .field { display: flex; flex-direction: column; gap: 4px; }
+.checkout-form fieldset.field { border: none; padding: 0; margin: 0; }
+.checkout-form legend {
+  padding: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
 .checkout-form label {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--color-ink-soft);
 }
+.checkout-extra-fields { display: flex; flex-direction: column; gap: 12px; }
+.radio-group { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+.radio-option input { accent-color: var(--color-rose); width: 16px; height: 16px; }
 .checkout-form input,
 .checkout-form textarea {
   font-family: var(--font-body);

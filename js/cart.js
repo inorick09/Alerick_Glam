@@ -77,9 +77,15 @@ function removeFromCart(id) {
 
 function buildWhatsAppMessage(cart, customer) {
   const lines = cart.map(i => `• ${i.qty}x ${i.name} — ${formatPrice(i.price * i.qty)}`).join('\n');
-  const datos = customer
-    ? `\n\nMis datos:\nNombre: ${customer.nombre}\nTeléfono: ${customer.telefono}\nCiudad/dirección: ${customer.ciudad}${customer.notas ? `\nNotas: ${customer.notas}` : ''}`
-    : '';
+  let datos = '';
+  if (customer) {
+    const partes = [`Nombre: ${customer.nombre}`];
+    if (customer.clienta === 'recurrente') partes.push('Clienta recurrente');
+    if (customer.telefono) partes.push(`Teléfono: ${customer.telefono}`);
+    if (customer.ciudad) partes.push(`Ciudad/dirección: ${customer.ciudad}`);
+    if (customer.notas) partes.push(`Notas: ${customer.notas}`);
+    datos = `\n\nMis datos:\n${partes.join('\n')}`;
+  }
   return `Hola Alerick Glam, quiero pedir:\n${lines}\n\nTotal: ${formatPrice(cartTotal(cart))}${datos}`;
 }
 
@@ -153,6 +159,7 @@ function setCheckoutStatus(message, kind) {
 async function submitOrder(customer) {
   const cart = getCart();
   const payload = {
+    clienta: customer.clienta,
     nombre: customer.nombre,
     telefono: customer.telefono,
     ciudad: customer.ciudad,
@@ -205,16 +212,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const form = document.getElementById('checkoutForm');
+  const extraFields = document.getElementById('checkoutExtraFields');
+
+  // Clienta nueva: hay que diligenciar teléfono, ciudad y notas.
+  // Clienta recurrente: con el nombre basta, esos campos se ocultan.
+  form?.querySelectorAll('input[name="clienta"]').forEach(input => {
+    input.addEventListener('change', () => {
+      const isNew = input.value === 'nueva' && input.checked;
+      if (!extraFields) return;
+      extraFields.hidden = !isNew;
+      form.telefono.required = isNew;
+      form.ciudad.required = isNew;
+      if (!isNew) {
+        form.telefono.value = '';
+        form.ciudad.value = '';
+        form.notas.value = '';
+      }
+    });
+  });
+
   form?.addEventListener('submit', async e => {
     e.preventDefault();
     const cart = getCart();
     if (cart.length === 0) return;
 
+    const clienta = form.querySelector('input[name="clienta"]:checked')?.value || '';
+    const isNew = clienta === 'nueva';
+
     const customer = {
+      clienta,
       nombre: form.nombre.value.trim(),
-      telefono: form.telefono.value.trim(),
-      ciudad: form.ciudad.value.trim(),
-      notas: form.notas.value.trim()
+      telefono: isNew ? form.telefono.value.trim() : '',
+      ciudad: isNew ? form.ciudad.value.trim() : '',
+      notas: isNew ? form.notas.value.trim() : ''
     };
 
     const submitBtn = document.getElementById('cartCheckout');
