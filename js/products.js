@@ -1626,7 +1626,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Chicle Mocca 40 cm + 5 cm",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP527.png",
+  image: "images/productos/Bisuteria/Collares/NP527.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1635,7 +1635,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas Corazón Mocca 41 cm + 5 cm Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT353.png",
+  image: "images/productos/Bisuteria/Collares/FT353.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1644,7 +1644,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Margarita 38 cm + 5 cm Extensión",
   price: 35900,
-  image: "images/productos/Bisuteria/Collares/SP395.png",
+  image: "images/productos/Bisuteria/Collares/SP395.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1653,7 +1653,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas y Corazones Vinotinto 38 cm + 5 cm",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT352.png",
+  image: "images/productos/Bisuteria/Collares/FT352.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1662,7 +1662,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Corazones Pasador 44 cm + 5 Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT349.png",
+  image: "images/productos/Bisuteria/Collares/FT349.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1671,7 +1671,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena personalizada 1 letra. letra adicional TS256",
   price: 10900,
-  image: "images/productos/Bisuteria/Collares/AC347-P.png",
+  image: "images/productos/Bisuteria/Collares/AC347-P.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1680,7 +1680,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena personalizada 1 letra. letra adicional GP366",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL250-P.png",
+  image: "images/productos/Bisuteria/Collares/LL250-P.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1689,7 +1689,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena personalizada 1 letra-letra adicional GP445",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB672.png",
+  image: "images/productos/Bisuteria/Collares/CB672.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1698,7 +1698,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas 44 cm + 5 cm Extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO174.png",
+  image: "images/productos/Bisuteria/Collares/RO174.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1707,7 +1707,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas 44 cm + 5 cm Extensíon",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO173.png",
+  image: "images/productos/Bisuteria/Collares/RO173.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1716,7 +1716,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Café 42 cm + 6 Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT345.png",
+  image: "images/productos/Bisuteria/Collares/FT345.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1725,7 +1725,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Colores 42 cm + 5 Extensión",
   price: 35900,
-  image: "images/productos/Bisuteria/Collares/SP389.png",
+  image: "images/productos/Bisuteria/Collares/SP389.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1734,7 +1734,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar maxi corazón negro 40cm + 6cm extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT344.png",
+  image: "images/productos/Bisuteria/Collares/FT344.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1743,7 +1743,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar maxi negro y dorado 40cm cm + 6cm",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT343.png",
+  image: "images/productos/Bisuteria/Collares/FT343.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1752,7 +1752,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar maxi rojo y dorado 40cm + 6 cm extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT342.png",
+  image: "images/productos/Bisuteria/Collares/FT342.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1761,7 +1761,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar perla corazón Rojo 40cm + 6 cm extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP526.png",
+  image: "images/productos/Bisuteria/Collares/NP526.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1770,7 +1770,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar perla corazón café 40cm + 6 cm extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP525.png",
+  image: "images/productos/Bisuteria/Collares/NP525.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1779,7 +1779,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar perla corazón blanco 40cm + 6 cm extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP524.png",
+  image: "images/productos/Bisuteria/Collares/NP524.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1788,7 +1788,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije princesa 49 cm",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC950.png",
+  image: "images/productos/Bisuteria/Collares/MC950.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1797,7 +1797,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije princesa 49 cm",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC949.png",
+  image: "images/productos/Bisuteria/Collares/MC949.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1806,7 +1806,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije princesa 49 cm",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC948.png",
+  image: "images/productos/Bisuteria/Collares/MC948.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1815,7 +1815,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable 48cm dije mariposa verde",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO164.png",
+  image: "images/productos/Bisuteria/Collares/RO164.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1824,7 +1824,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable 48cm dije mariposa tornasol",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO163.png",
+  image: "images/productos/Bisuteria/Collares/RO163.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1833,7 +1833,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable 48cm dije mariposa rojo",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO162.png",
+  image: "images/productos/Bisuteria/Collares/RO162.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1842,7 +1842,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena balines 44,5 cm +3cm extensión",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL580.png",
+  image: "images/productos/Bisuteria/Collares/LL580.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1851,7 +1851,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena balín ovalado 44,5 cm +3cm extensión",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL579.png",
+  image: "images/productos/Bisuteria/Collares/LL579.jpg",
   description: "Material: Rodio"
 },
 {
@@ -1860,7 +1860,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi corazón Negro 40 cm +5 Extensión",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC942.png",
+  image: "images/productos/Bisuteria/Collares/MC942.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1869,7 +1869,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Negro 45 cm + 5 extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP522.png",
+  image: "images/productos/Bisuteria/Collares/NP522.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1878,7 +1878,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Blanco 44cm + 5 extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP521.png",
+  image: "images/productos/Bisuteria/Collares/NP521.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1887,7 +1887,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Margarita 41 cm + 5 Extensión",
   price: 35900,
-  image: "images/productos/Bisuteria/Collares/SP360.png",
+  image: "images/productos/Bisuteria/Collares/SP360.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1896,7 +1896,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Guadalupe 45 cm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL577.png",
+  image: "images/productos/Bisuteria/Collares/LL577.jpg",
   description: "Material: Acero"
 },
 {
@@ -1905,7 +1905,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena San Benito 45 cm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL576.png",
+  image: "images/productos/Bisuteria/Collares/LL576.jpg",
   description: "Material: Acero"
 },
 {
@@ -1914,7 +1914,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena San Miguel y Guadalupe 45 cm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL575.png",
+  image: "images/productos/Bisuteria/Collares/LL575.jpg",
   description: "Material: Acero"
 },
 {
@@ -1923,7 +1923,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Blanco y Negro 42 cm +6 cm Extensión",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC939.png",
+  image: "images/productos/Bisuteria/Collares/MC939.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1932,7 +1932,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Amariilo y Café 42 cm + 6 cm Extensión",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC940.png",
+  image: "images/productos/Bisuteria/Collares/MC940.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1941,7 +1941,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Amarillo y Café 42 cm + 5 cm Extensión",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC941.png",
+  image: "images/productos/Bisuteria/Collares/MC941.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1950,7 +1950,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar maxi Amarillo y Vino 40 cm + 5 cm Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT332.png",
+  image: "images/productos/Bisuteria/Collares/FT332.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1959,7 +1959,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Lila 40 cm + 5 Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT333.png",
+  image: "images/productos/Bisuteria/Collares/FT333.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1968,7 +1968,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Rosa y Rojo 40 cm + 5 cm Extension",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT334.png",
+  image: "images/productos/Bisuteria/Collares/FT334.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1977,7 +1977,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Celeste 41 cm + 6 cm Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT336.png",
+  image: "images/productos/Bisuteria/Collares/FT336.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1986,7 +1986,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Corazón Rojo 38 cm + 6 cm Extensión",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT330.png",
+  image: "images/productos/Bisuteria/Collares/FT330.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -1995,7 +1995,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Corazones Moca 38 cm + 6 Extensión",
   price: 35900,
-  image: "images/productos/Bisuteria/Collares/SP355.png",
+  image: "images/productos/Bisuteria/Collares/SP355.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2004,7 +2004,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Rosa 38 cm + 7 cm Extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO153.png",
+  image: "images/productos/Bisuteria/Collares/RO153.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2013,7 +2013,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Rojo 36 cm + 7 cm extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO151.png",
+  image: "images/productos/Bisuteria/Collares/RO151.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2022,7 +2022,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Blanco 36 cm + 7 cm Extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO152.png",
+  image: "images/productos/Bisuteria/Collares/RO152.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2031,7 +2031,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Negro 37 cm +5 extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO149.png",
+  image: "images/productos/Bisuteria/Collares/RO149.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2040,7 +2040,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Maxi Moca 38 cm + 6 extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO150.png",
+  image: "images/productos/Bisuteria/Collares/RO150.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2049,7 +2049,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Chunky Negro 42 cm x 1,6 cm + 5 extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP492.png",
+  image: "images/productos/Bisuteria/Collares/NP492.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2058,7 +2058,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Flor Cristal Ajustable",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR491.png",
+  image: "images/productos/Bisuteria/Collares/LR491.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2067,7 +2067,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar FLor Roja Ajustable",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR490.png",
+  image: "images/productos/Bisuteria/Collares/LR490.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2076,7 +2076,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Flor Verde Ajustable",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR489.png",
+  image: "images/productos/Bisuteria/Collares/LR489.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2085,7 +2085,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Bandera Colombia 40 cm + 5 Extensión",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX440.png",
+  image: "images/productos/Bisuteria/Collares/OX440.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2094,7 +2094,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije Colombia",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB712.png",
+  image: "images/productos/Bisuteria/Collares/CB712.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2103,7 +2103,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije Colombia",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB711.png",
+  image: "images/productos/Bisuteria/Collares/CB711.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2112,7 +2112,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije Colombia",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB710.png",
+  image: "images/productos/Bisuteria/Collares/CB710.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2121,7 +2121,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Mini Aros Balines 3 mm x 45 cm + 5 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG453.png",
+  image: "images/productos/Bisuteria/Collares/PG453.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2130,7 +2130,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Cola Ratón Rayada 1mm x 45 cm + 5 cm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL555.png",
+  image: "images/productos/Bisuteria/Collares/LL555.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2139,7 +2139,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "cadena Cola Ratón 1 mm x 45 cm + 5 Extensión",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG451.png",
+  image: "images/productos/Bisuteria/Collares/PG451.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2148,7 +2148,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "cadena candado Plana 3mm x 45 cm + 5 cm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL554.png",
+  image: "images/productos/Bisuteria/Collares/LL554.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2157,7 +2157,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra Z",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451Z.png",
+  image: "images/productos/Bisuteria/Collares/GP451Z.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2166,7 +2166,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra Y",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451Y.png",
+  image: "images/productos/Bisuteria/Collares/GP451Y.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2175,7 +2175,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra X",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451X.png",
+  image: "images/productos/Bisuteria/Collares/GP451X.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2184,7 +2184,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra W",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451W.png",
+  image: "images/productos/Bisuteria/Collares/GP451W.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2193,7 +2193,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra V",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451V.png",
+  image: "images/productos/Bisuteria/Collares/GP451V.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2202,7 +2202,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra U",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451U.png",
+  image: "images/productos/Bisuteria/Collares/GP451U.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2211,7 +2211,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra T",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451T.png",
+  image: "images/productos/Bisuteria/Collares/GP451T.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2220,7 +2220,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra S",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451S.png",
+  image: "images/productos/Bisuteria/Collares/GP451S.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2229,7 +2229,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra O",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451O.png",
+  image: "images/productos/Bisuteria/Collares/GP451O.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2238,7 +2238,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra N",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451N.png",
+  image: "images/productos/Bisuteria/Collares/GP451N.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2247,7 +2247,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar letra M",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451M.png",
+  image: "images/productos/Bisuteria/Collares/GP451M.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2256,7 +2256,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra K",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451K.png",
+  image: "images/productos/Bisuteria/Collares/GP451K.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2265,7 +2265,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra J",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451J.png",
+  image: "images/productos/Bisuteria/Collares/GP451J.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2274,7 +2274,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra I",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451I.png",
+  image: "images/productos/Bisuteria/Collares/GP451I.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2283,7 +2283,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra H",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451H.png",
+  image: "images/productos/Bisuteria/Collares/GP451H.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2292,7 +2292,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra F",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451F.png",
+  image: "images/productos/Bisuteria/Collares/GP451F.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2301,7 +2301,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra E",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451E.png",
+  image: "images/productos/Bisuteria/Collares/GP451E.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2310,7 +2310,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra C",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451C.png",
+  image: "images/productos/Bisuteria/Collares/GP451C.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2319,7 +2319,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Letra B",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP451B.png",
+  image: "images/productos/Bisuteria/Collares/GP451B.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2328,7 +2328,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena grano 47 cm x 5mm + 5 extensión",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC931.png",
+  image: "images/productos/Bisuteria/Collares/MC931.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2337,7 +2337,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije estrella",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX430.png",
+  image: "images/productos/Bisuteria/Collares/OX430.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2346,7 +2346,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije estrella",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO103.png",
+  image: "images/productos/Bisuteria/Collares/RO103.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2355,7 +2355,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar lazo 2,5mm 43.5cm + 5 cm extensión",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX428.png",
+  image: "images/productos/Bisuteria/Collares/OX428.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2364,7 +2364,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije ballena",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM860.png",
+  image: "images/productos/Bisuteria/Collares/LM860.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2373,7 +2373,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Dije Sagrado Corazón Ajustable",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR476.png",
+  image: "images/productos/Bisuteria/Collares/LR476.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2382,7 +2382,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dijes del Mar",
   price: 35900,
-  image: "images/productos/Bisuteria/Collares/SP337.png",
+  image: "images/productos/Bisuteria/Collares/SP337.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2391,7 +2391,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas Caracol y Concha",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/SP336.png",
+  image: "images/productos/Bisuteria/Collares/SP336.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2400,7 +2400,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Elefante",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP449.png",
+  image: "images/productos/Bisuteria/Collares/GP449.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2409,7 +2409,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar DIje Luna",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP448.png",
+  image: "images/productos/Bisuteria/Collares/GP448.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2418,7 +2418,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Árbol de La vida",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP447.png",
+  image: "images/productos/Bisuteria/Collares/GP447.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2427,7 +2427,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Corazón Gris 1 cm x 45 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG444.png",
+  image: "images/productos/Bisuteria/Collares/PG444.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2436,7 +2436,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Corazón Negro 1 cm x 45 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG442.png",
+  image: "images/productos/Bisuteria/Collares/PG442.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2445,7 +2445,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collare Corazón Amarillo 1 cm x 45 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG441.png",
+  image: "images/productos/Bisuteria/Collares/PG441.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2454,7 +2454,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Corazón Dorado 1 cm x 45 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG440.png",
+  image: "images/productos/Bisuteria/Collares/PG440.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2463,7 +2463,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Lazo 2 mm x 45 cm + 5 Extensión",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX406.png",
+  image: "images/productos/Bisuteria/Collares/OX406.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2472,7 +2472,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena San Miguel Ajustable",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR467.png",
+  image: "images/productos/Bisuteria/Collares/LR467.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2481,7 +2481,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Militar 2,5 mm x 45 cm + 5 extensión",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB692.png",
+  image: "images/productos/Bisuteria/Collares/CB692.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2490,7 +2490,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena cubana destellos 2 mm x 45 cm",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG438.png",
+  image: "images/productos/Bisuteria/Collares/PG438.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2499,7 +2499,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Cubana Corazones 1 mm x 45 cm + 5",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL518.png",
+  image: "images/productos/Bisuteria/Collares/LL518.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2508,7 +2508,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Aros Balín 2 mm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL517.png",
+  image: "images/productos/Bisuteria/Collares/LL517.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2517,7 +2517,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Militar Balín 2mm x 45 cm + 5 cm extensión",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL515.png",
+  image: "images/productos/Bisuteria/Collares/LL515.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2526,7 +2526,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena balín y canutillo 45 cm + 5 cm extensión",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL514.png",
+  image: "images/productos/Bisuteria/Collares/LL514.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2535,7 +2535,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "choker corazones",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM852.png",
+  image: "images/productos/Bisuteria/Collares/LM852.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2544,7 +2544,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Estrellas",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM851.png",
+  image: "images/productos/Bisuteria/Collares/LM851.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2553,7 +2553,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Perlas y Estrella",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM849.png",
+  image: "images/productos/Bisuteria/Collares/LM849.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2562,7 +2562,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar trébol Rojo 47 cm",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO053.png",
+  image: "images/productos/Bisuteria/Collares/RO053.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2571,7 +2571,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Dije Trébol Rojo",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB684.png",
+  image: "images/productos/Bisuteria/Collares/CB684.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2580,7 +2580,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadeja Dije Trébol Blanco",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB683.png",
+  image: "images/productos/Bisuteria/Collares/CB683.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2589,7 +2589,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Dije Trébol Negro",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB682.png",
+  image: "images/productos/Bisuteria/Collares/CB682.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2598,7 +2598,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena estrellas",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL505.png",
+  image: "images/productos/Bisuteria/Collares/LL505.jpg",
   description: "Material: Acero"
 },
 {
@@ -2607,7 +2607,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena DIje Oso",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX387.png",
+  image: "images/productos/Bisuteria/Collares/OX387.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2616,7 +2616,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Aros Balin 45 cm x 2 mm + 5 extensión",
   price: 11900,
-  image: "images/productos/Bisuteria/Collares/PG421.png",
+  image: "images/productos/Bisuteria/Collares/PG421.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2625,7 +2625,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Cubana 45 cm x 4 mm + 5 extensión",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM837.png",
+  image: "images/productos/Bisuteria/Collares/LM837.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2634,7 +2634,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Militar 45 cm x 4mm + 5 extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO044.png",
+  image: "images/productos/Bisuteria/Collares/RO044.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2643,7 +2643,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Negro 45 cm + 5 cm extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO042.png",
+  image: "images/productos/Bisuteria/Collares/RO042.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2652,7 +2652,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Negro 45 cm + 5 cm extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO041.png",
+  image: "images/productos/Bisuteria/Collares/RO041.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2661,7 +2661,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Negro y Dorado 42,5 cm + 6 cm",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO040.png",
+  image: "images/productos/Bisuteria/Collares/RO040.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2670,7 +2670,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Rojo 42,5 cm + 6 cm extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO038.png",
+  image: "images/productos/Bisuteria/Collares/RO038.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2679,7 +2679,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Dorado 44 cm + 5 extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO037.png",
+  image: "images/productos/Bisuteria/Collares/RO037.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2688,7 +2688,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Blanco 42,5 cm + 6 cm de extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO036.png",
+  image: "images/productos/Bisuteria/Collares/RO036.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2697,7 +2697,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Trébol Rojo y Dorado 42,5 cm + 6 cm de",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO035.png",
+  image: "images/productos/Bisuteria/Collares/RO035.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2706,7 +2706,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena aros balín 1,5mm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL498.png",
+  image: "images/productos/Bisuteria/Collares/LL498.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2715,7 +2715,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena singapur 2mm",
   price: 10900,
-  image: "images/productos/Bisuteria/Collares/AC425.png",
+  image: "images/productos/Bisuteria/Collares/AC425.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2724,7 +2724,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena veneciana destellos",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL492.png",
+  image: "images/productos/Bisuteria/Collares/LL492.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2733,7 +2733,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena lazo con canutillo 2,5mm",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB655.png",
+  image: "images/productos/Bisuteria/Collares/CB655.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2742,7 +2742,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena singapur 2,5mm",
   price: 13900,
-  image: "images/productos/Bisuteria/Collares/LL491.png",
+  image: "images/productos/Bisuteria/Collares/LL491.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2751,7 +2751,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Mano Hamsa 45 cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP443.png",
+  image: "images/productos/Bisuteria/Collares/GP443.jpg",
   description: "Material: Acero - Zamak"
 },
 {
@@ -2760,7 +2760,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Árbol de la vida 45 cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP442.png",
+  image: "images/productos/Bisuteria/Collares/GP442.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2769,7 +2769,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Corazón 45 cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP440.png",
+  image: "images/productos/Bisuteria/Collares/GP440.jpg",
   description: "Material: Acero - Fantasia"
 },
 {
@@ -2778,7 +2778,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Ojo Turco 45 cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP439.png",
+  image: "images/productos/Bisuteria/Collares/GP439.jpg",
   description: "Material: Acero - Fantasia"
 },
 {
@@ -2787,7 +2787,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Dije Corazón 45 cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP436.png",
+  image: "images/productos/Bisuteria/Collares/GP436.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2796,7 +2796,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije relicario 4.3 x 4cm",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM790.png",
+  image: "images/productos/Bisuteria/Collares/LM790.jpg",
   description: "Material: Rodio - Covergold"
 },
 {
@@ -2805,7 +2805,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije relicario 4.3 x 4cm",
   price: 21000,
-  image: "images/productos/Bisuteria/Collares/LM789.png",
+  image: "images/productos/Bisuteria/Collares/LM789.jpg",
   description: "Material: Rodio - Covergold"
 },
 {
@@ -2814,7 +2814,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar de estrellas multicolor 45cm + 5 ext",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP464.png",
+  image: "images/productos/Bisuteria/Collares/NP464.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2823,7 +2823,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar de estrellas negras 45cm + 5 ext",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP463.png",
+  image: "images/productos/Bisuteria/Collares/NP463.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2832,7 +2832,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar dije trébol Negro 43cm + 5cm extensión",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/RO009.png",
+  image: "images/productos/Bisuteria/Collares/RO009.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2841,7 +2841,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije medusa",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR417.png",
+  image: "images/productos/Bisuteria/Collares/LR417.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2850,7 +2850,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena Leopardo",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP456.png",
+  image: "images/productos/Bisuteria/Collares/NP456.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2859,7 +2859,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable Dije Tortuga",
   price: 18000,
-  image: "images/productos/Bisuteria/Collares/OX362.png",
+  image: "images/productos/Bisuteria/Collares/OX362.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2868,7 +2868,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar Estrella Cristal 45 cm + 5 extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP455.png",
+  image: "images/productos/Bisuteria/Collares/NP455.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2877,7 +2877,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar trébol blanco",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC851.png",
+  image: "images/productos/Bisuteria/Collares/MC851.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2886,7 +2886,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Cadena corazón doble dorado y plateado",
   price: 39900,
-  image: "images/productos/Bisuteria/Collares/FT285.png",
+  image: "images/productos/Bisuteria/Collares/FT285.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2895,7 +2895,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar dije trébol mini Negro",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB631.png",
+  image: "images/productos/Bisuteria/Collares/CB631.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2904,7 +2904,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar dijes trébol Rojo 40 cm + 5 cm Extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP424.png",
+  image: "images/productos/Bisuteria/Collares/NP424.jpg",
   description: "Material: Acero"
 },
 {
@@ -2913,7 +2913,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar dijes Verde Negro 40 cm + 5 cm Extensión",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP426.png",
+  image: "images/productos/Bisuteria/Collares/NP426.jpg",
   description: "Material: Acero"
 },
 {
@@ -2922,7 +2922,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar dije oso, cadena ajustable",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB625.png",
+  image: "images/productos/Bisuteria/Collares/CB625.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -2931,7 +2931,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije abeja",
   price: 27000,
-  image: "images/productos/Bisuteria/Collares/MC804.png",
+  image: "images/productos/Bisuteria/Collares/MC804.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2940,7 +2940,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar trébol, largo 70 cm",
   price: 52000,
-  image: "images/productos/Bisuteria/Collares/DC058.png",
+  image: "images/productos/Bisuteria/Collares/DC058.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2949,7 +2949,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajusteble dije mamá",
   price: 30000,
-  image: "images/productos/Bisuteria/Collares/NP403.png",
+  image: "images/productos/Bisuteria/Collares/NP403.jpg",
   description: "Material: Rodio"
 },
 {
@@ -2958,7 +2958,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar 7 chakras",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR332.png",
+  image: "images/productos/Bisuteria/Collares/LR332.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2967,7 +2967,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar corazón",
   price: 9000,
-  image: "images/productos/Bisuteria/Collares/PC667.png",
+  image: "images/productos/Bisuteria/Collares/PC667.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -2976,7 +2976,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible ópalo 39cm + 5 cm extensión",
   price: 9000,
-  image: "images/productos/Bisuteria/Collares/PC659.png",
+  image: "images/productos/Bisuteria/Collares/PC659.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -2985,7 +2985,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar arcángel Rafael, Salud",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB613.png",
+  image: "images/productos/Bisuteria/Collares/CB613.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -2994,7 +2994,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar arcángel Gabriel, Mensajero de Dios",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB610.png",
+  image: "images/productos/Bisuteria/Collares/CB610.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -3003,7 +3003,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar arcángel Joﬁel 48 cm ajustable",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB507.png",
+  image: "images/productos/Bisuteria/Collares/CB507.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -3012,7 +3012,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar arcángel Uriel 48 cm ajustable",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB508.png",
+  image: "images/productos/Bisuteria/Collares/CB508.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -3021,7 +3021,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar arcángel Zadaquiel 48 cm ajustable",
   price: 15500,
-  image: "images/productos/Bisuteria/Collares/CB511.png",
+  image: "images/productos/Bisuteria/Collares/CB511.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -3030,7 +3030,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar ajustable dije estrella de mar",
   price: 10900,
-  image: "images/productos/Bisuteria/Collares/AC397.png",
+  image: "images/productos/Bisuteria/Collares/AC397.jpg",
   description: "Material: Rodio - Oro Goldfield"
 },
 {
@@ -3039,7 +3039,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar 7 chakras",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR302.png",
+  image: "images/productos/Bisuteria/Collares/LR302.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3048,7 +3048,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar lluvia de oro 44cm. Dije: 4.2cm",
   price: 24000,
-  image: "images/productos/Bisuteria/Collares/OR441.png",
+  image: "images/productos/Bisuteria/Collares/OR441.jpg",
   description: "Material: Acero - Zamak"
 },
 {
@@ -3057,7 +3057,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar placa protección 45cm. Dije: 1cm",
   price: 7100,
-  image: "images/productos/Bisuteria/Collares/GP220.png",
+  image: "images/productos/Bisuteria/Collares/GP220.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3066,7 +3066,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra E 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR071.png",
+  image: "images/productos/Bisuteria/Collares/LR071.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3075,7 +3075,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra F 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR063.png",
+  image: "images/productos/Bisuteria/Collares/LR063.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3084,7 +3084,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra I 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR062.png",
+  image: "images/productos/Bisuteria/Collares/LR062.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3093,7 +3093,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra N 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR069.png",
+  image: "images/productos/Bisuteria/Collares/LR069.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3102,7 +3102,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra Y 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR067.png",
+  image: "images/productos/Bisuteria/Collares/LR067.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3111,7 +3111,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra C 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR061.png",
+  image: "images/productos/Bisuteria/Collares/LR061.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3120,7 +3120,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra V 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR066.png",
+  image: "images/productos/Bisuteria/Collares/LR066.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3129,7 +3129,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra K 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR064.png",
+  image: "images/productos/Bisuteria/Collares/LR064.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3138,7 +3138,7 @@ const PRODUCTS = [
   subcategory: "Collares",
   name: "Collar invisible letra S 40cm + 6cm extensión",
   price: 19900,
-  image: "images/productos/Bisuteria/Collares/LR065.png",
+  image: "images/productos/Bisuteria/Collares/LR065.jpg",
   description: "Material: Oro Goldfield"
 },
 ];
