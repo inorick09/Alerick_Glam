@@ -214,8 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('checkoutForm');
   const extraFields = document.getElementById('checkoutExtraFields');
 
-  // Clienta nueva: hay que diligenciar teléfono, ciudad y notas.
-  // Clienta recurrente: con el nombre basta, esos campos se ocultan.
+  // Clienta nueva: hay que diligenciar teléfono y ciudad (además de
+  // nombre y notas, que siempre se piden). Clienta recurrente: con
+  // nombre y notas basta, teléfono y ciudad se ocultan.
   form?.querySelectorAll('input[name="clienta"]').forEach(input => {
     input.addEventListener('change', () => {
       const isNew = input.value === 'nueva' && input.checked;
@@ -226,7 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!isNew) {
         form.telefono.value = '';
         form.ciudad.value = '';
-        form.notas.value = '';
       }
     });
   });
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nombre: form.nombre.value.trim(),
       telefono: isNew ? form.telefono.value.trim() : '',
       ciudad: isNew ? form.ciudad.value.trim() : '',
-      notas: isNew ? form.notas.value.trim() : ''
+      notas: form.notas.value.trim()
     };
 
     const submitBtn = document.getElementById('cartCheckout');

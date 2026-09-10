@@ -852,6 +852,7 @@ em {
   color: var(--color-ink-soft);
 }
 .checkout-extra-fields { display: flex; flex-direction: column; gap: 12px; }
+.checkout-extra-fields[hidden] { display: none; }
 .radio-group { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
 .radio-option {
   display: flex;
