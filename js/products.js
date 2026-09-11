@@ -4049,4 +4049,1473 @@ const PRODUCTS = [
   image: "images/productos/Bisuteria/Empaques/C-002.jpg",
   description: "Caja"
 },
+
+// --- Pulseras ---
+{
+  id: "MC958",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera set x 2 Pareja Ajustable - MC958",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC958.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX448",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set X2 Corazones Ajustable - OX448",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX448.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB733",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x 2 Corazones Ajustable - CB733",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB733.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LR495",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x 2 Corazón Ajustable - LR495",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR495.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO175",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x3 Corazón Ajustable - RO175",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO175.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX447",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x2 Mariposa Ajustable - OX447",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX447.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB732",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulseras Set x2 Cruz Ajustable - CB732",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB732.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LM881",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x2 Corazón Ajustable - LM881",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM881.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LR493",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x2 Corazón y Estrella Dorado Ajustable - LR493",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR493.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX446",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x2 Corazones Ajustable - OX446",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX446.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LM880",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x2 Corazones Ajustable - LM880",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM880.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LR492",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set X 2 Sol y Luna Ajustable - LR492",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR492.jpg",
+  description: "Material: Rodio - Zamak"
+},
+{
+  id: "CB731",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Maxi Negra Ajustable - CB731",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB731.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB730",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Maxi Rosada Ajustable - CB730",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB730.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB729",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Maxi Morada Ajustable - CB729",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB729.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB727",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Maragritas 17 cm + 5 cm Extensión - CB727",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB727.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "CB726",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Bolas Café y Dorado Ajustable - CB726",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB726.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB725",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Bolas Blanca y Dorada Ajustable - CB725",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB725.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB724",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Bolas Café y Dorado Ajustable - CB724",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB724.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO161",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Mariposa verde - RO161",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO161.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO160",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Mariposa Tornasol - RO160",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO160.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO159",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Mariposa roja - RO159",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO159.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "FT341",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tulipán Morada 17 cm - FT341",
+  price: 39900,
+  image: "images/productos/Bisuteria/Pulseras/FT341.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "FT340",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tulipán Rosada 17 cm - FT340",
+  price: 39900,
+  image: "images/productos/Bisuteria/Pulseras/FT340.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "FT339",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tulipán roja 17 cm - FT339",
+  price: 39900,
+  image: "images/productos/Bisuteria/Pulseras/FT339.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL578",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Llamador de Angeles Ajustable - LL578",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL578.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX442",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Margarita set x3 - OX442",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX442.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX441",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Maxi Corazón Negro Ajustable - OX441",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX441.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "NP520",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Ajustable - NP520",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP520.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP519",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Negra Ajustable - NP519",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP519.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP518",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Ajustable - NP518",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP518.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC937",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Brazalete 7,5 cm - MC937",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC937.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB723",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Grano 18 cm + 5 cm Extensión - CB723",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB723.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL563",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Seleccion Colombia Ajustable - LL563",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL563.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL562",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Seleccion Colombia Ajustable - LL562",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL562.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL561",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Seleccion Colombia Ajustable - LL561",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL561.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL560",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Selección Colombia Ajustable - LL560",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL560.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL559",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Seleccion Colombia Ajustable - LL559",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL559.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL558",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable tricolor - LL558",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL558.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL557",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable tricolor - LL557",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL557.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL556",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable tricolor - LL556",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL556.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LR487",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Colombia - LR487",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR487.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LR486",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Colombia - LR486",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR486.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LR485",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Colombia - LR485",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR485.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM873",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Negro Ajustable - LM873",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM873.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM872",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Azul Ajustable - LM872",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM872.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO131",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Ojo Turco Ajustable - RO131",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO131.jpg",
+  description: "Material: Fantasia"
+},
+{
+  id: "RO130",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera protección Ajustable - RO130",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO130.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO129",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Ojo turco y San Benito Ajustable - RO129",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO129.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO128",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cruz y San Benito Ajustable - RO128",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO128.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO127",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Ojo Turco y Ala Ajustable - RO127",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO127.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO126",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x3 Ojo Turco Ajustable - RO126",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO126.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO125",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x4 Perlas Ajustable - RO125",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO125.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO124",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x4 Estrellas Ajustable - RO124",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO124.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO123",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x 4 Murano Ajustable - RO123",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO123.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO122",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x 4 Corazón Ajustable - RO122",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO122.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO121",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Set x 4 Estrellas Ajustable - RO121",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO121.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO120",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera set x 4 Murano Ajustable - RO120",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO120.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LL553",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Pasador Ajustable - LL553",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL553.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL552",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Miguel y Cruz Ajustable - LL552",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL552.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL551",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Virgen y Cruz Ajustable - LL551",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL551.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL550",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Pasador Ajustable - LL550",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL550.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL549",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Pasador Ajustable - LL549",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL549.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL548",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Ajustable Roja - LL548",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL548.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "PC724",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Mini Aros 18 cm + 5 cm Extensión - PC724",
+  price: 9000,
+  image: "images/productos/Bisuteria/Pulseras/PC724.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB705",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Circones Dorados Ajustable - CB705",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB705.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "SP348",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Virgen Nacar 18,5 cm + 5 cm Extensión - SP348",
+  price: 35900,
+  image: "images/productos/Bisuteria/Pulseras/SP348.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO110",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Azul Ajustable - RO110",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO110.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO109",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito Roja Ajustable - RO109",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO109.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "OX424",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Mamá Doble Ajustable - OX424",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX424.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB702",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Mamá Dije Perla Ajustable - CB702",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB702.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LL537",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Mamá y Corona Ajustable - LL537",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL537.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LL536",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Mamá Doble Ajustable - LL536",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL536.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LL534",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Protección Mamá Ajustable - LL534",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL534.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LL533",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Abuela Ajustable - LL533",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL533.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "PC721",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Triclor Ajustable - PC721",
+  price: 9000,
+  image: "images/productos/Bisuteria/Pulseras/PC721.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "PG437",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Atlético Nacional Ajustable - PG437",
+  price: 11900,
+  image: "images/productos/Bisuteria/Pulseras/PG437.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "RO078",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Balón Ajustable - RO078",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO078.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP489",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Guadalupe Ajustable - NP489",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP489.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP488",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Guadalupe verde Ajustable - NP488",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP488.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP487",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Guadalupe Cristal Ajustable - NP487",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP487.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP486",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Guadalupe Ajustable - NP486",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP486.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP485",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cruz y guadalupe Ajustable - NP485",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP485.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "OX396",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Balin Dije Divino NIño Ajustable - OX396",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX396.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "OX395",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Balin Dije cruz Ajustable - OX395",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX395.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LR464",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazones Negros 18 cm x 1,2 + 5 Extensión - LR464",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR464.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LR460",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Conchas 19cm x 1,3 cm + 5 Extensión - LR460",
+  price: 19900,
+  image: "images/productos/Bisuteria/Pulseras/LR460.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM850",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera corazón set x 3 Ajustable - LM850",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM850.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "MC913",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Rosada x3 Ajustable - MC913",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC913.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "LM846",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol roja 19 cm + 6 extensión - LM846",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM846.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM843",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol 17 cm + 5 cm extensión - LM843",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM843.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO051",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trébol Rojo - RO051",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO051.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO050",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trébol Negro - RO050",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO050.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LL508",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera G 18 cm x 4 mm - extensor 4 cm - LL508",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL508.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB681",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol blanca - CB681",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB681.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB680",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol negra - CB680",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB680.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC901",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Dije Sol 2,4 CM X 1,9 CM Ajustable - MC901",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC901.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "AC429",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Set x2 - AC429",
+  price: 10900,
+  image: "images/productos/Bisuteria/Pulseras/AC429.jpg",
+  description: "Material: Fantasia"
+},
+{
+  id: "AC428",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón set x 2 - AC428",
+  price: 10900,
+  image: "images/productos/Bisuteria/Pulseras/AC428.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB677",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Ojo Turco Set x2 - CB677",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB677.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "CB676",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cruz Set x2 - CB676",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB676.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "CB675",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Set x2 - CB675",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB675.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "LL504",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Corazón Set x 2 - LL504",
+  price: 13900,
+  image: "images/productos/Bisuteria/Pulseras/LL504.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "LM836",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trébol Dorado 17 cm + 5 cm extensión - LM836",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM836.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM835",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trébol Rojo 17 cm + 5 cm extensión - LM835",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM835.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM833",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trébol Negro 17 cm + 5 cm extensión - LM833",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM833.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB671",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera 7 chakras Negra, el color de la piedra puede variar - CB671",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB671.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "CB670",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera 7 chakras Roja, el color de la piedra puede variar - CB670",
+  price: 15500,
+  image: "images/productos/Bisuteria/Pulseras/CB670.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "TS263",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera amatista ajustable - TS263",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS263.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS264",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera cuarzo rosa ajustable - TS264",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS264.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS265",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera turquesa ajustable - TS265",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS265.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS266",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ónix ajustable - TS266",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS266.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS267",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera cuarzo cristal ajustable - TS267",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS267.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS268",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera jade ajustable - TS268",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS268.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS286",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Ojo de Tigre - TS286",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS286.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS287",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Lluvia de oro - TS287",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS287.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS288",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Ojo de tigre - TS288",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS288.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS285",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable Lluvia de oro - TS285",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS285.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS205",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Ónix (Ajustable) - TS205",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS205.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS204",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tejida cuarzos 8mm (Ajustable) - TS204",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS204.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS203",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Jade (Ajustable) - TS203",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS203.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS202",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Amatista (Ajustable) - TS202",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS202.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS201",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cuarzo rosa (Ajustable) - TS201",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS201.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS200",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Turquesa (Ajustable) - TS200",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS200.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "DR079",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera acrilica Blanca - DR079",
+  price: 49900,
+  image: "images/productos/Bisuteria/Pulseras/DR079.jpg",
+  description: "Material: Acrilico"
+},
+{
+  id: "DR077",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera acrilica negra - DR077",
+  price: 49900,
+  image: "images/productos/Bisuteria/Pulseras/DR077.jpg",
+  description: "Material: Acrilico"
+},
+{
+  id: "DR078",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera acrilica Rosada - DR078",
+  price: 49900,
+  image: "images/productos/Bisuteria/Pulseras/DR078.jpg",
+  description: "Material: Acrilico"
+},
+{
+  id: "RO013",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera virgen guadalupe y medalla milagrosa, 18cm - RO013",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO013.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO014",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera protección san benito, 18cm + 5 ext. - RO014",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO014.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO012",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera protección san benito, 18cm + 5 ext. - RO012",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO012.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO011",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera virgen guadalupe y medalla milagrosa, 18cm - RO011",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO011.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "NP462",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera dije Estrella de Mar 18 cm + 5 extensión - NP462",
+  price: 30000,
+  image: "images/productos/Bisuteria/Pulseras/NP462.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO007",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol rojo, 18cm + 5 cm extensión - RO007",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO007.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO005",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol rojo 17,5 cm + 5 cm extensión - RO005",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO005.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO002",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trebol dorada 17.5 cm + 5 cm extensión - RO002",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO002.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO001",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol dorada 18 cm + 5 cm extensión - RO001",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO001.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "RO003",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol blanco + 5 cm extensión - RO003",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/RO003.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "LM788",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera caracol 18cm + 5 cm extensión - LM788",
+  price: 21000,
+  image: "images/productos/Bisuteria/Pulseras/LM788.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC853",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San Benito dorado y plateado - MC853",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC853.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC852",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera San benito dorada - MC852",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC852.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "OX294",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Set x 2 pulseras corazón rojo - OX294",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX294.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "OX295",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Set x 2 pulseras corazón negro - OX295",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX295.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC846",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol blanco y negro - MC846",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC846.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC829",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera negra trébol 18 cm + 5 cm extensión - MC829",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC829.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "MC826",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera set x3 Margaritas - MC826",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC826.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "PC669",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Set x 2 pulseras para compartir dije avión - PC669",
+  price: 9000,
+  image: "images/productos/Bisuteria/Pulseras/PC669.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "MC807",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol negro 18 cm + 5 cm extensión - MC807",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC807.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "OX292",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Uriel, energías positivas - OX292",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX292.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX291",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Jofiel Sabiduría, comprensión e inspiración - OX291",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX291.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX290",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Zadquiel, Alegría y libertad - OX290",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX290.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX289",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Rafael, Salud - OX289",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX289.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX288",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Gabriel, Mensajero de Dios - OX288",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX288.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX287",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Miguel, protección, la fuerza y la fe. - OX287",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX287.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "OX286",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera arcángel Chamuel, Amor y unión - OX286",
+  price: 18000,
+  image: "images/productos/Bisuteria/Pulseras/OX286.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "MC775",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol verde 17 cm + 5 cm extensión - MC775",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC775.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "MC763",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera trébol roja 17 cm + 5 cm extensión - MC763",
+  price: 27000,
+  image: "images/productos/Bisuteria/Pulseras/MC763.jpg",
+  description: "Material: Acero"
+},
+{
+  id: "OR051",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Trebol negra ajustable - OR051",
+  price: 24000,
+  image: "images/productos/Bisuteria/Pulseras/OR051.jpg",
+  description: "Material: Rodio"
+},
+{
+  id: "TS278",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable - TS278",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS278.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS277",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ajustable - TS277",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS277.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TS215",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tejida 7 chakras 7mm (Ajustable) - TS215",
+  price: 5400,
+  image: "images/productos/Bisuteria/Pulseras/TS215.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "GP362",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera ojo turco ajustable - GP362",
+  price: 7100,
+  image: "images/productos/Bisuteria/Pulseras/GP362.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "PC607",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera cuarzo rosa ajustable - PC607",
+  price: 9000,
+  image: "images/productos/Bisuteria/Pulseras/PC607.jpg",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "TP336",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera tejida 7 nudos 3mm (Ajustable) - TP336",
+  price: 4200,
+  image: "images/productos/Bisuteria/Pulseras/TP336.jpg",
+  description: "Material: Fantasia"
+},
 ];
