@@ -3141,4 +3141,577 @@ const PRODUCTS = [
   image: "images/productos/Bisuteria/Collares/LR065.jpg",
   description: "Material: Oro Goldfield"
 },
+
+// --- Conjuntos ---
+{
+  id: "RO148",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Balón de Fútbol Ajustable - RO148",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO148.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO147",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Colombia Ajustable - RO147",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO147.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO146",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Balón y Guayo Ajustable - RO146",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO146.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO142",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Mini Colibrí 44 cm - RO142",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO142.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO138",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Cruz 44 cm - RO138",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO138.png",
+  description: "Material: Rodio"
+},
+{
+  id: "NP510",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Collar y Pulsera Ajustable - NP510",
+  price: 30000,
+  image: "images/productos/Bisuteria/Conjuntos/NP510.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO135",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Trébol Negro - RO135",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO135.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO133",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Trébol Rojo - RO133",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO133.png",
+  description: "Material: Rodio"
+},
+{
+  id: "RO132",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Trébol Verde - RO132",
+  price: 24000,
+  image: "images/productos/Bisuteria/Conjuntos/RO132.png",
+  description: "Material: Rodio"
+},
+{
+  id: "NP481",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Collar y Pulsera corazón - NP481",
+  price: 30000,
+  image: "images/productos/Bisuteria/Conjuntos/NP481.png",
+  description: "Material: Rodio"
+},
+{
+  id: "MC908",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Dije Oso ajustable - MC908",
+  price: 27000,
+  image: "images/productos/Bisuteria/Conjuntos/MC908.png",
+  description: "Material: Rodio"
+},
+{
+  id: "CB685",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Cereza - CB685",
+  price: 15500,
+  image: "images/productos/Bisuteria/Conjuntos/CB685.png",
+  description: "Material: Rodio"
+},
+{
+  id: "MC896",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Turmalina tamaño y color de la piedra puede variar - MC896",
+  price: 27000,
+  image: "images/productos/Bisuteria/Conjuntos/MC896.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM831",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Cuarzo cristal tamaño y color de la piedra puede variar - LM831",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM831.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM830",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Amatista tamaño y color de la piedra puede variar - LM830",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM830.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM832",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Cuarzo rosa tamaño y color de la piedra puede variar - LM832",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM832.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM829",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Jade tamaño y color de la piedra puede variar - LM829",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM829.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM827",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Cuarzo cristal tamaño y color de la piedra puede variar - LM827",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM827.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "MC895",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto Turmalina tamaño y color de la piedra puede variar - MC895",
+  price: 27000,
+  image: "images/productos/Bisuteria/Conjuntos/MC895.png",
+  description: "Material: Acero - Oro Goldfield"
+},
+{
+  id: "LM786",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto dije colibrí - LM786",
+  price: 21000,
+  image: "images/productos/Bisuteria/Conjuntos/LM786.png",
+  description: "Material: Rodio"
+},
+{
+  id: "AC136H",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Collar dije letra H, el tamaño de los topos puede variar - AC136H",
+  price: 10900,
+  image: "images/productos/Bisuteria/Conjuntos/AC136H.png",
+  description: "Material: Rodio"
+},
+
+// --- Dijes ---
+{
+  id: "RO056",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Mariposa - RO056",
+  price: 24000,
+  image: "images/productos/Bisuteria/Dijes/RO056.png",
+  description: "Material: Rodio"
+},
+{
+  id: "LM848",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Estrella y Concha - LM848",
+  price: 21000,
+  image: "images/productos/Bisuteria/Dijes/LM848.png",
+  description: "Material: Rodio"
+},
+{
+  id: "LR455",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Tornasol - LR455",
+  price: 19900,
+  image: "images/productos/Bisuteria/Dijes/LR455.png",
+  description: "Material: Rodio"
+},
+{
+  id: "LR453",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Trébol Negro - LR453",
+  price: 19900,
+  image: "images/productos/Bisuteria/Dijes/LR453.png",
+  description: "Material: Rodio"
+},
+{
+  id: "GP445",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Letra 1 cm - GP445",
+  price: 7100,
+  image: "images/productos/Bisuteria/Dijes/GP445.png",
+  description: "Material: Rodio"
+},
+{
+  id: "TS256",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra 6mm - TS256",
+  price: 5400,
+  image: "images/productos/Bisuteria/Dijes/TS256.png",
+  description: "Material: Rodio"
+},
+{
+  id: "GP366",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Letra rodio - GP366",
+  price: 7100,
+  image: "images/productos/Bisuteria/Dijes/GP366.png",
+  description: "Material: Rodio"
+},
+
+// --- Earcuff ---
+{
+  id: "LL507",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - LL507",
+  price: 13900,
+  image: "images/productos/Bisuteria/Earcuff/LL507.png",
+  description: "Material: Rodio"
+},
+{
+  id: "OX391",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - OX391",
+  price: 18000,
+  image: "images/productos/Bisuteria/Earcuff/OX391.png",
+  description: "Material: Rodio"
+},
+{
+  id: "OX390",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff chunky - OX390",
+  price: 18000,
+  image: "images/productos/Bisuteria/Earcuff/OX390.png",
+  description: "Material: Rodio"
+},
+{
+  id: "CB679",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff Flores - CB679",
+  price: 15500,
+  image: "images/productos/Bisuteria/Earcuff/CB679.png",
+  description: "Material: Rodio"
+},
+{
+  id: "LL501",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perla plateado - LL501",
+  price: 13900,
+  image: "images/productos/Bisuteria/Earcuff/LL501.png",
+  description: "Material: Rodio"
+},
+{
+  id: "CB667",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff estrellas - CB667",
+  price: 15500,
+  image: "images/productos/Bisuteria/Earcuff/CB667.png",
+  description: "Material: Rodio"
+},
+{
+  id: "PC713",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC713",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC713.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP433",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff flores - GP433",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP433.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP432",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP432",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP432.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP431",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP431",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP431.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP430",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP430",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP430.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP429",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP429",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP429.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP428",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP428",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP428.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC711",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - PC711",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC711.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC710",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff chunky - PC710",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC710.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC707",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff cadena y topo - PC707",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC707.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP423",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - GP423",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP423.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP422",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff chunky - GP422",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP422.png",
+  description: "Material: Covergold"
+},
+{
+  id: "GP421",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff dorado - GP421",
+  price: 7100,
+  image: "images/productos/Bisuteria/Earcuff/GP421.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC706",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC706",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC706.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC705",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC705",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC705.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC704",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC704",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC704.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC703",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC703",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC703.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC702",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC702",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC702.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC701",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC701",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC701.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC700",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC700",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC700.png",
+  description: "Material: Covergold"
+},
+{
+  id: "AC405",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff hojas - AC405",
+  price: 10900,
+  image: "images/productos/Bisuteria/Earcuff/AC405.png",
+  description: "Material: Acero"
+},
+{
+  id: "PC688",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC688",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC688.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC685",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC685",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC685.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC681",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff perlas - PC681",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC681.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC671",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff - PC671",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC671.png",
+  description: "Material: Covergold"
+},
+{
+  id: "PC670",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff doble - PC670",
+  price: 9000,
+  image: "images/productos/Bisuteria/Earcuff/PC670.png",
+  description: "Material: Covergold"
+},
+{
+  id: "LL382",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff Colores - LL382",
+  price: 13900,
+  image: "images/productos/Bisuteria/Earcuff/LL382.png",
+  description: "Material: Oro Goldfield"
+},
+{
+  id: "PG361",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff doble - PG361",
+  price: 11900,
+  image: "images/productos/Bisuteria/Earcuff/PG361.png",
+  description: "Material: Rodio"
+},
+{
+  id: "CB596",
+  category: "bisuteria",
+  subcategory: "Earcuff",
+  name: "Earcuff tejido - CB596",
+  price: 15500,
+  image: "images/productos/Bisuteria/Earcuff/CB596.png",
+  description: "Material: Oro Goldfield"
+},
 ];
