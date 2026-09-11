@@ -291,6 +291,11 @@ em {
 }
 .page-hero__contact a { color: var(--color-rose-deep); font-weight: 600; text-decoration: underline; }
 
+.page-hero .page-hero__catalog-note {
+  margin: 2.2em auto 0;
+}
+.page-hero .catalog-filters { margin: 20px 0 0; }
+
 /* ---------- 5. Cómo comprar (pasos) ---------- */
 .steps__list {
   list-style: none;
