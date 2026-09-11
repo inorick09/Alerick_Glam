@@ -3714,4 +3714,339 @@ const PRODUCTS = [
   image: "images/productos/Bisuteria/Earcuff/CB596.png",
   description: "Material: Oro Goldfield"
 },
+
+// --- Empaques ---
+{
+  id: "PG465",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería 5×5×3,5 cm - PG465",
+  price: 11900,
+  image: "images/productos/Bisuteria/Empaques/PG465.png",
+  description: "Caja"
+},
+{
+  id: "PG464",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería Rosa 5×5×3,5 cm - PG464",
+  price: 11900,
+  image: "images/productos/Bisuteria/Empaques/PG464.png",
+  description: "Caja"
+},
+{
+  id: "PG463",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Deslizable Negro 5×5×3,5 cm - PG463",
+  price: 11900,
+  image: "images/productos/Bisuteria/Empaques/PG463.png",
+  description: "Empaque"
+},
+{
+  id: "RO176",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Royal 8,5 × 7,5 × 3,5 cm - RO176",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO176.png",
+  description: "Empaque"
+},
+{
+  id: "FT348",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Noir Atelier 11 × 16 × 3,5 cm - FT348",
+  price: 39900,
+  image: "images/productos/Bisuteria/Empaques/FT348.png",
+  description: "Empaque"
+},
+{
+  id: "GP457",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería en forma de corazón negro 4×4×3,3 - GP457",
+  price: 7100,
+  image: "images/productos/Bisuteria/Empaques/GP457.png",
+  description: "Caja"
+},
+{
+  id: "GP456",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería en forma de corazón rojo 4×4×3,3 - GP456",
+  price: 7100,
+  image: "images/productos/Bisuteria/Empaques/GP456.png",
+  description: "Caja"
+},
+{
+  id: "BR128",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería cuadrada 7×10×3,5 cm - BR128",
+  price: 45000,
+  image: "images/productos/Bisuteria/Empaques/BR128.png",
+  description: "Caja"
+},
+{
+  id: "MC955",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Deluxe Gris 7 × 8 × 3,5 cm - MC955",
+  price: 27000,
+  image: "images/productos/Bisuteria/Empaques/MC955.png",
+  description: "Empaque"
+},
+{
+  id: "SP392",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Elite 9 × 9 × 4,5 cm - SP392",
+  price: 35900,
+  image: "images/productos/Bisuteria/Empaques/SP392.png",
+  description: "Empaque"
+},
+{
+  id: "RO099",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO099",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO099.png",
+  description: "Caja"
+},
+{
+  id: "RO098",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO098",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO098.png",
+  description: "Caja"
+},
+{
+  id: "RO097",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO097",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO097.png",
+  description: "Caja"
+},
+{
+  id: "FT314",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Negro Mediano - FT314",
+  price: 39900,
+  image: "images/productos/Bisuteria/Empaques/FT314.png",
+  description: "Joyero"
+},
+{
+  id: "FT313",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Salmón Mediano - FT313",
+  price: 39900,
+  image: "images/productos/Bisuteria/Empaques/FT313.png",
+  description: "Joyero"
+},
+{
+  id: "FT312",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Blanco Mediano - FT312",
+  price: 39900,
+  image: "images/productos/Bisuteria/Empaques/FT312.png",
+  description: "Joyero"
+},
+{
+  id: "RO093",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Negro Cuadrado - RO093",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO093.png",
+  description: "Joyero"
+},
+{
+  id: "RO092",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Salmón Cuadrado - RO092",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO092.png",
+  description: "Joyero"
+},
+{
+  id: "RO091",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Blanco Cuadrado - RO091",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO091.png",
+  description: "Joyero"
+},
+{
+  id: "RO090",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Blanco Redondo - RO090",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO090.png",
+  description: "Joyero"
+},
+{
+  id: "RO089",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero Rosa Redondo - RO089",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO089.png",
+  description: "Joyero"
+},
+{
+  id: "BR121",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería 6,5×3,5×4,5cm - BR121",
+  price: 45000,
+  image: "images/productos/Bisuteria/Empaques/BR121.png",
+  description: "Caja"
+},
+{
+  id: "BR120",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería 6,5×3,5×4,5cm - BR120",
+  price: 45000,
+  image: "images/productos/Bisuteria/Empaques/BR120.png",
+  description: "Caja"
+},
+{
+  id: "CB689",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja para Joyería Cuadrada 9×9×3,5 cm - CB689",
+  price: 15500,
+  image: "images/productos/Bisuteria/Empaques/CB689.png",
+  description: "Caja"
+},
+{
+  id: "RO065",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO065",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO065.png",
+  description: "Caja"
+},
+{
+  id: "RO045",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Cofre Negro 4,6 cm x 5,5 cm - RO045",
+  price: 24000,
+  image: "images/productos/Bisuteria/Empaques/RO045.png",
+  description: "Cofre"
+},
+{
+  id: "1PE-PLATINADO-JNC",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Elegance platinado - 1PE-PLATINADO-JNC",
+  price: 7500,
+  image: "images/productos/Bisuteria/Empaques/1PE-PLATINADO-JNC.png",
+  description: "Empaque"
+},
+{
+  id: "PANA-001",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Bolsa de pana pequeña - PANA-001",
+  price: 800,
+  image: "images/productos/Bisuteria/Empaques/PANA-001.png",
+  description: "Bolsa"
+},
+{
+  id: "NP365",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Joyero negro redondo. Diámetro10.5 cm alto 4cm - NP365",
+  price: 30000,
+  image: "images/productos/Bisuteria/Empaques/NP365.png",
+  description: "Joyero"
+},
+{
+  id: "1EU-NEGRO-JNC",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Elegance - 1EU-NEGRO-JNC",
+  price: 7500,
+  image: "images/productos/Bisuteria/Empaques/1EU-NEGRO-JNC.png",
+  description: "Empaque"
+},
+{
+  id: "1EU-PERLA-JNC",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Elegance - 1EU-PERLA-JNC",
+  price: 7500,
+  image: "images/productos/Bisuteria/Empaques/1EU-PERLA-JNC.png",
+  description: "Empaque"
+},
+{
+  id: "1EU-ROSA-JNC",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Empaque Elegance - 1EU-ROSA-JNC",
+  price: 7500,
+  image: "images/productos/Bisuteria/Empaques/1EU-ROSA-JNC.png",
+  description: "Empaque"
+},
+{
+  id: "C-005",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja Beige Pequeña - C-005",
+  price: 3000,
+  image: "images/productos/Bisuteria/Empaques/C-005.png",
+  description: "Caja"
+},
+{
+  id: "VA004",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Bolsa tul mediana. Medidas: 12CM X 8CM por unidad - VA004",
+  price: 600,
+  image: "images/productos/Bisuteria/Empaques/VA004.png",
+  description: "Bolsa"
+},
+{
+  id: "VA022",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Bolsa tul pequeña. Medidas: 6.5cm x 9 cm por unidad - VA022",
+  price: 400,
+  image: "images/productos/Bisuteria/Empaques/VA022.png",
+  description: "Bolsa"
+},
+{
+  id: "VA005",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Bolsa tul grande. Medidas: 18cm x 12cm. Colores - VA005",
+  price: 800,
+  image: "images/productos/Bisuteria/Empaques/VA005.png",
+  description: "Bolsa"
+},
+{
+  id: "C-002",
+  category: "bisuteria",
+  subcategory: "Empaques",
+  name: "Caja tipo sobre, medida: Ancho 10.5cm x Largo - C-002",
+  price: 105,
+  image: "images/productos/Bisuteria/Empaques/C-002.png",
+  description: "Caja"
+},
 ];
