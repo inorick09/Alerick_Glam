@@ -285,6 +285,11 @@ em {
 .page-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); margin-bottom: 0.5em; }
 .page-hero p { max-width: 560px; margin: 0 auto 1.6em; color: var(--color-ink-soft); font-size: 1.05rem; }
 .page-hero .hero__actions { justify-content: center; }
+.page-hero .page-hero__contact {
+  margin: 1.2em auto 0;
+  font-size: 0.95rem;
+}
+.page-hero__contact a { color: var(--color-rose-deep); font-weight: 600; text-decoration: underline; }
 
 /* ---------- 5. Cómo comprar (pasos) ---------- */
 .steps__list {
@@ -454,6 +459,46 @@ em {
   font-size: 0.8rem;
   color: var(--color-ink-soft);
 }
+
+/* ---------- 7c. Materiales ---------- */
+.materials-intro {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.material-card {
+  background: var(--color-card);
+  border: 1px solid rgba(184, 147, 90, 0.2);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.material-card__tagline {
+  font-weight: 600;
+  color: var(--color-rose-deep);
+  font-size: 0.88rem;
+  margin: 0 0 0.7em;
+}
+.material-card p { color: var(--color-ink-soft); font-size: 0.92rem; margin: 0 0 0.8em; }
+.material-card p:last-child { margin-bottom: 0; }
+.material-card p strong { color: var(--color-ink); }
+
+.materials-tip {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  text-align: center;
+}
+.materials-tip h3 { color: var(--color-rose-deep); margin-bottom: 0.4em; }
+.materials-tip p { color: var(--color-ink-soft); margin: 0; font-size: 0.92rem; }
 
 .product-card {
   background: var(--color-card);
@@ -917,6 +962,7 @@ em {
   .hero__gallery { height: 240px; order: -1; }
 
   .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .materials-grid { grid-template-columns: repeat(2, 1fr); }
 
   .steps__list { flex-direction: column; align-items: center; }
   .steps__item { max-width: 340px; width: 100%; }
@@ -924,7 +970,7 @@ em {
 }
 
 @media (max-width: 560px) {
-  .products-grid, .categories-grid { grid-template-columns: 1fr; }
+  .products-grid, .categories-grid, .materials-grid { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { text-align: center; }
   .steps__flow { flex-direction: column; gap: 4px; }
