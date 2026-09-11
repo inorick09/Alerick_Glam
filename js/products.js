@@ -49,7 +49,7 @@ const PRODUCTS = [
   id: "SET2168",              // texto único, sin espacios
   category: "maquillaje",              // "maquillaje" o "bisuteria"
   subcategory: "Cuidado Facial",       // ver lista de tipos arriba
-  name: "Serum Facial Encanto",
+  name: "Serum Facial Encanto - SET2168",
   price: 15000,                        // solo el número, sin puntos ni $
   image: "images/productos/Maquillaje/Cuidado_Facial/SET2168.jpg",
   description: "Un básico para incluir en tu rutina de cuidado facial. Su textura ligera y fácil de aplicar lo hacen perfecto para usar diariamente y darle a tu piel ese toque de cuidado que se merece."
@@ -58,7 +58,7 @@ const PRODUCTS = [
   id: "BAQ584",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Base Aqua Cobertura Media",
+  name: "Base Aqua Cobertura Media - BAQ584",
   price: 30000,
   image: "images/productos/Maquillaje/Rostro/BAQ584.jpg",
   description: "La Base Aqua realza tu belleza natural con un acabado luminoso, fresco y sin peso, se funde perfectamente con la piel."
@@ -67,7 +67,7 @@ const PRODUCTS = [
   id: "BMT1666",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Baul Mediano Negro",
+  name: "Baul Mediano Negro - BMT1666",
   price: 40000,
   image: "images/productos/Maquillaje/Accesorios/BMT1666.jpg",
   description: "Organiza los productos favoritos de maquillaje y cuidado facial con la nueva cosmetiquera Trendy. Es muy amplia e incluye varios compartimentos internos en donde puedes organizar productos pequeños. Viene con separador para una organización óptima de los productos y separadores para organizar las brochas de maquillaje."
@@ -76,7 +76,7 @@ const PRODUCTS = [
   id: "LL590",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo corazón con alas Ajustable",
+  name: "Anillo corazón con alas Ajustable - LL590",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL590.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -85,7 +85,7 @@ const PRODUCTS = [
   id: "LL588",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo cirón rojo Ajustable",
+  name: "Anillo cirón rojo Ajustable - LL588",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL588.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -94,7 +94,7 @@ const PRODUCTS = [
   id: "LL586",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo cirón cristal Ajustable",
+  name: "Anillo cirón cristal Ajustable - LL586",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL586.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -103,7 +103,7 @@ const PRODUCTS = [
   id: "LL585",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo circón verde Ajustable",
+  name: "Anillo circón verde Ajustable - LL585",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL585.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -112,7 +112,7 @@ const PRODUCTS = [
   id: "LL584",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo cadena Ajustable",
+  name: "Anillo cadena Ajustable - LL584",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL584.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -121,7 +121,7 @@ const PRODUCTS = [
   id: "LL581",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo circón cristal Ajustable",
+  name: "Anillo circón cristal Ajustable - LL581",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL581.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -130,7 +130,7 @@ const PRODUCTS = [
   id: "OX445",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Ajustable mariposa tornasol",
+  name: "Anillo Ajustable mariposa tornasol - OX445",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX445.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -139,7 +139,7 @@ const PRODUCTS = [
   id: "OX444",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Ajustable mariposa verde",
+  name: "Anillo Ajustable mariposa verde - OX444",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX444.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -148,7 +148,7 @@ const PRODUCTS = [
   id: "OX443",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Ajustable mariposa roja",
+  name: "Anillo Ajustable mariposa roja - OX443",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX443.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -157,7 +157,7 @@ const PRODUCTS = [
   id: "RO158",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Maxi Ajustable",
+  name: "Anillo Maxi Ajustable - RO158",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO158.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -166,7 +166,7 @@ const PRODUCTS = [
   id: "RO157",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Maxi Ajustable",
+  name: "Anillo Maxi Ajustable - RO157",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO157.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -175,7 +175,7 @@ const PRODUCTS = [
   id: "RO156",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Maxi Ajustable",
+  name: "Anillo Maxi Ajustable - RO156",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO156.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -184,7 +184,7 @@ const PRODUCTS = [
   id: "RO155",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Maxi Ajustable",
+  name: "Anillo Maxi Ajustable - RO155",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO155.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -193,7 +193,7 @@ const PRODUCTS = [
   id: "NP515",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Flor y Perla Ajustable",
+  name: "Anillo Flor y Perla Ajustable - NP515",
   price: 30000,
   image: "images/productos/Bisuteria/Anillos/NP515.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -202,7 +202,7 @@ const PRODUCTS = [
   id: "MC934",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Maxi Flor y Perla Ajustable",
+  name: "Anillo Maxi Flor y Perla Ajustable - MC934",
   price: 27000,
   image: "images/productos/Bisuteria/Anillos/MC934.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -211,7 +211,7 @@ const PRODUCTS = [
   id: "NP514",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Flor Maxi Ajustable",
+  name: "Anillo Flor Maxi Ajustable - NP514",
   price: 30000,
   image: "images/productos/Bisuteria/Anillos/NP514.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -220,7 +220,7 @@ const PRODUCTS = [
   id: "RO145",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Corazones Rojos Ajustable",
+  name: "Anillo Corazones Rojos Ajustable - RO145",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO145.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -229,7 +229,7 @@ const PRODUCTS = [
   id: "RO144",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Corazones blancos Ajustable",
+  name: "Anillo Corazones blancos Ajustable - RO144",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO144.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -238,7 +238,7 @@ const PRODUCTS = [
   id: "RO143",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Corazones Rojos Ajustable",
+  name: "Anillo Corazones Rojos Ajustable - RO143",
   price: 24000,
   image: "images/productos/Bisuteria/Anillos/RO143.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -247,7 +247,7 @@ const PRODUCTS = [
   id: "NP513",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Blanco Ajustable",
+  name: "Anillo Blanco Ajustable - NP513",
   price: 30000,
   image: "images/productos/Bisuteria/Anillos/NP513.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -256,7 +256,7 @@ const PRODUCTS = [
   id: "LL565",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Cadena Ajustable",
+  name: "Anillo Cadena Ajustable - LL565",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL565.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -265,7 +265,7 @@ const PRODUCTS = [
   id: "LL564",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Doble Mariposa Ajustable",
+  name: "Anillo Doble Mariposa Ajustable - LL564",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL564.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -274,7 +274,7 @@ const PRODUCTS = [
   id: "LL567",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Solitario Ajustable",
+  name: "Anillo Solitario Ajustable - LL567",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL567.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -283,7 +283,7 @@ const PRODUCTS = [
   id: "LL569",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo circones Ajustable",
+  name: "Anillo circones Ajustable - LL569",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL569.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -292,7 +292,7 @@ const PRODUCTS = [
   id: "OX426",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Corazón Maxi Ajustable",
+  name: "Anillo Corazón Maxi Ajustable - OX426",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX426.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -301,7 +301,7 @@ const PRODUCTS = [
   id: "LR477",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Estrella Ajustable",
+  name: "Anillo Estrella Ajustable - LR477",
   price: 19900,
   image: "images/productos/Bisuteria/Anillos/LR477.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -310,7 +310,7 @@ const PRODUCTS = [
   id: "CB703",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Circones Cristal Ajustable",
+  name: "Anillo Circones Cristal Ajustable - CB703",
   price: 15500,
   image: "images/productos/Bisuteria/Anillos/CB703.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -319,7 +319,7 @@ const PRODUCTS = [
   id: "LL540",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Corazón Ajustable",
+  name: "Anillo Corazón Ajustable - LL540",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL540.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -328,7 +328,7 @@ const PRODUCTS = [
   id: "LL538",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Circones Ajustable",
+  name: "Anillo Circones Ajustable - LL538",
   price: 13900,
   image: "images/productos/Bisuteria/Anillos/LL538.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -337,7 +337,7 @@ const PRODUCTS = [
   id: "OX422",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Concha Ajustable",
+  name: "Anillo Concha Ajustable - OX422",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX422.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -346,7 +346,7 @@ const PRODUCTS = [
   id: "OX417",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Circón Fucsia Ajustable",
+  name: "Anillo Circón Fucsia Ajustable - OX417",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX417.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -355,7 +355,7 @@ const PRODUCTS = [
   id: "MC925",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Sol y Luna Ajustable",
+  name: "Anillo Sol y Luna Ajustable - MC925",
   price: 27000,
   image: "images/productos/Bisuteria/Anillos/MC925.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -364,7 +364,7 @@ const PRODUCTS = [
   id: "LM855",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Cubano Ajustable",
+  name: "Anillo Cubano Ajustable - LM855",
   price: 21000,
   image: "images/productos/Bisuteria/Anillos/LM855.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -373,7 +373,7 @@ const PRODUCTS = [
   id: "OX398",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Nota musical Ajustable",
+  name: "Anillo Nota musical Ajustable - OX398",
   price: 18000,
   image: "images/productos/Bisuteria/Anillos/OX398.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -382,7 +382,7 @@ const PRODUCTS = [
   id: "PG428",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Ovalos Ajustable",
+  name: "Anillo Ovalos Ajustable - PG428",
   price: 11900,
   image: "images/productos/Bisuteria/Anillos/PG428.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -391,7 +391,7 @@ const PRODUCTS = [
   id: "PG424",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Balin Ajustable",
+  name: "Anillo Balin Ajustable - PG424",
   price: 11900,
   image: "images/productos/Bisuteria/Anillos/PG424.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -400,7 +400,7 @@ const PRODUCTS = [
   id: "LM839",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo Sol y Luna Ajustable",
+  name: "Anillo Sol y Luna Ajustable - LM839",
   price: 21000,
   image: "images/productos/Bisuteria/Anillos/LM839.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -409,7 +409,7 @@ const PRODUCTS = [
   id: "MC784",
   category: "bisuteria",
   subcategory: "Anillos",
-  name: "Anillo cuadrado circones",
+  name: "Anillo cuadrado circones - MC784",
   price: 27000,
   image: "images/productos/Bisuteria/Anillos/MC784.jpg",
   description: "Anillo Ajustable en Rodio"
@@ -418,7 +418,7 @@ const PRODUCTS = [
   id: "LR501",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - LR501",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR501.jpg",
   description: "Material: Rodio"
@@ -427,7 +427,7 @@ const PRODUCTS = [
   id: "LR500",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 Topos",
+  name: "Set x 3 Topos - LR500",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR500.jpg",
   description: "Material: Rodio"
@@ -436,7 +436,7 @@ const PRODUCTS = [
   id: "LR499",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 Topos",
+  name: "Set x 3 Topos - LR499",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR499.jpg",
   description: "Material: Rodio"
@@ -445,7 +445,7 @@ const PRODUCTS = [
   id: "LR498",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 Corazones",
+  name: "Set x 3 Corazones - LR498",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR498.jpg",
   description: "Material: Rodio"
@@ -454,7 +454,7 @@ const PRODUCTS = [
   id: "LR497",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 topos",
+  name: "Set x 3 topos - LR497",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR497.jpg",
   description: "Material: Rodio"
@@ -463,7 +463,7 @@ const PRODUCTS = [
   id: "LL596",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Corazón",
+  name: "Arete Corazón - LL596",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL596.jpg",
   description: "Material: Oro Goldfield"
@@ -472,7 +472,7 @@ const PRODUCTS = [
   id: "LL595",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bola Rosa 14 mm",
+  name: "Arete Bola Rosa 14 mm - LL595",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL595.jpg",
   description: "Material: Oro Goldfield"
@@ -481,7 +481,7 @@ const PRODUCTS = [
   id: "LL594",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bola Roja 14 mm",
+  name: "Arete Bola Roja 14 mm - LL594",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL594.jpg",
   description: "Material: Oro Goldfield"
@@ -490,7 +490,7 @@ const PRODUCTS = [
   id: "LL593",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bola Amarillo 14 mm",
+  name: "Arete Bola Amarillo 14 mm - LL593",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL593.jpg",
   description: "Material: Oro Goldfield"
@@ -499,7 +499,7 @@ const PRODUCTS = [
   id: "LL592",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bola Blanco 14 mm",
+  name: "Arete Bola Blanco 14 mm - LL592",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL592.jpg",
   description: "Material: Oro Goldfield"
@@ -508,7 +508,7 @@ const PRODUCTS = [
   id: "LL591",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bola Negro 14 mm",
+  name: "Arete Bola Negro 14 mm - LL591",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL591.jpg",
   description: "Material: Oro Goldfield"
@@ -517,7 +517,7 @@ const PRODUCTS = [
   id: "AC442",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga cruz 1.4cm",
+  name: "Candonga cruz 1.4cm - AC442",
   price: 10900,
   image: "images/productos/Bisuteria/Aretes/AC442.jpg",
   description: "Material: Rodio"
@@ -526,7 +526,7 @@ const PRODUCTS = [
   id: "AC441",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga estrellas 1.4cm",
+  name: "Candonga estrellas 1.4cm - AC441",
   price: 10900,
   image: "images/productos/Bisuteria/Aretes/AC441.jpg",
   description: "Material: Rodio"
@@ -535,7 +535,7 @@ const PRODUCTS = [
   id: "MC952",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 2 pares de topos",
+  name: "Set x 2 pares de topos - MC952",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC952.jpg",
   description: "Material: Rodio"
@@ -544,7 +544,7 @@ const PRODUCTS = [
   id: "RO172",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 2 pares de topos",
+  name: "Set x 2 pares de topos - RO172",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO172.jpg",
   description: "Material: Rodio"
@@ -553,7 +553,7 @@ const PRODUCTS = [
   id: "SP368",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de aretes",
+  name: "Set x 3 pares de aretes - SP368",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP368.jpg",
   description: "Material: Rodio"
@@ -562,7 +562,7 @@ const PRODUCTS = [
   id: "LM878",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 1,5 cm",
+  name: "Candonga 1,5 cm - LM878",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM878.jpg",
   description: "Material: Rodio"
@@ -571,7 +571,7 @@ const PRODUCTS = [
   id: "RO171",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 1,9 cm",
+  name: "Candonga 1,9 cm - RO171",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO171.jpg",
   description: "Material: Rodio"
@@ -580,7 +580,7 @@ const PRODUCTS = [
   id: "RO170",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO170",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO170.jpg",
   description: "Material: Rodio"
@@ -589,7 +589,7 @@ const PRODUCTS = [
   id: "RO169",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO169",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO169.jpg",
   description: "Material: Rodio"
@@ -598,7 +598,7 @@ const PRODUCTS = [
   id: "RO168",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO168",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO168.jpg",
   description: "Material: Rodio"
@@ -607,7 +607,7 @@ const PRODUCTS = [
   id: "RO167",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO167",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO167.jpg",
   description: "Material: Rodio"
@@ -616,7 +616,7 @@ const PRODUCTS = [
   id: "RO166",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO166",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO166.jpg",
   description: "Material: Rodio"
@@ -625,7 +625,7 @@ const PRODUCTS = [
   id: "RO165",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - RO165",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO165.jpg",
   description: "Material: Rodio"
@@ -634,7 +634,7 @@ const PRODUCTS = [
   id: "MC946",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set candongas x 3",
+  name: "Set candongas x 3 - MC946",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC946.jpg",
   description: "Material: Rodio"
@@ -643,7 +643,7 @@ const PRODUCTS = [
   id: "MC945",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set candongas x 3",
+  name: "Set candongas x 3 - MC945",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC945.jpg",
   description: "Material: Rodio"
@@ -652,7 +652,7 @@ const PRODUCTS = [
   id: "MC944",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set candongas x 3",
+  name: "Set candongas x 3 - MC944",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC944.jpg",
   description: "Material: Rodio"
@@ -661,7 +661,7 @@ const PRODUCTS = [
   id: "SP367",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete ﬂor 2 cm",
+  name: "Arete ﬂor 2 cm - SP367",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP367.jpg",
   description: "Material: Rodio"
@@ -670,7 +670,7 @@ const PRODUCTS = [
   id: "SP365",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - SP365",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP365.jpg",
   description: "Material: Rodio"
@@ -679,7 +679,7 @@ const PRODUCTS = [
   id: "SP364",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - SP364",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP364.jpg",
   description: "Material: Rodio"
@@ -688,7 +688,7 @@ const PRODUCTS = [
   id: "SP363",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - SP363",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP363.jpg",
   description: "Material: Rodio"
@@ -697,7 +697,7 @@ const PRODUCTS = [
   id: "SP362",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - SP362",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP362.jpg",
   description: "Material: Rodio"
@@ -706,7 +706,7 @@ const PRODUCTS = [
   id: "SP361",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 Topos",
+  name: "Set x3 Topos - SP361",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP361.jpg",
   description: "Material: Rodio"
@@ -715,7 +715,7 @@ const PRODUCTS = [
   id: "MC943",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x3 topos",
+  name: "Set x3 topos - MC943",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC943.jpg",
   description: "Material: Rodio"
@@ -724,7 +724,7 @@ const PRODUCTS = [
   id: "PG460",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Estrella 5 mm",
+  name: "Aretes Estrella 5 mm - PG460",
   price: 11900,
   image: "images/productos/Bisuteria/Aretes/PG460.jpg",
   description: "Material: Rodio"
@@ -733,7 +733,7 @@ const PRODUCTS = [
   id: "LL572",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Corona 1 cm x 1,4 cm",
+  name: "Aretes Corona 1 cm x 1,4 cm - LL572",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL572.jpg",
   description: "Material: Rodio"
@@ -742,7 +742,7 @@ const PRODUCTS = [
   id: "MC938",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor Doble 1,5 cm x 3,1 cm",
+  name: "Arete Flor Doble 1,5 cm x 3,1 cm - MC938",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC938.jpg",
   description: "Material: Rodio"
@@ -751,7 +751,7 @@ const PRODUCTS = [
   id: "RO154",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Bicolor 1,9 cm x 1,5 cm",
+  name: "Arete Bicolor 1,9 cm x 1,5 cm - RO154",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO154.jpg",
   description: "Material: Rodio"
@@ -760,7 +760,7 @@ const PRODUCTS = [
   id: "SP356",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Maxi Blanco 3 cm",
+  name: "Arete Maxi Blanco 3 cm - SP356",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP356.jpg",
   description: "Material: Rodio"
@@ -769,7 +769,7 @@ const PRODUCTS = [
   id: "GP454",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Lisa 5,5 cm",
+  name: "Candonga Lisa 5,5 cm - GP454",
   price: 7100,
   image: "images/productos/Bisuteria/Aretes/GP454.jpg",
   description: "Material: Acero"
@@ -778,7 +778,7 @@ const PRODUCTS = [
   id: "GP453",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "candonga Lisa 2,9 cm",
+  name: "candonga Lisa 2,9 cm - GP453",
   price: 7100,
   image: "images/productos/Bisuteria/Aretes/GP453.jpg",
   description: "Material: Acero"
@@ -787,7 +787,7 @@ const PRODUCTS = [
   id: "PC731",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Lisa 1,3 cm",
+  name: "Candonga Lisa 1,3 cm - PC731",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC731.jpg",
   description: "Material: Acero"
@@ -796,7 +796,7 @@ const PRODUCTS = [
   id: "PC730",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Lisa 1,6",
+  name: "Candonga Lisa 1,6 - PC730",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC730.jpg",
   description: "Material: Acero"
@@ -805,7 +805,7 @@ const PRODUCTS = [
   id: "PC729",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Lisa 1,5 cm",
+  name: "Candonga Lisa 1,5 cm - PC729",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC729.jpg",
   description: "Material: Acero"
@@ -814,7 +814,7 @@ const PRODUCTS = [
   id: "PG459",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Lisa 1 cm",
+  name: "Candonga Lisa 1 cm - PG459",
   price: 11900,
   image: "images/productos/Bisuteria/Aretes/PG459.jpg",
   description: "Material: Rodio"
@@ -823,7 +823,7 @@ const PRODUCTS = [
   id: "PG458",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 1,5 X 1,3",
+  name: "Candonga 1,5 X 1,3 - PG458",
   price: 11900,
   image: "images/productos/Bisuteria/Aretes/PG458.jpg",
   description: "Material: Rodio"
@@ -832,7 +832,7 @@ const PRODUCTS = [
   id: "FT329",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Maxi FLor 4,3 cm",
+  name: "Arete Maxi FLor 4,3 cm - FT329",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT329.jpg",
   description: "Material: Rodio"
@@ -841,7 +841,7 @@ const PRODUCTS = [
   id: "FT328",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Maxi Corazón 2,6 cm",
+  name: "Arete Maxi Corazón 2,6 cm - FT328",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT328.jpg",
   description: "Material: Rodio"
@@ -850,7 +850,7 @@ const PRODUCTS = [
   id: "SP354",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor y Perla 2,4 cm",
+  name: "Arete Flor y Perla 2,4 cm - SP354",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP354.jpg",
   description: "Material: Rodio"
@@ -859,7 +859,7 @@ const PRODUCTS = [
   id: "FT326",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Flor 2,9 x 2,4 cm",
+  name: "Aretes Flor 2,9 x 2,4 cm - FT326",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT326.jpg",
   description: "Material: Rodio"
@@ -868,7 +868,7 @@ const PRODUCTS = [
   id: "FT325",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Blanca 3,4 cm x 2,4 cm",
+  name: "Candonga Blanca 3,4 cm x 2,4 cm - FT325",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT325.jpg",
   description: "Material: Rodio"
@@ -877,7 +877,7 @@ const PRODUCTS = [
   id: "FT324",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor Turquesa 3,4 cm",
+  name: "Arete Flor Turquesa 3,4 cm - FT324",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT324.jpg",
   description: "Material: Rodio"
@@ -886,7 +886,7 @@ const PRODUCTS = [
   id: "SP353",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor Negro 3 cm",
+  name: "Arete Flor Negro 3 cm - SP353",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP353.jpg",
   description: "Material: Rodio"
@@ -895,7 +895,7 @@ const PRODUCTS = [
   id: "OX439",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Corazón 3,4 cm",
+  name: "Arete Corazón 3,4 cm - OX439",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX439.jpg",
   description: "Material: Rodio"
@@ -904,7 +904,7 @@ const PRODUCTS = [
   id: "OX438",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Entorchada 2,9 cm",
+  name: "Candonga Entorchada 2,9 cm - OX438",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX438.jpg",
   description: "Material: Rodio"
@@ -913,7 +913,7 @@ const PRODUCTS = [
   id: "RO137",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 1,7cm",
+  name: "Candonga 1,7cm - RO137",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO137.jpg",
   description: "Material: Rodio"
@@ -922,7 +922,7 @@ const PRODUCTS = [
   id: "RO136",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topos Set x 3",
+  name: "Topos Set x 3 - RO136",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO136.jpg",
   description: "Material: Rodio"
@@ -931,7 +931,7 @@ const PRODUCTS = [
   id: "SP351",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Maxi 6,2 cm",
+  name: "Arete Maxi 6,2 cm - SP351",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP351.jpg",
   description: "Material: Rodio"
@@ -940,7 +940,7 @@ const PRODUCTS = [
   id: "RO115",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes FLor y Perla 2,5 cm",
+  name: "Aretes FLor y Perla 2,5 cm - RO115",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO115.jpg",
   description: "Material: Acero"
@@ -949,7 +949,7 @@ const PRODUCTS = [
   id: "RO111",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Flor 2,5 cm",
+  name: "Aretes Flor 2,5 cm - RO111",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO111.jpg",
   description: "Material: Acero"
@@ -958,7 +958,7 @@ const PRODUCTS = [
   id: "OX433",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Doble Corazón 3,1 cm x1,7 cm",
+  name: "Aretes Doble Corazón 3,1 cm x1,7 cm - OX433",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX433.jpg",
   description: "Material: Acero"
@@ -967,7 +967,7 @@ const PRODUCTS = [
   id: "PG449",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Gota y Perlas 1,9 cm",
+  name: "Arete Gota y Perlas 1,9 cm - PG449",
   price: 11900,
   image: "images/productos/Bisuteria/Aretes/PG449.jpg",
   description: "Material: Rodio"
@@ -976,7 +976,7 @@ const PRODUCTS = [
   id: "RO108",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 2,7cm",
+  name: "Candonga 2,7cm - RO108",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO108.jpg",
   description: "Material: Rodio"
@@ -985,7 +985,7 @@ const PRODUCTS = [
   id: "RO107",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga balín diamantado 3.5cm",
+  name: "Candonga balín diamantado 3.5cm - RO107",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO107.jpg",
   description: "Material: Rodio"
@@ -994,7 +994,7 @@ const PRODUCTS = [
   id: "LM868",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga balín italy 3.7 cm",
+  name: "Candonga balín italy 3.7 cm - LM868",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM868.jpg",
   description: "Material: Rodio"
@@ -1003,7 +1003,7 @@ const PRODUCTS = [
   id: "LM867",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 2.1 cm",
+  name: "Candonga 2.1 cm - LM867",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM867.jpg",
   description: "Material: Rodio"
@@ -1012,7 +1012,7 @@ const PRODUCTS = [
   id: "LM865",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 3 cm",
+  name: "Candonga 3 cm - LM865",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM865.jpg",
   description: "Material: Rodio"
@@ -1021,7 +1021,7 @@ const PRODUCTS = [
   id: "LM863",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 4cm",
+  name: "Candonga 4cm - LM863",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM863.jpg",
   description: "Material: Rodio"
@@ -1030,7 +1030,7 @@ const PRODUCTS = [
   id: "RO104",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Plateada 3cm",
+  name: "Candonga Plateada 3cm - RO104",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO104.jpg",
   description: "Material: Rodio"
@@ -1039,7 +1039,7 @@ const PRODUCTS = [
   id: "LL547",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete estrella 1.5cm",
+  name: "Arete estrella 1.5cm - LL547",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL547.jpg",
   description: "Material: Rodio"
@@ -1048,7 +1048,7 @@ const PRODUCTS = [
   id: "OX429",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete estrella 2.5cm x 2.7cm",
+  name: "Arete estrella 2.5cm x 2.7cm - OX429",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX429.jpg",
   description: "Material: Rodio"
@@ -1057,7 +1057,7 @@ const PRODUCTS = [
   id: "LM861",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete estrela 5cm",
+  name: "Arete estrela 5cm - LM861",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM861.jpg",
   description: "Material: Rodio"
@@ -1066,7 +1066,7 @@ const PRODUCTS = [
   id: "AC431",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo 1.8 cm",
+  name: "Topo 1.8 cm - AC431",
   price: 10900,
   image: "images/productos/Bisuteria/Aretes/AC431.jpg",
   description: "Material: Rodio"
@@ -1075,7 +1075,7 @@ const PRODUCTS = [
   id: "FT318",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor negro",
+  name: "Arete Flor negro - FT318",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT318.jpg",
   description: "Material: Rodio"
@@ -1084,7 +1084,7 @@ const PRODUCTS = [
   id: "NP509",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete ﬂor rosada",
+  name: "Arete ﬂor rosada - NP509",
   price: 30000,
   image: "images/productos/Bisuteria/Aretes/NP509.jpg",
   description: "Material: Rodio"
@@ -1093,7 +1093,7 @@ const PRODUCTS = [
   id: "NP508",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga 2.2 Cm",
+  name: "Candonga 2.2 Cm - NP508",
   price: 30000,
   image: "images/productos/Bisuteria/Aretes/NP508.jpg",
   description: "Material: Rodio"
@@ -1102,7 +1102,7 @@ const PRODUCTS = [
   id: "LM859",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo corazón rojo 8mm",
+  name: "Topo corazón rojo 8mm - LM859",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM859.jpg",
   description: "Material: Rodio"
@@ -1111,7 +1111,7 @@ const PRODUCTS = [
   id: "RO101",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Escalador 2 cm x 1,1 cm",
+  name: "Arete Escalador 2 cm x 1,1 cm - RO101",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO101.jpg",
   description: "Material: Rodio"
@@ -1120,7 +1120,7 @@ const PRODUCTS = [
   id: "RO100",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topos Set x3 cruz",
+  name: "Topos Set x3 cruz - RO100",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO100.jpg",
   description: "Material: Rodio"
@@ -1129,7 +1129,7 @@ const PRODUCTS = [
   id: "LL544",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topos Estrella 1,1 cm",
+  name: "Topos Estrella 1,1 cm - LL544",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL544.jpg",
   description: "Material: Rodio"
@@ -1138,7 +1138,7 @@ const PRODUCTS = [
   id: "OX427",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Escalador Corazones 2,2 cm x 6 mm",
+  name: "Arete Escalador Corazones 2,2 cm x 6 mm - OX427",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX427.jpg",
   description: "Material: Rodio"
@@ -1147,7 +1147,7 @@ const PRODUCTS = [
   id: "LL543",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Cristal 1,4 cm x 4 mm",
+  name: "Aretes Cristal 1,4 cm x 4 mm - LL543",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL543.jpg",
   description: "Material: Rodio"
@@ -1156,7 +1156,7 @@ const PRODUCTS = [
   id: "LL541",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Flor Cristal 8 mm",
+  name: "Aretes Flor Cristal 8 mm - LL541",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL541.jpg",
   description: "Material: Rodio"
@@ -1165,7 +1165,7 @@ const PRODUCTS = [
   id: "FT317",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga Set X3 Dorada",
+  name: "Candonga Set X3 Dorada - FT317",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT317.jpg",
   description: "Material: Rodio"
@@ -1174,7 +1174,7 @@ const PRODUCTS = [
   id: "SP343",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Corazón Blanco 1,6 cm",
+  name: "Arete Corazón Blanco 1,6 cm - SP343",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP343.jpg",
   description: "Material: Rodio"
@@ -1183,7 +1183,7 @@ const PRODUCTS = [
   id: "LL527",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topos Cruz 1,3 cm x 8 mm",
+  name: "Topos Cruz 1,3 cm x 8 mm - LL527",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL527.jpg",
   description: "Material: Rodio"
@@ -1192,7 +1192,7 @@ const PRODUCTS = [
   id: "RO095",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topos astronauta Set x 3",
+  name: "Topos astronauta Set x 3 - RO095",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO095.jpg",
   description: "Material: Rodio"
@@ -1201,7 +1201,7 @@ const PRODUCTS = [
   id: "SP341",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Maxi Corazón 2,9 cm x 3,1 m",
+  name: "Arete Maxi Corazón 2,9 cm x 3,1 m - SP341",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP341.jpg",
   description: "Material: Rodio"
@@ -1210,7 +1210,7 @@ const PRODUCTS = [
   id: "PC723",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo Figura 1 cm x 8 mm",
+  name: "Topo Figura 1 cm x 8 mm - PC723",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC723.jpg",
   description: "Material: Rodio"
@@ -1219,7 +1219,7 @@ const PRODUCTS = [
   id: "BR122",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set topos x3",
+  name: "Set topos x3 - BR122",
   price: 45000,
   image: "images/productos/Bisuteria/Aretes/BR122.jpg",
   description: "Material: Rodio"
@@ -1228,7 +1228,7 @@ const PRODUCTS = [
   id: "BR124",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set de topos x3",
+  name: "Set de topos x3 - BR124",
   price: 45000,
   image: "images/productos/Bisuteria/Aretes/BR124.jpg",
   description: "Material: Rodio"
@@ -1237,7 +1237,7 @@ const PRODUCTS = [
   id: "RO088",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete doble cristal 1,4 cm x 1 cm",
+  name: "Arete doble cristal 1,4 cm x 1 cm - RO088",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO088.jpg",
   description: "Material: Rodio"
@@ -1246,7 +1246,7 @@ const PRODUCTS = [
   id: "MC921",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Cristal 1,6 cm x 1,3 cm",
+  name: "Arete Cristal 1,6 cm x 1,3 cm - MC921",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC921.jpg",
   description: "Material: Rodio"
@@ -1255,7 +1255,7 @@ const PRODUCTS = [
   id: "RO087",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Cristal 1,3 cm",
+  name: "Arete Cristal 1,3 cm - RO087",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO087.jpg",
   description: "Material: Rodio"
@@ -1264,7 +1264,7 @@ const PRODUCTS = [
   id: "RO086",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Cuadrado 1,1 cm",
+  name: "Arete Cuadrado 1,1 cm - RO086",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO086.jpg",
   description: "Material: Rodio"
@@ -1273,7 +1273,7 @@ const PRODUCTS = [
   id: "MC920",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Cristales 1,2 m",
+  name: "Arete Cristales 1,2 m - MC920",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC920.jpg",
   description: "Material: Rodio"
@@ -1282,7 +1282,7 @@ const PRODUCTS = [
   id: "RO082",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Aretes Flor 2,6 cm",
+  name: "Aretes Flor 2,6 cm - RO082",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO082.jpg",
   description: "Material: Rodio"
@@ -1291,7 +1291,7 @@ const PRODUCTS = [
   id: "FT310",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Tejido Blanco 4,9 cm",
+  name: "Arete Tejido Blanco 4,9 cm - FT310",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT310.jpg",
   description: "Material: Rodio"
@@ -1300,7 +1300,7 @@ const PRODUCTS = [
   id: "FT309",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Tejido Rojo 4,9 cm",
+  name: "Arete Tejido Rojo 4,9 cm - FT309",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT309.jpg",
   description: "Material: Rodio"
@@ -1309,7 +1309,7 @@ const PRODUCTS = [
   id: "FT308",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Tejido Verde 4,9 cm",
+  name: "Arete Tejido Verde 4,9 cm - FT308",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT308.jpg",
   description: "Material: Rodio"
@@ -1318,7 +1318,7 @@ const PRODUCTS = [
   id: "FT307",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Tejido Beige 4,9 cm",
+  name: "Arete Tejido Beige 4,9 cm - FT307",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT307.jpg",
   description: "Material: Rodio"
@@ -1327,7 +1327,7 @@ const PRODUCTS = [
   id: "FT306",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete tejido Azul 4,9 cm",
+  name: "Arete tejido Azul 4,9 cm - FT306",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT306.jpg",
   description: "Material: Rodio"
@@ -1336,7 +1336,7 @@ const PRODUCTS = [
   id: "FT305",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Tejido Colombia 4,9 cm",
+  name: "Arete Tejido Colombia 4,9 cm - FT305",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT305.jpg",
   description: "Material: Rodio"
@@ -1345,7 +1345,7 @@ const PRODUCTS = [
   id: "SP325",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Cristal 3,8 cm x 1,4 cm",
+  name: "Arete Cristal 3,8 cm x 1,4 cm - SP325",
   price: 35900,
   image: "images/productos/Bisuteria/Aretes/SP325.jpg",
   description: "Material: Rodio"
@@ -1354,7 +1354,7 @@ const PRODUCTS = [
   id: "RO077",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Flor 1,8 cm x 1,7 cm",
+  name: "Arete Flor 1,8 cm x 1,7 cm - RO077",
   price: 24000,
   image: "images/productos/Bisuteria/Aretes/RO077.jpg",
   description: "Material: Rodio"
@@ -1363,7 +1363,7 @@ const PRODUCTS = [
   id: "LL511",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo puntos 1 cm",
+  name: "Topo puntos 1 cm - LL511",
   price: 13900,
   image: "images/productos/Bisuteria/Aretes/LL511.jpg",
   description: "Material: Rodio"
@@ -1372,7 +1372,7 @@ const PRODUCTS = [
   id: "PC718",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo trébol negro 8mm",
+  name: "Topo trébol negro 8mm - PC718",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC718.jpg",
   description: "Material: Rodio"
@@ -1381,7 +1381,7 @@ const PRODUCTS = [
   id: "NP478",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete 3 circulos 5,9 cm x 2,5 cm",
+  name: "Arete 3 circulos 5,9 cm x 2,5 cm - NP478",
   price: 30000,
   image: "images/productos/Bisuteria/Aretes/NP478.jpg",
   description: "Material: Rodio"
@@ -1390,7 +1390,7 @@ const PRODUCTS = [
   id: "NP474",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Óvalo 5,9 cm X 1,8 cm",
+  name: "Arete Óvalo 5,9 cm X 1,8 cm - NP474",
   price: 30000,
   image: "images/productos/Bisuteria/Aretes/NP474.jpg",
   description: "Material: Rodio"
@@ -1399,7 +1399,7 @@ const PRODUCTS = [
   id: "NP473",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete corazón 2 cm x 1,4 cm",
+  name: "Arete corazón 2 cm x 1,4 cm - NP473",
   price: 30000,
   image: "images/productos/Bisuteria/Aretes/NP473.jpg",
   description: "Material: Rodio"
@@ -1408,7 +1408,7 @@ const PRODUCTS = [
   id: "LM803",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete escarabajo 3.7 cm",
+  name: "Arete escarabajo 3.7 cm - LM803",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM803.jpg",
   description: "Material: Rodio"
@@ -1417,7 +1417,7 @@ const PRODUCTS = [
   id: "LM802",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete langosta 4.6cm",
+  name: "Arete langosta 4.6cm - LM802",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM802.jpg",
   description: "Material: Rodio"
@@ -1426,7 +1426,7 @@ const PRODUCTS = [
   id: "LM801",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete cangrejo 3 x 2.1 cm",
+  name: "Arete cangrejo 3 x 2.1 cm - LM801",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM801.jpg",
   description: "Material: Rodio"
@@ -1435,7 +1435,7 @@ const PRODUCTS = [
   id: "LM799",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete medusa 3cm",
+  name: "Arete medusa 3cm - LM799",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM799.jpg",
   description: "Material: Rodio"
@@ -1444,7 +1444,7 @@ const PRODUCTS = [
   id: "LM798",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete caimán 5.5",
+  name: "Arete caimán 5.5 - LM798",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM798.jpg",
   description: "Material: Rodio"
@@ -1453,7 +1453,7 @@ const PRODUCTS = [
   id: "LM797",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete cocodrilo 4.2cm",
+  name: "Arete cocodrilo 4.2cm - LM797",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM797.jpg",
   description: "Material: Rodio"
@@ -1462,7 +1462,7 @@ const PRODUCTS = [
   id: "LM796",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete rana 4cm",
+  name: "Arete rana 4cm - LM796",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM796.jpg",
   description: "Material: Rodio"
@@ -1471,7 +1471,7 @@ const PRODUCTS = [
   id: "LM795",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete medusa 2.1cm",
+  name: "Arete medusa 2.1cm - LM795",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM795.jpg",
   description: "Material: Rodio"
@@ -1480,7 +1480,7 @@ const PRODUCTS = [
   id: "LM794",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete concha 2.9cm",
+  name: "Arete concha 2.9cm - LM794",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM794.jpg",
   description: "Material: Rodio"
@@ -1489,7 +1489,7 @@ const PRODUCTS = [
   id: "LM793",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Escarabajo 3.6 cm",
+  name: "Arete Escarabajo 3.6 cm - LM793",
   price: 21000,
   image: "images/productos/Bisuteria/Aretes/LM793.jpg",
   description: "Material: Rodio"
@@ -1498,7 +1498,7 @@ const PRODUCTS = [
   id: "CB648",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete gota 3cm",
+  name: "Arete gota 3cm - CB648",
   price: 15500,
   image: "images/productos/Bisuteria/Aretes/CB648.jpg",
   description: "Material: Rodio"
@@ -1507,7 +1507,7 @@ const PRODUCTS = [
   id: "LR418",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Set x 3 pares de topos",
+  name: "Set x 3 pares de topos - LR418",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR418.jpg",
   description: "Material: Rodio"
@@ -1516,7 +1516,7 @@ const PRODUCTS = [
   id: "PC696",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo trébol rojo 1cm",
+  name: "Topo trébol rojo 1cm - PC696",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC696.jpg",
   description: "Material: Rodio"
@@ -1525,7 +1525,7 @@ const PRODUCTS = [
   id: "PC695",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo trébol negro 1cm",
+  name: "Topo trébol negro 1cm - PC695",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC695.jpg",
   description: "Material: Rodio"
@@ -1534,7 +1534,7 @@ const PRODUCTS = [
   id: "PC697",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo trébol blanco 1cm",
+  name: "Topo trébol blanco 1cm - PC697",
   price: 9000,
   image: "images/productos/Bisuteria/Aretes/PC697.jpg",
   description: "Material: Rodio"
@@ -1543,7 +1543,7 @@ const PRODUCTS = [
   id: "MC870",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete estrella de mar",
+  name: "Arete estrella de mar - MC870",
   price: 27000,
   image: "images/productos/Bisuteria/Aretes/MC870.jpg",
   description: "Material: Rodio"
@@ -1552,7 +1552,7 @@ const PRODUCTS = [
   id: "CB642",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete Gota 3,1 cm",
+  name: "Arete Gota 3,1 cm - CB642",
   price: 15500,
   image: "images/productos/Bisuteria/Aretes/CB642.jpg",
   description: "Material: Rodio"
@@ -1561,7 +1561,7 @@ const PRODUCTS = [
   id: "OX315",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo trébol verde 1.4 cm",
+  name: "Topo trébol verde 1.4 cm - OX315",
   price: 18000,
   image: "images/productos/Bisuteria/Aretes/OX315.jpg",
   description: "Material: Rodio"
@@ -1570,7 +1570,7 @@ const PRODUCTS = [
   id: "FT262",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete animal Print 1,7 cm",
+  name: "Arete animal Print 1,7 cm - FT262",
   price: 39900,
   image: "images/productos/Bisuteria/Aretes/FT262.jpg",
   description: "Material: Rodio"
@@ -1579,7 +1579,7 @@ const PRODUCTS = [
   id: "BR095",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Arete animal print 4.5 cm",
+  name: "Arete animal print 4.5 cm - BR095",
   price: 45000,
   image: "images/productos/Bisuteria/Aretes/BR095.jpg",
   description: "Material: Rodio"
@@ -1588,7 +1588,7 @@ const PRODUCTS = [
   id: "LR310",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga tejida Blanca 4cm",
+  name: "Candonga tejida Blanca 4cm - LR310",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR310.jpg",
   description: "Material: Oro Goldfield - Acero"
@@ -1597,7 +1597,7 @@ const PRODUCTS = [
   id: "LR308",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga tejida Roja 4cm",
+  name: "Candonga tejida Roja 4cm - LR308",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR308.jpg",
   description: "Material: Oro Goldfield - Acero"
@@ -1606,7 +1606,7 @@ const PRODUCTS = [
   id: "LR307",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Candonga tejida negra 4cm",
+  name: "Candonga tejida negra 4cm - LR307",
   price: 19900,
   image: "images/productos/Bisuteria/Aretes/LR307.jpg",
   description: "Material: Oro Goldfield - Acero"
@@ -1615,7 +1615,7 @@ const PRODUCTS = [
   id: "TS273",
   category: "bisuteria",
   subcategory: "Aretes",
-  name: "Topo seguridad",
+  name: "Topo seguridad - TS273",
   price: 5400,
   image: "images/productos/Bisuteria/Aretes/TS273.jpg",
   description: "Material: Acero"
@@ -1624,7 +1624,7 @@ const PRODUCTS = [
   id: "NP527",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Chicle Mocca 40 cm + 5 cm",
+  name: "Collar Chicle Mocca 40 cm + 5 cm - NP527",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP527.jpg",
   description: "Material: Oro Goldfield"
@@ -1633,7 +1633,7 @@ const PRODUCTS = [
   id: "FT353",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas Corazón Mocca 41 cm + 5 cm Extensión",
+  name: "Collar Perlas Corazón Mocca 41 cm + 5 cm Extensión - FT353",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT353.jpg",
   description: "Material: Oro Goldfield"
@@ -1642,7 +1642,7 @@ const PRODUCTS = [
   id: "SP395",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Margarita 38 cm + 5 cm Extensión",
+  name: "Collar Margarita 38 cm + 5 cm Extensión - SP395",
   price: 35900,
   image: "images/productos/Bisuteria/Collares/SP395.jpg",
   description: "Material: Oro Goldfield"
@@ -1651,7 +1651,7 @@ const PRODUCTS = [
   id: "FT352",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas y Corazones Vinotinto 38 cm + 5 cm",
+  name: "Collar Perlas y Corazones Vinotinto 38 cm + 5 cm - FT352",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT352.jpg",
   description: "Material: Oro Goldfield"
@@ -1660,7 +1660,7 @@ const PRODUCTS = [
   id: "FT349",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Corazones Pasador 44 cm + 5 Extensión",
+  name: "Collar Corazones Pasador 44 cm + 5 Extensión - FT349",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT349.jpg",
   description: "Material: Oro Goldfield"
@@ -1669,7 +1669,7 @@ const PRODUCTS = [
   id: "AC347-P",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena personalizada 1 letra. letra adicional TS256",
+  name: "Cadena personalizada 1 letra. letra adicional TS256 - AC347-P",
   price: 10900,
   image: "images/productos/Bisuteria/Collares/AC347-P.jpg",
   description: "Material: Rodio"
@@ -1678,7 +1678,7 @@ const PRODUCTS = [
   id: "LL250-P",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena personalizada 1 letra. letra adicional GP366",
+  name: "Cadena personalizada 1 letra. letra adicional GP366 - LL250-P",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL250-P.jpg",
   description: "Material: Rodio"
@@ -1687,7 +1687,7 @@ const PRODUCTS = [
   id: "CB672",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena personalizada 1 letra-letra adicional GP445",
+  name: "Cadena personalizada 1 letra-letra adicional GP445 - CB672",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB672.jpg",
   description: "Material: Rodio"
@@ -1696,7 +1696,7 @@ const PRODUCTS = [
   id: "RO174",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas 44 cm + 5 cm Extensión",
+  name: "Collar Perlas 44 cm + 5 cm Extensión - RO174",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO174.jpg",
   description: "Material: Oro Goldfield"
@@ -1705,7 +1705,7 @@ const PRODUCTS = [
   id: "RO173",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas 44 cm + 5 cm Extensíon",
+  name: "Collar Perlas 44 cm + 5 cm Extensíon - RO173",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO173.jpg",
   description: "Material: Oro Goldfield"
@@ -1714,7 +1714,7 @@ const PRODUCTS = [
   id: "FT345",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Café 42 cm + 6 Extensión",
+  name: "Collar Maxi Café 42 cm + 6 Extensión - FT345",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT345.jpg",
   description: "Material: Oro Goldfield"
@@ -1723,7 +1723,7 @@ const PRODUCTS = [
   id: "SP389",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Colores 42 cm + 5 Extensión",
+  name: "Collar Maxi Colores 42 cm + 5 Extensión - SP389",
   price: 35900,
   image: "images/productos/Bisuteria/Collares/SP389.jpg",
   description: "Material: Oro Goldfield"
@@ -1732,7 +1732,7 @@ const PRODUCTS = [
   id: "FT344",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar maxi corazón negro 40cm + 6cm extensión",
+  name: "Collar maxi corazón negro 40cm + 6cm extensión - FT344",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT344.jpg",
   description: "Material: Oro Goldfield"
@@ -1741,7 +1741,7 @@ const PRODUCTS = [
   id: "FT343",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar maxi negro y dorado 40cm cm + 6cm",
+  name: "Collar maxi negro y dorado 40cm cm + 6cm - FT343",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT343.jpg",
   description: "Material: Oro Goldfield"
@@ -1750,7 +1750,7 @@ const PRODUCTS = [
   id: "FT342",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar maxi rojo y dorado 40cm + 6 cm extensión",
+  name: "Collar maxi rojo y dorado 40cm + 6 cm extensión - FT342",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT342.jpg",
   description: "Material: Oro Goldfield"
@@ -1759,7 +1759,7 @@ const PRODUCTS = [
   id: "NP526",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar perla corazón Rojo 40cm + 6 cm extensión",
+  name: "Collar perla corazón Rojo 40cm + 6 cm extensión - NP526",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP526.jpg",
   description: "Material: Oro Goldfield"
@@ -1768,7 +1768,7 @@ const PRODUCTS = [
   id: "NP525",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar perla corazón café 40cm + 6 cm extensión",
+  name: "Collar perla corazón café 40cm + 6 cm extensión - NP525",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP525.jpg",
   description: "Material: Oro Goldfield"
@@ -1777,7 +1777,7 @@ const PRODUCTS = [
   id: "NP524",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar perla corazón blanco 40cm + 6 cm extensión",
+  name: "Collar perla corazón blanco 40cm + 6 cm extensión - NP524",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP524.jpg",
   description: "Material: Rodio"
@@ -1786,7 +1786,7 @@ const PRODUCTS = [
   id: "MC950",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije princesa 49 cm",
+  name: "Collar ajustable dije princesa 49 cm - MC950",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC950.jpg",
   description: "Material: Rodio"
@@ -1795,7 +1795,7 @@ const PRODUCTS = [
   id: "MC949",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije princesa 49 cm",
+  name: "Collar ajustable dije princesa 49 cm - MC949",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC949.jpg",
   description: "Material: Rodio"
@@ -1804,7 +1804,7 @@ const PRODUCTS = [
   id: "MC948",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije princesa 49 cm",
+  name: "Collar ajustable dije princesa 49 cm - MC948",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC948.jpg",
   description: "Material: Rodio"
@@ -1813,7 +1813,7 @@ const PRODUCTS = [
   id: "RO164",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable 48cm dije mariposa verde",
+  name: "Collar ajustable 48cm dije mariposa verde - RO164",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO164.jpg",
   description: "Material: Rodio"
@@ -1822,7 +1822,7 @@ const PRODUCTS = [
   id: "RO163",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable 48cm dije mariposa tornasol",
+  name: "Collar ajustable 48cm dije mariposa tornasol - RO163",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO163.jpg",
   description: "Material: Rodio"
@@ -1831,7 +1831,7 @@ const PRODUCTS = [
   id: "RO162",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable 48cm dije mariposa rojo",
+  name: "Collar ajustable 48cm dije mariposa rojo - RO162",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO162.jpg",
   description: "Material: Rodio"
@@ -1840,7 +1840,7 @@ const PRODUCTS = [
   id: "LL580",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena balines 44,5 cm +3cm extensión",
+  name: "Cadena balines 44,5 cm +3cm extensión - LL580",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL580.jpg",
   description: "Material: Rodio"
@@ -1849,7 +1849,7 @@ const PRODUCTS = [
   id: "LL579",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena balín ovalado 44,5 cm +3cm extensión",
+  name: "Cadena balín ovalado 44,5 cm +3cm extensión - LL579",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL579.jpg",
   description: "Material: Rodio"
@@ -1858,7 +1858,7 @@ const PRODUCTS = [
   id: "MC942",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi corazón Negro 40 cm +5 Extensión",
+  name: "Collar Maxi corazón Negro 40 cm +5 Extensión - MC942",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC942.jpg",
   description: "Material: Oro Goldfield"
@@ -1867,7 +1867,7 @@ const PRODUCTS = [
   id: "NP522",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Negro 45 cm + 5 extensión",
+  name: "Collar Maxi Negro 45 cm + 5 extensión - NP522",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP522.jpg",
   description: "Material: Oro Goldfield"
@@ -1876,7 +1876,7 @@ const PRODUCTS = [
   id: "NP521",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Blanco 44cm + 5 extensión",
+  name: "Collar Maxi Blanco 44cm + 5 extensión - NP521",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP521.jpg",
   description: "Material: Oro Goldfield"
@@ -1885,7 +1885,7 @@ const PRODUCTS = [
   id: "SP360",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Margarita 41 cm + 5 Extensión",
+  name: "Collar Maxi Margarita 41 cm + 5 Extensión - SP360",
   price: 35900,
   image: "images/productos/Bisuteria/Collares/SP360.jpg",
   description: "Material: Oro Goldfield"
@@ -1894,7 +1894,7 @@ const PRODUCTS = [
   id: "LL577",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Guadalupe 45 cm",
+  name: "Cadena Guadalupe 45 cm - LL577",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL577.jpg",
   description: "Material: Acero"
@@ -1903,7 +1903,7 @@ const PRODUCTS = [
   id: "LL576",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena San Benito 45 cm",
+  name: "Cadena San Benito 45 cm - LL576",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL576.jpg",
   description: "Material: Acero"
@@ -1912,7 +1912,7 @@ const PRODUCTS = [
   id: "LL575",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena San Miguel y Guadalupe 45 cm",
+  name: "Cadena San Miguel y Guadalupe 45 cm - LL575",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL575.jpg",
   description: "Material: Acero"
@@ -1921,7 +1921,7 @@ const PRODUCTS = [
   id: "MC939",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Blanco y Negro 42 cm +6 cm Extensión",
+  name: "Collar Maxi Blanco y Negro 42 cm +6 cm Extensión - MC939",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC939.jpg",
   description: "Material: Oro Goldfield"
@@ -1930,7 +1930,7 @@ const PRODUCTS = [
   id: "MC940",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Amariilo y Café 42 cm + 6 cm Extensión",
+  name: "Collar Maxi Amariilo y Café 42 cm + 6 cm Extensión - MC940",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC940.jpg",
   description: "Material: Oro Goldfield"
@@ -1939,7 +1939,7 @@ const PRODUCTS = [
   id: "MC941",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Amarillo y Café 42 cm + 5 cm Extensión",
+  name: "Collar Maxi Amarillo y Café 42 cm + 5 cm Extensión - MC941",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC941.jpg",
   description: "Material: Oro Goldfield"
@@ -1948,7 +1948,7 @@ const PRODUCTS = [
   id: "FT332",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar maxi Amarillo y Vino 40 cm + 5 cm Extensión",
+  name: "Collar maxi Amarillo y Vino 40 cm + 5 cm Extensión - FT332",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT332.jpg",
   description: "Material: Oro Goldfield"
@@ -1957,7 +1957,7 @@ const PRODUCTS = [
   id: "FT333",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Lila 40 cm + 5 Extensión",
+  name: "Collar Maxi Lila 40 cm + 5 Extensión - FT333",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT333.jpg",
   description: "Material: Oro Goldfield"
@@ -1966,7 +1966,7 @@ const PRODUCTS = [
   id: "FT334",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Rosa y Rojo 40 cm + 5 cm Extension",
+  name: "Collar Maxi Rosa y Rojo 40 cm + 5 cm Extension - FT334",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT334.jpg",
   description: "Material: Oro Goldfield"
@@ -1975,7 +1975,7 @@ const PRODUCTS = [
   id: "FT336",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Celeste 41 cm + 6 cm Extensión",
+  name: "Collar Maxi Celeste 41 cm + 6 cm Extensión - FT336",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT336.jpg",
   description: "Material: Oro Goldfield"
@@ -1984,7 +1984,7 @@ const PRODUCTS = [
   id: "FT330",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Corazón Rojo 38 cm + 6 cm Extensión",
+  name: "Collar Maxi Corazón Rojo 38 cm + 6 cm Extensión - FT330",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT330.jpg",
   description: "Material: Oro Goldfield"
@@ -1993,7 +1993,7 @@ const PRODUCTS = [
   id: "SP355",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Corazones Moca 38 cm + 6 Extensión",
+  name: "Collar Maxi Corazones Moca 38 cm + 6 Extensión - SP355",
   price: 35900,
   image: "images/productos/Bisuteria/Collares/SP355.jpg",
   description: "Material: Oro Goldfield"
@@ -2002,7 +2002,7 @@ const PRODUCTS = [
   id: "RO153",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Rosa 38 cm + 7 cm Extensión",
+  name: "Collar Maxi Rosa 38 cm + 7 cm Extensión - RO153",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO153.jpg",
   description: "Material: Oro Goldfield"
@@ -2011,7 +2011,7 @@ const PRODUCTS = [
   id: "RO151",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Rojo 36 cm + 7 cm extensión",
+  name: "Collar Maxi Rojo 36 cm + 7 cm extensión - RO151",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO151.jpg",
   description: "Material: Oro Goldfield"
@@ -2020,7 +2020,7 @@ const PRODUCTS = [
   id: "RO152",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Blanco 36 cm + 7 cm Extensión",
+  name: "Collar Maxi Blanco 36 cm + 7 cm Extensión - RO152",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO152.jpg",
   description: "Material: Oro Goldfield"
@@ -2029,7 +2029,7 @@ const PRODUCTS = [
   id: "RO149",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Negro 37 cm +5 extensión",
+  name: "Collar Maxi Negro 37 cm +5 extensión - RO149",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO149.jpg",
   description: "Material: Oro Goldfield"
@@ -2038,7 +2038,7 @@ const PRODUCTS = [
   id: "RO150",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Maxi Moca 38 cm + 6 extensión",
+  name: "Collar Maxi Moca 38 cm + 6 extensión - RO150",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO150.jpg",
   description: "Material: Oro Goldfield"
@@ -2047,7 +2047,7 @@ const PRODUCTS = [
   id: "NP492",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Chunky Negro 42 cm x 1,6 cm + 5 extensión",
+  name: "Collar Chunky Negro 42 cm x 1,6 cm + 5 extensión - NP492",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP492.jpg",
   description: "Material: Oro Goldfield"
@@ -2056,7 +2056,7 @@ const PRODUCTS = [
   id: "LR491",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Flor Cristal Ajustable",
+  name: "Collar Flor Cristal Ajustable - LR491",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR491.jpg",
   description: "Material: Rodio"
@@ -2065,7 +2065,7 @@ const PRODUCTS = [
   id: "LR490",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar FLor Roja Ajustable",
+  name: "Collar FLor Roja Ajustable - LR490",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR490.jpg",
   description: "Material: Rodio"
@@ -2074,7 +2074,7 @@ const PRODUCTS = [
   id: "LR489",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Flor Verde Ajustable",
+  name: "Collar Flor Verde Ajustable - LR489",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR489.jpg",
   description: "Material: Rodio"
@@ -2083,7 +2083,7 @@ const PRODUCTS = [
   id: "OX440",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Bandera Colombia 40 cm + 5 Extensión",
+  name: "Collar Bandera Colombia 40 cm + 5 Extensión - OX440",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX440.jpg",
   description: "Material: Rodio"
@@ -2092,7 +2092,7 @@ const PRODUCTS = [
   id: "CB712",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije Colombia",
+  name: "Collar ajustable dije Colombia - CB712",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB712.jpg",
   description: "Material: Rodio"
@@ -2101,7 +2101,7 @@ const PRODUCTS = [
   id: "CB711",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije Colombia",
+  name: "Collar ajustable dije Colombia - CB711",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB711.jpg",
   description: "Material: Rodio"
@@ -2110,7 +2110,7 @@ const PRODUCTS = [
   id: "CB710",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije Colombia",
+  name: "Collar ajustable dije Colombia - CB710",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB710.jpg",
   description: "Material: Rodio"
@@ -2119,7 +2119,7 @@ const PRODUCTS = [
   id: "PG453",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Mini Aros Balines 3 mm x 45 cm + 5 cm",
+  name: "Cadena Mini Aros Balines 3 mm x 45 cm + 5 cm - PG453",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG453.jpg",
   description: "Material: Rodio"
@@ -2128,7 +2128,7 @@ const PRODUCTS = [
   id: "LL555",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Cola Ratón Rayada 1mm x 45 cm + 5 cm",
+  name: "Cadena Cola Ratón Rayada 1mm x 45 cm + 5 cm - LL555",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL555.jpg",
   description: "Material: Rodio"
@@ -2137,7 +2137,7 @@ const PRODUCTS = [
   id: "PG451",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "cadena Cola Ratón 1 mm x 45 cm + 5 Extensión",
+  name: "cadena Cola Ratón 1 mm x 45 cm + 5 Extensión - PG451",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG451.jpg",
   description: "Material: Rodio"
@@ -2146,7 +2146,7 @@ const PRODUCTS = [
   id: "LL554",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "cadena candado Plana 3mm x 45 cm + 5 cm",
+  name: "cadena candado Plana 3mm x 45 cm + 5 cm - LL554",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL554.jpg",
   description: "Material: Rodio"
@@ -2155,7 +2155,7 @@ const PRODUCTS = [
   id: "GP451Z",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra Z",
+  name: "Collar Letra Z - GP451Z",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451Z.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2164,7 +2164,7 @@ const PRODUCTS = [
   id: "GP451Y",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra Y",
+  name: "Collar Letra Y - GP451Y",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451Y.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2173,7 +2173,7 @@ const PRODUCTS = [
   id: "GP451X",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra X",
+  name: "Collar Letra X - GP451X",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451X.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2182,7 +2182,7 @@ const PRODUCTS = [
   id: "GP451W",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra W",
+  name: "Collar Letra W - GP451W",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451W.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2191,7 +2191,7 @@ const PRODUCTS = [
   id: "GP451V",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra V",
+  name: "Collar Letra V - GP451V",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451V.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2200,7 +2200,7 @@ const PRODUCTS = [
   id: "GP451U",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra U",
+  name: "Collar Letra U - GP451U",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451U.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2209,7 +2209,7 @@ const PRODUCTS = [
   id: "GP451T",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra T",
+  name: "Collar Letra T - GP451T",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451T.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2218,7 +2218,7 @@ const PRODUCTS = [
   id: "GP451S",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra S",
+  name: "Collar Letra S - GP451S",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451S.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2227,7 +2227,7 @@ const PRODUCTS = [
   id: "GP451O",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra O",
+  name: "Collar Letra O - GP451O",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451O.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2236,7 +2236,7 @@ const PRODUCTS = [
   id: "GP451N",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra N",
+  name: "Collar Letra N - GP451N",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451N.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2245,7 +2245,7 @@ const PRODUCTS = [
   id: "GP451M",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar letra M",
+  name: "Collar letra M - GP451M",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451M.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2254,7 +2254,7 @@ const PRODUCTS = [
   id: "GP451K",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra K",
+  name: "Collar Letra K - GP451K",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451K.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2263,7 +2263,7 @@ const PRODUCTS = [
   id: "GP451J",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra J",
+  name: "Collar Letra J - GP451J",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451J.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2272,7 +2272,7 @@ const PRODUCTS = [
   id: "GP451I",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra I",
+  name: "Collar Letra I - GP451I",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451I.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2281,7 +2281,7 @@ const PRODUCTS = [
   id: "GP451H",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra H",
+  name: "Collar Letra H - GP451H",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451H.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2290,7 +2290,7 @@ const PRODUCTS = [
   id: "GP451F",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra F",
+  name: "Collar Letra F - GP451F",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451F.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2299,7 +2299,7 @@ const PRODUCTS = [
   id: "GP451E",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra E",
+  name: "Collar Letra E - GP451E",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451E.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2308,7 +2308,7 @@ const PRODUCTS = [
   id: "GP451C",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra C",
+  name: "Collar Letra C - GP451C",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451C.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2317,7 +2317,7 @@ const PRODUCTS = [
   id: "GP451B",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Letra B",
+  name: "Collar Letra B - GP451B",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP451B.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2326,7 +2326,7 @@ const PRODUCTS = [
   id: "MC931",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena grano 47 cm x 5mm + 5 extensión",
+  name: "Cadena grano 47 cm x 5mm + 5 extensión - MC931",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC931.jpg",
   description: "Material: Rodio"
@@ -2335,7 +2335,7 @@ const PRODUCTS = [
   id: "OX430",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije estrella",
+  name: "Collar ajustable dije estrella - OX430",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX430.jpg",
   description: "Material: Rodio"
@@ -2344,7 +2344,7 @@ const PRODUCTS = [
   id: "RO103",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije estrella",
+  name: "Collar ajustable dije estrella - RO103",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO103.jpg",
   description: "Material: Rodio"
@@ -2353,7 +2353,7 @@ const PRODUCTS = [
   id: "OX428",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar lazo 2,5mm 43.5cm + 5 cm extensión",
+  name: "Collar lazo 2,5mm 43.5cm + 5 cm extensión - OX428",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX428.jpg",
   description: "Material: Rodio"
@@ -2362,7 +2362,7 @@ const PRODUCTS = [
   id: "LM860",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije ballena",
+  name: "Collar ajustable dije ballena - LM860",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM860.jpg",
   description: "Material: Rodio"
@@ -2371,7 +2371,7 @@ const PRODUCTS = [
   id: "LR476",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Dije Sagrado Corazón Ajustable",
+  name: "Cadena Dije Sagrado Corazón Ajustable - LR476",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR476.jpg",
   description: "Material: Rodio"
@@ -2380,7 +2380,7 @@ const PRODUCTS = [
   id: "SP337",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dijes del Mar",
+  name: "Collar Dijes del Mar - SP337",
   price: 35900,
   image: "images/productos/Bisuteria/Collares/SP337.jpg",
   description: "Material: Oro Goldfield"
@@ -2389,7 +2389,7 @@ const PRODUCTS = [
   id: "SP336",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas Caracol y Concha",
+  name: "Collar Perlas Caracol y Concha - SP336",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/SP336.jpg",
   description: "Material: Oro Goldfield"
@@ -2398,7 +2398,7 @@ const PRODUCTS = [
   id: "GP449",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Elefante",
+  name: "Collar Dije Elefante - GP449",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP449.jpg",
   description: "Material: Oro Goldfield"
@@ -2407,7 +2407,7 @@ const PRODUCTS = [
   id: "GP448",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar DIje Luna",
+  name: "Collar DIje Luna - GP448",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP448.jpg",
   description: "Material: Oro Goldfield"
@@ -2416,7 +2416,7 @@ const PRODUCTS = [
   id: "GP447",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Árbol de La vida",
+  name: "Collar Árbol de La vida - GP447",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP447.jpg",
   description: "Material: Oro Goldfield"
@@ -2425,7 +2425,7 @@ const PRODUCTS = [
   id: "PG444",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Corazón Gris 1 cm x 45 cm",
+  name: "Collar Corazón Gris 1 cm x 45 cm - PG444",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG444.jpg",
   description: "Material: Oro Goldfield"
@@ -2434,7 +2434,7 @@ const PRODUCTS = [
   id: "PG442",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Corazón Negro 1 cm x 45 cm",
+  name: "Collar Corazón Negro 1 cm x 45 cm - PG442",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG442.jpg",
   description: "Material: Oro Goldfield"
@@ -2443,7 +2443,7 @@ const PRODUCTS = [
   id: "PG441",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collare Corazón Amarillo 1 cm x 45 cm",
+  name: "Collare Corazón Amarillo 1 cm x 45 cm - PG441",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG441.jpg",
   description: "Material: Oro Goldfield"
@@ -2452,7 +2452,7 @@ const PRODUCTS = [
   id: "PG440",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Corazón Dorado 1 cm x 45 cm",
+  name: "Collar Corazón Dorado 1 cm x 45 cm - PG440",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG440.jpg",
   description: "Material: Oro Goldfield"
@@ -2461,7 +2461,7 @@ const PRODUCTS = [
   id: "OX406",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Lazo 2 mm x 45 cm + 5 Extensión",
+  name: "Cadena Lazo 2 mm x 45 cm + 5 Extensión - OX406",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX406.jpg",
   description: "Material: Rodio"
@@ -2470,7 +2470,7 @@ const PRODUCTS = [
   id: "LR467",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena San Miguel Ajustable",
+  name: "Cadena San Miguel Ajustable - LR467",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR467.jpg",
   description: "Material: Rodio"
@@ -2479,7 +2479,7 @@ const PRODUCTS = [
   id: "CB692",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Militar 2,5 mm x 45 cm + 5 extensión",
+  name: "Cadena Militar 2,5 mm x 45 cm + 5 extensión - CB692",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB692.jpg",
   description: "Material: Rodio"
@@ -2488,7 +2488,7 @@ const PRODUCTS = [
   id: "PG438",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena cubana destellos 2 mm x 45 cm",
+  name: "Cadena cubana destellos 2 mm x 45 cm - PG438",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG438.jpg",
   description: "Material: Rodio"
@@ -2497,7 +2497,7 @@ const PRODUCTS = [
   id: "LL518",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Cubana Corazones 1 mm x 45 cm + 5",
+  name: "Cadena Cubana Corazones 1 mm x 45 cm + 5 - LL518",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL518.jpg",
   description: "Material: Rodio"
@@ -2506,7 +2506,7 @@ const PRODUCTS = [
   id: "LL517",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Aros Balín 2 mm",
+  name: "Cadena Aros Balín 2 mm - LL517",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL517.jpg",
   description: "Material: Rodio"
@@ -2515,7 +2515,7 @@ const PRODUCTS = [
   id: "LL515",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Militar Balín 2mm x 45 cm + 5 cm extensión",
+  name: "Cadena Militar Balín 2mm x 45 cm + 5 cm extensión - LL515",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL515.jpg",
   description: "Material: Rodio"
@@ -2524,7 +2524,7 @@ const PRODUCTS = [
   id: "LL514",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena balín y canutillo 45 cm + 5 cm extensión",
+  name: "Cadena balín y canutillo 45 cm + 5 cm extensión - LL514",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL514.jpg",
   description: "Material: Rodio"
@@ -2533,7 +2533,7 @@ const PRODUCTS = [
   id: "LM852",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "choker corazones",
+  name: "choker corazones - LM852",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM852.jpg",
   description: "Material: Oro Goldfield"
@@ -2542,7 +2542,7 @@ const PRODUCTS = [
   id: "LM851",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Estrellas",
+  name: "Collar Estrellas - LM851",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM851.jpg",
   description: "Material: Oro Goldfield"
@@ -2551,7 +2551,7 @@ const PRODUCTS = [
   id: "LM849",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Perlas y Estrella",
+  name: "Collar Perlas y Estrella - LM849",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM849.jpg",
   description: "Material: Oro Goldfield"
@@ -2560,7 +2560,7 @@ const PRODUCTS = [
   id: "RO053",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar trébol Rojo 47 cm",
+  name: "Collar trébol Rojo 47 cm - RO053",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO053.jpg",
   description: "Material: Rodio"
@@ -2569,7 +2569,7 @@ const PRODUCTS = [
   id: "CB684",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Dije Trébol Rojo",
+  name: "Cadena Dije Trébol Rojo - CB684",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB684.jpg",
   description: "Material: Rodio"
@@ -2578,7 +2578,7 @@ const PRODUCTS = [
   id: "CB683",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadeja Dije Trébol Blanco",
+  name: "Cadeja Dije Trébol Blanco - CB683",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB683.jpg",
   description: "Material: Rodio"
@@ -2587,7 +2587,7 @@ const PRODUCTS = [
   id: "CB682",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Dije Trébol Negro",
+  name: "Cadena Dije Trébol Negro - CB682",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB682.jpg",
   description: "Material: Rodio"
@@ -2596,7 +2596,7 @@ const PRODUCTS = [
   id: "LL505",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena estrellas",
+  name: "Cadena estrellas - LL505",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL505.jpg",
   description: "Material: Acero"
@@ -2605,7 +2605,7 @@ const PRODUCTS = [
   id: "OX387",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena DIje Oso",
+  name: "Cadena DIje Oso - OX387",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX387.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2614,7 +2614,7 @@ const PRODUCTS = [
   id: "PG421",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Aros Balin 45 cm x 2 mm + 5 extensión",
+  name: "Cadena Aros Balin 45 cm x 2 mm + 5 extensión - PG421",
   price: 11900,
   image: "images/productos/Bisuteria/Collares/PG421.jpg",
   description: "Material: Rodio"
@@ -2623,7 +2623,7 @@ const PRODUCTS = [
   id: "LM837",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Cubana 45 cm x 4 mm + 5 extensión",
+  name: "Cadena Cubana 45 cm x 4 mm + 5 extensión - LM837",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM837.jpg",
   description: "Material: Rodio"
@@ -2632,7 +2632,7 @@ const PRODUCTS = [
   id: "RO044",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Militar 45 cm x 4mm + 5 extensión",
+  name: "Cadena Militar 45 cm x 4mm + 5 extensión - RO044",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO044.jpg",
   description: "Material: Rodio"
@@ -2641,7 +2641,7 @@ const PRODUCTS = [
   id: "RO042",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Negro 45 cm + 5 cm extensión",
+  name: "Collar Trébol Negro 45 cm + 5 cm extensión - RO042",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO042.jpg",
   description: "Material: Rodio"
@@ -2650,7 +2650,7 @@ const PRODUCTS = [
   id: "RO041",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Negro 45 cm + 5 cm extensión",
+  name: "Collar Trébol Negro 45 cm + 5 cm extensión - RO041",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO041.jpg",
   description: "Material: Rodio"
@@ -2659,7 +2659,7 @@ const PRODUCTS = [
   id: "RO040",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Negro y Dorado 42,5 cm + 6 cm",
+  name: "Collar Trébol Negro y Dorado 42,5 cm + 6 cm - RO040",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO040.jpg",
   description: "Material: Rodio"
@@ -2668,7 +2668,7 @@ const PRODUCTS = [
   id: "RO038",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Rojo 42,5 cm + 6 cm extensión",
+  name: "Collar Trébol Rojo 42,5 cm + 6 cm extensión - RO038",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO038.jpg",
   description: "Material: Rodio"
@@ -2677,7 +2677,7 @@ const PRODUCTS = [
   id: "RO037",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Dorado 44 cm + 5 extensión",
+  name: "Collar Trébol Dorado 44 cm + 5 extensión - RO037",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO037.jpg",
   description: "Material: Rodio"
@@ -2686,7 +2686,7 @@ const PRODUCTS = [
   id: "RO036",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Blanco 42,5 cm + 6 cm de extensión",
+  name: "Collar Trébol Blanco 42,5 cm + 6 cm de extensión - RO036",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO036.jpg",
   description: "Material: Rodio"
@@ -2695,7 +2695,7 @@ const PRODUCTS = [
   id: "RO035",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Trébol Rojo y Dorado 42,5 cm + 6 cm de",
+  name: "Collar Trébol Rojo y Dorado 42,5 cm + 6 cm de - RO035",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO035.jpg",
   description: "Material: Rodio"
@@ -2704,7 +2704,7 @@ const PRODUCTS = [
   id: "LL498",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena aros balín 1,5mm",
+  name: "Cadena aros balín 1,5mm - LL498",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL498.jpg",
   description: "Material: Rodio"
@@ -2713,7 +2713,7 @@ const PRODUCTS = [
   id: "AC425",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena singapur 2mm",
+  name: "Cadena singapur 2mm - AC425",
   price: 10900,
   image: "images/productos/Bisuteria/Collares/AC425.jpg",
   description: "Material: Rodio"
@@ -2722,7 +2722,7 @@ const PRODUCTS = [
   id: "LL492",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena veneciana destellos",
+  name: "Cadena veneciana destellos - LL492",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL492.jpg",
   description: "Material: Rodio"
@@ -2731,7 +2731,7 @@ const PRODUCTS = [
   id: "CB655",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena lazo con canutillo 2,5mm",
+  name: "Cadena lazo con canutillo 2,5mm - CB655",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB655.jpg",
   description: "Material: Rodio"
@@ -2740,7 +2740,7 @@ const PRODUCTS = [
   id: "LL491",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena singapur 2,5mm",
+  name: "Cadena singapur 2,5mm - LL491",
   price: 13900,
   image: "images/productos/Bisuteria/Collares/LL491.jpg",
   description: "Material: Rodio"
@@ -2749,7 +2749,7 @@ const PRODUCTS = [
   id: "GP443",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Mano Hamsa 45 cm",
+  name: "Collar Dije Mano Hamsa 45 cm - GP443",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP443.jpg",
   description: "Material: Acero - Zamak"
@@ -2758,7 +2758,7 @@ const PRODUCTS = [
   id: "GP442",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Árbol de la vida 45 cm",
+  name: "Collar Dije Árbol de la vida 45 cm - GP442",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP442.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2767,7 +2767,7 @@ const PRODUCTS = [
   id: "GP440",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Corazón 45 cm",
+  name: "Collar Dije Corazón 45 cm - GP440",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP440.jpg",
   description: "Material: Acero - Fantasia"
@@ -2776,7 +2776,7 @@ const PRODUCTS = [
   id: "GP439",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Ojo Turco 45 cm",
+  name: "Collar Dije Ojo Turco 45 cm - GP439",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP439.jpg",
   description: "Material: Acero - Fantasia"
@@ -2785,7 +2785,7 @@ const PRODUCTS = [
   id: "GP436",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Dije Corazón 45 cm",
+  name: "Collar Dije Corazón 45 cm - GP436",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP436.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2794,7 +2794,7 @@ const PRODUCTS = [
   id: "LM790",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije relicario 4.3 x 4cm",
+  name: "Collar ajustable dije relicario 4.3 x 4cm - LM790",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM790.jpg",
   description: "Material: Rodio - Covergold"
@@ -2803,7 +2803,7 @@ const PRODUCTS = [
   id: "LM789",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije relicario 4.3 x 4cm",
+  name: "Collar ajustable dije relicario 4.3 x 4cm - LM789",
   price: 21000,
   image: "images/productos/Bisuteria/Collares/LM789.jpg",
   description: "Material: Rodio - Covergold"
@@ -2812,7 +2812,7 @@ const PRODUCTS = [
   id: "NP464",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar de estrellas multicolor 45cm + 5 ext",
+  name: "Collar de estrellas multicolor 45cm + 5 ext - NP464",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP464.jpg",
   description: "Material: Rodio"
@@ -2821,7 +2821,7 @@ const PRODUCTS = [
   id: "NP463",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar de estrellas negras 45cm + 5 ext",
+  name: "Collar de estrellas negras 45cm + 5 ext - NP463",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP463.jpg",
   description: "Material: Rodio"
@@ -2830,7 +2830,7 @@ const PRODUCTS = [
   id: "RO009",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar dije trébol Negro 43cm + 5cm extensión",
+  name: "Collar dije trébol Negro 43cm + 5cm extensión - RO009",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/RO009.jpg",
   description: "Material: Rodio"
@@ -2839,7 +2839,7 @@ const PRODUCTS = [
   id: "LR417",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije medusa",
+  name: "Collar ajustable dije medusa - LR417",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR417.jpg",
   description: "Material: Rodio"
@@ -2848,7 +2848,7 @@ const PRODUCTS = [
   id: "NP456",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena Leopardo",
+  name: "Cadena Leopardo - NP456",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP456.jpg",
   description: "Material: Rodio"
@@ -2857,7 +2857,7 @@ const PRODUCTS = [
   id: "OX362",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable Dije Tortuga",
+  name: "Collar ajustable Dije Tortuga - OX362",
   price: 18000,
   image: "images/productos/Bisuteria/Collares/OX362.jpg",
   description: "Material: Rodio"
@@ -2866,7 +2866,7 @@ const PRODUCTS = [
   id: "NP455",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar Estrella Cristal 45 cm + 5 extensión",
+  name: "Collar Estrella Cristal 45 cm + 5 extensión - NP455",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP455.jpg",
   description: "Material: Rodio"
@@ -2875,7 +2875,7 @@ const PRODUCTS = [
   id: "MC851",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar trébol blanco",
+  name: "Collar trébol blanco - MC851",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC851.jpg",
   description: "Material: Rodio"
@@ -2884,7 +2884,7 @@ const PRODUCTS = [
   id: "FT285",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Cadena corazón doble dorado y plateado",
+  name: "Cadena corazón doble dorado y plateado - FT285",
   price: 39900,
   image: "images/productos/Bisuteria/Collares/FT285.jpg",
   description: "Material: Rodio"
@@ -2893,7 +2893,7 @@ const PRODUCTS = [
   id: "CB631",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar dije trébol mini Negro",
+  name: "Collar dije trébol mini Negro - CB631",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB631.jpg",
   description: "Material: Rodio"
@@ -2902,7 +2902,7 @@ const PRODUCTS = [
   id: "NP424",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar dijes trébol Rojo 40 cm + 5 cm Extensión",
+  name: "Collar dijes trébol Rojo 40 cm + 5 cm Extensión - NP424",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP424.jpg",
   description: "Material: Acero"
@@ -2911,7 +2911,7 @@ const PRODUCTS = [
   id: "NP426",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar dijes Verde Negro 40 cm + 5 cm Extensión",
+  name: "Collar dijes Verde Negro 40 cm + 5 cm Extensión - NP426",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP426.jpg",
   description: "Material: Acero"
@@ -2920,7 +2920,7 @@ const PRODUCTS = [
   id: "CB625",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar dije oso, cadena ajustable",
+  name: "Collar dije oso, cadena ajustable - CB625",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB625.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -2929,7 +2929,7 @@ const PRODUCTS = [
   id: "MC804",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije abeja",
+  name: "Collar ajustable dije abeja - MC804",
   price: 27000,
   image: "images/productos/Bisuteria/Collares/MC804.jpg",
   description: "Material: Rodio"
@@ -2938,7 +2938,7 @@ const PRODUCTS = [
   id: "DC058",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar trébol, largo 70 cm",
+  name: "Collar trébol, largo 70 cm - DC058",
   price: 52000,
   image: "images/productos/Bisuteria/Collares/DC058.jpg",
   description: "Material: Rodio"
@@ -2947,7 +2947,7 @@ const PRODUCTS = [
   id: "NP403",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajusteble dije mamá",
+  name: "Collar ajusteble dije mamá - NP403",
   price: 30000,
   image: "images/productos/Bisuteria/Collares/NP403.jpg",
   description: "Material: Rodio"
@@ -2956,7 +2956,7 @@ const PRODUCTS = [
   id: "LR332",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar 7 chakras",
+  name: "Collar 7 chakras - LR332",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR332.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2965,7 +2965,7 @@ const PRODUCTS = [
   id: "PC667",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar corazón",
+  name: "Collar corazón - PC667",
   price: 9000,
   image: "images/productos/Bisuteria/Collares/PC667.jpg",
   description: "Material: Acero - Oro Goldfield"
@@ -2974,7 +2974,7 @@ const PRODUCTS = [
   id: "PC659",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible ópalo 39cm + 5 cm extensión",
+  name: "Collar invisible ópalo 39cm + 5 cm extensión - PC659",
   price: 9000,
   image: "images/productos/Bisuteria/Collares/PC659.jpg",
   description: "Material: Oro Goldfield"
@@ -2983,7 +2983,7 @@ const PRODUCTS = [
   id: "CB613",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar arcángel Rafael, Salud",
+  name: "Collar arcángel Rafael, Salud - CB613",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB613.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -2992,7 +2992,7 @@ const PRODUCTS = [
   id: "CB610",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar arcángel Gabriel, Mensajero de Dios",
+  name: "Collar arcángel Gabriel, Mensajero de Dios - CB610",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB610.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -3001,7 +3001,7 @@ const PRODUCTS = [
   id: "CB507",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar arcángel Joﬁel 48 cm ajustable",
+  name: "Collar arcángel Joﬁel 48 cm ajustable - CB507",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB507.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -3010,7 +3010,7 @@ const PRODUCTS = [
   id: "CB508",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar arcángel Uriel 48 cm ajustable",
+  name: "Collar arcángel Uriel 48 cm ajustable - CB508",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB508.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -3019,7 +3019,7 @@ const PRODUCTS = [
   id: "CB511",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar arcángel Zadaquiel 48 cm ajustable",
+  name: "Collar arcángel Zadaquiel 48 cm ajustable - CB511",
   price: 15500,
   image: "images/productos/Bisuteria/Collares/CB511.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -3028,7 +3028,7 @@ const PRODUCTS = [
   id: "AC397",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar ajustable dije estrella de mar",
+  name: "Collar ajustable dije estrella de mar - AC397",
   price: 10900,
   image: "images/productos/Bisuteria/Collares/AC397.jpg",
   description: "Material: Rodio - Oro Goldfield"
@@ -3037,7 +3037,7 @@ const PRODUCTS = [
   id: "LR302",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar 7 chakras",
+  name: "Collar 7 chakras - LR302",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR302.jpg",
   description: "Material: Oro Goldfield"
@@ -3046,7 +3046,7 @@ const PRODUCTS = [
   id: "OR441",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar lluvia de oro 44cm. Dije: 4.2cm",
+  name: "Collar lluvia de oro 44cm. Dije: 4.2cm - OR441",
   price: 24000,
   image: "images/productos/Bisuteria/Collares/OR441.jpg",
   description: "Material: Acero - Zamak"
@@ -3055,7 +3055,7 @@ const PRODUCTS = [
   id: "GP220",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar placa protección 45cm. Dije: 1cm",
+  name: "Collar placa protección 45cm. Dije: 1cm - GP220",
   price: 7100,
   image: "images/productos/Bisuteria/Collares/GP220.jpg",
   description: "Material: Oro Goldfield"
@@ -3064,7 +3064,7 @@ const PRODUCTS = [
   id: "LR071",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra E 40cm + 6cm extensión",
+  name: "Collar invisible letra E 40cm + 6cm extensión - LR071",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR071.jpg",
   description: "Material: Oro Goldfield"
@@ -3073,7 +3073,7 @@ const PRODUCTS = [
   id: "LR063",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra F 40cm + 6cm extensión",
+  name: "Collar invisible letra F 40cm + 6cm extensión - LR063",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR063.jpg",
   description: "Material: Oro Goldfield"
@@ -3082,7 +3082,7 @@ const PRODUCTS = [
   id: "LR062",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra I 40cm + 6cm extensión",
+  name: "Collar invisible letra I 40cm + 6cm extensión - LR062",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR062.jpg",
   description: "Material: Oro Goldfield"
@@ -3091,7 +3091,7 @@ const PRODUCTS = [
   id: "LR069",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra N 40cm + 6cm extensión",
+  name: "Collar invisible letra N 40cm + 6cm extensión - LR069",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR069.jpg",
   description: "Material: Oro Goldfield"
@@ -3100,7 +3100,7 @@ const PRODUCTS = [
   id: "LR067",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra Y 40cm + 6cm extensión",
+  name: "Collar invisible letra Y 40cm + 6cm extensión - LR067",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR067.jpg",
   description: "Material: Oro Goldfield"
@@ -3109,7 +3109,7 @@ const PRODUCTS = [
   id: "LR061",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra C 40cm + 6cm extensión",
+  name: "Collar invisible letra C 40cm + 6cm extensión - LR061",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR061.jpg",
   description: "Material: Oro Goldfield"
@@ -3118,7 +3118,7 @@ const PRODUCTS = [
   id: "LR066",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra V 40cm + 6cm extensión",
+  name: "Collar invisible letra V 40cm + 6cm extensión - LR066",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR066.jpg",
   description: "Material: Oro Goldfield"
@@ -3127,7 +3127,7 @@ const PRODUCTS = [
   id: "LR064",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra K 40cm + 6cm extensión",
+  name: "Collar invisible letra K 40cm + 6cm extensión - LR064",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR064.jpg",
   description: "Material: Oro Goldfield"
@@ -3136,7 +3136,7 @@ const PRODUCTS = [
   id: "LR065",
   category: "bisuteria",
   subcategory: "Collares",
-  name: "Collar invisible letra S 40cm + 6cm extensión",
+  name: "Collar invisible letra S 40cm + 6cm extensión - LR065",
   price: 19900,
   image: "images/productos/Bisuteria/Collares/LR065.jpg",
   description: "Material: Oro Goldfield"
