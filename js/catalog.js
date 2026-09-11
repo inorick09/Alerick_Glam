@@ -68,7 +68,11 @@ function renderProductCards(grid, items) {
   });
 }
 
-function renderCatalogPlaceholder(grid) {
+function renderCatalogPlaceholder(grid, category) {
+  if (category === 'bisuteria') {
+    grid.innerHTML = '';
+    return;
+  }
   grid.innerHTML = '<p class="catalog-placeholder">Elige una categoría para ver sus productos.</p>';
 }
 
@@ -182,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // no hay nada que elegir y se muestran todos los productos ya mismo
   // (paginados de a PAGE_SIZE).
   if (hasCategories) {
-    renderCatalogPlaceholder(grid);
+    renderCatalogPlaceholder(grid, category);
   } else {
     renderPage(grid, pagerEl, items, 1);
   }
