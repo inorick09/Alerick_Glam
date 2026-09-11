@@ -435,7 +435,8 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 40px;
 }
 
@@ -454,10 +455,35 @@ em {
 .pager-btn:hover:not(:disabled) { border-color: var(--color-rose); color: var(--color-rose); }
 .pager-btn:disabled { opacity: 0.35; cursor: default; }
 
-.pager-info {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+.pager-numbers { display: flex; align-items: center; gap: 4px; }
+
+.pager-num {
+  min-width: 36px;
+  height: 36px;
+  border: 1.5px solid transparent;
+  background: transparent;
   color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.pager-num:hover:not(.is-active) { border-color: var(--color-gold); color: var(--color-rose-deep); }
+.pager-num.is-active {
+  background: var(--color-rose);
+  border-color: var(--color-rose);
+  color: #fff;
+  cursor: default;
+  font-weight: 700;
+}
+
+.pager-ellipsis {
+  color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0 2px;
 }
 
 /* ---------- 7c. Materiales ---------- */

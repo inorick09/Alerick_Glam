@@ -3,8 +3,7 @@
 // Lee el arreglo PRODUCTS (definido en products.js) y arma las
 // tarjetas de producto dentro de #productsGrid, filtrando por
 // la categoría indicada en su atributo data-category.
-// Si todavía no hay productos en esa categoría, no toca nada y
-// se queda visible el bloque "Muy pronto" que ya está en el HTML.
+// Si todavía no hay productos en esa categoría, no toca nada.
 //
 // Si además existe #catalogFilters en el HTML, arma los chips de
 // categoría (subcategory) a partir de los productos que sí tienen
@@ -76,6 +75,26 @@ function renderCatalogPlaceholder(grid) {
 // Máximo de productos por página, para no cargar todo el catálogo de una vez.
 const PAGE_SIZE = 15;
 
+// Números de página a mostrar: siempre primera, última, la actual y sus
+// vecinas inmediatas; el resto se resume con "…".
+function getPaginationRange(current, total) {
+  const delta = 1;
+  const range = [];
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
+      range.push(i);
+    }
+  }
+  const withEllipsis = [];
+  let prev = 0;
+  for (const i of range) {
+    if (prev && i - prev > 1) withEllipsis.push('…');
+    withEllipsis.push(i);
+    prev = i;
+  }
+  return withEllipsis;
+}
+
 function renderPager(pagerEl, items, page, onPageChange) {
   const totalPages = Math.ceil(items.length / PAGE_SIZE);
   if (totalPages <= 1) {
@@ -85,13 +104,19 @@ function renderPager(pagerEl, items, page, onPageChange) {
   }
 
   pagerEl.hidden = false;
+  const numbersHtml = getPaginationRange(page, totalPages).map(n => (
+    n === '…'
+      ? `<span class="pager-ellipsis">…</span>`
+      : `<button type="button" class="pager-num${n === page ? ' is-active' : ''}" data-page="${n}" ${n === page ? 'aria-current="page"' : ''}>${n}</button>`
+  )).join('');
+
   pagerEl.innerHTML = `
     <button type="button" class="pager-btn" data-page="${page - 1}" ${page <= 1 ? 'disabled' : ''}>← Anterior</button>
-    <span class="pager-info">Página ${page} de ${totalPages}</span>
+    <div class="pager-numbers">${numbersHtml}</div>
     <button type="button" class="pager-btn" data-page="${page + 1}" ${page >= totalPages ? 'disabled' : ''}>Siguiente →</button>
   `;
 
-  pagerEl.querySelectorAll('.pager-btn:not(:disabled)').forEach(btn => {
+  pagerEl.querySelectorAll('.pager-btn:not(:disabled), .pager-num:not(.is-active)').forEach(btn => {
     btn.addEventListener('click', () => onPageChange(Number(btn.dataset.page)));
   });
 }
@@ -142,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const category = grid.dataset.category;
   const items = PRODUCTS.filter(p => p.category === category);
-  if (items.length === 0) return; // se queda el "Muy pronto" que ya está en el HTML
+  if (items.length === 0) return;
 
   const pagerEl = document.createElement('div');
   pagerEl.className = 'catalog-pager';
@@ -160,14 +185,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCatalogPlaceholder(grid);
   } else {
     renderPage(grid, pagerEl, items, 1);
-  }
-
-  // el encabezado de la sección ya no dice "Muy pronto"
-  const head = grid.closest('section')?.querySelector('.section__head');
-  if (head) {
-    const eyebrow = head.querySelector('.eyebrow');
-    const note = head.querySelector('p:not(.eyebrow)');
-    if (eyebrow) eyebrow.textContent = 'Catálogo';
-    if (note) note.textContent = 'Elige tus favoritos y agrégalos al carrito.';
   }
 });
