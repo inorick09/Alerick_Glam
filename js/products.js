@@ -3149,7 +3149,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Balón de Fútbol Ajustable - RO148",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO148.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO148.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3158,7 +3158,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Colombia Ajustable - RO147",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO147.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO147.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3167,7 +3167,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Balón y Guayo Ajustable - RO146",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO146.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO146.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3176,7 +3176,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Mini Colibrí 44 cm - RO142",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO142.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO142.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3185,7 +3185,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Cruz 44 cm - RO138",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO138.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO138.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3194,7 +3194,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Collar y Pulsera Ajustable - NP510",
   price: 30000,
-  image: "images/productos/Bisuteria/Conjuntos/NP510.png",
+  image: "images/productos/Bisuteria/Conjuntos/NP510.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3203,7 +3203,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Trébol Negro - RO135",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO135.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO135.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3212,7 +3212,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Trébol Rojo - RO133",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO133.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO133.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3221,7 +3221,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Trébol Verde - RO132",
   price: 24000,
-  image: "images/productos/Bisuteria/Conjuntos/RO132.png",
+  image: "images/productos/Bisuteria/Conjuntos/RO132.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3230,7 +3230,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Collar y Pulsera corazón - NP481",
   price: 30000,
-  image: "images/productos/Bisuteria/Conjuntos/NP481.png",
+  image: "images/productos/Bisuteria/Conjuntos/NP481.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3239,7 +3239,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Dije Oso ajustable - MC908",
   price: 27000,
-  image: "images/productos/Bisuteria/Conjuntos/MC908.png",
+  image: "images/productos/Bisuteria/Conjuntos/MC908.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3248,7 +3248,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Cereza - CB685",
   price: 15500,
-  image: "images/productos/Bisuteria/Conjuntos/CB685.png",
+  image: "images/productos/Bisuteria/Conjuntos/CB685.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3257,7 +3257,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Turmalina tamaño y color de la piedra puede variar - MC896",
   price: 27000,
-  image: "images/productos/Bisuteria/Conjuntos/MC896.png",
+  image: "images/productos/Bisuteria/Conjuntos/MC896.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3266,7 +3266,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Cuarzo cristal tamaño y color de la piedra puede variar - LM831",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM831.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM831.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3275,7 +3275,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Amatista tamaño y color de la piedra puede variar - LM830",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM830.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM830.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3284,7 +3284,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Cuarzo rosa tamaño y color de la piedra puede variar - LM832",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM832.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM832.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3293,7 +3293,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Jade tamaño y color de la piedra puede variar - LM829",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM829.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM829.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3302,7 +3302,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Cuarzo cristal tamaño y color de la piedra puede variar - LM827",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM827.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM827.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3311,7 +3311,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto Turmalina tamaño y color de la piedra puede variar - MC895",
   price: 27000,
-  image: "images/productos/Bisuteria/Conjuntos/MC895.png",
+  image: "images/productos/Bisuteria/Conjuntos/MC895.jpg",
   description: "Material: Acero - Oro Goldfield"
 },
 {
@@ -3320,7 +3320,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Conjunto dije colibrí - LM786",
   price: 21000,
-  image: "images/productos/Bisuteria/Conjuntos/LM786.png",
+  image: "images/productos/Bisuteria/Conjuntos/LM786.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3329,7 +3329,7 @@ const PRODUCTS = [
   subcategory: "Conjuntos",
   name: "Collar dije letra H, el tamaño de los topos puede variar - AC136H",
   price: 10900,
-  image: "images/productos/Bisuteria/Conjuntos/AC136H.png",
+  image: "images/productos/Bisuteria/Conjuntos/AC136H.jpg",
   description: "Material: Rodio"
 },
 
@@ -3340,7 +3340,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije Mariposa - RO056",
   price: 24000,
-  image: "images/productos/Bisuteria/Dijes/RO056.png",
+  image: "images/productos/Bisuteria/Dijes/RO056.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3349,7 +3349,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije Estrella y Concha - LM848",
   price: 21000,
-  image: "images/productos/Bisuteria/Dijes/LM848.png",
+  image: "images/productos/Bisuteria/Dijes/LM848.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3358,7 +3358,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije Tornasol - LR455",
   price: 19900,
-  image: "images/productos/Bisuteria/Dijes/LR455.png",
+  image: "images/productos/Bisuteria/Dijes/LR455.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3367,7 +3367,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije Trébol Negro - LR453",
   price: 19900,
-  image: "images/productos/Bisuteria/Dijes/LR453.png",
+  image: "images/productos/Bisuteria/Dijes/LR453.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3376,7 +3376,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije Letra 1 cm - GP445",
   price: 7100,
-  image: "images/productos/Bisuteria/Dijes/GP445.png",
+  image: "images/productos/Bisuteria/Dijes/GP445.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3385,7 +3385,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Dije letra 6mm - TS256",
   price: 5400,
-  image: "images/productos/Bisuteria/Dijes/TS256.png",
+  image: "images/productos/Bisuteria/Dijes/TS256.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3394,7 +3394,7 @@ const PRODUCTS = [
   subcategory: "Dijes",
   name: "Letra rodio - GP366",
   price: 7100,
-  image: "images/productos/Bisuteria/Dijes/GP366.png",
+  image: "images/productos/Bisuteria/Dijes/GP366.jpg",
   description: "Material: Rodio"
 },
 
@@ -3405,7 +3405,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - LL507",
   price: 13900,
-  image: "images/productos/Bisuteria/Earcuff/LL507.png",
+  image: "images/productos/Bisuteria/Earcuff/LL507.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3414,7 +3414,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - OX391",
   price: 18000,
-  image: "images/productos/Bisuteria/Earcuff/OX391.png",
+  image: "images/productos/Bisuteria/Earcuff/OX391.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3423,7 +3423,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff chunky - OX390",
   price: 18000,
-  image: "images/productos/Bisuteria/Earcuff/OX390.png",
+  image: "images/productos/Bisuteria/Earcuff/OX390.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3432,7 +3432,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff Flores - CB679",
   price: 15500,
-  image: "images/productos/Bisuteria/Earcuff/CB679.png",
+  image: "images/productos/Bisuteria/Earcuff/CB679.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3441,7 +3441,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perla plateado - LL501",
   price: 13900,
-  image: "images/productos/Bisuteria/Earcuff/LL501.png",
+  image: "images/productos/Bisuteria/Earcuff/LL501.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3450,7 +3450,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff estrellas - CB667",
   price: 15500,
-  image: "images/productos/Bisuteria/Earcuff/CB667.png",
+  image: "images/productos/Bisuteria/Earcuff/CB667.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3459,7 +3459,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC713",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC713.png",
+  image: "images/productos/Bisuteria/Earcuff/PC713.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3468,7 +3468,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff flores - GP433",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP433.png",
+  image: "images/productos/Bisuteria/Earcuff/GP433.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3477,7 +3477,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP432",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP432.png",
+  image: "images/productos/Bisuteria/Earcuff/GP432.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3486,7 +3486,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP431",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP431.png",
+  image: "images/productos/Bisuteria/Earcuff/GP431.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3495,7 +3495,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP430",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP430.png",
+  image: "images/productos/Bisuteria/Earcuff/GP430.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3504,7 +3504,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP429",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP429.png",
+  image: "images/productos/Bisuteria/Earcuff/GP429.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3513,7 +3513,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP428",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP428.png",
+  image: "images/productos/Bisuteria/Earcuff/GP428.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3522,7 +3522,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - PC711",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC711.png",
+  image: "images/productos/Bisuteria/Earcuff/PC711.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3531,7 +3531,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff chunky - PC710",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC710.png",
+  image: "images/productos/Bisuteria/Earcuff/PC710.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3540,7 +3540,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff cadena y topo - PC707",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC707.png",
+  image: "images/productos/Bisuteria/Earcuff/PC707.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3549,7 +3549,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - GP423",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP423.png",
+  image: "images/productos/Bisuteria/Earcuff/GP423.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3558,7 +3558,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff chunky - GP422",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP422.png",
+  image: "images/productos/Bisuteria/Earcuff/GP422.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3567,7 +3567,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff dorado - GP421",
   price: 7100,
-  image: "images/productos/Bisuteria/Earcuff/GP421.png",
+  image: "images/productos/Bisuteria/Earcuff/GP421.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3576,7 +3576,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC706",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC706.png",
+  image: "images/productos/Bisuteria/Earcuff/PC706.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3585,7 +3585,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC705",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC705.png",
+  image: "images/productos/Bisuteria/Earcuff/PC705.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3594,7 +3594,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC704",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC704.png",
+  image: "images/productos/Bisuteria/Earcuff/PC704.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3603,7 +3603,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC703",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC703.png",
+  image: "images/productos/Bisuteria/Earcuff/PC703.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3612,7 +3612,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC702",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC702.png",
+  image: "images/productos/Bisuteria/Earcuff/PC702.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3621,7 +3621,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC701",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC701.png",
+  image: "images/productos/Bisuteria/Earcuff/PC701.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3630,7 +3630,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC700",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC700.png",
+  image: "images/productos/Bisuteria/Earcuff/PC700.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3639,7 +3639,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff hojas - AC405",
   price: 10900,
-  image: "images/productos/Bisuteria/Earcuff/AC405.png",
+  image: "images/productos/Bisuteria/Earcuff/AC405.jpg",
   description: "Material: Acero"
 },
 {
@@ -3648,7 +3648,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC688",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC688.png",
+  image: "images/productos/Bisuteria/Earcuff/PC688.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3657,7 +3657,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC685",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC685.png",
+  image: "images/productos/Bisuteria/Earcuff/PC685.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3666,7 +3666,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff perlas - PC681",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC681.png",
+  image: "images/productos/Bisuteria/Earcuff/PC681.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3675,7 +3675,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff - PC671",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC671.png",
+  image: "images/productos/Bisuteria/Earcuff/PC671.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3684,7 +3684,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff doble - PC670",
   price: 9000,
-  image: "images/productos/Bisuteria/Earcuff/PC670.png",
+  image: "images/productos/Bisuteria/Earcuff/PC670.jpg",
   description: "Material: Covergold"
 },
 {
@@ -3693,7 +3693,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff Colores - LL382",
   price: 13900,
-  image: "images/productos/Bisuteria/Earcuff/LL382.png",
+  image: "images/productos/Bisuteria/Earcuff/LL382.jpg",
   description: "Material: Oro Goldfield"
 },
 {
@@ -3702,7 +3702,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff doble - PG361",
   price: 11900,
-  image: "images/productos/Bisuteria/Earcuff/PG361.png",
+  image: "images/productos/Bisuteria/Earcuff/PG361.jpg",
   description: "Material: Rodio"
 },
 {
@@ -3711,7 +3711,7 @@ const PRODUCTS = [
   subcategory: "Earcuff",
   name: "Earcuff tejido - CB596",
   price: 15500,
-  image: "images/productos/Bisuteria/Earcuff/CB596.png",
+  image: "images/productos/Bisuteria/Earcuff/CB596.jpg",
   description: "Material: Oro Goldfield"
 },
 
@@ -3722,7 +3722,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería 5×5×3,5 cm - PG465",
   price: 11900,
-  image: "images/productos/Bisuteria/Empaques/PG465.png",
+  image: "images/productos/Bisuteria/Empaques/PG465.jpg",
   description: "Caja"
 },
 {
@@ -3731,7 +3731,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería Rosa 5×5×3,5 cm - PG464",
   price: 11900,
-  image: "images/productos/Bisuteria/Empaques/PG464.png",
+  image: "images/productos/Bisuteria/Empaques/PG464.jpg",
   description: "Caja"
 },
 {
@@ -3740,7 +3740,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Deslizable Negro 5×5×3,5 cm - PG463",
   price: 11900,
-  image: "images/productos/Bisuteria/Empaques/PG463.png",
+  image: "images/productos/Bisuteria/Empaques/PG463.jpg",
   description: "Empaque"
 },
 {
@@ -3749,7 +3749,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Royal 8,5 × 7,5 × 3,5 cm - RO176",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO176.png",
+  image: "images/productos/Bisuteria/Empaques/RO176.jpg",
   description: "Empaque"
 },
 {
@@ -3758,7 +3758,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Noir Atelier 11 × 16 × 3,5 cm - FT348",
   price: 39900,
-  image: "images/productos/Bisuteria/Empaques/FT348.png",
+  image: "images/productos/Bisuteria/Empaques/FT348.jpg",
   description: "Empaque"
 },
 {
@@ -3767,7 +3767,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería en forma de corazón negro 4×4×3,3 - GP457",
   price: 7100,
-  image: "images/productos/Bisuteria/Empaques/GP457.png",
+  image: "images/productos/Bisuteria/Empaques/GP457.jpg",
   description: "Caja"
 },
 {
@@ -3776,7 +3776,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería en forma de corazón rojo 4×4×3,3 - GP456",
   price: 7100,
-  image: "images/productos/Bisuteria/Empaques/GP456.png",
+  image: "images/productos/Bisuteria/Empaques/GP456.jpg",
   description: "Caja"
 },
 {
@@ -3785,7 +3785,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería cuadrada 7×10×3,5 cm - BR128",
   price: 45000,
-  image: "images/productos/Bisuteria/Empaques/BR128.png",
+  image: "images/productos/Bisuteria/Empaques/BR128.jpg",
   description: "Caja"
 },
 {
@@ -3794,7 +3794,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Deluxe Gris 7 × 8 × 3,5 cm - MC955",
   price: 27000,
-  image: "images/productos/Bisuteria/Empaques/MC955.png",
+  image: "images/productos/Bisuteria/Empaques/MC955.jpg",
   description: "Empaque"
 },
 {
@@ -3803,7 +3803,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Elite 9 × 9 × 4,5 cm - SP392",
   price: 35900,
-  image: "images/productos/Bisuteria/Empaques/SP392.png",
+  image: "images/productos/Bisuteria/Empaques/SP392.jpg",
   description: "Empaque"
 },
 {
@@ -3812,7 +3812,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO099",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO099.png",
+  image: "images/productos/Bisuteria/Empaques/RO099.jpg",
   description: "Caja"
 },
 {
@@ -3821,7 +3821,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO098",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO098.png",
+  image: "images/productos/Bisuteria/Empaques/RO098.jpg",
   description: "Caja"
 },
 {
@@ -3830,7 +3830,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO097",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO097.png",
+  image: "images/productos/Bisuteria/Empaques/RO097.jpg",
   description: "Caja"
 },
 {
@@ -3839,7 +3839,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Negro Mediano - FT314",
   price: 39900,
-  image: "images/productos/Bisuteria/Empaques/FT314.png",
+  image: "images/productos/Bisuteria/Empaques/FT314.jpg",
   description: "Joyero"
 },
 {
@@ -3848,7 +3848,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Salmón Mediano - FT313",
   price: 39900,
-  image: "images/productos/Bisuteria/Empaques/FT313.png",
+  image: "images/productos/Bisuteria/Empaques/FT313.jpg",
   description: "Joyero"
 },
 {
@@ -3857,7 +3857,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Blanco Mediano - FT312",
   price: 39900,
-  image: "images/productos/Bisuteria/Empaques/FT312.png",
+  image: "images/productos/Bisuteria/Empaques/FT312.jpg",
   description: "Joyero"
 },
 {
@@ -3866,7 +3866,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Negro Cuadrado - RO093",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO093.png",
+  image: "images/productos/Bisuteria/Empaques/RO093.jpg",
   description: "Joyero"
 },
 {
@@ -3875,7 +3875,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Salmón Cuadrado - RO092",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO092.png",
+  image: "images/productos/Bisuteria/Empaques/RO092.jpg",
   description: "Joyero"
 },
 {
@@ -3884,7 +3884,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Blanco Cuadrado - RO091",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO091.png",
+  image: "images/productos/Bisuteria/Empaques/RO091.jpg",
   description: "Joyero"
 },
 {
@@ -3893,7 +3893,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Blanco Redondo - RO090",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO090.png",
+  image: "images/productos/Bisuteria/Empaques/RO090.jpg",
   description: "Joyero"
 },
 {
@@ -3902,7 +3902,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero Rosa Redondo - RO089",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO089.png",
+  image: "images/productos/Bisuteria/Empaques/RO089.jpg",
   description: "Joyero"
 },
 {
@@ -3911,7 +3911,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería 6,5×3,5×4,5cm - BR121",
   price: 45000,
-  image: "images/productos/Bisuteria/Empaques/BR121.png",
+  image: "images/productos/Bisuteria/Empaques/BR121.jpg",
   description: "Caja"
 },
 {
@@ -3920,7 +3920,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería 6,5×3,5×4,5cm - BR120",
   price: 45000,
-  image: "images/productos/Bisuteria/Empaques/BR120.png",
+  image: "images/productos/Bisuteria/Empaques/BR120.jpg",
   description: "Caja"
 },
 {
@@ -3929,7 +3929,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja para Joyería Cuadrada 9×9×3,5 cm - CB689",
   price: 15500,
-  image: "images/productos/Bisuteria/Empaques/CB689.png",
+  image: "images/productos/Bisuteria/Empaques/CB689.jpg",
   description: "Caja"
 },
 {
@@ -3938,7 +3938,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja de joyería con colgaderas 10×10×3,5 cm - RO065",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO065.png",
+  image: "images/productos/Bisuteria/Empaques/RO065.jpg",
   description: "Caja"
 },
 {
@@ -3947,7 +3947,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Cofre Negro 4,6 cm x 5,5 cm - RO045",
   price: 24000,
-  image: "images/productos/Bisuteria/Empaques/RO045.png",
+  image: "images/productos/Bisuteria/Empaques/RO045.jpg",
   description: "Cofre"
 },
 {
@@ -3956,7 +3956,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Elegance platinado - 1PE-PLATINADO-JNC",
   price: 7500,
-  image: "images/productos/Bisuteria/Empaques/1PE-PLATINADO-JNC.png",
+  image: "images/productos/Bisuteria/Empaques/1PE-PLATINADO-JNC.jpg",
   description: "Empaque"
 },
 {
@@ -3965,7 +3965,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Bolsa de pana pequeña - PANA-001",
   price: 800,
-  image: "images/productos/Bisuteria/Empaques/PANA-001.png",
+  image: "images/productos/Bisuteria/Empaques/PANA-001.jpg",
   description: "Bolsa"
 },
 {
@@ -3974,7 +3974,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Joyero negro redondo. Diámetro10.5 cm alto 4cm - NP365",
   price: 30000,
-  image: "images/productos/Bisuteria/Empaques/NP365.png",
+  image: "images/productos/Bisuteria/Empaques/NP365.jpg",
   description: "Joyero"
 },
 {
@@ -3983,7 +3983,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Elegance - 1EU-NEGRO-JNC",
   price: 7500,
-  image: "images/productos/Bisuteria/Empaques/1EU-NEGRO-JNC.png",
+  image: "images/productos/Bisuteria/Empaques/1EU-NEGRO-JNC.jpg",
   description: "Empaque"
 },
 {
@@ -3992,7 +3992,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Elegance - 1EU-PERLA-JNC",
   price: 7500,
-  image: "images/productos/Bisuteria/Empaques/1EU-PERLA-JNC.png",
+  image: "images/productos/Bisuteria/Empaques/1EU-PERLA-JNC.jpg",
   description: "Empaque"
 },
 {
@@ -4001,7 +4001,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Empaque Elegance - 1EU-ROSA-JNC",
   price: 7500,
-  image: "images/productos/Bisuteria/Empaques/1EU-ROSA-JNC.png",
+  image: "images/productos/Bisuteria/Empaques/1EU-ROSA-JNC.jpg",
   description: "Empaque"
 },
 {
@@ -4010,7 +4010,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja Beige Pequeña - C-005",
   price: 3000,
-  image: "images/productos/Bisuteria/Empaques/C-005.png",
+  image: "images/productos/Bisuteria/Empaques/C-005.jpg",
   description: "Caja"
 },
 {
@@ -4019,7 +4019,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Bolsa tul mediana. Medidas: 12CM X 8CM por unidad - VA004",
   price: 600,
-  image: "images/productos/Bisuteria/Empaques/VA004.png",
+  image: "images/productos/Bisuteria/Empaques/VA004.jpg",
   description: "Bolsa"
 },
 {
@@ -4028,7 +4028,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Bolsa tul pequeña. Medidas: 6.5cm x 9 cm por unidad - VA022",
   price: 400,
-  image: "images/productos/Bisuteria/Empaques/VA022.png",
+  image: "images/productos/Bisuteria/Empaques/VA022.jpg",
   description: "Bolsa"
 },
 {
@@ -4037,7 +4037,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Bolsa tul grande. Medidas: 18cm x 12cm. Colores - VA005",
   price: 800,
-  image: "images/productos/Bisuteria/Empaques/VA005.png",
+  image: "images/productos/Bisuteria/Empaques/VA005.jpg",
   description: "Bolsa"
 },
 {
@@ -4046,7 +4046,7 @@ const PRODUCTS = [
   subcategory: "Empaques",
   name: "Caja tipo sobre, medida: Ancho 10.5cm x Largo - C-002",
   price: 105,
-  image: "images/productos/Bisuteria/Empaques/C-002.png",
+  image: "images/productos/Bisuteria/Empaques/C-002.jpg",
   description: "Caja"
 },
 ];
