@@ -131,12 +131,12 @@ function openLightbox(src, name) {
   document.body.style.overflow = 'hidden';
 }
 
-function renderCatalogPlaceholder(grid, category) {
-  if (category === 'bisuteria') {
-    grid.innerHTML = '';
-    return;
-  }
-  grid.innerHTML = '<p class="catalog-placeholder">Elige una categoría para ver sus productos.</p>';
+// El aviso "Elige una categoría..." vive fijo en el HTML, justo antes
+// de los chips de filtro — aquí solo se muestra/oculta según la página.
+function showCatalogPlaceholder(category) {
+  const placeholder = document.getElementById('catalogPlaceholder');
+  if (!placeholder) return;
+  placeholder.hidden = category === 'bisuteria';
 }
 
 // Máximo de productos por página, para no cargar todo el catálogo de una vez.
@@ -222,8 +222,9 @@ function setupCatalogFilters(filtersEl, grid, pagerEl, items, category) {
     chip.classList.add('is-active');
 
     // Al elegir una categoría, la página se enfoca solo en los productos:
-    // se ocultan la sección extra (materiales / marcas) y la nota de
-    // contacto por WhatsApp.
+    // se ocultan el aviso de "elige una categoría", la sección extra
+    // (materiales / marcas) y la nota de contacto por WhatsApp.
+    document.getElementById('catalogPlaceholder')?.setAttribute('hidden', '');
     document.querySelector('.catalog-extra')?.setAttribute('hidden', '');
     document.querySelector('.page-hero__contact')?.setAttribute('hidden', '');
 
@@ -255,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // no hay nada que elegir y se muestran todos los productos ya mismo
   // (paginados de a PAGE_SIZE).
   if (hasCategories) {
-    renderCatalogPlaceholder(grid, category);
+    showCatalogPlaceholder(category);
   } else {
     renderPage(grid, pagerEl, items, 1);
   }
