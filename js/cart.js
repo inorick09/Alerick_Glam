@@ -22,7 +22,14 @@ const WHATSAPP_NUMBER = '573112894267';
 // "PENDIENTE_CONFIGURAR", el pedido no se podrá enviar solo y el
 // formulario le ofrecerá al cliente el enlace de WhatsApp como
 // alternativa.
-const ORDER_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxoHtXUzr_4CMtDpmZeh_C2wM7B--BwysGsn5-fqpf2QxGSWoYVGEdx94phqTmVkvLYFg/exec';
+const ORDER_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzVfJJwBB9MldhU3zIn1XC_8KzGmNRfn8vsPpW66urK_VUzU46RcspYybzAzfvb3YKeNQ/exec';
+
+// Clave que el script de Google revisa antes de guardar un pedido, para
+// que no cualquiera pueda escribirle a la hoja directamente sin pasar
+// por el sitio. Debe ser IDÉNTICA a SECRET_TOKEN dentro del Apps Script
+// (ver GOOGLE_SHEETS_SETUP.md). Si alguna vez quieres cambiarla, actualiza
+// los dos lados a la vez.
+const ORDER_TOKEN = '5EJmuaJk2m_XfyP-4WJGBZ2Cv1AIfBKs';
 
 function getCart() {
   try {
@@ -159,6 +166,7 @@ function setCheckoutStatus(message, kind) {
 async function submitOrder(customer) {
   const cart = getCart();
   const payload = {
+    token: ORDER_TOKEN,
     clienta: customer.clienta,
     nombre: customer.nombre,
     telefono: customer.telefono,
@@ -179,6 +187,12 @@ async function submitOrder(customer) {
     body: JSON.stringify(payload)
   });
   if (!res.ok) throw new Error('respuesta-no-ok');
+
+  // Apps Script siempre responde HTTP 200, incluso cuando el script
+  // rechaza el pedido (token inválido, límite de envíos alcanzado,
+  // etc.) — por eso hay que revisar el cuerpo de la respuesta también.
+  const data = await res.json().catch(() => null);
+  if (!data || data.ok !== true) throw new Error('pedido-rechazado');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
