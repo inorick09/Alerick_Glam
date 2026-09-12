@@ -222,8 +222,9 @@ function setupCatalogFilters(filtersEl, grid, pagerEl, items, category) {
     chip.classList.add('is-active');
 
     // Al elegir una categoría, la página se enfoca solo en los productos:
-    // se ocultan los materiales y la nota de contacto por WhatsApp.
-    document.getElementById('materiales')?.setAttribute('hidden', '');
+    // se ocultan la sección extra (materiales / marcas) y la nota de
+    // contacto por WhatsApp.
+    document.querySelector('.catalog-extra')?.setAttribute('hidden', '');
     document.querySelector('.page-hero__contact')?.setAttribute('hidden', '');
 
     const filtered = items.filter(p => p.subcategory === chip.dataset.filter);
