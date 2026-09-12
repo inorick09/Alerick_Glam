@@ -35,8 +35,14 @@ function renderProductCards(grid, items) {
   // se quedarían invisibles para siempre si la lleváramos.
   grid.innerHTML = items.map(p => `
     <article class="product-card">
-      <div class="product-card__img">
+      <div class="product-card__img" data-zoom-image="${p.image}" data-zoom-name="${p.name}">
         <img src="${p.image}" alt="${p.name}" loading="lazy">
+        <span class="product-card__zoom-hint" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
       </div>
       <div class="product-card__body">
         <h3>${p.name}</h3>
@@ -66,6 +72,63 @@ function renderProductCards(grid, items) {
       });
     });
   });
+
+  // clic en la foto de un producto: la amplía en grande (efecto lupa)
+  grid.querySelectorAll('.product-card__img').forEach(imgWrap => {
+    imgWrap.addEventListener('click', () => {
+      openLightbox(imgWrap.dataset.zoomImage, imgWrap.dataset.zoomName);
+    });
+  });
+}
+
+// ---------- Lupa: amplía la foto del producto al hacer clic ----------
+// Crea la ventana emergente una sola vez y la reutiliza para cualquier
+// producto que el usuario abra, en cualquiera de las dos páginas.
+let lightboxEls = null;
+
+function ensureLightbox() {
+  if (lightboxEls) return lightboxEls;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.id = 'lightboxOverlay';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.setAttribute('aria-label', 'Imagen ampliada del producto');
+  overlay.innerHTML = `
+    <figure class="lightbox-overlay__figure">
+      <button type="button" class="lightbox-overlay__close" aria-label="Cerrar">&times;</button>
+      <img class="lightbox-overlay__img" alt="">
+    </figure>
+  `;
+  document.body.appendChild(overlay);
+
+  const img = overlay.querySelector('.lightbox-overlay__img');
+  const closeBtn = overlay.querySelector('.lightbox-overlay__close');
+
+  const close = () => {
+    overlay.classList.remove('is-open');
+    document.body.style.removeProperty('overflow');
+  };
+
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') close();
+  });
+
+  lightboxEls = { overlay, img, close };
+  return lightboxEls;
+}
+
+function openLightbox(src, name) {
+  const { overlay, img } = ensureLightbox();
+  img.src = src;
+  img.alt = name || '';
+  overlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
 }
 
 function renderCatalogPlaceholder(grid, category) {
