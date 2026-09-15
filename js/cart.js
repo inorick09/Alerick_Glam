@@ -138,6 +138,7 @@ function ensureToneModal() {
   overlay.innerHTML = `
     <div class="tone-modal" role="dialog" aria-modal="true" aria-label="Elige un tono">
       <button type="button" class="tone-modal__close" aria-label="Cerrar">&times;</button>
+      <img class="tone-modal__extra-img" alt="" hidden>
       <p class="tone-modal__eyebrow">Elige un tono</p>
       <h3 class="tone-modal__name"></h3>
       <div class="tone-modal__options"></div>
@@ -148,6 +149,7 @@ function ensureToneModal() {
   const nameEl = overlay.querySelector('.tone-modal__name');
   const optionsEl = overlay.querySelector('.tone-modal__options');
   const closeBtn = overlay.querySelector('.tone-modal__close');
+  const extraImgEl = overlay.querySelector('.tone-modal__extra-img');
 
   const close = () => {
     overlay.classList.remove('is-open');
@@ -162,13 +164,40 @@ function ensureToneModal() {
     if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
   });
 
-  toneModalEls = { overlay, nameEl, optionsEl, close };
+  toneModalEls = { overlay, nameEl, optionsEl, close, extraImgEl };
   return toneModalEls;
 }
 
+// Si la foto principal es "ALGO.png", busca "ALGO_2.png" junto a ella —
+// mismo patrón de nombres que usa la lupa del catálogo (catalog.js) para
+// sus fotos extra. Si no existe, el <img> se queda oculto.
+function secondImageSrc(src) {
+  const match = (src || '').match(/^(.*?)(_\d+)?(\.[^./]+)$/);
+  if (!match) return null;
+  const [, base, , ext] = match;
+  return `${base}_2${ext}`;
+}
+
 function openToneModal(product, sourceEl) {
-  const { overlay, nameEl, optionsEl, close } = ensureToneModal();
+  const { overlay, nameEl, optionsEl, close, extraImgEl } = ensureToneModal();
   nameEl.textContent = product.name;
+
+  extraImgEl.hidden = true;
+  extraImgEl.removeAttribute('src');
+  const secondSrc = secondImageSrc(product.image);
+  if (secondSrc) {
+    const probe = new Image();
+    probe.onload = () => {
+      if (extraImgEl.dataset.probeSrc !== secondSrc) return;
+      extraImgEl.src = secondSrc;
+      extraImgEl.alt = product.name;
+      extraImgEl.hidden = false;
+    };
+    probe.onerror = () => {};
+    extraImgEl.dataset.probeSrc = secondSrc;
+    probe.src = secondSrc;
+  }
+
   optionsEl.innerHTML = product.tonos.map(tono => `
     <button type="button" class="tone-modal__option" data-tono="${tono}">${tono}</button>
   `).join('');

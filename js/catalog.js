@@ -73,7 +73,7 @@ function renderProductCards(grid, items) {
       <div class="product-card__body">
         <h3 title="${p.name}">${p.name}</h3>
         <p class="product-card__desc">${p.description || ''}</p>
-        <button type="button" class="product-card__more" hidden>Ver más</button>
+        ${p.category === 'maquillaje' ? '<button type="button" class="product-card__more" hidden>Ver más</button>' : ''}
         <div class="product-card__foot">
           <span class="price">${formatPriceCOP(p.price)}</span>
           <button type="button" class="btn-cart"
