@@ -424,6 +424,20 @@ em {
 .filter-chip:hover { border-color: var(--color-rose); color: var(--color-rose); }
 .filter-chip.is-active { background: var(--color-rose); border-color: var(--color-rose); color: #fff; }
 
+/* Segunda fila de chips (colección/colaboración) — es un filtro
+   independiente del de arriba (tipo de producto), así que lleva una
+   etiqueta corta para diferenciarla. */
+.catalog-filters--colaboracion { margin-top: -14px; }
+.catalog-filters--colaboracion::before {
+  content: "Colección:";
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  margin-right: 2px;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -989,24 +1003,79 @@ em {
 .lightbox-overlay__figure {
   position: relative;
   max-width: min(880px, 92vw);
-  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   transform: scale(0.9);
   transition: transform 0.25s ease;
 }
 .lightbox-overlay.is-open .lightbox-overlay__figure { transform: scale(1); }
 
+.lightbox-overlay__stage {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+}
+
 .lightbox-overlay__img {
   display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 88vh;
+  max-width: 100%;
+  max-height: 72vh;
   object-fit: contain;
   border-radius: 12px;
   background: var(--color-card);
 }
 
+.lightbox-overlay__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(20, 16, 15, 0.55);
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lightbox-overlay__nav:hover { background: rgba(20, 16, 15, 0.8); }
+.lightbox-overlay__nav--prev { left: 12px; }
+.lightbox-overlay__nav--next { right: 12px; }
+
+.lightbox-overlay__thumbs {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 2px;
+}
+.lightbox-overlay__thumb {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+.lightbox-overlay__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lightbox-overlay__thumb:hover { opacity: 0.85; }
+.lightbox-overlay__thumb.is-active { opacity: 1; border-color: var(--color-rose); }
+
 .lightbox-overlay__close {
   position: absolute;
+  z-index: 2;
   top: -18px;
   right: -18px;
   width: 40px;
@@ -1029,7 +1098,119 @@ em {
 @media (max-width: 560px) {
   .lightbox-overlay { padding: 16px; }
   .lightbox-overlay__close { top: -14px; right: -6px; width: 36px; height: 36px; }
+  .lightbox-overlay__nav { width: 36px; height: 36px; font-size: 1.4rem; }
+  .lightbox-overlay__thumb { width: 44px; height: 44px; }
 }
+
+/* ---------- 9d. Selección de tono obligatoria ---------- */
+.tone-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: rgba(20, 16, 15, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.tone-modal-overlay.is-open { opacity: 1; pointer-events: auto; }
+
+.tone-modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 32px 28px 28px;
+  text-align: center;
+  transform: scale(0.92);
+  transition: transform 0.25s ease;
+  box-shadow: 0 30px 60px -24px rgba(20, 16, 15, 0.5);
+}
+.tone-modal-overlay.is-open .tone-modal { transform: scale(1); }
+
+.tone-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-bg-alt);
+  color: var(--color-ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.tone-modal__close:hover { background: var(--color-gold-light); }
+
+.tone-modal__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-rose-deep);
+  margin: 0 0 0.4em;
+}
+.tone-modal__name { margin: 0 0 1.2em; font-size: 1.15rem; }
+
+.tone-modal__options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.tone-modal__option {
+  border: 1.5px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-rose-deep);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.6em 1.3em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.tone-modal__option:hover {
+  background: var(--color-rose);
+  border-color: var(--color-rose);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 560px) {
+  .tone-modal { padding: 28px 20px 24px; }
+}
+
+/* ---------- 9e. Animación al agregar al carrito ---------- */
+.fly-to-cart {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 300;
+  pointer-events: none;
+  transition: transform 0.55s cubic-bezier(.5, 0, .15, 1), opacity 0.55s ease;
+  box-shadow: 0 8px 20px -6px rgba(20, 16, 15, 0.5);
+}
+
+@keyframes cartBump {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.28); }
+  65% { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+.cart-toggle--bump { animation: cartBump 0.4s ease; }
 
 /* ---------- 10. Animación de aparición ---------- */
 .reveal {

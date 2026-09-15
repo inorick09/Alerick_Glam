@@ -26,6 +26,28 @@
 // 4. Guarda el archivo y sube los cambios a GitHub — listo,
 //    ya aparece en la página con su botón "Agregar" funcionando.
 //
+// SI EL PRODUCTO VIENE EN VARIOS TONOS:
+// Agrégale un campo "tonos" con la lista de opciones, así:
+//   tonos: ["Beige claro", "Beige medio", "Beige oscuro"]
+// En ese caso el botón cambia de "Agregar" a "Elegir tono", y antes de
+// meterlo al carrito le pide a la clienta escoger uno de esa lista —
+// no se puede agregar sin elegir. Los productos SIN este campo (la
+// mayoría) se agregan directo, como siempre. No hace falta poner
+// "tonos" si el producto es de un solo color/versión.
+//
+// SI EL PRODUCTO ES DE UNA COLECCIÓN O COLABORACIÓN (Barbie, Bob
+// Esponja, Toy Story, Disney, etc.):
+// Agrégale un campo "colaboracion" con el nombre de esa colección, así:
+//   colaboracion: "Barbie"
+// Es independiente de "subcategory": un producto puede ser "Rostro" y
+// además ser de la colección "Barbie" al mismo tiempo, y en la página
+// aparece filtrable por los dos a la vez. Es texto libre (no hay una
+// lista fija como en subcategory) — solo asegúrate de escribir el
+// mismo texto, con las mismas mayúsculas, en todos los productos de
+// esa colección para que el filtro los agrupe bien. Los productos SIN
+// este campo (los que no son de ninguna colaboración) simplemente no
+// aparecen en ese filtro.
+//
 // Como compras según lo que te piden, no hay control de stock
 // aquí: si un producto ya no lo consigues, simplemente borra su
 // bloque (o coméntalo con /* así */) y desaparece del catálogo.
@@ -42,202 +64,85 @@ const PRODUCTS_MAQUILLAJE = [
   //   image: "images/productos/Maquillaje/Labios/labial-rosa-nude.jpg",
   //   description: "Acabado mate de larga duración, tono rosado nude."
   // },
+  // Ejemplo de producto con varios tonos:
+  // {
+  //   id: "base-aqua-smooth",
+  //   category: "maquillaje",
+  //   name: "Base Aqua Smooth",
+  //   price: 30000,
+  //   image: "images/productos/Maquillaje/Rostro/base-aqua-smooth.jpg",
+  //   description: "Acabado natural, fresca y sin peso.",
+  //   tonos: ["Claro", "Medio", "Oscuro"]
+  // },
 {
-  id: "SET2168",              // texto único, sin espacios
-  category: "maquillaje",              // "maquillaje" o "bisuteria"
-  subcategory: "Cuidado Facial",       // ver lista de tipos arriba
-  name: "Serum Facial Encanto - SET2168",
-  price: 15000,                        // solo el número, sin puntos ni $
-  image: "images/productos/Maquillaje/Cuidado_Facial/SET2168.jpg",
-  description: "Un básico para incluir en tu rutina de cuidado facial. Su textura ligera y fácil de aplicar lo hacen perfecto para usar diariamente y darle a tu piel ese toque de cuidado que se merece."
-},
-{
-  id: "BAQ584",
+  id: "MT2418",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Base Aqua Cobertura Media - BAQ584",
-  price: 30000,
-  image: "images/productos/Maquillaje/Rostro/BAQ584.jpg",
-  description: "La Base Aqua realza tu belleza natural con un acabado luminoso, fresco y sin peso, se funde perfectamente con la piel."
-},
-{
-  id: "BMT1666",
-  category: "maquillaje",
-  subcategory: "Accesorios",
-  name: "Baul Mediano Negro - BMT1666",
-  price: 40000,
-  image: "images/productos/Maquillaje/Accesorios/BMT1666.jpg",
-  description: "Organiza los productos favoritos de maquillaje y cuidado facial con la nueva cosmetiquera Trendy. Es muy amplia e incluye varios compartimentos internos en donde puedes organizar productos pequeños. Viene con separador para una organización óptima de los productos y separadores para organizar las brochas de maquillaje."
-},
-{
-  id: "GCD2283",
-  category: "maquillaje",
-  subcategory: "Cejas",
-  name: "Betún De Cejas Doble Dreams Trendy - GCD2283",
+  name: "Kit Brillo Y Monedero Amigas Barbie",
   price: 10000,
-  image: "images/productos/Maquillaje/Cejas/GCD2283.jpg",
-  description: "Nuestro betún es ideal para maquillar y definir tus cejas. Incluye dos tonos café para resaltar tu mirada con un acabado natural y armonioso. Modo de uso: Puedes usar ambos tonos: el más claro al inicio de la ceja y el más oscuro al final para crear un efecto degradé y obtener un acabado más natural y profesional."
+  image: "images/productos/Maquillaje/Rostro/MT2418.jpg",
+  description: "Brilla con luz propia y lleva todo el estilo de Barbie a donde quiera que vayas. Este kit combina dos glosses sin color cargados con delicados destellos en tonos azul y rosado, acompañados por un práctico monedero pequeño para guardar tus cosas. Es la opción ideal para complementar tus Looks diarios mientras disfrutas de un producto útil y bonito.",
+  colaboracion: "Mattel"
 },
 {
-  id: "BTT2162",
+  id: "HLB2482",
   category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Bolrla Triangular Morada - BTT2162",
-  price: 5000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/BTT2162.jpg",
-  description: "Viene en forma triangular, lo que facilita llegar a zonas como el contorno de ojos y las comisuras de la nariz. Es perfecta para la aplicación de productos en polvo, como polvos sueltos y compactos. Su material es de una felpa suave y acolchada."
+  subcategory: "Labios",
+  name: "Hidratante De Labios Bob Esponja",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/HLB2482.jpg",
+  description: "Dale a tus labios un momento divertido de cuidado mientras combates la resequedad diaria. Esta mascarilla inspirada en Bob Esponja complementa tu rutina ofreciendo una experiencia diferente que ayuda a mantener los labios suaves, hidratados y con una apariencia más saludable.",
+  colaboracion: "Paramount"
 },
 {
-  id: "DY2140",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Borlas Intensamente - Alegria - DY2140",
-  price: 8000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/DY2140.jpg",
-  description: "Descubre la suavidad de nuestras borlas de maquillaje inspiradas en Intensamente 2, perfectas para aplicar y difuminar productos en polvo. Su diseño se adapta a la forma de tu rostro, estas borlas te permiten un acabado profesional en tu maquillaje, asegurando una aplicación uniforme."
-},
-{
-  id: "BMT2271",
+  id: "PSA2483",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Borador de Maquillaje - BMT2271",
+  name: "Polvo Suelto Arenita Bob Esponja",
   price: 15000,
-  image: "images/productos/Maquillaje/Rostro/BMT2271.jpg",
-  description: "Borrar los errores del maquillaje, ahora sí se logra con un borrador. Arregla esos pequeños detalles de tu maquillaje que marcan la diferencia con este plumón borrador de maquillaje, retira hasta las fórmulas más resistentes con pocas pasadas."
+  image: "images/productos/Maquillaje/Rostro/PSA2483.jpg",
+  description: "Sella tus productos cremosos y evita que la base o el corrector se muevan con el paso del tiempo. Este polvo suelto inspirado en Bob Esponja ayuda a fijar el maquillaje dejando un acabado suave y completamente aterciopelado para que la piel luzca uniforme. Su textura micropulverizada se difumina fácilmente y se siente liviana sobre el rostro, mientras que su subtono amarillo ayuda a neutralizar visualmente los tonos fríos, siendo el aliado perfecto para corregir y perfeccionar la zona de la ojera.",
+  colaboracion: "Paramount"
 },
 {
-  id: "BAM2430",
+  id: "Dyt2678",
   category: "maquillaje",
   subcategory: "Labios",
-  name: "Brillo de Labios Mocca Aura - BAM2430",
-  price: 20000,
-  image: "images/productos/Maquillaje/Labios/BAM2430.jpg",
-  description: "Gloss Mocca llega para darle a tus labios un tono elegante, hermoso y en tendencia. Disponible en 6 tonos que van desde moccas claros hasta opciones más intensas y con matices rojizos. Son ideales para complementar cualquier look. Cada tono ofrece un acabado único que realza la belleza natural de los labios."
+  name: "Kit Pizza Planet",
+  price: 35000,
+  image: "images/productos/Maquillaje/Labios/Dyt2678.jpg",
+  description: "Incluye:\n\n1 Brillo de labios que aporta un color natural.\n1 Tinta de textura cremosa color terracota.\n1 Tinta acuosa color vino.\n1 Gloss en formato colapsible que aporta color rojizo.\n1 Una cosmetiquera con ganchito para llevar a todas partes.",
+  colaboracion: "Disney"
 },
 {
-  id: "BAT1878",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo De Labios Aura - BAT1878",
-  price: 20000,
-  image: "images/productos/Maquillaje/Labios/BAT1878.jpg",
-  description: "El gloss más viral de internet! El Brillo de Labios Aura Trendy está diseñado para quienes buscan unos labios perfectos con un acabado tipo espejo y son amates al acabado jugoso del gloss. Con su aplicador de gran tamaño y textura ligera, este brillo de labios se desliza suavemente sin dejar sensación pesada."
-},
-{
-  id: "BHG1893",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo De Labios Hologlam - BHG1893",
-  price: 5000,
-  image: "images/productos/Maquillaje/Labios/BHG1893.jpg",
-  description: "Hologlam es la mezcla perfecta entre glamour y brillo. Vienen 4 colores, el que te llegue, te encantará. Los tonos varían entre rosas, violetas y dorados que le dan un acabado tornasol y jugoso a cualquier maquillaje de labios. Contienen un leve aroma a chicle."
-},
-{
-  id: "BPT1963",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo De Labios Lip Oil Pretty Things - BPT1963",
-  price: 15000,
-  image: "images/productos/Maquillaje/Labios/BPT1963.jpg",
-  description: "Su pigmentación es construible, así que entre más apliques más se notará el color. Tienen una textura suave y ligera, así que se difuminan suavemente sobre tus labios. Son 6 tonos diferentes, elige tu color favorito. Sus colores son rojizos y uno violeta, ideales para aportar un leve color. Su textura es espesa, así que se esparce sobre tus labios fácilmente."
-},
-{
-  id: "HKS1551",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Lip Balm Kisses - HKS1551",
-  price: 8000,
-  image: "images/productos/Maquillaje/Labios/HKS1551.jpg",
-  description: "Los lip balm Kisses son la clave para lograr unos labios suaves, brillantes y con ese acabado jugoso que nunca pasa de moda. Vienen en 2 referencias que no aportan color, realza la belleza natural de tus labios, aportando un brillo hermoso y una apariencia saludable. Su textura es cómoda, ligera y agradable de llevar durante el día, dejando los labios con una apariencia saludable y luminosa."
-},
-{
-  id: "BLS2258",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Lip Oil Sandia - BLS2258",
-  price: 15000,
-  image: "images/productos/Maquillaje/Labios/BLS2258.jpg",
-  description: "Son de textura suave, ligera y dejan una fragancia a sandía que te encantará. Su aplicador de silicona es perfecto para utilizar sobre tus mejores lip combos, esto evita que ensucies o alteres el color del gloss. No dejan sensación pegajosa. Aportan una sensación de hidratación que mantiene tus labios suaves y luminosos."
-},
-{
-  id: "HL15",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Magico Honey - HL15",
-  price: 6000,
-  image: "images/productos/Maquillaje/Labios/HL15.jpg",
-  description: "abios hermosos, con color en segundos y una sensación hidratante desde la primera aplicación. Este brillo mágico reacciona al pH natural de tus labios, creando un tono único que se adapta a ti y realza tu color natural. Su fórmula enriquecida con aceites ayuda a mantener los labios suaves e hidratados, mientras aporta un acabado luminoso y fresco."
-},
-{
-  id: "BDC1848",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Para Niñas Dolly Chic - BDC1848",
-  price: 10000,
-  image: "images/productos/Maquillaje/Labios/BDC1848.jpg",
-  description: "Brillos Dolly Chic para las más pequeñas de la casa. Este kit x 2 brillitos es perfecto para que sus labios luzcan hermosos con un toque de brillo y color suave. Incluye dos tonos, uno lila y otro rosa, ambos cargados con destellitos sutiles y acompañados de un delicioso aroma muy suave que les encantará. Aplícalo directamente sobre los labios para un acabado lindo e instantáneo. Pueden alternar el tono rosa o el lila según sus prendas favoritas del día."
-},
-{
-  id: "RLG1846",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Red Lips - RLG1846",
-  price: 8000,
-  image: "images/productos/Maquillaje/Labios/RLG1846.jpg",
-  description: "Un gloss con color para darle protagonismo a tus labios. Es perfecto para complementar tus maquillajes. Vienen 6 tonos entre nudes, rojos y terracotas. Se envían surtidos. Son de una textura suave, se adhiere muy bien sin dejar sensación pesada o grasosa. Tienen un aroma deli!"
-},
-{
-  id: "B177",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Retráctil Beauty Glazed - B177",
-  price: 15000,
-  image: "images/productos/Maquillaje/Labios/B177.jpg",
-  description: "No sufras más porque tu labial favorito se rompió, Con el Lip Plump de Beauty Glazed podrás mantener a raya tu labial favorito evitando que se quiebre. Solo debes dar click a medida que vas gastando el producto y saldrá como nuevo. Esta fórmula cremosa y suave te dará un brillo y suavidad excepcional. Deja una sensación de hidratación inmediata y cero pegajosa. Mantiene su brillo durante horas. Tonos de excelente pigmentación y calidad."
-},
-{
-  id: "BRK1406",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Retro Kisses - BRK1406",
-  price: 8000,
-  image: "images/productos/Maquillaje/Labios/BRK1406.jpg",
-  description: "¡Labios irresistibles, besables y jugositos! El Gloss Retro Kisses es todo lo que buscas. Vienen en dos tonalidades, una con destellos tornasol y otra con destellos rosas. Su textura es suave y no se siente pesada. Sientes hidratados tus labios una vez lo aplicas. Tiene un aroma a dulce encantador. Aplícalo sobre labiales mates o solo, como lo prefieras."
-},
-{
-  id: "SL13",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Voluminizador Smoothie Lips - SL13",
-  price: 12000,
-  image: "images/productos/Maquillaje/Labios/SL13.jpg",
-  description: "Este producto ES NORMAL que sientas alguna picazón al aplicarlo, por eso debes ser muy cuidadoso en su aplicación y si es la primera vez que lo pruebas te recomendamos usar poco producto y esperar alrededor de un minuto, allí vas sintiendo la sensación y tus labios en transcurso de 5 minutos quedarán con el resultado final."
-},
-{
-  id: "DY2099",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillos De Los Recuerdos Intensamente - DY2099",
-  price: 5000,
-  image: "images/productos/Maquillaje/Labios/DY2099.jpg",
-  description: "Nos inspiramos en Intensamente y en cada uno de sus icónicos personajes. Cada brillo representa una emoción, ¡Elige tu favorito! Su diferencia es que varían sus tonos entre rosaditos y transparentes con una leve escarchita. Su fragancia te encantará. Aporta un leve tono rosa a tus labios y viene con destellos dorados que le darán un plus a cualquier maquillaje. Perfecto para llevar en la cosmetiquera o bolso."
-},
-{
-  id: "P213",
+  id: "Dyt2512",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Brocha Individual Doble Fibra - P213",
-  price: 1000,
-  image: "images/productos/Maquillaje/Accesorios/P213.jpg",
-  description: "¡La brocha que hace un dúo excepcional con los productos en crema! Brocha de doble fibra para aplicar productos cremosos. Sus cerdas amplias te permitirán aplicar rubores e iluminadores líquidos para una piel luminosa efecto glowy. Funciona perfectamente para aplicar productos de skincare si no te gusta hacerlo con tus dedos como sueros o primers. Está fabricada con pelo sintético en fibra de Nylon y mango en madera."
+  name: "Monedero Lotso",
+  price: 25000,
+  image: "images/productos/Maquillaje/Accesorios/Dyt2512.jpg",
+  description: "Un 3 en 1 que te facilita tu look. Lleva tus esenciales de maquillaje a todas partes con el encanto de Lotso. Este práctico kit incluye un monedero adorable y muy amplio, un brillo natural para tus labios y un rubor en polvo en tono rosa que aporta brillo muy sutil sobre las mejillas, combina funcionalidad y estilo en un accesorio ideal para el día a día.",
+  colaboracion: "Disney"
 },
 {
-  id: "P206",
+  id: "Dyt2552",
   category: "maquillaje",
-  subcategory: "Accesorios",
-  name: "Brocha Individual Ojo Plana - P206",
-  price: 6000,
-  image: "images/productos/Maquillaje/Accesorios/P206.jpg",
-  description: "¡Cortes de cuenca como toda una profesional en el makeup! Brocha para crear looks que requieren precisión. Gracias a la forma plana y delgada puedes realizar cortes de cuenca perfectos. Utilízalas para tus sombras satinadas aplicando a toquecitos y darle una mayor saturación al producto. Está fabricada con pelo sintético en fibra de Nylon y mango en madera."
+  subcategory: "Rostro",
+  name: "Mini Rubor Lotso",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/Dyt2552.jpg",
+  description: "Un rubor satinado que tiene que ser parte de tu colección. Dale a tus mejillas un toque de dulzura y frescura con el Mini Rubor Lotso. Su textura suave y ligera se difumina fácilmente sobre la piel, aportando un color natural y luminoso que realza la belleza del rostro y brinda una apariencia saludable y radiante.",
+  tonos: ["01", "02"],
+  colaboracion: "Disney"
+},
+{
+  id: "Dyt2551",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Fijador Toy Story",
+  price: 25000,
+  image: "images/productos/Maquillaje/Rostro/Dyt2551.jpg",
+  description: "Lleva tu maquillaje al infinito y más allá con el fijador Toy Story.\nSu innovadora fórmula en gel se transforma en una ligera bruma líquida al salir del spray, permitiendo una aplicación uniforme y cómoda sobre la piel.\nDiseñado para complementar tu rutina de maquillaje, ayuda a mantener una apariencia fresca y favorece un acabado más integrado y natural semi mate, sin sensación pesada.",
+  colaboracion: "Disney"
 },
 ];

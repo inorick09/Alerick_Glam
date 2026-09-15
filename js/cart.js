@@ -65,7 +65,146 @@ function addToCart({ id, name, price, image }) {
   }
   saveCart(cart);
   renderCart();
-  openCart();
+  // A propósito no abrimos el carrito aquí: la clienta sigue viendo el
+  // catálogo y ve la animación de abajo confirmando que se agregó; ella
+  // decide cuándo abrir el carrito para revisar o pagar.
+}
+
+// ---------- Animación al agregar ----------
+// Una miniatura de la foto "vuela" desde donde se hizo clic hasta el
+// ícono del carrito, y el ícono rebota al llegar — así la clienta ve
+// que sí se agregó sin que el carrito se le abra encima.
+function flyToCart(sourceEl, imageSrc) {
+  const cartBtn = document.getElementById('cartToggle');
+  if (!cartBtn || !imageSrc) return;
+
+  const cartRect = cartBtn.getBoundingClientRect();
+  const startRect = sourceEl?.getBoundingClientRect();
+  const origin = (startRect && startRect.width > 0 && startRect.height > 0)
+    ? startRect
+    : { left: window.innerWidth / 2 - 24, top: window.innerHeight / 2 - 24, width: 48, height: 48 };
+
+  const flyer = document.createElement('img');
+  flyer.src = imageSrc;
+  flyer.className = 'fly-to-cart';
+  flyer.style.left = `${origin.left + origin.width / 2 - 24}px`;
+  flyer.style.top = `${origin.top + origin.height / 2 - 24}px`;
+  document.body.appendChild(flyer);
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const dx = (cartRect.left + cartRect.width / 2) - (origin.left + origin.width / 2);
+      const dy = (cartRect.top + cartRect.height / 2) - (origin.top + origin.height / 2);
+      flyer.style.transform = `translate(${dx}px, ${dy}px) scale(0.15)`;
+      flyer.style.opacity = '0.3';
+    });
+  });
+
+  let cleaned = false;
+  const cleanup = () => {
+    if (cleaned) return;
+    cleaned = true;
+    flyer.remove();
+    pulseCartIcon();
+  };
+  flyer.addEventListener('transitionend', cleanup, { once: true });
+  // Respaldo por si el navegador no dispara transitionend (pestaña en
+  // segundo plano, elemento removido, etc.) — la miniatura no se queda pegada.
+  setTimeout(cleanup, 900);
+}
+
+function pulseCartIcon() {
+  const cartBtn = document.getElementById('cartToggle');
+  if (!cartBtn) return;
+  cartBtn.classList.remove('cart-toggle--bump');
+  void cartBtn.offsetWidth; // fuerza reflow para poder repetir la animación
+  cartBtn.classList.add('cart-toggle--bump');
+  cartBtn.addEventListener('animationend', () => cartBtn.classList.remove('cart-toggle--bump'), { once: true });
+}
+
+// ---------- Selección de tono obligatoria ----------
+// Si un producto trae "tonos" en products.js (una lista de opciones),
+// el botón "Agregar" no lo mete directo al carrito: primero abre esta
+// ventanita para que la clienta elija uno. Los productos sin "tonos"
+// siguen agregándose igual que siempre, sin este paso de más.
+let toneModalEls = null;
+
+function ensureToneModal() {
+  if (toneModalEls) return toneModalEls;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'tone-modal-overlay';
+  overlay.id = 'toneModalOverlay';
+  overlay.innerHTML = `
+    <div class="tone-modal" role="dialog" aria-modal="true" aria-label="Elige un tono">
+      <button type="button" class="tone-modal__close" aria-label="Cerrar">&times;</button>
+      <p class="tone-modal__eyebrow">Elige un tono</p>
+      <h3 class="tone-modal__name"></h3>
+      <div class="tone-modal__options"></div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const nameEl = overlay.querySelector('.tone-modal__name');
+  const optionsEl = overlay.querySelector('.tone-modal__options');
+  const closeBtn = overlay.querySelector('.tone-modal__close');
+
+  const close = () => {
+    overlay.classList.remove('is-open');
+    document.body.style.removeProperty('overflow');
+  };
+
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+  });
+
+  toneModalEls = { overlay, nameEl, optionsEl, close };
+  return toneModalEls;
+}
+
+function openToneModal(product, sourceEl) {
+  const { overlay, nameEl, optionsEl, close } = ensureToneModal();
+  nameEl.textContent = product.name;
+  optionsEl.innerHTML = product.tonos.map(tono => `
+    <button type="button" class="tone-modal__option" data-tono="${tono}">${tono}</button>
+  `).join('');
+  optionsEl.querySelectorAll('.tone-modal__option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      addToCart({
+        id: `${product.id}::${btn.dataset.tono}`,
+        name: `${product.name} — Tono: ${btn.dataset.tono}`,
+        price: product.price,
+        image: product.image
+      });
+      close();
+      flyToCart(sourceEl, product.image);
+    });
+  });
+
+  overlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+// Punto de entrada del botón "Agregar"/"Elegir tono" de cada tarjeta:
+// decide si el producto necesita que elijan tono primero o si se puede
+// agregar directo. "sourceEl" es el botón que se hizo clic, para que la
+// animación de abajo sepa desde dónde "volar" hasta el carrito.
+function addProductToCart(product, sourceEl) {
+  if (Array.isArray(product.tonos) && product.tonos.length > 0) {
+    openToneModal(product, sourceEl);
+    return;
+  }
+  addToCart({
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    image: product.image
+  });
+  flyToCart(sourceEl, product.image);
 }
 
 function changeQty(id, delta) {
@@ -212,6 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: btn.dataset.price,
         image: btn.dataset.image
       });
+      flyToCart(btn, btn.dataset.image);
     });
   });
 
