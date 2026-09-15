@@ -1272,9 +1272,8 @@ em {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-rose-deep);
-  margin: 0 0 0.4em;
+  margin: 0 0 1.2em;
 }
-.tone-modal__name { margin: 0 0 1.2em; font-size: 1.15rem; }
 
 .tone-modal__options {
   display: flex;

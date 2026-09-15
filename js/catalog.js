@@ -79,7 +79,7 @@ function renderProductCards(grid, items) {
           <button type="button" class="btn-cart"
                   data-id="${p.id}" data-name="${p.name}"
                   data-price="${p.price}" data-image="${p.image}">
-            ${Array.isArray(p.tonos) && p.tonos.length > 0 ? 'Elegir tono' : 'Agregar'}
+            Agregar
           </button>
         </div>
       </div>

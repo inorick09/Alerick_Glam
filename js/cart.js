@@ -136,17 +136,15 @@ function ensureToneModal() {
   overlay.className = 'tone-modal-overlay';
   overlay.id = 'toneModalOverlay';
   overlay.innerHTML = `
-    <div class="tone-modal" role="dialog" aria-modal="true" aria-label="Elige un tono">
+    <div class="tone-modal" role="dialog" aria-modal="true" aria-label="Tonos disponibles">
       <button type="button" class="tone-modal__close" aria-label="Cerrar">&times;</button>
       <img class="tone-modal__extra-img" alt="" hidden>
-      <p class="tone-modal__eyebrow">Elige un tono</p>
-      <h3 class="tone-modal__name"></h3>
+      <p class="tone-modal__eyebrow">Tonos disponibles:</p>
       <div class="tone-modal__options"></div>
     </div>
   `;
   document.body.appendChild(overlay);
 
-  const nameEl = overlay.querySelector('.tone-modal__name');
   const optionsEl = overlay.querySelector('.tone-modal__options');
   const closeBtn = overlay.querySelector('.tone-modal__close');
   const extraImgEl = overlay.querySelector('.tone-modal__extra-img');
@@ -164,7 +162,7 @@ function ensureToneModal() {
     if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
   });
 
-  toneModalEls = { overlay, nameEl, optionsEl, close, extraImgEl };
+  toneModalEls = { overlay, optionsEl, close, extraImgEl };
   return toneModalEls;
 }
 
@@ -179,8 +177,7 @@ function secondImageSrc(src) {
 }
 
 function openToneModal(product, sourceEl) {
-  const { overlay, nameEl, optionsEl, close, extraImgEl } = ensureToneModal();
-  nameEl.textContent = product.name;
+  const { overlay, optionsEl, close, extraImgEl } = ensureToneModal();
 
   extraImgEl.hidden = true;
   extraImgEl.removeAttribute('src');
