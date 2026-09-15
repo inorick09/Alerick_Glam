@@ -297,6 +297,65 @@ em {
   margin: 2.2em auto 0;
 }
 .page-hero .catalog-filters { margin: 20px 0 0; }
+.page-hero .catalog-search { margin: 24px auto 0; }
+
+/* ---------- 4c. Buscador del catálogo (lupa) ---------- */
+.catalog-search {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto 24px;
+}
+.catalog-search__icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  color: var(--color-ink-soft);
+  pointer-events: none;
+}
+.catalog-search__input {
+  width: 100%;
+  padding: 0.75em 2.6em;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 999px;
+  background: var(--color-card);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.catalog-search__input::placeholder { color: var(--color-ink-soft); opacity: 0.85; }
+.catalog-search__input::-webkit-search-cancel-button,
+.catalog-search__input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+.catalog-search__input:focus {
+  outline: none;
+  border-color: var(--color-rose);
+  box-shadow: 0 0 0 3px rgba(194, 65, 107, 0.15);
+}
+.catalog-search__clear {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-ink-soft);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.catalog-search__clear:hover { background: rgba(43, 22, 32, 0.08); color: var(--color-ink); }
 
 /* ---------- 5. Cómo comprar (pasos) ---------- */
 .steps__list {
@@ -608,7 +667,53 @@ em {
 .tag--aqua { background: var(--color-aqua); }
 
 .product-card__body { padding: 22px; }
-.product-card__body p { color: var(--color-ink-soft); font-size: 0.92rem; margin: 0 0 1.2em; }
+
+/* Título y descripción a una cantidad fija de líneas (con "…" si el
+   texto no cabe) para que todas las tarjetas queden del mismo alto,
+   sin importar si el nombre o la descripción son más largos que otros. */
+.product-card__body h3 {
+  height: 2.16em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-card__body p {
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+  height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.product-card__body p.is-expanded {
+  height: auto;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+.product-card__more {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 1.2em;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-rose-deep);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.product-card__more:hover { color: var(--color-rose); }
 
 .product-card__foot {
   display: flex;

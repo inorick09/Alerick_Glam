@@ -6,17 +6,16 @@
 // Si todavía no hay productos en esa categoría, no toca nada.
 //
 // Si además existen #catalogFilters y/o #catalogFiltersColaboracion en
-// el HTML, arma dos grupos de chips INDEPENDIENTES entre sí:
+// el HTML, arma dos grupos de chips que NO se combinan entre sí:
 //   - #catalogFilters          → tipo de producto (campo subcategory)
 //   - #catalogFiltersColaboracion → colección/colaboración (campo colaboracion)
-// Un producto puede tener los dos campos a la vez (ej: subcategory
-// "Rostro" + colaboracion "Barbie"). Los chips se combinan: si eliges
-// un chip de cada grupo, solo se muestran los productos que cumplen
-// ambos; si solo eliges uno, filtra solo por ese. Volver a hacer clic
-// en el chip activo de un grupo lo desactiva. Solo aparecen los
-// valores que ya tienen productos cargados. Mientras haya al menos un
-// grupo de chips, el catálogo empieza sin productos visibles: solo se
-// muestran al elegir un chip.
+// Elegir un chip de un grupo desactiva el que estuviera elegido en el
+// otro grupo — solo un filtro manda a la vez, nunca los dos juntos.
+// Volver a hacer clic en el chip activo lo desactiva y vuelve al
+// catálogo sin filtrar. Solo aparecen los valores que ya tienen
+// productos cargados. Mientras haya al menos un grupo de chips, el
+// catálogo empieza sin productos visibles: solo se muestran al elegir
+// un chip.
 // ============================================
 
 // Orden fijo en el que deben aparecer los chips de filtro, por
@@ -36,6 +35,26 @@ function formatPriceCOP(value) {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
 }
 
+// Quita tildes/mayúsculas para que la búsqueda encuentre "PLANCHA" con
+// "plancha" o "Rímel" con "rimel", sin importar cómo lo escriba la clienta.
+function normalizeSearchText(str) {
+  return (str || '')
+    .toString()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '');
+}
+
+// El nombre del producto debe contener CADA palabra escrita en la
+// búsqueda (en cualquier orden) — así "labial mate" encuentra
+// "Labial Mate Trendy" pero no "Labial Trendy" a secas.
+function matchesSearch(name, query) {
+  const words = normalizeSearchText(query).trim().split(/\s+/).filter(Boolean);
+  if (words.length === 0) return true;
+  const normalizedName = normalizeSearchText(name);
+  return words.every(word => normalizedName.includes(word));
+}
+
 function renderProductCards(grid, items) {
   // Sin la clase "reveal": esas tarjetas las observa script.js una sola
   // vez al cargar la página, antes de que este script las cree, así que
@@ -52,8 +71,9 @@ function renderProductCards(grid, items) {
         </span>
       </div>
       <div class="product-card__body">
-        <h3>${p.name}</h3>
-        <p>${p.description || ''}</p>
+        <h3 title="${p.name}">${p.name}</h3>
+        <p class="product-card__desc">${p.description || ''}</p>
+        <button type="button" class="product-card__more" hidden>Ver más</button>
         <div class="product-card__foot">
           <span class="price">${formatPriceCOP(p.price)}</span>
           <button type="button" class="btn-cart"
@@ -82,6 +102,25 @@ function renderProductCards(grid, items) {
   grid.querySelectorAll('.product-card__img').forEach(imgWrap => {
     imgWrap.addEventListener('click', () => {
       openLightbox(imgWrap.dataset.zoomImage, imgWrap.dataset.zoomName);
+    });
+  });
+
+  // Las descripciones se recortan a 3 líneas (ver CSS) para que todas
+  // las tarjetas queden del mismo tamaño. Si el texto de un producto sí
+  // se corta, aparece su botón "Ver más" — si el texto ya cabía completo
+  // en esas 3 líneas, el botón se queda oculto (no hace falta).
+  grid.querySelectorAll('.product-card__desc').forEach(desc => {
+    if (desc.scrollHeight > desc.clientHeight + 1) {
+      const moreBtn = desc.nextElementSibling;
+      if (moreBtn?.classList.contains('product-card__more')) moreBtn.hidden = false;
+    }
+  });
+
+  grid.querySelectorAll('.product-card__more').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const desc = btn.previousElementSibling;
+      const expanded = desc.classList.toggle('is-expanded');
+      btn.textContent = expanded ? 'Ver menos' : 'Ver más';
     });
   });
 }
@@ -363,12 +402,13 @@ document.addEventListener('DOMContentLoaded', () => {
   pagerEl.hidden = true;
   grid.insertAdjacentElement('afterend', pagerEl);
 
-  // Estado de los dos filtros — son independientes, pero se combinan
-  // (AND) cuando los dos tienen un valor elegido.
-  const state = { subcategory: null, colaboracion: null };
+  // Estado de los dos filtros de chip — nunca los dos a la vez: elegir
+  // uno limpia el otro (ver más abajo) — más la búsqueda por nombre, que
+  // sí se combina con cualquiera de los dos (afina lo que ya esté filtrado).
+  const state = { subcategory: null, colaboracion: null, search: '' };
 
   const applyFilters = () => {
-    const hasFilter = state.subcategory || state.colaboracion;
+    const hasFilter = state.subcategory || state.colaboracion || state.search.trim();
 
     if (!hasFilter) {
       // Sin ningún chip activo: se vuelve al estado inicial, con el
@@ -391,7 +431,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filtered = items.filter(p =>
       (!state.subcategory || p.subcategory === state.subcategory) &&
-      (!state.colaboracion || p.colaboracion === state.colaboracion)
+      (!state.colaboracion || p.colaboracion === state.colaboracion) &&
+      matchesSearch(p.name, state.search)
     );
     renderPage(grid, pagerEl, filtered, 1);
   };
@@ -399,16 +440,61 @@ document.addEventListener('DOMContentLoaded', () => {
   const subcategoryValues = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
   const colaboracionValues = getPresentFilterValues(items, 'colaboracion');
 
+  const filtersElSubcategory = document.getElementById('catalogFilters');
+  const filtersElColaboracion = document.getElementById('catalogFiltersColaboracion');
+
+  // Quita el chip activo (si hay uno) del otro grupo, para que los dos
+  // grupos nunca filtren a la vez.
+  const clearActiveChip = filtersEl => {
+    filtersEl?.querySelectorAll('.filter-chip.is-active').forEach(b => b.classList.remove('is-active'));
+  };
+
   const hasSubcategoryFilter = setupFilterGroup(
-    document.getElementById('catalogFilters'),
+    filtersElSubcategory,
     subcategoryValues,
-    value => { state.subcategory = value; applyFilters(); }
+    value => {
+      state.subcategory = value;
+      if (value) {
+        state.colaboracion = null;
+        clearActiveChip(filtersElColaboracion);
+      }
+      applyFilters();
+    }
   );
   const hasColaboracionFilter = setupFilterGroup(
-    document.getElementById('catalogFiltersColaboracion'),
+    filtersElColaboracion,
     colaboracionValues,
-    value => { state.colaboracion = value; applyFilters(); }
+    value => {
+      state.colaboracion = value;
+      if (value) {
+        state.subcategory = null;
+        clearActiveChip(filtersElSubcategory);
+      }
+      applyFilters();
+    }
   );
+
+  // Buscador por nombre (la lupa): funciona sola, sin necesidad de
+  // elegir antes un chip, y se combina con el chip activo si hay uno.
+  const searchInput = document.getElementById('catalogSearch');
+  const searchClear = document.getElementById('catalogSearchClear');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      state.search = searchInput.value;
+      if (searchClear) searchClear.hidden = state.search.trim() === '';
+      applyFilters();
+    });
+  }
+  if (searchClear) {
+    searchClear.addEventListener('click', () => {
+      state.search = '';
+      searchInput.value = '';
+      searchClear.hidden = true;
+      applyFilters();
+      searchInput.focus();
+    });
+  }
 
   // Si hay al menos un grupo de chips, el catálogo empieza sin
   // productos visibles: solo se muestran al elegir uno. Si no hay
