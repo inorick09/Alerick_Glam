@@ -395,6 +395,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const category = grid.dataset.category;
   const items = PRODUCTS.filter(p => p.category === category);
+  // Solo maquillaje va en orden alfabético por nombre — bisutería se queda
+  // en el orden en que aparece en products.js.
+  if (category === 'maquillaje') {
+    items.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
+  }
   if (items.length === 0) return;
 
   const pagerEl = document.createElement('div');
