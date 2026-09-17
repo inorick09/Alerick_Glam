@@ -704,4 +704,547 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Rostro/WGT1652.jpg",
   description: "¡El iluminador le agrega ese toque mágico a tu maquillaje de rostro!\n\nUnas mejillas perceptibles y perfectas con tonos satinados.\nUn producto en donde se combinan 4 tonos entre rosas, dorados y un toque de blanco.\nEs muy versátil, ya que le queda bien a todo tipo de piel.\nAl ser mineralizado, sus partículas dan un glow extra, ese que tanto te gusta.\nSu pigmentación es increíble."
 },
+{
+  id: "BLT2219",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Mágico Groovy - BLT2219",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/BLT2219.jpg",
+  description: "¡El brillo mágico que nunca pasa de moda! Este gloss reacciona al pH natural de tus labios, creando un tono rosado que puede ir de suave a moderado según cada persona, para un resultado único y personalizado. Son 2 tonos, ambos con ese acabado rosita. Su textura ligera tipo lip oil brinda una sensación cómoda, suave e hidratante, mientras sus delicados destellos aportan un brillo hermoso que resalta los labios sin sentirse pesado. Además, cuenta con un práctico aplicador de silicona, ideal para usar solo o sobre tus labiales y tintas favoritas para crear lip combos espectaculares. Un imprescindible para quienes aman los labios brillantes, jugosos y con un toque de magia."
+},
+{
+  id: "Dyt2648",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Labial Doble Vaquero Toy Story - Dyt2648",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Dyt2648.jpg",
+  description: "Dos formas de expresar tu estilo en un solo producto. El Labial Doble Toy Story combina color y versatilidad para crear diferentes looks, permitiéndote mezclar el acabado que mejor se adapte a cada ocasión. Su práctica presentación reúne dos opciones en un solo producto, por un costado encontrarás un labial semi mate y por el otro el mismo tono pero con acabado satinado, ideal para acompañarte desde el día hasta la noche con comodidad y personalidad. Disponible en 3 tonos, rosado, café y uno naranja. Inspirado en el mágico universo de Toy Story, es perfecto para quienes disfrutan experimentar con su maquillaje y llevar siempre una alternativa para complementar cualquier estilo.",
+  tonos: ["01", "02", "03"],
+  colaboracion: "Disney"
+},
+{
+  id: "Dyt2683",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Lip Balm Glitter Ham - Dyt2683",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Dyt2683.jpg",
+  description: "Mágico desde el empaque hasta el color. Consiente tus labios con color  y un delicado toque de brillo. El Lip Balm Ham combina cuidado, belleza e innovación gracias a su textura de gelatina; son 3 tonos diferentes en su barra, pero el color es el mismo. Te ayuda a mantener los labios suaves, cómodos y con una apariencia saludable. Su textura ligera se desliza fácilmente, proporcionando una sensación confortable y un acabado natural ideal para cualquier ocasión.",
+  tonos: ["02", "03"],
+  colaboracion: "Disney"
+},
+{
+  id: "BLT2222",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Gloss Retro Glow - BLT2222",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/BLT2222.jpg",
+  description: "¡El gloss con aroma a fresa que llevarás en tu cartera siempre!\n\nMantén tus labios jugosos y de apariencia saludable con los gloss retro Glow.\nSu fórmula es suave y ligera. Perfectos para el diario.\nNo da sensación pegajosa y no son pesados. Aportan un leve color rosita, perfecto para combinar con tus labiales o tintas favoritas y crear un lip combo increíble.\nTienen una fragancia frutal dulce y ligera.\nSu aplicador es ideal para que retoques el brillo durante el día sin manchas.",
+  tonos: ["01", "02"]
+},
+{
+  id: "Gcg2577",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Gloss Cafe Garden - Gcg2577",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/Gcg2577.jpg",
+  description: "- El aliado perfecto para lograr unos labios con un tono cálido, elegante y versátil.\n- El tono café, protagonista de las tendencias actuales, se ha convertido en un imprescindible por su capacidad de realzar cualquier look, desde los más naturales hasta los más sofisticados.\n -Aporta profundidad y un estilo moderno que favorece todos los tonos de piel.\n- Su acabado brillante realza el color natural de los labios, dejando un efecto luminoso y jugoso. Además, su textura es cómoda, ligera y no pegajosa, permitiendo una aplicación uniforme. Perfecto para usar solo o sobre tu labial favorito para potenciar el color."
+},
+{
+  id: "DYT2571",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Furia - DYT2571",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/DYT2571.jpg",
+  description: "- La Tinta de Labios Furia de Trendy está diseñada para quienes aman un color intenso con un acabado hermoso y duradero.\n- Su textura ligeramente oleosa permite que se deslice con facilidad, logrando una aplicación uniforme sin sensación pesada ni pegajosa.\n- Aporta un tono vibrante que se fija en los labios dejando un efecto natural.\n- Perfecta para usar sola con acabado difuminado o como base para potenciar tu gloss favorito.\n- Es la tinta perfecta para lograr looks versátiles, en tendencia y con la actitud Furia que te encanta.",
+  colaboracion: "Disney"
+},
+{
+  id: "BTT2221",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Voluminizador Boutique - BTT2221",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/BTT2221.jpg",
+  description: "Es ideal para dar volumen de forma natural. Su fórmula ligera ofrece un efecto voluminizador suave. Cuenta con aplicador de silicona, que permite una aplicación uniforme, precisa y delicada, adaptándose perfectamente a la forma de los labios. Disponible en tonos transparentes y un poco más rojizos, perfectos para el uso diario o para complementar cualquier look. Producto no apto para niñas menores de 13 años."
+},
+{
+  id: "DYT2572",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Voluminizador Furia - DYT2572",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/DYT2572.jpg",
+  description: "¡Tu favorito ahora en versión individual!\n\n- Brillo labial voluminizador con brillitos sutiles que aportan un acabado luminoso y hermoso.\n- Su fórmula genera un ligero cosquilleo que ayuda a dar la apariencia de labios más grandes y definidos.\n- Aporta un leve tono rojizo casi transparente, perfecto para realzar el color natural de los labios sin recargarlos.\n- Ideal para usar solo o sobre tu labial favorito y lograr un efecto jugoso y voluminoso.\n- El ligero picor es normal y forma parte del efecto voluminizador.",
+  colaboracion: "Disney"
+},
+{
+  id: "BHC2273",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Llavero Hippie Chic - BHC2273",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/BHC2273.jpg",
+  description: "Dale brillo a tus labios y estilo a tus accesorios con este gloss, que incluye un llavero metálico decorativo ideal para colgar en tu bolso, llaves o tener en tu cosmetiquera.\nSu fórmula ligera aporta un acabado brillante con destellos y deja los labios con un look fresco y divertido.\n\nGloss labial con acabado brillante y efecto glitter.\nTextura suave y fácil de aplicar.\n\nDos tonos disponibles: uno rosado y uno oro rosa perfectos que aportan unos destellos sutiles."
+},
+{
+  id: "KPG2087",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Lip Combo Pink And Gold - KPG2087",
+  price: 12000,
+  image: "images/productos/Maquillaje/Labios/KPG2087.jpg",
+  description: "Un lip combo que será tu compañía a donde quiera que vayas gracias a su tamaño. Es perfecto para darle personalidad a tus labios, dar volumen óptico, definir el contorno y lograr que el color dure mucho más tiempo. Contiene dos productos: un delineador y un gloss, con el que podrás crear un efecto degradado. Es pequeño pero poderoso en tus labios. Gloss de textura suave que no deja sensación pegajosa. Lápiz delineador de punta tajable y fórmula cremosa de excelente pigmentación. Son dos referencias con tonos rosita y nude; cada uno incluye los dos productos.",
+  tonos: ["02", "03"]
+},
+{
+  id: "Dy2105",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Twist Villanos - Dy2105",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Dy2105.jpg",
+  description: "Los brillos pueden transformar cualquier look así como lo harán los de la nueva colección inspirada en Villanos que le dan el toque a las historias, ahora también pueden darte ese toque de poder y encanto que necesitas.\n\n- ¡3 tonos encantadores para que elijas tu favorito!\n- Tus villanos favoritos se unen para darle un acabado mágico a tus labios.\n- Su textura suave y ligera se difumina a la perfección.\n- Tonos rositas con leves destellos que aportan un acabado más jugoso y suave a tus labios.\n- Diseños únicos que llamarán la atención donde quieras que vayas.",
+  tonos: ["Hades", "Queen", "Úrsula"],
+  colaboracion: "Disney"
+},
+{
+  id: "Dy2080",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Labios Stitch - Dy2080",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Dy2080.jpg",
+  description: "¡El aroma tropical que tus labios merecen! Dales color e hidratación a tus labios con este dúo infaltable. Perfectos para llevar en la cosmetiquera. Incluye un bálsamo hidratante y un gloss rosita. El lip balm o bálsamo labial sirve para hidratar, proteger y reparar los labios. Su textura crea una barrera que evita la pérdida de humedad causada por el clima frío, el viento o el sol. Además, previene grietas y es ideal para usarlo a diario. Su textura ligera deja los labios suaves, frescos y sin sensación pegajosa. El gloss o brillo labial sirve para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios que tiene un sutil toque de color. Perfecto para usar solo o sobre tintas y labiales mate. No es pegajoso ni pesado. Un diseño exclusivo inspirado en Stitch que amarás.",
+  colaboracion: "Disney"
+},
+{
+  id: "Dy2159",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Gloss Jack - Dy2159",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/Dy2159.jpg",
+  description: "El lip combo perfecto para unos labios irresistibles, inspirado en el clásico de Disney, Tim Burton´s The Night Before Christmas.\n- Este dúo incluye una tinta de labios oleosa con textura ultrasuave y fácil de difuminar; te aportará un tono y un aroma a vino que te sorprenderá.\n- Por el otro lado, encontrarás un gloss con un toque de color rosa y destellos, que no solo te aportará un toque de color, sino también un efecto mentolado refrescante y un aroma delicioso.\n- Aplica la tinta en tus labios y difumínala para un efecto natural.\n- Si buscas un toque brillante, añade el gloss encima y consigue un lip combo irresistible.\n- Este dúo elevará tu look y hará que tus labios luzcan espectaculares siempre.",
+  colaboracion: "Disney"
+},
+{
+  id: "Dy2099",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillos De Los Recuerdos Intensamente - Dy2099",
+  price: 5000,
+  image: "images/productos/Maquillaje/Labios/Dy2099.jpg",
+  description: "Nos inspiramos en Intensamente y en cada uno de sus icónicos personajes.\nCada brillo representa una emoción, ¡Elige tu favorito!\nSu diferencia es que varían sus tonos entre rosaditos y transparentes con una leve escarchita.\nSu fragancia te encantará. Aporta un leve tono rosa a tus labios y viene con destellos dorados que le darán un plus a cualquier maquillaje.\nPerfecto para llevar en la cosmetiquera o bolso.",
+  tonos: ["Alegría", "Ansiedad", "Furia"],
+  colaboracion: "Disney"
+},
+{
+  id: "Bbs2096",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit X 3 Brillos Bloom To Shine - Bbs2096",
+  price: 18000,
+  image: "images/productos/Maquillaje/Labios/Bbs2096.jpg",
+  description: "Acá está el secreto para unos labios radiantes y deslumbrantes! Estos glosses o brillos labiales sirven para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios. Este kit incluye 3 brillos satinados ideales para cualquier ocasión. Con una textura ligera tipo gloss, proporciona un brillo duradero sin dejar sensación pegajosa en los labios. Su fragancia te cautivará. Úsalos solos o sobre tu labial mate favorito para un acabado luminoso y sofisticado."
+},
+{
+  id: "Kcl2095",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Crema Y Brillo Bright And Fun - Kcl2095",
+  price: 12000,
+  image: "images/productos/Maquillaje/Labios/Kcl2095.jpg",
+  description: "¡Este será tu dúo favorito a partir de ahora! El lip balm o bálsamo labial sirve para hidratar, proteger, reparar los labios y aportar un tono sutil dependiendo de tu pH. Su textura crea una barrera que evita la pérdida de humedad causada por el clima frío, el viento o el sol. Además, previene grietas y es ideal para usarlo a diario. Su textura ligera deja los labios suaves, frescos y sin sensación pegajosa. También viene con una mini crema de manos que hidrata la piel sin dejar sensación grasosa, absorbiéndose rápidamente y dejando un aroma delicioso que te enamorará."
+},
+{
+  id: "KLT2088",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Labios Love Travel - KLT2088",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/KLT2088.jpg",
+  description: "Dale a tus labios el cuidado que merecen. Este kit exclusivo es ideal para ti y para tu mini Trendy lover. El lip balm o bálsamo labial sirve para hidratar, proteger y reparar los labios. Su textura crea una barrera que evita la pérdida de humedad causada por el clima frío, el viento o el sol. Además, previene grietas y es ideal para usarlo a diario. Su textura ligera deja los labios suaves, frescos y sin sensación pegajosa. El gloss o brillo labial sirve para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios que tiene un sutil toque de color. Perfecto para usar solo o sobre tintas y labiales mate. No es pegajoso ni pesado. Su tamaño es viajero perfecto para llevar a todas partes sin que ocupe mucho espacio. El aroma de este set te va a enamorar."
+},
+{
+  id: "Dy2075",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Holográfico Stitch - Dy2075",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/Dy2075.jpg",
+  description: "Su diseño adorable es el match perfecto para tus maquillajes diarios. Son dos diseños que se envían surtidos.\nCada uno es perfecto para utilizarlos solos o aplicar sobre cualquier labial y crear un look apto para cualquier ocasión.\nContiene leves partículas escarchadas holográficas que le dan brillo y un acabado jugoso a tus labios. Sentirás una deliciosa fragancia al destaparlo.\nDejan una sensación suave y ligera en tus labios sin aportar un acabado pegajoso.\nSe envía Surtido",
+  colaboracion: "Disney"
+},
+{
+  id: "DY2098",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Labios Furia - DY2098",
+  price: 25000,
+  image: "images/productos/Maquillaje/Labios/DY2098.jpg",
+  description: "El kit incluye un gloss voluminizador con destellos, un brillo de labios tono cereza y un delineador de labios, juntos hacen en match perfecto para lucir unos labios rojos de impacto.\nLa calidad y versatilidad de este producto te va a enamorar. El delineador de labios es de una textura cremosa que se desliza fácilmente sobre tus labios, es mate y de excelente durabilidad.\nEl gloss será tu favorito desde la primera aplicación. Cuando apliques el producto, quedará un brillo hermoso en tus labios.\nSi quieres para finalizar, aplica el gloss voluminizador, esto no solo aporta brillo con destellos, sino que también da la ilusión de labios más jugosos y rellenos, recuerda que puedes sentir una sensación de picor y ardor, aplícalo progresivamente y verifica que tan sensible puedes ser al uso del mismo.\nEste lip combo es ideal para cualquier ocasión en donde quieres que tus labios sean los protagonistas. No apto para niños.",
+  colaboracion: "Disney"
+},
+{
+  id: "BAT1878",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo De Labios Aura - BAT1878",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/BAT1878.jpg",
+  description: "¡El gloss más viral de internet! El Brillo de Labios Aura Trendy está diseñado para quienes buscan unos labios perfectos con un acabado tipo espejo y son amates al acabado jugoso del gloss. Con su aplicador de gran tamaño y textura ligera, este brillo de labios se desliza suavemente sin dejar sensación pesada. Su fórmula enriquecida con componentes hidratantes actúa en ellos dándole una apariencia saludable, ideal para brindar jugosidad a los labios resecos mientras aporta un color vibrante.\n\nDisponible en 6 tonos versátiles que incluyen labiales nude, labial fucsia y el clásico brillo rosado, el Gloss Aura es la pieza clave para crear tu lip combo favorito. Ya sea que busques un look de labios rojos naturales o prefieras un tono naranja o mocca, este gloss labial con aroma a fresa garantiza una hidratación prolongada, funcionando casi como un serum para labios de uso diario.",
+  tonos: ["01", "02"]
+},
+{
+  id: "Bpt1963",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo De Labios Lip Oil Pretty Things - Bpt1963",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Bpt1963.jpg",
+  description: "Su pigmentación es construible, así que entre más apliques más se notará el color.\nTienen una textura suave y ligera, así que se difuminan suavemente sobre tus labios.\nSon 6 tonos diferentes, elige tu color favorito.\nSus colores son rojizos y uno violeta, ideales para aportar un leve color.\nSu textura es espesa, así que se esparce sobre tus labios fácilmente.",
+  tonos: ["01", "02"]
+},
+{
+  id: "STT1328",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Soda - STT1328",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/STT1328.jpg",
+  description: "¡Tinta de labios en forma de gaseosa! El producto que nunca pasará de moda.\n\nEs una tinta de labios que se desliza fácilmente sobre los labios. Su textura es acuosa y de excelente pigmentación. No deja una sensación pesada. Larga duración. Viene en un solo tono rojizo que queda perfecto para todo tipo de piel. Su tamaño es perfecto para llevar en todas partes."
+},
+{
+  id: "CC11",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Cotton Candy - CC11",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/CC11.jpg",
+  description: "Es un brillo transparente que deja un efecto gloss con glitter sobre los labios gracias a las partículas de escarcha que se reflejan.\nSon 3 tonos distintos pero todos te dejan el mismo resultado.\nViene con un aplicador en goma divino que ayuda a dejar un efecto húmedo en los labios.\nHuelen delicioso."
+},
+{
+  id: "BCC1366",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Cherry Color - BCC1366",
+  price: 5000,
+  image: "images/productos/Maquillaje/Labios/BCC1366.jpg",
+  description: "- Nunca pasan de moda y los Gloss Cherry tienen todo lo que amamos de un buen brillo labial.\n- Vienen en 5 tonalidades nude perfectas para el día a día, maquillajes naturales o cualquier ocasión.\n- Su textura es suave, cómoda y ligera sobre los labios, aportando un acabado brillante sin sensación pesada o pegajosa.\n- Son ideales para usar solos o sobre tu labial favorito si quieres unos labios mucho más protagonistas.\n- Se envían surtidos, pero seguro te encantará el que te llegue."
+},
+{
+  id: "KSC1737",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit De Glosses Sweet Cream - KSC1737",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/KSC1737.jpg",
+  description: "- Este set de tres piezas es el sueño de cualquier amante de los labiales nude.\n- Cada brillo cuenta con la tendencia de lip glosses con aplicador grueso, lo que permite una aplicación generosa que envuelve los labios en una capa de suavidad extrema.\n- Su fórmula cremosa es ideal para quienes sufren de labios resecos, aportando un efecto volumen visual y una sensación de confort que dura horas sin ser pegajosa.",
+  tonos: ["01", "02", "03", "04", "05"]
+},
+{
+  id: "Hl15",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Magico Honey - Hl15",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/Hl15.jpg",
+  description: "Labios hermosos, con color en segundos y una sensación hidratante desde la primera aplicación. Este brillo mágico reacciona al pH natural de tus labios, creando un tono único que se adapta a ti y realza tu color natural. Su fórmula enriquecida con aceites ayuda a mantener los labios suaves e hidratados, mientras aporta un acabado luminoso y fresco. Disfruta de una textura cómoda, ligera y agradable de llevar durante todo el día, con un toque de color personalizado y un brillo que resalta la belleza natural de tus labios."
+},
+{
+  id: "Dlt1270",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Delineador De Labios - Dlt1270",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/Dlt1270.jpg",
+  description: "- El Delineador Jumbo Cupcake redefine la técnica del contorno labial.\n- Su formato ancho y su mina rica en ceras naturales permiten un deslizamiento sin fricción, ideal para labios resecos que necesitan definición sin maltrato.\n- Funciona como el ancla perfecta para labiales duraderos, creando una barrera física que impide que el color se desplace, mientras que su alta pigmentación permite usarlo como una barra labial mate de cobertura total.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "BFG1776",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit X8 Forever Gloss - BFG1776",
+  price: 25000,
+  image: "images/productos/Maquillaje/Labios/BFG1776.jpg",
+  description: "Tus labios requieren un color diferente cada día.\n\nCompleta tu rutina de maquillaje con este práctico kit de 8 glosses con color en tonos rosas, rojizos y nudes.\n\nSu textura suave y ligera brinda un acabado brillante que realza los labios, aportando color y frescura con una durabilidad media.\n\nPerfectos para crear diferentes looks y lucir unos labios radiantes en cualquier ocasión."
+},
+{
+  id: "7498B",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Heladito - 7498B",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/7498B.jpg",
+  description: "Nuestra tinta de labios líquida es de textura ultraligera que se absorbe en la piel. Sirve para aportar un color de larga duración que resiste a la transferencia, logrando un efecto de \"tatuaje\" natural que tiñe los labios durante horas sin necesidad de retoques. Lograrás un efecto de color natural y fresco con esta tinta multifuncional, ideal para complementar cualquier maquillaje, ya que puedes usarla como rubor o sombra de ojos. Es ideal si quieres modificar el color de tus labios a unos más rojitos con un aspecto saludable y luminoso. Puedes usarlo solo o complementarlo con un brillo o gloss.",
+  tonos: ["01", "02", "03", "04"]
+},
+{
+  id: "7999A",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Frutas - 7999A",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/7999A.jpg",
+  description: "¡Color natural para labios y mejillas en un solo producto!\n\nEstas tintas de frutas aportan un tono rojito natural perfecto para looks frescos y ligeros.\nSu textura acuosa se adhiere rápidamente a la piel, manteniendo el color por horas.\nPuedes usarlas como labial o rubor para darle a tu maquillaje un acabado más natural y saludable.\nTodas las referencias tienen coloración roja y una duración aproximada de 4 horas.",
+  tonos: ["01", "02", "03", "04"]
+},
+{
+  id: "Kbg1400",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit X 5 Garden Gloss - Kbg1400",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/Kbg1400.jpg",
+  description: "Perfecto para llevar contigo y estar lista para cualquier ocasión.\nTextura suave y cómoda en los labios.\nCada cajita incluye 5 tonos: rosas, nude, tierras, neutros y rojizos. Acabados satinados y neutros.\nSe adaptan a todo tipo de ocasión.\nAroma delicioso que amarás.\nTambién puedes usarlos sobre labiales mates para darles un toque de brillo y frescura."
+},
+{
+  id: "Vpg1966",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Voluminizador Plump Gloss - Vpg1966",
+  price: 5000,
+  image: "images/productos/Maquillaje/Labios/Vpg1966.jpg",
+  description: "Logra unos labios de impacto y glossy con esta mini cápsula.\nDale volumen a tus labios, al principio sentirás una leve picazón, es un efecto normal.\nEn minutos unos labios más gruesitos.\nDisponibles en tres aromas deliciosos.\nSu textura es suave, no te deja sensación pesada.\nSe envían surtidos.\nModo de uso: Si es la primera vez que lo pruebas, te recomendamos usar poco producto y esperar alrededor de un minuto, allí vas sintiendo la sensación de picor, tus labios en un transcurso de 5 minutos quedarán con el resultado final.\n\nInfo adicional: \"No recomendamos este producto para pieles o labios sensibles.\nSe envian surtidos\""
+},
+{
+  id: "Bmp1920",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit X 3 Gloss Mood Pills - Bmp1920",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Bmp1920.jpg",
+  description: "Estas píldoras son el remedio perfecto para el síndrome de maquillaje aburrido.\nKit de 3 glosses con el glow más precioso de todos.\nUtilízalas para devolverle el brillo y glamour a tus looks.\nEn cada cajita encuentras 3 tonos diferentes, entre oro rosa, rosado y uno con destellos dorados."
+},
+{
+  id: "Bms1596",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Labios Soda Pop - Bms1596",
+  price: 18000,
+  image: "images/productos/Maquillaje/Labios/Bms1596.jpg",
+  description: "¡El S.O.S para tus labios! Lo necesitas para el cuidado y una mejor apariencia en tus labios. Logra unos labios suaves, saludables y de impacto. Con este kit lograrás hidratación con un toque de brillo. Incluye una mascarilla/bálsamo labial diseñada para nutrir, suavizar y proteger los labios, ayudando a mantenerlos suaves y muy saludables. Se complementa con un brillo de textura ligera que aporta un acabado luminoso y natural, perfecto para usar solo o sobre el bálsamo. Un dúo práctico muy ideal para el uso diario."
+},
+{
+  id: "Tpi1414",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Ice Paleta - Tpi1414",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/Tpi1414.jpg",
+  description: "¡Alerta para que te unas a la tendencia de la tinta de labios! Labios al estilo coreano con las nuevas Tintas Ice de Trendy. Viene en 4 tonos rojos hermosos muy similares. Su textura suave tipo aceitosa la hace una tinta hidratante. Tiene un leve olor a dulce delicioso. Son perfectas para darle un tono rojito a tus labios."
+},
+{
+  id: "Bpm1426",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Magico Doble Perfect Match - Bpm1426",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/Bpm1426.jpg",
+  description: "Los labios son y serán siempre tendencia.Acabado: Semi Mate\nTipo de labial: Brillo\nFórmula cosmética: Líquida"
+},
+{
+  id: "Hs24",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Mascarilla Hidratante De Labios Strawberry - Hs24",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Hs24.jpg",
+  description: "Mascarilla de labios sin color, ideal para el cuidado diario.\nSu textura suave se desliza fácilmente, brindando naturalidad inmediata, mientras su delicioso aroma a fresa convierte la aplicación en una experiencia sensorial.\nViene en un empaque hermoso, perfecto para llevar contigo y disfrutar de labios visiblemente más suaves y cuidados.\nDisponible en 2 presentaciones diferentes. El producto se entrega surtido según disponibilidad."
+},
+{
+  id: "HMA1460",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Hidratante Mágico Aloe Vera - HMA1460",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/HMA1460.jpg",
+  description: "Labios maquillados y saludables con un mismo producto. Este brillo mágico reacciona al pH natural de tus labios para revelar un tono único y personalizado en cada persona. Su textura ultra ligera e hidratante los mantiene suaves y cómodos, mientras aporta un color natural y favorecedor que dura por horas. Su presentación en barra es práctica y perfecta para llevar contigo a todas partes, ideal para darle un toque de color y brillo a tus labios en cualquier momento."
+},
+{
+  id: "Lbe1921",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Labial Y Gloss Eclipse - Lbe1921",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Lbe1921.jpg",
+  description: "Un lip combo en un solo producto.\nEl dúo dinámico para un maquillaje de labios completo y de impacto.\nPor un costado viene un gloss con color y por el otro un labial en barra que aporta un acabado semi mate precioso.\nVienen 6 tonos disponibles entre rosas y rojos que se envían surtidos.\nSon de una textura suave sin sentirse pesados.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "DL07",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Y Brillo Doggie Lips - DL07",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/DL07.jpg",
+  description: "¡Dos imprescindibles para unos labios irresistibles!\nBrillo labial + tinta, el dúo perfecto para lograr unos labios jugosos, con color y apariencia saludable.\nSu práctico diseño 2 en 1 reúne todo lo que necesitas: en un lado encontrarás la tinta para aportar un tono rojito natural y de larga duración, y en el otro un brillo labial para darle el toque final a tu maquillaje.\nViene en un único tono y es el compañero perfecto para llevar en tu cartera y retocar tus labios en cualquier momento."
+},
+{
+  id: "HKC1550",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Lip Balm Kisses Rojo - HKC1550",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/HKC1550.jpg",
+  description: "Los lip balm Kisses son la clave para lograr unos labios suaves, brillantes y con ese acabado jugoso que nunca pasa de moda.\nVienen en 2 referencias que aportan un delicado tono rojizo, ideal para realzar el color natural de los labios de forma sutil y favorecedora.\nSu textura es cómoda, ligera y agradable de llevar durante el día, dejando los labios con una apariencia saludable y luminosa.\nAdemás, su práctico tamaño de bolsillo es perfecto para llevarlo contigo a todas partes y retocar cuando quieras.\nSe envían surtidos.",
+  tonos: ["01", "02"]
+},
+{
+  id: "BJL1726",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Just Lips Balm - BJL1726",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/BJL1726.jpg",
+  description: "¡La salvación a los labios resecos!\nTu nuevo bálsamo favorito para tener unos labios suaves y con vida.\nViene en tres aromas y tonalidades muy sutiles:\nDurazno: Es un tono coral que no aporta tanto color.\nFresa: Tono rosa claro. Sandia:\nTono cereza.\nTe llegan surtidos.\nEs de una textura suave manteniendo los labios suaves durante bastante tiempo.\nCon él logras tener un acabado mucho más prolijo cuando apliques productos mate, además le aporta esa hidratación extra."
+},
+{
+  id: "HRT1461",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Reparador Rosas - HRT1461",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/HRT1461.jpg",
+  description: "¡El cuidado diario que tus labios necesitan! Este bálsamo reparador en barra ayuda a mantener los labios suaves, protegidos y con una apariencia saludable. Su fórmula se desliza fácilmente, brindando una sensación cómoda e hidratante desde la primera aplicación. No aporta color, por lo que es perfecto para usar solo o como preparación antes de tu labial favorito. Además, su delicioso aroma hace que reaplicarlo durante el día sea aún más agradable. Llévalo siempre contigo y dale a tus labios el cuidado que merecen en cualquier momento."
+},
+{
+  id: "TST1368",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta School - TST1368",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/TST1368.jpg",
+  description: "¡Las tintas en los labios son un estilo de vida!\n\nTus tintas favoritas están de regreso, ahora con un empaque renovado que las hace aún más irresistibles. Su fórmula a base de agua aporta una sensación cómoda sobre los labios y se distribuye fácilmente para lograr un acabado natural y uniforme.\nSu tono rojizo se adapta hermoso al color de los labios, creando ese efecto de \"labio naturalmente sonrojado\" que tanto nos encanta.\nAdemás, tienen excelente durabilidad para que disfrutes de un toque de color fresco durante horas."
+},
+{
+  id: "HKS1551",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Lip Balm Kisses Sin Color - HKS1551",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/HKS1551.jpg",
+  description: "Los lip balm Kisses son la clave para lograr unos labios suaves, brillantes y con ese acabado jugoso que nunca pasa de moda.\nVienen en 2 referencias que no aportan color, realza la belleza natural de tus labios, aportando un brillo hermoso y una apariencia saludable.\nSu textura es cómoda, ligera y agradable de llevar durante el día, dejando los labios con una apariencia saludable y luminosa.\nAdemás, su práctico tamaño de bolsillo es perfecto para llevarlo contigo a todas partes y retocar cuando quieras.\nSe envían surtidos."
+},
+{
+  id: "KBT1484",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit De Labios Tiger Lips - KBT1484",
+  price: 35000,
+  image: "images/productos/Maquillaje/Labios/KBT1484.jpg",
+  description: "3¡Amado y bendito gloss de los 2000’s! La tendencia que perdurará por siempre. Estos glosses o brillos labiales sirven para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios. Encontrás en color transparente, con escarcha o con un toque de color. Lograrás reflejar la luz para que los labios luzcan más carnosos y saludables. Puedes usarlos solos o sobre tu labial favorito para cambiar su textura y agregar dimensión. Son el complemento perfecto para unos labios maquillados o naturales. ¡5 Glosses en una sola cajita! Las texturas son ligeras y fáciles de difuminar. Son de excelente pigmentación. Tienen un aroma delicioso."
+},
+{
+  id: "LT18",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Voluminizador De Labios - LT18",
+  price: 12000,
+  image: "images/productos/Maquillaje/Labios/LT18.jpg",
+  description: "Este voluminizador de labios está diseñado para proporcionar una apariencia más voluminosa y definida de forma temporal.\nAl aplicarlo es normal sentir una ligera sensación de picazón, hormigueo o frescura, ya que son parte del efecto que ayuda a potenciar el volumen de los labios.\nSi es tu primera vez usándolo, te recomendamos aplicar una pequeña cantidad y esperar unos minutos para conocer cómo responde tu piel.\nPuedes aplicar una segunda capa si deseas intensificar el efecto y te sientes cómoda con la sensación.\nLos resultados comienzan a apreciarse en pocos minutos y el efecto voluminizador puede durar entre 1 y 3 horas, dependiendo de cada persona.\n\nTip: Úsalo solo o sobre tu labial favorito para unos labios más llamativos y con apariencia más voluminosa.\nNo se recomienda para labios o pieles sensibles."
+},
+{
+  id: "EML1727",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Dúo Exfoliante + Mascarilla De Labios Pink Lemon - EML1727",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/EML1727.jpg",
+  description: "Dale a tus labios el cuidado que merecen con este dúo reparador, diseñado para ayudar a mejorar su apariencia y mantenerlos suaves todos los días.\nIncluye un exfoliante labial que ayuda a remover suavemente las células muertas y la resequedad acumulada, dejando los labios más lisos y preparados para recibir hidratación.\nAdemás, cuenta con una mascarilla reparadora que ayuda a acondicionar y suavizar los labios, aportándoles una apariencia más saludable y confortable.\nEs el complemento perfecto para preparar tus labios antes del maquillaje o para incluir en tu rutina de cuidado diario. La mascarilla tiene tonalidad naranja y el exfoliante tonalidad rosa.\nTip: Utilízalos juntos para conseguir unos labios más suaves, uniformes y listos para cualquier labial o gloss."
+},
+{
+  id: "BKL1685",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Kiss Lips - BKL1685",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/BKL1685.jpg",
+  description: "El brillo en los labios es obligatorio.\n\n¡Le agrega el plus ideal!\n- Disponibles en 10 tonos entre rosas y nudes que son perfectos para toda ocasión.\n- Unos son con color y otros satinados.\n- Tienen un aroma delicioso\n- Deja un efecto de brillo con color extremo.",
+  tonos: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]
+},
+{
+  id: "BDT1749",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Dash - BDT1749",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/BDT1749.jpg",
+  description: "Unos labios elegantes, modernos y siempre en tendencia.\n\nDisponible en 6 tonos entre rosas, nudes y terracotas, una selección versátil que complementa cualquier look y ocasión.\nSu aplicador de tamaño amplio permite una aplicación fácil, uniforme y cómoda.\nSu textura suave se desliza perfectamente sobre los labios sin dejar sensación pesada o pegajosa. Además de aportar un brillo hermoso, ofrece excelente duración para que tus labios se vean radiantes por más tiempo.\nSe envían surtidos.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "BHB1744",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Happy Berry - BHB1744",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/BHB1744.jpg",
+  description: "Un gloss que nunca puede faltar.\n¡Es un básico en tu kit de maquillaje!\n- El brillo Happy Berry llegó para darle a tus labios un brillo extremo y suavidad instantánea.\n- Aporta un tono rosa muy sutil.\n- Se desliza con suavidad sobre tus labios."
+},
+{
+  id: "BMT1748",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Maddie - BMT1748",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/BMT1748.jpg",
+  description: "Unos labios elegantes, pero en tendencia.\n- Un lip gloss con una tonalidad perfecta para cada día, te llegan surtidos.\n- Son 6 tonos entre rosas, dorados y holográficos para que puedas combinar con tus look diarios.\n- Su aplicador es grueso, perfecto para la aplicación del gloss.\n- Son ultra suaves y no deja sensación pesada.\n- Es de excelente durabilidad.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "RLG1846",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Red Lips - RLG1846",
+  price: 8000,
+  image: "images/productos/Maquillaje/Labios/RLG1846.jpg",
+  description: "Un gloss con color para darle protagonismo a tus labios. Es perfecto para complementar tus maquillajes. Vienen 6 tonos entre nudes, rojos y terracotas. Se envían surtidos. Son de una textura suave, se adhiere muy bien sin dejar sensación pesada o grasosa. Tienen un aroma deli",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "BFT1756",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Gloss Flash - BFT1756",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/BFT1756.jpg",
+  description: "Los gloss ya son parte indispensable de nuestro maquillaje. Gloss donde los labios serán centro de atención. Perfecto para brindarle a tus labios una apariencia saludable y jugosita. Es el complemento perfecto para tu día a día. Viene en 6 tonos con glitter entre rosas, dorados, oro rosas y holográficos. Su durabilidad es buena, pero debes retocarlo durante el día. Se envian surtidos.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "B177",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Retráctil Beauty Glazed - B177",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/B177.jpg",
+  description: "No sufras más porque tu labial favorito se rompió, Con el Lip Plump de Beauty Glazed podrás mantener a raya tu labial favorito evitando que se quiebre. Solo debes dar click a medida que vas gastando el producto y saldrá como nuevo.\nEsta fórmula cremosa y suave te dará un brillo y suavidad excepcional.\nDeja una sensación de hidratación inmediata y cero pegajosa.\nMantiene su brillo durante horas.\nTonos de excelente pigmentación y calidad."
+},
+{
+  id: "Tgt1896",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Gloss Corazón - Tgt1896",
+  price: 5000,
+  image: "images/productos/Maquillaje/Labios/Tgt1896.jpg",
+  description: "Descubre un nuevo formato de Tinta de Labios de larga duración.\nDisponible en una gama vibrante de tonos rojizos, esta fórmula innovadora de textura aterciopelada y cremosa, que se desliza suavemente para crear un acabado mate y sin transferencias lo que hará que perdure todo el día.\nNo solo proporciona un color intenso, sino que también mantiene tus labios suaves y flexibles.\nPerfecta para cualquier ocasión, nuestra Tinta Gloss Tint es el complemento ideal para tu rutina de maquillaje, garantizando una aplicación fácil y resultados duraderos desde el primer toque.",
+  tonos: ["01", "02", "03", "04", "05", "06"]
+},
+{
+  id: "TEB1745",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Con Escarcha Be Mine - TEB1745",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/TEB1745.jpg",
+  description: "¡Las tintas le dan el color perfecto a tus labios! Unos labios de impacto gracias a la tinta Be mine.\n\nSu textura es suave y se difumina sobre tus labios de forma perfecta.\nAporta un acabado con destellos dorados.\nSu durabilidad es excelente. Viene en un tono rojo cereza."
+},
 ];
