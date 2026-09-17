@@ -667,4 +667,41 @@ const PRODUCTS_MAQUILLAJE = [
   description: "Descubre esta sombra 2 en 1 que te permitirá recrear looks satinados con todo el brillo e impacto que necesitas.\nUn extremo con sombra líquida satinada de alta pigmentación y aplicador de punta fina, ideal para usar también como delineador perlado.\nSu otro extremo contiene la sombra cremosa tipo mantequilla, la cual se difumina fácilmente sin dejar parches.\nSon de excelente adherencia y durabilidad.\nDisponible en 4 tonos perlados versátiles: dorados y oro rosa.\nPerfecta para llevar en el bolso y realzar tu mirada con un solo producto.",
   tonos: ["01", "02", "03", "04"]
 },
+{
+  id: "BAQ564",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Base Aqua OG - BAQ564",
+  price: 30000,
+  image: "images/productos/Maquillaje/Rostro/BAQ564.jpg",
+  description: "La base ideal para tus looks diarios\nUna de nuestras marcas favoritas para el cuidado de la piel y una de las más vendidas en la tienda.\nPerfecta para todo tipo de piel, especialmente si buscas un acabado natural y uniforme.\nOfrece una cobertura media, de larga duración, con una textura ligera y formulación semicremosa que se adapta fácilmente a tu rutina diaria.",
+  tonos: ["04", "06"]
+},
+{
+  id: "IPU1654",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Iluminador Pin - IPU1654",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/IPU1654.jpg",
+  description: "¡El glowy nunca faltará en tu vida si este iluminador conforma tu maquillaje!\nVienen dos tonos de iluminador prensado, uno en tono champaña y otro en rosa champaña.\nTienen una pigmentación de otro planeta. Con poco producto satura increíble.\nSu textura es suave.\nLlévala contigo siempre."
+},
+{
+  id: "Slb1927",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Iluminador Liquido Brilla - Slb1927",
+  price: 8000,
+  image: "images/productos/Maquillaje/Rostro/Slb1927.jpg",
+  description: "¡Deslumbra tus maquillajes de la mano de este iluminador!\n\nAgrega un glowy perfecto pero con un plus y es que es que se ve muy sutil en tus looks. Su textura es cremosa y muy ligera. Al aplicarlo se difumina fácil. No te deja sensación pesada. Viene en un tono único champán precioso."
+},
+{
+  id: "WGT1652",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Iluminador Wonderland Glow - WGT1652",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/WGT1652.jpg",
+  description: "¡El iluminador le agrega ese toque mágico a tu maquillaje de rostro!\n\nUnas mejillas perceptibles y perfectas con tonos satinados.\nUn producto en donde se combinan 4 tonos entre rosas, dorados y un toque de blanco.\nEs muy versátil, ya que le queda bien a todo tipo de piel.\nAl ser mineralizado, sus partículas dan un glow extra, ese que tanto te gusta.\nSu pigmentación es increíble."
+},
 ];
