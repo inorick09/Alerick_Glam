@@ -660,49 +660,304 @@ const PRODUCTS_MAQUILLAJE = [
 {
   id: "SLU1936",
   category: "maquillaje",
-  subcategory: "Rostro",
+  subcategory: "Ojos",
   name: "Sombra En Barra + Líquida Level Up - SLU1936",
   price: 10000,
-  image: "images/productos/Maquillaje/Rostro/SLU1936.jpg",
+  image: "images/productos/Maquillaje/Ojos/SLU1936.jpg",
   description: "Descubre esta sombra 2 en 1 que te permitirá recrear looks satinados con todo el brillo e impacto que necesitas.\nUn extremo con sombra líquida satinada de alta pigmentación y aplicador de punta fina, ideal para usar también como delineador perlado.\nSu otro extremo contiene la sombra cremosa tipo mantequilla, la cual se difumina fácilmente sin dejar parches.\nSon de excelente adherencia y durabilidad.\nDisponible en 4 tonos perlados versátiles: dorados y oro rosa.\nPerfecta para llevar en el bolso y realzar tu mirada con un solo producto.",
   tonos: ["01", "02", "03", "04"]
 },
 {
-  id: "BAQ564",
+  id: "DYT2528",
   category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Base Aqua OG - BAQ564",
-  price: 30000,
-  image: "images/productos/Maquillaje/Rostro/BAQ564.jpg",
-  description: "La base ideal para tus looks diarios\nUna de nuestras marcas favoritas para el cuidado de la piel y una de las más vendidas en la tienda.\nPerfecta para todo tipo de piel, especialmente si buscas un acabado natural y uniforme.\nOfrece una cobertura media, de larga duración, con una textura ligera y formulación semicremosa que se adapta fácilmente a tu rutina diaria.",
-  tonos: ["04", "06"]
+  subcategory: "Ojos",
+  name: "Sombra Toy Story - DYT2528",
+  price: 40000,
+  image: "images/productos/Maquillaje/Ojos/DYT2528.jpg",
+  description: "Tu look merece esta calidad y combinación. Lleva la diversión y la aventura de Toy Story a tu maquillaje con esta sombra de ojos de alta pigmentación.\n\nSu textura suave permite crear desde looks delicados para el día hasta maquillajes más llamativos para cualquier ocasión.\nUn toque de color que hará brillar tu creatividad.\nIncluye tambien sombras tipo glitter perfectas para looks mas arriesgados y artísticos. Encontrarás 38 tonos entre mates nude, mate coloridos y satinados.\nAdemás, incluye un espejo en donde facilitará tu maquillaje.",
+  colaboracion: "Disney"
 },
 {
-  id: "IPU1654",
+  id: "Dyt2654",
   category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador Pin - IPU1654",
+  subcategory: "Ojos",
+  name: "Lápiz Ojos y Cejas Toy Story - Dyt2654",
   price: 15000,
-  image: "images/productos/Maquillaje/Rostro/IPU1654.jpg",
-  description: "¡El glowy nunca faltará en tu vida si este iluminador conforma tu maquillaje!\nVienen dos tonos de iluminador prensado, uno en tono champaña y otro en rosa champaña.\nTienen una pigmentación de otro planeta. Con poco producto satura increíble.\nSu textura es suave.\nLlévala contigo siempre."
+  image: "images/productos/Maquillaje/Ojos/Dyt2654.jpg",
+  description: "La herramienta que buscas para unos ojos de impacto. Consigue cejas definidas y de apariencia natural con este Lápiz de Cejas. Sus dos puntas permiten crear trazos precisos con los que puedes rellenar espacios; por un costado encontrarás un lápiz retráctil de textura cremosa y, por el otro lado un plumón delineador de larga duración resistente al agua, ayudando a dar forma a las cejas con facilidad o perfecto para delinear tus ojos. Son 3 tonos disponibles en el lápiz cremoso.",
+  tonos: ["01", "02", "03"],
+  colaboracion: "Disney"
 },
 {
-  id: "Slb1927",
+  id: "Dyt2724",
   category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador Liquido Brilla - Slb1927",
-  price: 8000,
-  image: "images/productos/Maquillaje/Rostro/Slb1927.jpg",
-  description: "¡Deslumbra tus maquillajes de la mano de este iluminador!\n\nAgrega un glowy perfecto pero con un plus y es que es que se ve muy sutil en tus looks. Su textura es cremosa y muy ligera. Al aplicarlo se difumina fácil. No te deja sensación pesada. Viene en un tono único champán precioso."
-},
-{
-  id: "WGT1652",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador Wonderland Glow - WGT1652",
+  subcategory: "Ojos",
+  name: "Sombra Vaquera Toy Story - Dyt2724",
   price: 20000,
-  image: "images/productos/Maquillaje/Rostro/WGT1652.jpg",
-  description: "¡El iluminador le agrega ese toque mágico a tu maquillaje de rostro!\n\nUnas mejillas perceptibles y perfectas con tonos satinados.\nUn producto en donde se combinan 4 tonos entre rosas, dorados y un toque de blanco.\nEs muy versátil, ya que le queda bien a todo tipo de piel.\nAl ser mineralizado, sus partículas dan un glow extra, ese que tanto te gusta.\nSu pigmentación es increíble."
+  image: "images/productos/Maquillaje/Ojos/Dyt2724.jpg",
+  description: "Dale vida a tu mirada con la sombra Toy Story, una propuesta perfecta para los amantes de los tonos tierra. Su textura suave permite una aplicación cómoda y un difuminado fácil, logrando acabados desde los más naturales hasta los más intensos, según el estilo que quieras crear.\nSu paleta combina tonos tierras mates y satinados ideales para lograr looks cálidos, equilibrados y muy favorecedores para el día a día o para ocasiones especiales.\nTiene una increíble pigmentación los 10 tonos.",
+  colaboracion: "Disney"
+},
+{
+  id: "Dct2573",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Delineador Cafe Rainbow - Dct2573",
+  price: 10000,
+  image: "images/productos/Maquillaje/Ojos/Dct2573.jpg",
+  description: "Seamos muy sinceras: amamos el delineador negro, pero hay días en los que queremos un look más fresco, sutil y natural para ir a la oficina o la universidad, y el negro puede verse muy fuerte o endurecer la mirada. Intentar un delineado café con sombras a veces termina en un manchón que se borra a las dos horas, y los lápices tradicionales suelen ser rígidos, raspan el párpado y se corren con el sudor. ¡Por eso rescatamos a este rey del famoso kit Rainbow para traerlo de forma individual! Este delineador líquido café es una absoluta joya para lograr acabados ultra suaves, cálidos y elegantes. Su aplicador en pincel de alta precisión te da el control total para diseñar desde líneas milimétricas hasta colitas de gato intensas. Además, su fórmula es de secado rápido, tiene una duración espectacular y se asienta de forma homogénea para que tu mirada se vea impecable, despierta y hermosa todo el día sin cuartearse."
+},
+{
+  id: "DST2259",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Lápiz Delineador Ojos Safari - DST2259",
+  price: 5000,
+  image: "images/productos/Maquillaje/Ojos/DST2259.jpg",
+  description: "Aceptémoslo: no hay nada más frustrante que intentar delinear tu línea del agua con un lápiz viejo, duro y seco que te raspa el ojo, te hace llorar y termina dejando un trazo grisáceo y parchado que desaparece a las dos horas, dejándote un manchón oscuro fatal en la ojera. ¡Es momento de despedirse de las batallas del diario y darle la bienvenida al trazo más dócil del planeta! El Lápiz Safari llegó para rescatar tus looks con su pigmento negro intenso que aporta un color profundo desde la primera pasada. Su textura es deliciosamente cremosa, lo que facilita un deslizamiento ultra suave y uniforme tanto si buscas un trazo gráfico súper preciso como si quieres difuminar los bordes para crear esos ahumados espectaculares que roban miradas. Un básico versátil y salvavidas que no puede faltar en tu colección."
+},
+{
+  id: "Slt2203",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Liquida Glow Beat - Slt2203",
+  price: 8000,
+  image: "images/productos/Maquillaje/Ojos/Slt2203.jpg",
+  description: "La Sombra Líquida Glow es la elegida para darle a tu mirada un acabado luminoso y divertido.\n\n- Su fórmula ligera y de fácil aplicación se desliza suavemente sobre el párpado o mejillas, dejando un efecto radiante con destellos en tonos lilas, morados y dorados que transforman cualquier look en un estilo lleno de magia y único."
+},
+{
+  id: "Sut2170",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra En Polvo X12 Urban - Sut2170",
+  price: 12000,
+  image: "images/productos/Maquillaje/Ojos/Sut2170.jpg",
+  description: "Seguro te ha pasado: tienes boletas para un festival o una salida emocionante con tus amigas, te sientas a maquillarte y te das cuenta de que todas tus paletas tienen los mismos tonos cafés clásicos de siempre. ¡Es momento de dejar atrás los looks planos y darle la bienvenida a la paleta más urbana y cool de tu colección! La paleta Urban reúne 12 tonos espectaculares entre mates y satinados, con una armonía genial enfocada principalmente en la gama de los verdes. Diseñada con una calidad premium y una pigmentación de locura, esta paleta te permite construir desde un delineado difuminado, clásico para el diario hasta los sombreados más vanguardistas y potentes para bailar toda la noche. Su polvo sedoso se adhiere a tus párpados como un imán, asegurándote que tu mirada se quede on point e intacta sin importar qué tan intenso se ponga el evento."
+},
+{
+  id: "Slu2171",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Líquida Urban - Slu2171",
+  price: 5000,
+  image: "images/productos/Maquillaje/Ojos/Slu2171.jpg",
+  description: "El brillo nunca está de más, y mucho menos cuando hablamos de festivales, conciertos o de esos días donde simplemente quieres que tu maquillaje grite estilo propio. Seguro te ha pasado que quieres un look divertido pero terminas usando glitters sueltos pesados que te raspan el párpado, se caen por toda la cara a los diez minutos o te dejan una sensación grasosa e incómoda que te cuartea la base. ¡Es hora de dejar atrás los desastres y darle la bienvenida al destello más cómodo del planeta! Esta sombra líquida es una absoluta joya porque la puedes aplicar tanto en los párpados como en las mejillas para crear un efecto luminoso tridimensional. Su tono es un verde mágico con destellos doraditos preciosos que dan un acabado cálido espectacular. Al difuminarla en tu piel verás un acabado suave que no se siente pesado ni acartonado; su fórmula no se seca bruscamente, lo que te da el tiempo perfecto para esparcirla con tus dedos como un sueño absoluto."
+},
+{
+  id: "Dy2081",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Kit X 2 Delineadores Stitch - Dy2081",
+  price: 25000,
+  image: "images/productos/Maquillaje/Ojos/Dy2081.jpg",
+  description: "Salir de casa feliz con tu delineado y notar a mitad del día que el calor, el sudor o una lagrimita convirtieron tu mirada en un manchón es una verdadera pesadilla. Peor aún es querer sumarte a la tendencia de los delineados gráficos y descubrir que tus productos no pigmentan bien o se cuartean al dar la segunda pasada. ¡Es hora de ganar la batalla del trazo perfecto con tus nuevos compañeros favoritos! Con este kit puedes crear looks súper producidos para un día especial o lucir natural pero fabulosa en tu día a día. En este dúo encuentras los dos infaltables definitivos que toda amante del maquillaje necesita: un delineador negro ultra intenso y uno blanco puro. Ambos cuentan con una excelente pigmentación que deja un acabado prolijo desde el primer trazo, garantizándote calidad profesional para acabados extraordinarios. Su fórmula es de larga duración y resistente al agua, lo que significa que se fijan a tu piel como un escudo para que disfrutes tu rutina con total seguridad. Todo esto viene envuelto en un diseño hermoso y exclusivo inspirado en Stitch que vas a querer presumir en todos lados."
+},
+{
+  id: "SHT1310",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Hollywood - SHT1310",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/SHT1310.jpg",
+  description: "- Esta paleta incluye tonos muy versátiles y cálidos entre naranjas, rojizos y cafés, con acabados mate y satinados, ideales para cualquier ocasión.\n- Pigmentación construible que se adapta a cualquier maquillaje sea de día o noche.\n- Textura suave y fácil de difuminar.\n- Presentación inspirada en una cinta de película: ¡compacta y hermosa!\nSe envían surtidas."
+},
+{
+  id: "RROt10",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Cartera Teddy - RROt10",
+  price: 20000,
+  image: "images/productos/Maquillaje/Ojos/RROt10.jpg",
+  description: "Descubre la Paleta Cartera Teddy, un producto todo en uno diseñado para acompañarte a donde vayas.\nIncluye todo lo que necesitas para un look completo:\n\n- 26 sombras para ojos en tonos tierra: cafés, dorados y rosados.\n- 15 con acabado mate.\n- 11 con acabado satinado.\n- 2 rubores mate en tono rosado.\n- 2 iluminadores: Uno tono champaña y otro dorado.\n- 2 pigmentos en polvo para cejas.\n- Además, viene con una brocha pequeña y un espejo HD integrado, ideal para que te retoques donde estés.\n- Su presentación en forma de cartera la hace práctica y adorable.\n- Ideal para llevar en tu bolso o de viaje."
+},
+{
+  id: "Spv1777",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Vintage - Spv1777",
+  price: 30000,
+  image: "images/productos/Maquillaje/Ojos/Spv1777.jpg",
+  description: "¡Un salvamaquillajes cuando necesitamos una ayuda extra en los ojos!\nLa paleta de Vintage contiene 18 tonos entre mates y satinados.\nSon perfectas para maquillajes cálidos y coquetos.\nSus tonos magentas, vino, marrones rojizos y rosa de acabado matte, otros satinados de alta pigmentación en tonos dorados, rosa y un pigmento tipo glitter tono vino.\nTienen una pigmentación increíble."
+},
+{
+  id: "C07",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Frutas Fresa - C07",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/C07.jpg",
+  description: "Paleta Monocromática en Tonos Rojizos\n- Una explosión de color en una paleta compacta y poderosa.\n- Perfecta para crear looks en tonos rojizos y fucsias, con una mezcla que te permitirá lograr desde un maquillaje suave hasta uno vibrante e impactante.\n\nIncluye 9 tonos: Acabados mate, metálico y satinado.\n- Alta pigmentación y fácil de difuminar.\n- Ideal para quienes aman los tonos cálidos y atrevidos.\n- Empaque compacto, perfecto para llevar a todas partes."
+},
+{
+  id: "C06",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Frutas Coco - C06",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/C06.jpg",
+  description: "Paleta monocromática en tonos tierra.\n\n- Descubre esta paleta de 9 tonos neutros con la combinación ideal para crear maquillajes suaves o intensos en tonos cálidos y cafés.\n- Sombras mate, metálicas y satinadas.\n- Alta pigmentación y fácil difuminación.\n- Tonos versátiles perfectos para el día o la noche.\n- Empaque compacto, ideal para llevar a todas partes"
+},
+{
+  id: "Srt1287",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Rock - Srt1287",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/Srt1287.jpg",
+  description: "¡La línea Rock es indispensable para looks hermosos en tus ojos!\n\n- Llega en dos referencias surtidas, ambas con tonos ideales para elevar tus looks.\n- Incluye 8 sombras en cada paleta: Tonos mates y satinados.\n- Uno de ellos puede usarse como iluminador para dar ese toque de luz especial.\n- Su textura es ultra suave al tacto y se difumina fácilmente.\n- Tamaño práctico y compacto, perfecto para llevar en tu bolso o cosmetiquera.\n- Combina los tonos entre sí y añade un toque satinado para un efecto más impactante.\n- Paleta súper práctica para llevar contigo a todas partes."
+},
+{
+  id: "FE5",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Pestañina Fortalecedora Fresh - FE5",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/FE5.jpg",
+  description: "Si te gusta tener tus pestañas lindas pero sin sentir pesadez, necesitas este producto. El rímel o pestañina transparente es un gel multipropósito ideal para looks naturales. Sirve para definir y levantar las pestañas sin aportar color; además, un tip es que funciona para fijar las cejas levemente, y funciona como prebase para aumentar el volumen de tu rímel habitual. No maltrata tus pestañas. Su fórmula ligera ayuda a mantenerlas en su lugar con un acabado natural y cómodo. Llegó con nueva imagen, nuevo empaque, práctico y moderno, perfecto para tu rutina diaria."
+},
+{
+  id: "St23",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Terra Trendy - St23",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/St23.jpg",
+  description: "- Es una paleta ideal para looks diarios.\n- Tiene 9 tonos entre mates, tierras, rojizos y rosas.\n- Incluye sombras satinadas semi cremosas y compactas.\n- Son suaves al tacto y se difuminan muy bien.\n- Perfectas para llevarlas de viaje.\n- Se envían surtidas."
+},
+{
+  id: "PSL1374",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Pestañina Super Look - PSL1374",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/PSL1374.jpg",
+  description: "Luce una mirada intensa y llena de volumen con la máscara de pestañas Super Look. Su fórmula lavable ofrece excelente duración durante el día además permite un desmaquillado mucho más fácil y suave. Cuenta con un cepillo de silicona diseñado para separar, peinar y aportar volumen a cada pestaña. Sus cerdas alcanzan incluso las pestañas más cortas, ayudando a crear una apariencia más definida, abundante e impactante desde la raíz. Además, su fórmula no forma grumos, permitiendo aplicar capa tras capa sin perder la definición y logrando unas pestañas más largas, voluminosas y con un acabado uniforme."
+},
+{
+  id: "SST1879",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Sunset - SST1879",
+  price: 25000,
+  image: "images/productos/Maquillaje/Ojos/SST1879.jpg",
+  description: "Seguro te ha pasado que abres tu cosmetiquera y te encuentras con sombras que apenas pintan, que se caen a pedazos en tus ojeras o que te exigen llevar tres paletas diferentes solo para armar un look básico de diario. ¡Es hora de transformar ese momento de estrés en tu espacio favorito del día! Al abrir tu paleta Sunset, te recibirá un hermoso mensaje en su tapa interna diseñado para recordarte lo especial que eres mientras creas magia en tu mirada. Esta paleta es la combinación cálida perfecta que estabas buscando: reúne los tonos mate tierra infaltables para dar profundidad, el poderoso café oscuro que toda mujer necesita para dar fuerza y una selección de tonos satinados que varían entre dorados claros, dorados más oscuros y rosas espectaculares. Lo mejor de todo es que algunos de sus tonos brillantes vienen con un diseño único que te da un efecto duocromático divino, cambiando de color según la luz. Su excelente pigmentación y alta adherencia te aseguran que el color se quede en tu párpado y no en tus mejillas, logrando que maquillarte sea ultra fácil, rápido y súper divertido."
+},
+{
+  id: "SCT1327",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Cookies - SCT1327",
+  price: 20000,
+  image: "images/productos/Maquillaje/Ojos/SCT1327.jpg",
+  description: "Un look de ojos para el día a día, esta paleta queda chequeada para lograrlo de la mejor manera.\n- Contiene 9 tonos tierra entre mates y satinados, puedes lograr maquillajes de día y de noche.\n¡Es muy completa!\n- Su pigmentación es de excelente calidad y puedes saturar el color según tu necesidad.\n- Encuentras tonos de transición, de profundidad y el plus: ¡El pop de brillo!"
+},
+{
+  id: "PK15",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Puppy Collection - PK15",
+  price: 25000,
+  image: "images/productos/Maquillaje/Ojos/PK15.jpg",
+  description: "¡Todo lo que necesitas en una sola paleta!\nOlvídate de cargar una cosmetiquera pesada. Esta paleta tiene todo lo necesario para lograr un look completo y radiante.\n\nIncluye:\n16 sombras en tonos cálidos (mates y satinadas).\n2 iluminadores en tonos champaña y plateado.\n1 contorno en tono cálido.\n1 rubor con acabado mate.\n\nIncreíble pigmentación.\nTextura muy suave y fácil de difuminar.\nIdeal para crear desde looks naturales hasta maquillajes más elaborados.\nPerfecta para llevar en tu bolso y crear un full face en cualquier momento."
+},
+{
+  id: "MCR1861",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Color Rosa - MCR1861",
+  price: 25000,
+  image: "images/productos/Maquillaje/Ojos/MCR1861.jpg",
+  description: "¡Un producto pensado para las aficionadas a lo pinky!\n\n- En Trendy queremos traerte diseños cada vez más completos y hermosos, esta paleta es una de ellas.\n- Al abrirla encontrarás un mensaje especial para ti.\n- Su empaque es de calidad premium, con un diseño que amarás.\n- Contiene 9 tonos cálidos entre rosas y rojizos.\n- Es una paleta completa con sombras de acabados mates y satinados.\n- Su pigmentación es de calidad profesional y excelente adherencia."
+},
+{
+  id: "SSB1867",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Safari Boom - SSB1867",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/SSB1867.jpg",
+  description: "Seguro te ha pasado: terminas tu sombreado mate de diario, te miras al espejo y sientes que a tu mirada le falta ese glow o esa chispa especial para resaltar. O peor aún, compras una sombra brillante que se siente arenosa, te llena la ojera de escarcha suelta y se desvanece a las dos horas de haber salido de casa. ¡Es momento de despedirse de los ojos sin brillo y darle la bienvenida al destello más espectacular! Esta paleta de sombras es un verdadero tesoro compacto que llegó para salvar tus looks. Contiene 6 tonos completamente satinados con una gama cálida hermosa que varía entre dorados claros, oscuros y un tono terracota que es una absoluta bomba. Su textura ligeramente cremosa es un sueño total, haciendo que aplicarla sea ultra fácil y rápido, logrando que los pigmentos se fundan en tus ojos como seda desde la primera pasada. Tiene una excelente pigmentación y adherencia que mantiene ese glow intacto, todo en un tamaño ideal y súper práctico para llevar en cualquier cosmetiquera o bolso. ¡Es el secreto infalible para brillar con estilo estés donde estés!"
+},
+{
+  id: "PD08",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Dreams Pro - PD08",
+  price: 50000,
+  image: "images/productos/Maquillaje/Ojos/PD08.jpg",
+  description: "¡La paleta de tus sueños si existe!\n\n- Paleta Dreams Pro de calidad profesional.\n- Tiene 30 sombras en tonos mates y satinados.\n- Ultra pigmentadas y de larga duración.\n- Son suaves al tacto con la brocha.\n- Perfectas para crear muchas técnicas de maquillaje."
+},
+{
+  id: "SMT1657",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Meow - SMT1657",
+  price: 12000,
+  image: "images/productos/Maquillaje/Ojos/SMT1657.jpg",
+  description: "¡Ya no hay excusas para el glitter en tus maquillajes!\nPaleta con ese brillo que tanto te gusta.\nVienen 3 glitters en gel prensado con destellos en forma de estrella y 3 satinadas.\nMucho glowy en tu piel.\nSon ultra pigmentadas y de alta adherencia. Viene en un empaque hermoso y funcional."
+},
+{
+  id: "SRP1860",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombras Retro Phone - SRP1860",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/SRP1860.jpg",
+  description: "Salir de casa a las carreras y darte cuenta de que olvidaste empacar el rubor o que para retocar tu maquillaje debes cargar una paleta gigante. ¡Es hora de ganarle el juego a los looks express con un toque de nostalgia pura! Esta paleta con diseño de celular vintage es la combinación perfecta para lograr un look delicado y hermoso en cualquier lugar. Incluye 4 tonos de sombras satinadas (plateada, rosada y dos tonos dorados, uno intenso y otro claro) de textura semi cremosa que se difumina suavemente por tus párpados sin dejar pliegues. Además, viene con un rubor en polvo de excelente pigmentación en un tono universal que le da vida a tus mejillas de inmediato. Es el combo infalible para llevar en tu cosmetiquera y ganarte todos los halagos por tu maquillaje y por el empaque más lindo de todos."
+},
+{
+  id: "SLC1369",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Líquida Champagne - SLC1369",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/SLC1369.jpg",
+  description: "Si estás cansada de las sombras aburridas que pierden su brillo a los cinco minutos o de los glitters sueltos que terminan regados por toda tu cara, ¡este producto es tu salvación! Te presentamos nuestras sombras en dúo diseñadas estratégicamente para darle ese pop de glitter y luz a tus looks sin complicarte la vida. Viene por un lado en un color tornasol mágico, y por el otro un tono oro rosa espectacular con destellos de glitter que se roban todas las miradas. Se adhieren en la piel fácilmente gracias a su fórmula cremosa de secado inteligente y tienen una excelente durabilidad para que bailes, trabajes y disfrutes sin preocuparte por retoques. Es el toque de glamour que tu cosmetiquera estaba pidiendo a gritos."
+},
+{
+  id: "SPG176",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Escarcha Party Glitter - SPG176",
+  price: 5000,
+  image: "images/productos/Maquillaje/Ojos/SPG176.jpg",
+  description: "Brillar ya no es un problema! Los Party Glitter son el alido más conveniente si te vas de fiesta.\nGlitter de excelente pigmentación y calidad.\nContiene 6 tonos diferentes.\nSus tonos son entre rosas, dorados y violetas tornasol.\nLlevar tus looks a otro nivel con estos glitters serán tu nueva personalidad.\nRecuerda: Los glitters prensados contienen partículas más grandes que las de los iluminadores normales, lo que te da un acabado más potente y con más textura."
+},
+{
+  id: "Sct1767",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Chocolate - Sct1767",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/Sct1767.jpg",
+  description: "- Los tonos tierra nunca pasan de moda y lo mejor:\n- Favorecen a todos los tonos de piel y te permiten crear desde maquillajes suaves para el día hasta looks impactantes y sofisticados.\n- Incluye 8 sombras esenciales:\n- 4 tonos mate\n- 4 tonos satinados\n- Su pigmentación es construible, lo que te permite lograr un acabado natural o de calidad profesional, según tu estilo.\n- Además, su tamaño compacto la hace perfecta para llevar en el bolso y retocar tu maquillaje donde estés.\n- Diseño práctico, hermoso y perfecto para acompañarte en tu rutina diaria."
+},
+{
+  id: "Sct1471",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Sombra Glitter Circus - Sct1471",
+  price: 20000,
+  image: "images/productos/Maquillaje/Ojos/Sct1471.jpg",
+  description: "Olvídate de los maquillajes planos y aburridos que se apagan a mitad del día; llegó el momento de brillar con luz propia. Dale todo el poder satinado a tus maquillajes diarios con estas sombras e iluminadores tipo gel que son una completa locura. Contiene 9 tonos brillantes para que luzcas una mirada hermosa y magnética en cualquier ocasión. Lo mejor de todo es que dos de los tonos tienen una fórmula tipo gel innovadora, lo que les da mayor adherencia a tu párpado y un acabado con más textura, además tienen un efecto bicromático precioso que cambia de color según como te pegue la luz. Su pigmentación y calidad te encantarán desde la primera pasada. Es una paleta principalmente cálida, con tonos dorados y rosas perfectos para resaltar la calidez de tu piel y sintonizar con tu lado más Trendy."
+},
+{
+  id: "Ac30",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Delineador Plumon Artist - Ac30",
+  price: 20000,
+  image: "images/productos/Maquillaje/Ojos/Ac30.jpg",
+  description: "¡Pigmento y duración que impacta!\nDelineador individual con fórmula premium, tan bueno como los de alta gama.\nPigmentos súper intenso en color negro.\nFácil de usar.\nSecado rápido con acabado matte total.\nFormula aprueba de agua.\n¡Ideal para crear looks creativos, atrevidos y duraderos!"
+},
+{
+  id: "EY15",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Lápiz de Ojos Trendy - EY15",
+  price: 10000,
+  image: "images/productos/Maquillaje/Ojos/EY15.jpg",
+  description: "Salir a la calle feliz con un delineado espectacular y descubrir a mitad del día que el producto se corrió hacia abajo, dejándote ojos de panda y un aspecto cansado, es una de las peores batallas del maquillaje diario. ¡Es hora de ganarle la guerra a los ojos manchados con un toque de magia y nostalgia! Este increíble lápiz de ojos, inspirado en Woody y Buzz Lightyear de Toy Story, es colorido, divertido y está lleno de personalidad. Su fórmula profesional cuenta con una textura súper suave y cremosa que se desliza como seda sin necesidad de jalar el párpado ni causar lágrimas, depositando un color negro ultra pigmentado desde la primera pasada. Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de fijación te permite mantener tu delineado seguro siempre, convirtiéndose en el secreto infalible para un look intacto y perfecto que resiste todo tu día."
 },
 {
   id: "BLT2219",
