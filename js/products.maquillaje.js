@@ -2575,7 +2575,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Cepillo Pulidor Trendy - Cpt1891",
   price: 8000,
-  image: "images/productos/Maquillaje/Accesorios/Cpt1891.webp",
+  image: "images/productos/Maquillaje/Accesorios/Cpt1891.jpg",
   description: "El secreto del clean look. Consigue el estilo clean look y pulido que siempre has querido con nuestro cepillo pulidor.\nEstá diseñado para lograr un acabado elegante y sofisticado en tus peinados.\nSus cerdas suaves y densas permiten que el cabello tome forma y una textura lisa al momento de peinar, disminuyendo el frizz y logrando una apariencia pulida.\nEs muy versátil, perfecto para todo tipo de cabello.\nSu diseño es liviano y cómodo, esto lo hace de fácil manejo.\nPor un costado encuentras las cerdas gruesas para pulir y por el otro encuentras un cabo metálico que facilitará la separación del cabello para crear distintos peinados."
 },
 {
@@ -2584,7 +2584,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Cepillo Snake - Cst1977",
   price: 15000,
-  image: "images/productos/Maquillaje/Accesorios/Cst1977.webp",
+  image: "images/productos/Maquillaje/Accesorios/Cst1977.jpg",
   description: "¡Mantén tu cabello perfecto siempre! Trendy un cepillo especialmente diseñado para facilitar tu rutina capilar.\nSu material y sus cerdas desenreda el cabello de una forma suave, aportando un acabado brillante.\nSu tamaño es perfecto para llevar a todas partes, es ligero y flexible.\nSus cerdas son suaves y gracias a su flexibilidad se deslizan fácilmente sobre cualquier tipo de cabello.",
   category_new: "Nueva colección"
 },
@@ -2594,7 +2594,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Cuidado Facial",
   name: "Papeletas Anti Grasa Hombre - Pht1588",
   price: 15000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/Pht1588.webp",
+  image: "images/productos/Maquillaje/Cuidado_Facial/Pht1588.jpg",
   description: "¡La solución ideal para controlar la grasa facial en hombres! Son las mismas papeletas efectivas de siempre hechas a base de Aloe Vera y Té Verde, pero en una presentación renovada para que tu novio las lleve con él a todo lado. Controlan el brillo y absorben el exceso de grasa en cualquier momento del día. Su cajita con 100 unidades tiene el tamaño perfecto para cargar sin estorbar. Presiona una hoja sobre el rostro según sea necesario. Guardarlas en el bolsillo del abrigo o en el carro ayuda a tenerlas a la mano antes de cualquier reunión importante.",
   category_new: "Nueva colección"
 },
@@ -2604,7 +2604,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Depilador Individual - Dpt1778",
   price: 6000,
-  image: "images/productos/Maquillaje/Accesorios/Dpt1778.webp",
+  image: "images/productos/Maquillaje/Accesorios/Dpt1778.jpg",
   description: "Cejas on point con nuestro nuevo depilador: Check. Depilador de punta fina y delgada para más precisión al depilar las cejas.",
   category_new: "Nueva colección"
 },
@@ -2614,7 +2614,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Perfilador Facial Con Repuestos - Pft1779",
   price: 6000,
-  image: "images/productos/Maquillaje/Accesorios/Pft1779.webp",
+  image: "images/productos/Maquillaje/Accesorios/Pft1779.jpg",
   description: "¡Dile adiós a los vellitos de sobra! Este perfilador facial es el complemento ideal para lograr unas cejas perfectas con comodidad y practicidad. Cuenta con cuchilla intercambiable, cabezal removible y trae tres cuchillas extra como repuesto para renovarlo cuando lo necesites. Su diseño funcional y materiales de buena calidad facilitan tu rutina. Deslízalo suavemente sobre la piel limpia (puedes usarlo sobre un gel) para retirar los vellos. No utilizar sobre piel irritada, con heridas o lesiones, y mantener fuera del alcance de los niños. Inclina el perfilador en un ángulo de 45 grados y realiza trazos cortos en dirección al crecimiento del vello.",
   category_new: "Nueva colección"
 },
@@ -2624,7 +2624,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Separador De Pestañas - Spt2435",
   price: 10000,
-  image: "images/productos/Maquillaje/Accesorios/Spt2435.webp",
+  image: "images/productos/Maquillaje/Accesorios/Spt2435.jpg",
   description: "La mejor herramienta para unas pestañas perfectas. El separador de pestañas (o peine para pestañas) sirve para peinar, definir y eliminar los grumos de la pestañina después de su aplicación. Garantiza un acabado limpio, separa los vellos pegados evitando grumos, dando máximo alargamiento y volume, además logra un efecto de abanico profesional en la mirada sin necesidad de agregar más maquillaje. Una vez lo pruebas, se convierte en tu aliado. Hecho en acero quirúrgico de excelente calidad. Notas el cambio apenas lo usas.",
   category_new: "Nueva colección"
 },
@@ -2634,7 +2634,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Organizador Brochas Redondo - Om20",
   price: 15000,
-  image: "images/productos/Maquillaje/Accesorios/Om20.webp",
+  image: "images/productos/Maquillaje/Accesorios/Om20.jpg",
   description: "Mantén tu espacio ordenado y elegante con este organizador acrílico de 3 compartimentos.\n\nDiseño giratorio: Accede fácilmente a tus productos desde cualquier ángulo.\nVersátil y práctico: Ideal para brochas, pestañinas, delineadores, lápices y más.\nAhorra espacio: Perfecto para mantener tu tocador limpio y organizado.\nMaterial resistente: Acrílico transparente que combina con cualquier estilo.\n\n¡Una solución funcional y con estilo para espacios más organizados!",
   category_new: "Nueva colección"
 },
@@ -2644,7 +2644,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Cuidado Facial",
   name: "Papeletas Sky Lover - Psl2133",
   price: 10000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/Psl2133.webp",
+  image: "images/productos/Maquillaje/Cuidado_Facial/Psl2133.jpg",
   description: "El infaltable anti grasa que borra el exceso de brillo del rostro sin afectar ni un milímetro el maquillaje que llevas puesto.\n\n- Diseñadas específicamente para la zona T frente, nariz y mentón, donde la piel produce más sebo, funcionan con el gesto más simple: presiona sobre la zona brillante, la papeleta absorbe el sebo en 2-3 segundos y retiras.\n- Sin arrastrar, sin frotar, sin perder cobertura de base ni corrector.\n- El resultado es un rostro fresco, mate y con apariencia de maquillaje recién aplicado, en cualquier momento del día.\n- Son superiores al papel tissue o los pañuelos porque su material específico captura el sebo sin dejar pelusa ni alterar la superficie del maquillaje.",
   category_new: "Nueva colección"
 },
@@ -2654,7 +2654,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Accesorios",
   name: "Organizador Retro Rock - Orr2390",
   price: 25000,
-  image: "images/productos/Maquillaje/Accesorios/Orr2390.webp",
+  image: "images/productos/Maquillaje/Accesorios/Orr2390.jpg",
   description: "Organiza tus cosméticos favoritos y dale un toque único a tu tocador. El Organizador Retro Rock está pensado para solucionar el desorden en tu mesa, permitiéndote clasificar tus productos para tenerlos siempre a la mano. Fabricado en un material resistente, cuenta con el espacio ideal para mantener todo en su lugar de forma práctica. Coloca tus cosméticos en los compartimentos según tus necesidades. Clasifica tus labiales y brochas de uso diario en la zona frontal para alistarte mucho más rápido.",
   category_new: "Nueva colección"
 },
@@ -2664,7 +2664,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Rostro",
   name: "Base Aura - BAT2272",
   price: 30000,
-  image: "images/productos/Maquillaje/Rostro/BAT2272.webp",
+  image: "images/productos/Maquillaje/Rostro/BAT2272.jpg",
   description: "La base de maquillaje que logra lo que pocas consiguen: acabado mate profesional y cobertura buildable sin sensación grasa ni pesada durante todo el día\n\n- Su fórmula está desarrollada para pieles mixtas a grasas que necesitan control del brillo sin sacrificar comodidad.\n- El acabado mate mantiene la piel pulida durante horas sin que necesites retocar constantemente.\n- La cobertura es buildable: una capa da un resultado de piel unificada y natural; dos capas en zonas específicas dan mayor intensidad sin el efecto \"máscara\" que dan las bases de cobertura plana.\n- La sensación en la piel es ligera y cómoda — el maquillaje que se olvida que se lleva puesto hasta que te ves al espejo.\n- Disponible en varios tonos para la diversidad de pieles colombianas.",
   category_new: "Nueva colección",
   tonos: ["01", "02"]
