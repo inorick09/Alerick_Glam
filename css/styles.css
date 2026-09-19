@@ -31,7 +31,113 @@
   --radius: 18px;
 }
 
+/* ---------- 1b. Temas por categoría ----------
+   Cada categoría reemplaza las variables de color de :root para que
+   toda la página (header, tarjetas, footer) adopte su propia
+   personalidad, sin duplicar reglas. */
+body.page-maquillaje {
+  --color-bg:         #FDEBF1;
+  --color-bg-alt:      #FBD3E1;
+  --color-rose:        #D9457E;
+  --color-rose-deep:   #A22458;
+  --color-gold:        #E3A9B4;
+  --color-gold-light:  #F8DCE5;
+  --color-card:        #FFF6F9;
+}
+
+body.page-bisuteria {
+  --color-bg:         #FBF5E6;
+  --color-bg-alt:      #F2E1B8;
+  --color-rose:        #A97A2E;
+  --color-rose-deep:   #7C5A1E;
+  --color-gold:        #C9973F;
+  --color-gold-light:  #EFDBA6;
+  --color-card:        #FFFCF4;
+}
+
+body.page-home .hero {
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(217, 69, 126, 0.10) 0, transparent 40%),
+    radial-gradient(circle at 88% 12%, rgba(201, 151, 63, 0.16) 0, transparent 42%),
+    radial-gradient(circle at 70% 90%, rgba(255, 255, 255, 0.5) 0, transparent 40%);
+}
+body.page-home .category-card:hover {
+  box-shadow:
+    0 20px 40px -20px rgba(217, 69, 126, 0.35),
+    0 14px 32px -18px rgba(201, 151, 63, 0.35);
+}
+
+body.page-maquillaje .header {
+  background: rgba(253, 235, 241, 0.88);
+  border-bottom-color: rgba(217, 69, 126, 0.28);
+}
+body.page-bisuteria .header {
+  background: rgba(251, 245, 230, 0.9);
+  border-bottom-color: rgba(201, 151, 63, 0.35);
+}
+
+body.page-maquillaje .page-hero {
+  background-image:
+    radial-gradient(circle at 18% 28%, rgba(217, 69, 126, 0.14) 0, transparent 42%),
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.55) 0, transparent 40%);
+}
+body.page-bisuteria .page-hero {
+  background-image:
+    radial-gradient(circle at 16% 26%, rgba(201, 151, 63, 0.18) 0, transparent 42%),
+    radial-gradient(circle at 84% 78%, rgba(255, 252, 235, 0.65) 0, transparent 40%);
+}
+
+body.page-maquillaje .product-card:hover,
+body.page-maquillaje .category-card:hover,
+body.page-maquillaje .catalog-card:hover {
+  box-shadow: 0 20px 40px -18px rgba(217, 69, 126, 0.45);
+}
+body.page-bisuteria .product-card:hover,
+body.page-bisuteria .category-card:hover,
+body.page-bisuteria .catalog-card:hover {
+  box-shadow: 0 20px 40px -18px rgba(169, 122, 46, 0.45);
+}
+
+/* Elementos flotantes decorativos del hero de categoría (corazones y
+   brillos en maquillaje; joyas y brillos en bisutería). Puramente
+   ambientales: aria-hidden y sin contenido interactivo. */
+.page-hero { position: relative; overflow: hidden; }
+.page-hero .container { position: relative; z-index: 1; }
+
+.page-hero__deco {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.page-hero__deco-item {
+  position: absolute;
+  font-size: 1.5rem;
+  line-height: 1;
+  animation: page-hero-float 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+.page-hero__deco-item:nth-child(1) { top: 14%; left: 7%;  font-size: 1.9rem; animation-delay: 0s; }
+.page-hero__deco-item:nth-child(2) { top: 22%; right: 9%; font-size: 1.3rem; animation-delay: 1.2s; }
+.page-hero__deco-item:nth-child(3) { bottom: 18%; left: 13%; font-size: 1.4rem; animation-delay: 2.4s; }
+.page-hero__deco-item:nth-child(4) { bottom: 12%; right: 15%; font-size: 2rem; animation-delay: 0.8s; }
+.page-hero__deco-item:nth-child(5) { top: 48%; left: 3%; font-size: 1.1rem; animation-delay: 3s; }
+.page-hero__deco-item:nth-child(6) { top: 52%; right: 4%; font-size: 1.2rem; animation-delay: 1.8s; }
+
+@keyframes page-hero-float {
+  0%, 100% { transform: translateY(0) rotate(-4deg); opacity: .45; }
+  50%      { transform: translateY(-16px) rotate(6deg); opacity: .9; }
+}
+
 * { box-sizing: border-box; }
+
+/* Varios elementos de la página (badges, flechitas, chips de filtro...)
+   fijan su propio "display" (flex/grid) y luego se ocultan poniéndoles
+   el atributo "hidden" desde JS. Sin esta regla, ese "display" propio
+   gana por encima del "display:none" que el navegador aplica por
+   defecto a "hidden", y el elemento se queda visible igual. */
+[hidden] { display: none !important; }
 
 html { scroll-behavior: smooth; }
 
@@ -209,13 +315,15 @@ em {
 }
 
 /* ---------- 4. Hero ---------- */
-.hero { padding-top: 64px; overflow: hidden; }
+.hero { padding-top: 64px; overflow: hidden; position: relative; }
 
 .hero__inner {
   display: grid;
   grid-template-columns: 1.45fr 0.55fr;
   gap: 48px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
@@ -267,17 +375,41 @@ em {
   filter: drop-shadow(0 24px 48px rgba(20, 16, 15, 0.25));
 }
 
-/* Elemento distintivo: franja de tonos, como una carta de swatches */
-.shade-strip {
+/* Elemento distintivo: divisor decorativo con una ramita al centro,
+   flanqueada por una línea de corazones y brillos a cada lado. */
+.deco-divider {
   display: flex;
+  align-items: center;
+  gap: 16px;
   width: 100%;
-  height: 28px;
   margin-top: 56px;
+  position: relative;
+  z-index: 1;
 }
-.shade-strip--small { height: 18px; margin: 0 0 8px; }
-.shade-strip span {
-  flex: 1;
-  background: var(--c);
+.deco-divider--small { margin: 0 0 8px; }
+
+.deco-divider__line {
+  flex: 1 1 auto;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2072%2028'%20width='72'%20height='28'%3E%3Cg%20transform='translate(4,3)%20scale(0.8)'%3E%3Cpath%20fill='%23D9457E'%20d='M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z'/%3E%3C/g%3E%3Cg%20transform='translate(44,4)'%3E%3Cpath%20fill='%23C9973F'%20d='M10,0L12.5,7.5L20,10L12.5,12.5L10,20L7.5,12.5L0,10L7.5,7.5Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center left;
+  background-size: 72px 24px;
+  opacity: 0.85;
+}
+.deco-divider__line--flip { transform: scaleX(-1); }
+
+.deco-divider--small .deco-divider__line {
+  height: 18px;
+  background-size: 54px 18px;
+}
+
+.deco-divider__branch { flex: 0 0 auto; display: block; }
+.deco-divider--small .deco-divider__branch { width: 48px; height: 18px; }
+
+@media (max-width: 560px) {
+  .deco-divider__line { background-size: 54px 18px; height: 18px; }
+  .deco-divider__branch { width: 48px; height: 18px; }
 }
 
 /* ---------- 4b. Hero de página (categorías) ---------- */
@@ -489,6 +621,19 @@ em {
 .catalog-filters--colaboracion { margin-top: -14px; }
 .catalog-filters--colaboracion::before {
   content: "Colección:";
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  margin-right: 2px;
+}
+
+/* Tercera fila de chips (categoría por edad, campo category_age) —
+   mismo estilo que la de colección, con su propia etiqueta. */
+.catalog-filters--age { margin-top: -14px; }
+.catalog-filters--age::before {
+  content: "Edad:";
   align-self: center;
   font-family: var(--font-body);
   font-size: 0.8rem;
@@ -1030,7 +1175,6 @@ em {
   color: var(--color-ink-soft);
 }
 .checkout-extra-fields { display: flex; flex-direction: column; gap: 12px; }
-.checkout-extra-fields[hidden] { display: none; }
 .radio-group { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
 .radio-option {
   display: flex;
@@ -1089,6 +1233,32 @@ em {
 }
 .product-card__zoom-hint svg { width: 18px; height: 18px; }
 .product-card:hover .product-card__zoom-hint { opacity: 1; transform: scale(1); }
+
+/* Flechitas para pasar entre las fotos de un producto de maquillaje
+   directo desde la tarjeta (bisutería no las lleva: sus productos
+   solo tienen una foto). Se muestran solo si el producto tiene fotos
+   extra (ver setupCardGallery en catalog.js). */
+.product-card__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(20, 16, 15, 0.45);
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.product-card__nav:hover { background: rgba(20, 16, 15, 0.75); transform: translateY(-50%) scale(1.08); }
+.product-card__nav--prev { left: 10px; }
+.product-card__nav--next { right: 10px; }
 
 .lightbox-overlay {
   position: fixed;
@@ -1257,14 +1427,40 @@ em {
 }
 .tone-modal__close:hover { background: var(--color-gold-light); }
 
+.tone-modal__stage {
+  position: relative;
+  margin: 0 0 1em;
+}
+
 .tone-modal__extra-img {
   display: block;
   width: 100%;
   max-height: 340px;
   object-fit: contain;
   border-radius: calc(var(--radius) - 8px);
-  margin: 0 0 1em;
 }
+
+.tone-modal__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(20, 16, 15, 0.5);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.tone-modal__nav:hover { background: rgba(20, 16, 15, 0.8); transform: translateY(-50%) scale(1.06); }
+.tone-modal__nav--prev { left: 8px; }
+.tone-modal__nav--next { right: 8px; }
 
 .tone-modal__eyebrow {
   font-family: var(--font-mono);

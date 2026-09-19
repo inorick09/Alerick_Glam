@@ -5,12 +5,14 @@
 // la categoría indicada en su atributo data-category.
 // Si todavía no hay productos en esa categoría, no toca nada.
 //
-// Si además existen #catalogFilters y/o #catalogFiltersColaboracion en
-// el HTML, arma dos grupos de chips que NO se combinan entre sí:
+// Si además existen #catalogFilters, #catalogFiltersColaboracion y/o
+// #catalogFiltersAge en el HTML, arma hasta tres grupos de chips que NO
+// se combinan entre sí:
 //   - #catalogFilters          → tipo de producto (campo subcategory)
 //   - #catalogFiltersColaboracion → colección/colaboración (campo colaboracion)
-// Elegir un chip de un grupo desactiva el que estuviera elegido en el
-// otro grupo — solo un filtro manda a la vez, nunca los dos juntos.
+//   - #catalogFiltersAge       → categoría por edad (campo category_age)
+// Elegir un chip de un grupo desactiva el que estuviera elegido en los
+// otros grupos — solo un filtro manda a la vez, nunca dos juntos.
 // Volver a hacer clic en el chip activo lo desactiva y vuelve al
 // catálogo sin filtrar. Solo aparecen los valores que ya tienen
 // productos cargados. Mientras haya al menos un grupo de chips, el
@@ -61,8 +63,12 @@ function renderProductCards(grid, items) {
   // se quedarían invisibles para siempre si la lleváramos.
   grid.innerHTML = items.map(p => `
     <article class="product-card">
-      <div class="product-card__img" data-zoom-image="${p.image}" data-zoom-name="${p.name}">
+      <div class="product-card__img" data-zoom-image="${p.image}" data-zoom-name="${p.name}" data-category="${p.category}">
         <img src="${p.image}" alt="${p.name}" loading="lazy">
+        ${p.category === 'maquillaje' ? `
+        <button type="button" class="product-card__nav product-card__nav--prev" aria-label="Foto anterior" hidden>&#8249;</button>
+        <button type="button" class="product-card__nav product-card__nav--next" aria-label="Foto siguiente" hidden>&#8250;</button>
+        ` : ''}
         <span class="product-card__zoom-hint" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="7"></circle>
@@ -103,6 +109,13 @@ function renderProductCards(grid, items) {
     imgWrap.addEventListener('click', () => {
       openLightbox(imgWrap.dataset.zoomImage, imgWrap.dataset.zoomName);
     });
+    // Solo maquillaje: si el producto tiene fotos extra (BASE_2.jpg,
+    // BASE_3.jpg...), esta tarjeta muestra flechitas para pasearlas sin
+    // necesidad de abrir la lupa. Bisutería no las lleva (sus productos
+    // solo tienen una foto), así que ni siquiera se buscan.
+    if (imgWrap.dataset.category === 'maquillaje') {
+      setupCardGallery(imgWrap);
+    }
   });
 
   // Las descripciones se recortan a 3 líneas (ver CSS) para que todas
@@ -122,6 +135,31 @@ function renderProductCards(grid, items) {
       const expanded = desc.classList.toggle('is-expanded');
       btn.textContent = expanded ? 'Ver menos' : 'Ver más';
     });
+  });
+}
+
+// ---------- Flechitas de la tarjeta: pasear las fotos de un producto
+// sin abrir la lupa (solo maquillaje, ver comentario en renderProductCards) ----------
+function setupCardGallery(imgWrap) {
+  const imgEl = imgWrap.querySelector('img');
+  const prevBtn = imgWrap.querySelector('.product-card__nav--prev');
+  const nextBtn = imgWrap.querySelector('.product-card__nav--next');
+  if (!imgEl || !prevBtn || !nextBtn) return;
+
+  const baseImage = imgWrap.dataset.zoomImage;
+  probeExtraImages(baseImage).then(extras => {
+    if (extras.length === 0) return;
+    const images = [baseImage, ...extras];
+    let index = 0;
+    const show = next => {
+      index = (next + images.length) % images.length;
+      imgEl.src = images[index];
+      imgWrap.dataset.zoomImage = images[index];
+    };
+    prevBtn.hidden = false;
+    nextBtn.hidden = false;
+    prevBtn.addEventListener('click', e => { e.stopPropagation(); show(index - 1); });
+    nextBtn.addEventListener('click', e => { e.stopPropagation(); show(index + 1); });
   });
 }
 
@@ -410,10 +448,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Estado de los dos filtros de chip — nunca los dos a la vez: elegir
   // uno limpia el otro (ver más abajo) — más la búsqueda por nombre, que
   // sí se combina con cualquiera de los dos (afina lo que ya esté filtrado).
-  const state = { subcategory: null, colaboracion: null, search: '' };
+  const state = { subcategory: null, colaboracion: null, categoryAge: null, search: '' };
 
   const applyFilters = () => {
-    const hasFilter = state.subcategory || state.colaboracion || state.search.trim();
+    const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.search.trim();
 
     if (!hasFilter) {
       // Sin ningún chip activo: se vuelve al estado inicial, con el
@@ -437,6 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filtered = items.filter(p =>
       (!state.subcategory || p.subcategory === state.subcategory) &&
       (!state.colaboracion || p.colaboracion === state.colaboracion) &&
+      (!state.categoryAge || p.category_age === state.categoryAge) &&
       matchesSearch(p.name, state.search)
     );
     renderPage(grid, pagerEl, filtered, 1);
@@ -444,9 +483,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const subcategoryValues = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
   const colaboracionValues = getPresentFilterValues(items, 'colaboracion');
+  const categoryAgeValues = getPresentFilterValues(items, 'category_age');
 
   const filtersElSubcategory = document.getElementById('catalogFilters');
   const filtersElColaboracion = document.getElementById('catalogFiltersColaboracion');
+  const filtersElAge = document.getElementById('catalogFiltersAge');
 
   // Quita el chip activo (si hay uno) del otro grupo, para que los dos
   // grupos nunca filtren a la vez.
@@ -461,7 +502,9 @@ document.addEventListener('DOMContentLoaded', () => {
       state.subcategory = value;
       if (value) {
         state.colaboracion = null;
+        state.categoryAge = null;
         clearActiveChip(filtersElColaboracion);
+        clearActiveChip(filtersElAge);
       }
       applyFilters();
     }
@@ -473,7 +516,23 @@ document.addEventListener('DOMContentLoaded', () => {
       state.colaboracion = value;
       if (value) {
         state.subcategory = null;
+        state.categoryAge = null;
         clearActiveChip(filtersElSubcategory);
+        clearActiveChip(filtersElAge);
+      }
+      applyFilters();
+    }
+  );
+  const hasAgeFilter = setupFilterGroup(
+    filtersElAge,
+    categoryAgeValues,
+    value => {
+      state.categoryAge = value;
+      if (value) {
+        state.subcategory = null;
+        state.colaboracion = null;
+        clearActiveChip(filtersElSubcategory);
+        clearActiveChip(filtersElColaboracion);
       }
       applyFilters();
     }
@@ -505,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // productos visibles: solo se muestran al elegir uno. Si no hay
   // ningún dato de filtro, no hay nada que elegir y se muestran todos
   // los productos ya mismo (paginados de a PAGE_SIZE).
-  if (hasSubcategoryFilter || hasColaboracionFilter) {
+  if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter) {
     showCatalogPlaceholder(category);
   } else {
     renderPage(grid, pagerEl, items, 1);

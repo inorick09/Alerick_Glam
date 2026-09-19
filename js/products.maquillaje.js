@@ -52,6 +52,25 @@
 // este campo (los que no son de ninguna colaboración) simplemente no
 // aparecen en ese filtro.
 //
+// SI QUIERES AGRUPAR EL PRODUCTO POR EDAD (Niñas, Adultas, etc.):
+// Agrégale un campo "category_age" con ese texto, así:
+//   category_age: "Niñas"
+// En la página de Maquillaje aparece solo un botón (chip) con ese texto,
+// en la fila "Edad:", igual que las colecciones. Es texto libre: escribe
+// el mismo texto, con las mismas mayúsculas, en todos los productos del
+// mismo grupo para que el botón los agrupe. Los productos SIN este campo
+// simplemente no aparecen en ese filtro. Como los demás filtros, no se
+// combina con el de tipo ni con el de colección: manda uno a la vez.
+//
+// SI QUIERES AGRUPAR EL PRODUCTO EN UNA CATEGORÍA DE NOVEDADES:
+// Agrégale un campo "category_new" con ese texto, así:
+//   category_new: "Nuevos"
+// Funciona igual que "category_age": aparece un solo botón (chip) con ese
+// texto, en la fila "Novedades:". Es texto libre: escribe el mismo texto,
+// con las mismas mayúsculas, en todos los productos del grupo. Los
+// productos SIN este campo no aparecen en ese filtro, y solo manda un
+// filtro a la vez (tipo, colección, edad o novedades).
+//
 // Como compras según lo que te piden, no hay control de stock
 // aquí: si un producto ya no lo consigues, simplemente borra su
 // bloque (o coméntalo con /* así */) y desaparece del catálogo.

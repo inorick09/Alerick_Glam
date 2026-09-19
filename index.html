@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-home">
 
 <!-- ===== HEADER ===== -->
 <header class="header" id="header">
@@ -120,6 +120,14 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
+    <div class="page-hero__deco" aria-hidden="true">
+      <span class="page-hero__deco-item">💕</span>
+      <span class="page-hero__deco-item">⭐</span>
+      <span class="page-hero__deco-item">✨</span>
+      <span class="page-hero__deco-item">👑</span>
+      <span class="page-hero__deco-item">💖</span>
+      <span class="page-hero__deco-item">✨</span>
+    </div>
     <div class="container hero__inner">
       <div class="hero__text">
         <p class="eyebrow">Maquillaje &amp; bisutería · Bogotá</p>
@@ -139,14 +147,16 @@
       </div>
     </div>
 
-    <!-- Elemento distintivo: la "franja de tonos", como una carta de swatches de maquillaje -->
-    <div class="shade-strip" role="presentation">
-      <span style="--c:#C2416B"></span><span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span>
-      <span style="--c:#E8D5B5"></span><span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span>
-      <span style="--c:#8E2F52"></span><span style="--c:#F3D9CF"></span><span style="--c:#C2416B"></span>
-      <span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span><span style="--c:#E8D5B5"></span>
-      <span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span><span style="--c:#8E2F52"></span>
-      <span style="--c:#F3D9CF"></span>
+    <!-- Elemento distintivo: divisor de corazones y brillos alrededor de una ramita -->
+    <div class="deco-divider" role="presentation" aria-hidden="true">
+      <span class="deco-divider__line deco-divider__line--flip"></span>
+      <svg class="deco-divider__branch" viewBox="0 0 64 24" width="64" height="24" focusable="false">
+        <path d="M4,20 C20,8 44,8 60,20" fill="none" stroke="#B8935A" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16,13 C11,6 4,5 0,8 C5,11 10,13 16,13 Z" fill="#C9973F"/>
+        <path d="M32,8 C29,2 22,1 18,3 C23,6 27,8 32,8 Z" fill="#D9457E"/>
+        <path d="M48,13 C53,6 60,5 64,8 C59,11 54,13 48,13 Z" fill="#C9973F"/>
+      </svg>
+      <span class="deco-divider__line"></span>
     </div>
   </section>
 
@@ -249,10 +259,15 @@
     </div>
   </section>
 
-  <div class="shade-strip shade-strip--small" role="presentation">
-    <span style="--c:#C2416B"></span><span style="--c:#E8B4C4"></span><span style="--c:#B8935A"></span>
-    <span style="--c:#E8D5B5"></span><span style="--c:#2A9D8F"></span><span style="--c:#7FD3C7"></span>
-    <span style="--c:#8E2F52"></span><span style="--c:#F3D9CF"></span>
+  <div class="deco-divider deco-divider--small" role="presentation" aria-hidden="true">
+    <span class="deco-divider__line deco-divider__line--flip"></span>
+    <svg class="deco-divider__branch" viewBox="0 0 64 24" width="64" height="24" focusable="false">
+      <path d="M4,20 C20,8 44,8 60,20" fill="none" stroke="#B8935A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M16,13 C11,6 4,5 0,8 C5,11 10,13 16,13 Z" fill="#C9973F"/>
+      <path d="M32,8 C29,2 22,1 18,3 C23,6 27,8 32,8 Z" fill="#D9457E"/>
+      <path d="M48,13 C53,6 60,5 64,8 C59,11 54,13 48,13 Z" fill="#C9973F"/>
+    </svg>
+    <span class="deco-divider__line"></span>
   </div>
 
   <!-- ===== CATEGORÍAS ===== -->

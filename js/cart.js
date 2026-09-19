@@ -128,6 +128,7 @@ function pulseCartIcon() {
 // ventanita para que la clienta elija uno. Los productos sin "tonos"
 // siguen agregándose igual que siempre, sin este paso de más.
 let toneModalEls = null;
+let toneModalRequestId = 0;
 
 function ensureToneModal() {
   if (toneModalEls) return toneModalEls;
@@ -138,7 +139,11 @@ function ensureToneModal() {
   overlay.innerHTML = `
     <div class="tone-modal" role="dialog" aria-modal="true" aria-label="Tonos disponibles">
       <button type="button" class="tone-modal__close" aria-label="Cerrar">&times;</button>
-      <img class="tone-modal__extra-img" alt="" hidden>
+      <div class="tone-modal__stage" hidden>
+        <button type="button" class="tone-modal__nav tone-modal__nav--prev" aria-label="Foto anterior" hidden>&#8249;</button>
+        <img class="tone-modal__extra-img" alt="">
+        <button type="button" class="tone-modal__nav tone-modal__nav--next" aria-label="Foto siguiente" hidden>&#8250;</button>
+      </div>
       <p class="tone-modal__eyebrow">Tonos disponibles:</p>
       <div class="tone-modal__options"></div>
     </div>
@@ -147,7 +152,19 @@ function ensureToneModal() {
 
   const optionsEl = overlay.querySelector('.tone-modal__options');
   const closeBtn = overlay.querySelector('.tone-modal__close');
+  const stageEl = overlay.querySelector('.tone-modal__stage');
   const extraImgEl = overlay.querySelector('.tone-modal__extra-img');
+  const prevBtn = overlay.querySelector('.tone-modal__nav--prev');
+  const nextBtn = overlay.querySelector('.tone-modal__nav--next');
+
+  // "images" siempre trae las fotos de tono en orden (BASE_2, BASE_3...),
+  // nunca la foto principal del producto — por eso la lupa siempre abre
+  // mostrando la que termina en _2.
+  const imgState = { images: [], index: 0 };
+  const showToneImage = i => {
+    imgState.index = (i + imgState.images.length) % imgState.images.length;
+    extraImgEl.src = imgState.images[imgState.index];
+  };
 
   const close = () => {
     overlay.classList.remove('is-open');
@@ -155,45 +172,47 @@ function ensureToneModal() {
   };
 
   closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click', () => showToneImage(imgState.index - 1));
+  nextBtn.addEventListener('click', () => showToneImage(imgState.index + 1));
   overlay.addEventListener('click', e => {
     if (e.target === overlay) close();
   });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+    if (!overlay.classList.contains('is-open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') showToneImage(imgState.index - 1);
+    if (e.key === 'ArrowRight') showToneImage(imgState.index + 1);
   });
 
-  toneModalEls = { overlay, optionsEl, close, extraImgEl };
+  toneModalEls = { overlay, optionsEl, close, stageEl, extraImgEl, prevBtn, nextBtn, imgState, showToneImage };
   return toneModalEls;
 }
 
-// Si la foto principal es "ALGO.png", busca "ALGO_2.png" junto a ella —
-// mismo patrón de nombres que usa la lupa del catálogo (catalog.js) para
-// sus fotos extra. Si no existe, el <img> se queda oculto.
-function secondImageSrc(src) {
-  const match = (src || '').match(/^(.*?)(_\d+)?(\.[^./]+)$/);
-  if (!match) return null;
-  const [, base, , ext] = match;
-  return `${base}_2${ext}`;
-}
-
 function openToneModal(product, sourceEl) {
-  const { overlay, optionsEl, close, extraImgEl } = ensureToneModal();
+  const { overlay, optionsEl, stageEl, extraImgEl, prevBtn, nextBtn, imgState, showToneImage } = ensureToneModal();
 
-  extraImgEl.hidden = true;
+  stageEl.hidden = true;
+  prevBtn.hidden = true;
+  nextBtn.hidden = true;
   extraImgEl.removeAttribute('src');
-  const secondSrc = secondImageSrc(product.image);
-  if (secondSrc) {
-    const probe = new Image();
-    probe.onload = () => {
-      if (extraImgEl.dataset.probeSrc !== secondSrc) return;
-      extraImgEl.src = secondSrc;
-      extraImgEl.alt = product.name;
-      extraImgEl.hidden = false;
-    };
-    probe.onerror = () => {};
-    extraImgEl.dataset.probeSrc = secondSrc;
-    probe.src = secondSrc;
-  }
+  imgState.images = [];
+
+  // Busca "BASE_2.jpg", "BASE_3.jpg"... junto a la foto principal (mismo
+  // patrón de nombres que usa la lupa del catálogo, en catalog.js). Si
+  // hay más de una, aparecen las flechitas para pasarlas; si solo existe
+  // la _2, se muestra sola, sin flechas.
+  const requestId = ++toneModalRequestId;
+  probeExtraImages(product.image).then(extras => {
+    if (requestId !== toneModalRequestId || extras.length === 0) return;
+    imgState.images = extras;
+    extraImgEl.alt = product.name;
+    showToneImage(0);
+    stageEl.hidden = false;
+    if (extras.length > 1) {
+      prevBtn.hidden = false;
+      nextBtn.hidden = false;
+    }
+  });
 
   optionsEl.innerHTML = product.tonos.map(tono => `
     <button type="button" class="tone-modal__option" data-tono="${tono}">${tono}</button>
