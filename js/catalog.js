@@ -6,11 +6,12 @@
 // Si todavía no hay productos en esa categoría, no toca nada.
 //
 // Si además existen #catalogFilters, #catalogFiltersColaboracion y/o
-// #catalogFiltersAge en el HTML, arma hasta tres grupos de chips que NO
+// #catalogFiltersAge en el HTML, arma hasta cuatro grupos de chips que NO
 // se combinan entre sí:
 //   - #catalogFilters          → tipo de producto (campo subcategory)
 //   - #catalogFiltersColaboracion → colección/colaboración (campo colaboracion)
 //   - #catalogFiltersAge       → categoría por edad (campo category_age)
+//   - #catalogFiltersNew       → novedades (campo category_new)
 // Elegir un chip de un grupo desactiva el que estuviera elegido en los
 // otros grupos — solo un filtro manda a la vez, nunca dos juntos.
 // Volver a hacer clic en el chip activo lo desactiva y vuelve al
@@ -448,10 +449,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Estado de los dos filtros de chip — nunca los dos a la vez: elegir
   // uno limpia el otro (ver más abajo) — más la búsqueda por nombre, que
   // sí se combina con cualquiera de los dos (afina lo que ya esté filtrado).
-  const state = { subcategory: null, colaboracion: null, categoryAge: null, search: '' };
+  const state = { subcategory: null, colaboracion: null, categoryAge: null, categoryNew: null, search: '' };
 
   const applyFilters = () => {
-    const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.search.trim();
+    const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.categoryNew || state.search.trim();
 
     if (!hasFilter) {
       // Sin ningún chip activo: se vuelve al estado inicial, con el
@@ -476,6 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
       (!state.subcategory || p.subcategory === state.subcategory) &&
       (!state.colaboracion || p.colaboracion === state.colaboracion) &&
       (!state.categoryAge || p.category_age === state.categoryAge) &&
+      (!state.categoryNew || p.category_new === state.categoryNew) &&
       matchesSearch(p.name, state.search)
     );
     renderPage(grid, pagerEl, filtered, 1);
@@ -484,10 +486,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const subcategoryValues = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
   const colaboracionValues = getPresentFilterValues(items, 'colaboracion');
   const categoryAgeValues = getPresentFilterValues(items, 'category_age');
+  const categoryNewValues = getPresentFilterValues(items, 'category_new');
 
   const filtersElSubcategory = document.getElementById('catalogFilters');
   const filtersElColaboracion = document.getElementById('catalogFiltersColaboracion');
   const filtersElAge = document.getElementById('catalogFiltersAge');
+  const filtersElNew = document.getElementById('catalogFiltersNew');
 
   // Quita el chip activo (si hay uno) del otro grupo, para que los dos
   // grupos nunca filtren a la vez.
@@ -503,8 +507,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (value) {
         state.colaboracion = null;
         state.categoryAge = null;
+        state.categoryNew = null;
         clearActiveChip(filtersElColaboracion);
         clearActiveChip(filtersElAge);
+        clearActiveChip(filtersElNew);
       }
       applyFilters();
     }
@@ -517,8 +523,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (value) {
         state.subcategory = null;
         state.categoryAge = null;
+        state.categoryNew = null;
         clearActiveChip(filtersElSubcategory);
         clearActiveChip(filtersElAge);
+        clearActiveChip(filtersElNew);
       }
       applyFilters();
     }
@@ -531,8 +539,26 @@ document.addEventListener('DOMContentLoaded', () => {
       if (value) {
         state.subcategory = null;
         state.colaboracion = null;
+        state.categoryNew = null;
         clearActiveChip(filtersElSubcategory);
         clearActiveChip(filtersElColaboracion);
+        clearActiveChip(filtersElNew);
+      }
+      applyFilters();
+    }
+  );
+  const hasNewFilter = setupFilterGroup(
+    filtersElNew,
+    categoryNewValues,
+    value => {
+      state.categoryNew = value;
+      if (value) {
+        state.subcategory = null;
+        state.colaboracion = null;
+        state.categoryAge = null;
+        clearActiveChip(filtersElSubcategory);
+        clearActiveChip(filtersElColaboracion);
+        clearActiveChip(filtersElAge);
       }
       applyFilters();
     }
@@ -564,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // productos visibles: solo se muestran al elegir uno. Si no hay
   // ningún dato de filtro, no hay nada que elegir y se muestran todos
   // los productos ya mismo (paginados de a PAGE_SIZE).
-  if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter) {
+  if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter) {
     showCatalogPlaceholder(category);
   } else {
     renderPage(grid, pagerEl, items, 1);

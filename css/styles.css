@@ -620,26 +620,55 @@ em {
    etiqueta corta para diferenciarla. */
 .catalog-filters--colaboracion { margin-top: -14px; }
 .catalog-filters--colaboracion::before {
-  content: "Colección:";
+  content: "Colecciones:";
   align-self: center;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-ink-soft);
-  margin-right: 2px;
+  flex: 0 0 100%;
+  text-align: center;
 }
 
 /* Tercera fila de chips (categoría por edad, campo category_age) —
    mismo estilo que la de colección, con su propia etiqueta. */
 .catalog-filters--age { margin-top: -14px; }
 .catalog-filters--age::before {
-  content: "Edad:";
+  content: "Para nuestras mini trendylovers:";
   align-self: center;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-ink-soft);
-  margin-right: 2px;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+/* Primera fila de chips (tipo de producto, campo subcategory) — misma
+   etiqueta centrada encima de los botones que las demás filas. */
+.catalog-filters--subcategory::before {
+  content: "Para ti:";
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+/* Cuarta fila de chips (novedades, campo category_new) — mismo estilo
+   que las anteriores, con su propia etiqueta. */
+.catalog-filters--new { margin-top: -14px; }
+.catalog-filters--new::before {
+  content: "Novedades:";
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  flex: 0 0 100%;
+  text-align: center;
 }
 
 .products-grid {
