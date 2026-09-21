@@ -2667,6 +2667,6 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Rostro/BAT2272.jpg",
   description: "La base de maquillaje que logra lo que pocas consiguen: acabado mate profesional y cobertura buildable sin sensación grasa ni pesada durante todo el día\n\n- Su fórmula está desarrollada para pieles mixtas a grasas que necesitan control del brillo sin sacrificar comodidad.\n- El acabado mate mantiene la piel pulida durante horas sin que necesites retocar constantemente.\n- La cobertura es buildable: una capa da un resultado de piel unificada y natural; dos capas en zonas específicas dan mayor intensidad sin el efecto \"máscara\" que dan las bases de cobertura plana.\n- La sensación en la piel es ligera y cómoda — el maquillaje que se olvida que se lleva puesto hasta que te ves al espejo.\n- Disponible en varios tonos para la diversidad de pieles colombianas.",
   category_new: "Nueva colección",
-  tonos: ["01", "02"]
+  tonos: ["00", "01", "02"]
 },
 ];
