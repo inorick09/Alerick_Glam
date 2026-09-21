@@ -57,11 +57,18 @@ body.page-bisuteria {
 
 /* Fondo continuo compartido por categorías y hero (sin costura entre ambos) */
 body.page-home .top-glam {
+  position: relative;
   background-image:
     radial-gradient(circle at 15% 18%, rgba(217, 69, 126, 0.10) 0, transparent 40%),
     radial-gradient(circle at 88% 12%, rgba(201, 151, 63, 0.16) 0, transparent 42%),
     radial-gradient(circle at 70% 90%, rgba(255, 255, 255, 0.5) 0, transparent 40%);
 }
+body.page-home .top-glam__eyebrow {
+  position: relative;
+  z-index: 1;
+  padding-top: 32px;
+}
+body.page-home .top-glam__eyebrow .eyebrow { margin: 0; }
 body.page-home .section--deco {
   position: relative;
   overflow: hidden;
@@ -326,7 +333,7 @@ em {
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1.45fr 0.55fr;
+  grid-template-columns: 1fr;
   gap: 48px;
   align-items: center;
   position: relative;
@@ -370,14 +377,17 @@ em {
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .hero__gallery {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 280px;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .hero__logo {
-  width: min(100%, 260px);
+  width: 84px;
   height: auto;
   filter: drop-shadow(0 24px 48px rgba(20, 16, 15, 0.25));
 }
@@ -1582,7 +1592,7 @@ em {
   }
 
   .hero__inner { grid-template-columns: 1fr; }
-  .hero__gallery { height: 240px; order: -1; }
+  .hero__logo { width: 64px; }
 
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .materials-grid { grid-template-columns: repeat(2, 1fr); }
