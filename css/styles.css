@@ -1680,18 +1680,24 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 16px;
+  overscroll-behavior: contain;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
 }
 .pd-overlay.is-open { opacity: 1; pointer-events: auto; }
+/* La ventana nunca es más alta que la pantalla: la foto se encoge y el
+   texto hace scroll por dentro, así el botón de agregar siempre se ve. */
 .pd {
   position: relative;
   width: 100%;
   max-width: 440px;
-  max-height: 100%;
-  overflow-y: auto;
+  max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background: var(--color-card);
   border-radius: var(--radius);
   box-shadow: 0 30px 60px -24px rgba(20, 16, 15, 0.5);
@@ -1703,22 +1709,22 @@ em {
   position: absolute;
   top: 12px; right: 12px;
   z-index: 2;
-  width: 34px; height: 34px;
+  width: 38px; height: 38px;
   border-radius: 50%;
   border: none;
   background: rgba(255, 251, 249, 0.9);
   color: var(--color-ink);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
 }
-.pd__stage { position: relative; background: var(--color-bg-alt); }
-.pd__img { display: block; width: 100%; max-height: 420px; object-fit: contain; }
+.pd__stage { position: relative; background: var(--color-bg-alt); flex: 0 1 auto; min-height: 0; }
+.pd__img { display: block; width: 100%; max-height: min(420px, 42vh); max-height: min(420px, 42dvh); object-fit: contain; }
 .pd__nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 34px; height: 34px;
+  width: 38px; height: 38px;
   border-radius: 50%;
   border: none;
   background: rgba(20, 16, 15, 0.5);
@@ -1729,8 +1735,13 @@ em {
 }
 .pd__nav--prev { left: 10px; }
 .pd__nav--next { right: 10px; }
-.pd__body { padding: 20px 24px 24px; }
-.pd__name { font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 6px; }
-.pd__price { font-family: var(--font-mono); color: var(--color-rose-deep); font-size: 1.1rem; margin: 0 0 12px; }
-.pd__desc { color: var(--color-ink-soft); font-size: 0.92rem; line-height: 1.55; margin: 0 0 18px; }
-.pd__add { width: 100%; padding: 0.8em 1.2em; font-size: 0.95rem; }
+.pd__body {
+  padding: 16px 20px 0;
+  overflow-y: auto;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
+}
+.pd__name { font-family: var(--font-display); font-size: 1.2rem; margin: 0 0 6px; }
+.pd__price { font-family: var(--font-mono); color: var(--color-rose-deep); font-size: 1.1rem; margin: 0 0 10px; }
+.pd__desc { color: var(--color-ink-soft); font-size: 0.9rem; line-height: 1.5; margin: 0 0 14px; }
+.pd__add { position: sticky; bottom: 0; width: 100%; padding: 0.85em 1.2em; font-size: 0.95rem; margin: 0 0 16px; box-shadow: 0 -10px 14px -6px var(--color-card); }

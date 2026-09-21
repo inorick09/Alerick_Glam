@@ -88,7 +88,15 @@
     modal.prev.addEventListener('click', () => modal.show(modal.index - 1));
     modal.next.addEventListener('click', () => modal.show(modal.index + 1));
     modal.add.addEventListener('click', () => {
-      if (typeof addProductToCart === 'function') addProductToCart(modal.product, modal.img);
+      if (typeof addProductToCart !== 'function') return;
+      addProductToCart(modal.product, modal.img);
+      const needsTone = Array.isArray(modal.product.tonos) && modal.product.tonos.length > 0;
+      if (!needsTone) modal.close();
+    });
+    // Después de elegir un tono (o agregar directo) la ventana se cierra para
+    // que la clienta vea la animación hacia el carrito y siga navegando.
+    document.addEventListener('click', e => {
+      if (e.target.closest('.tone-modal__option')) modal.close();
     });
     document.addEventListener('keydown', e => {
       if (!overlay.classList.contains('is-open')) return;
