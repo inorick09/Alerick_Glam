@@ -127,11 +127,87 @@
     }
   }
 
+  // ---------- Desplazamiento automático ----------
+  // El carrusel es un contenedor con scroll horizontal normal (así se puede
+  // deslizar con el dedo en el celular). Esta función lo mueve solo, y se
+  // detiene mientras alguien lo toca / pasa el mouse por encima, o hay una
+  // ventana abierta. Con "reducir movimiento" activado no se mueve solo.
+  const SPEED = 40; // píxeles por segundo
+  const RESUME_DELAY = 2500; // ms después de soltar el dedo
+
+  const isModalOpen = () =>
+    !!document.querySelector('.pd-overlay.is-open, .tone-modal-overlay.is-open, .lightbox-overlay.is-open');
+
+  function startAutoScroll(el) {
+    const track = el.firstElementChild;
+    const unit = () => track.scrollWidth / 3; // ancho de una copia
+    const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+    let paused = false;
+    let resumeTimer = null;
+    let pos = 0;
+    let last = 0;
+    let visible = true;
+
+    const wrap = () => {
+      const u = unit();
+      if (!u) return;
+      if (el.scrollLeft < 1) el.scrollLeft += u;
+      else if (el.scrollLeft >= 2 * u) el.scrollLeft -= u;
+    };
+    const pause = () => { paused = true; clearTimeout(resumeTimer); };
+    const resumeLater = delay => {
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => { pos = el.scrollLeft; paused = false; }, delay);
+    };
+
+    // Dedo / lápiz: pausa al tocar y sigue solo unos segundos después de soltar.
+    el.addEventListener('touchstart', pause, { passive: true });
+    el.addEventListener('touchend', () => resumeLater(RESUME_DELAY), { passive: true });
+    el.addEventListener('touchcancel', () => resumeLater(RESUME_DELAY), { passive: true });
+    // Mouse: pausa mientras está encima. (No se usa :hover de CSS porque en
+    // el celular se queda "pegado" después de tocar.)
+    el.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') pause(); });
+    el.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') resumeLater(0); });
+    // Rueda / trackpad
+    el.addEventListener('wheel', () => { pause(); resumeLater(RESUME_DELAY); }, { passive: true });
+    el.addEventListener('scroll', () => { if (paused) wrap(); }, { passive: true });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(el);
+    }
+
+    // Se espera a que carguen las fotos para conocer el ancho real de las copias.
+    const init = () => {
+      const u = unit();
+      if (!u) return requestAnimationFrame(init);
+      el.scrollLeft = u;
+      pos = u;
+      if (reduceMotion) return;
+      const tick = t => {
+        const dt = last ? Math.min(t - last, 100) : 0;
+        last = t;
+        if (!paused && visible && !document.hidden && !isModalOpen()) {
+          pos += (SPEED * dt) / 1000;
+          const u2 = unit();
+          if (pos >= 2 * u2) pos -= u2;
+          el.scrollLeft = pos;
+        } else {
+          pos = el.scrollLeft;
+        }
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    init();
+  }
+
   // ---------- Carrusel ----------
   function initCarousel({ sectionId, trackId, items, showTag }) {
     const section = document.getElementById(sectionId);
     const track = document.getElementById(trackId);
-    if (!section || !track || !items.length) return;
+    const viewport = track?.parentElement;
+    if (!section || !track || !viewport || !items.length) return;
 
     const cardsHTML = hidden => items.map(p => `
       <button type="button" class="new-card" data-id="${esc(p.id)}"
@@ -142,10 +218,12 @@
         <span class="new-card__price">${price(p.price)}</span>
       </button>`).join('');
 
-    // Se duplica el contenido para que el bucle sea continuo.
-    track.innerHTML = cardsHTML(false) + cardsHTML(true);
-    track.style.setProperty('--new-duration', Math.max(items.length * 4, 20) + 's');
+    // Tres copias seguidas: se arranca en la del medio y, al llegar a una
+    // orilla, se salta una copia atrás/adelante sin que se note (bucle infinito
+    // tanto al moverse sola como al deslizar con el dedo).
+    track.innerHTML = cardsHTML(false) + cardsHTML(true) + cardsHTML(true);
     section.hidden = false;
+    startAutoScroll(viewport);
 
     track.addEventListener('click', e => {
       const card = e.target.closest('.new-card');

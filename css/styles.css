@@ -333,7 +333,7 @@ em {
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
   gap: 48px;
   align-items: center;
   position: relative;
@@ -377,17 +377,13 @@ em {
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .hero__gallery {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 2;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__logo {
-  width: 84px;
+  width: clamp(140px, 22vw, 260px);
   height: auto;
   filter: drop-shadow(0 24px 48px rgba(20, 16, 15, 0.25));
 }
@@ -1591,8 +1587,9 @@ em {
     border-bottom: 1px solid rgba(184,147,90,0.25);
   }
 
-  .hero__inner { grid-template-columns: 1fr; }
-  .hero__logo { width: 64px; }
+  .hero__inner { grid-template-columns: 1fr; gap: 24px; }
+  .hero__gallery { order: -1; }
+  .hero__logo { width: 110px; }
 
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .materials-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1614,24 +1611,24 @@ em {
 .section--new { padding: 24px 0 64px; }
 .section--new .section__head { margin-bottom: 28px; }
 
+/* La tira es un contenedor con scroll horizontal (se puede deslizar con el
+   dedo); carousel.js la mueve sola y se detiene cuando alguien la toca. */
 .new-carousel {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
+.new-carousel::-webkit-scrollbar { display: none; }
 .new-carousel__track {
   display: flex;
   gap: 18px;
   width: max-content;
   padding: 8px 9px;
-  animation: newScroll var(--new-duration, 40s) linear infinite;
-}
-.new-carousel:hover .new-carousel__track,
-.new-carousel:active .new-carousel__track,
-.new-carousel:focus-within .new-carousel__track { animation-play-state: paused; }
-
-@keyframes newScroll {
-  to { transform: translateX(calc(-50% - 9px)); }
 }
 
 .new-card {
@@ -1649,6 +1646,9 @@ em {
   font: inherit;
   text-align: left;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
   box-shadow: 0 6px 18px rgba(43, 22, 32, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -1669,9 +1669,6 @@ em {
 @media (max-width: 600px) {
   .new-card { flex-basis: 160px; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .new-carousel { overflow-x: auto; }
-  .new-carousel__track { animation: none; }
 }
 
 /* ---------- Detalle de producto (carrusel Recién llegados) ---------- */
