@@ -2655,7 +2655,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Organizador Retro Rock - Orr2390",
   price: 25000,
   image: "images/productos/Maquillaje/Accesorios/Orr2390.jpg",
-  description: "Organiza tus cosméticos favoritos y dale un toque único a tu tocador. El Organizador Retro Rock está pensado para solucionar el desorden en tu mesa, permitiéndote clasificar tus productos para tenerlos siempre a la mano. Fabricado en un material resistente, cuenta con el espacio ideal para mantener todo en su lugar de forma práctica. Coloca tus cosméticos en los compartimentos según tus necesidades. Clasifica tus labiales y brochas de uso diario en la zona frontal para alistarte mucho más rápido.",
+  description: "Organiza tus cosméticos favoritos y dale un toque único a tu tocador. Organizador Retro Rock está pensado para solucionar el desorden en tu mesa, permitiéndote clasificar tus productos para tenerlos siempre a la mano. Fabricado en un material resistente, cuenta con el espacio ideal para mantener todo en su lugar de forma práctica. Coloca tus cosméticos en los compartimentos según tus necesidades. Clasifica tus labiales y brochas de uso diario en la zona frontal para alistarte mucho más rápido.",
   category_new: "Nueva colección"
 },
 {
