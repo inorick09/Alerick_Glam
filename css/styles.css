@@ -1609,3 +1609,131 @@ em {
   .steps__flow { flex-direction: column; gap: 4px; }
   .steps__flow span[aria-hidden] { transform: rotate(90deg); }
 }
+
+/* ---------- Carrusel "Recién llegados" (inicio) ---------- */
+.section--new { padding: 24px 0 64px; }
+.section--new .section__head { margin-bottom: 28px; }
+
+.new-carousel {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.new-carousel__track {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  padding: 8px 9px;
+  animation: newScroll var(--new-duration, 40s) linear infinite;
+}
+.new-carousel:hover .new-carousel__track,
+.new-carousel:active .new-carousel__track,
+.new-carousel:focus-within .new-carousel__track { animation-play-state: paused; }
+
+@keyframes newScroll {
+  to { transform: translateX(calc(-50% - 9px)); }
+}
+
+.new-card {
+  position: relative;
+  flex: 0 0 220px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-ink);
+  border: none;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(43, 22, 32, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.new-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(43, 22, 32, 0.14); }
+.new-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.new-card__name {
+  padding: 12px 14px 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.new-card__price { padding: 0 14px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-rose-deep); }
+
+@media (max-width: 600px) {
+  .new-card { flex-basis: 160px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .new-carousel { overflow-x: auto; }
+  .new-carousel__track { animation: none; }
+}
+
+/* ---------- Detalle de producto (carrusel Recién llegados) ---------- */
+.pd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 140;
+  background: rgba(20, 16, 15, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.pd-overlay.is-open { opacity: 1; pointer-events: auto; }
+.pd {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  max-height: 100%;
+  overflow-y: auto;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: 0 30px 60px -24px rgba(20, 16, 15, 0.5);
+  transform: scale(0.92);
+  transition: transform 0.25s ease;
+}
+.pd-overlay.is-open .pd { transform: scale(1); }
+.pd__close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 2;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 251, 249, 0.9);
+  color: var(--color-ink);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.pd__stage { position: relative; background: var(--color-bg-alt); }
+.pd__img { display: block; width: 100%; max-height: 420px; object-fit: contain; }
+.pd__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(20, 16, 15, 0.5);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.pd__nav--prev { left: 10px; }
+.pd__nav--next { right: 10px; }
+.pd__body { padding: 20px 24px 24px; }
+.pd__name { font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 6px; }
+.pd__price { font-family: var(--font-mono); color: var(--color-rose-deep); font-size: 1.1rem; margin: 0 0 12px; }
+.pd__desc { color: var(--color-ink-soft); font-size: 0.92rem; line-height: 1.55; margin: 0 0 18px; }
+.pd__add { width: 100%; padding: 0.8em 1.2em; font-size: 0.95rem; }
