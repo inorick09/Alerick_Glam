@@ -148,57 +148,66 @@
 
   function startAutoScroll(el) {
     const track = el.firstElementChild;
-    const unit = () => track.scrollWidth / 3; // ancho de una copia
     const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
-    let paused = false;
+    // El ancho de una copia se mide una sola vez (al iniciar y si cambia el
+    // tamaño de pantalla), nunca dentro del bucle de animación: leerlo en
+    // cada cuadro obliga al navegador a recalcular el diseño constantemente,
+    // y en celulares eso es lo que dejaba la página pegada al tocar.
+    let unit = 0;
+    const measure = () => { unit = track.scrollWidth / 3; };
+
+    let paused = false;   // dedo/mouse encima: no se mueve solo
+    let dragging = false; // dedo abajo: además, no se corrige el scroll
     let resumeTimer = null;
     let pos = 0;
     let last = 0;
     let visible = true;
 
-    const wrap = () => {
-      const u = unit();
-      if (!u) return;
-      if (el.scrollLeft < 1) el.scrollLeft += u;
-      else if (el.scrollLeft >= 2 * u) el.scrollLeft -= u;
-    };
     const pause = () => { paused = true; clearTimeout(resumeTimer); };
     const resumeLater = delay => {
       clearTimeout(resumeTimer);
       resumeTimer = setTimeout(() => { pos = el.scrollLeft; paused = false; }, delay);
     };
 
-    // Dedo / lápiz: pausa al tocar y sigue solo unos segundos después de soltar.
-    el.addEventListener('touchstart', pause, { passive: true });
-    el.addEventListener('touchend', () => resumeLater(RESUME_DELAY), { passive: true });
-    el.addEventListener('touchcancel', () => resumeLater(RESUME_DELAY), { passive: true });
+    // Dedo / lápiz: mientras está abajo no se toca el scroll para nada (así
+    // el navegador maneja el gesto de arrastre sin que JS interfiera), y
+    // sigue solo unos segundos después de soltar.
+    el.addEventListener('touchstart', () => { dragging = true; pause(); }, { passive: true });
+    el.addEventListener('touchend', () => { dragging = false; resumeLater(RESUME_DELAY); }, { passive: true });
+    el.addEventListener('touchcancel', () => { dragging = false; resumeLater(RESUME_DELAY); }, { passive: true });
     // Mouse: pausa mientras está encima. (No se usa :hover de CSS porque en
     // el celular se queda "pegado" después de tocar.)
     el.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') pause(); });
     el.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') resumeLater(0); });
     // Rueda / trackpad
     el.addEventListener('wheel', () => { pause(); resumeLater(RESUME_DELAY); }, { passive: true });
-    el.addEventListener('scroll', () => { if (paused) wrap(); }, { passive: true });
 
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(el);
     }
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(measure).observe(track);
+    } else {
+      window.addEventListener('resize', measure);
+    }
 
     // Se espera a que carguen las fotos para conocer el ancho real de las copias.
     const init = () => {
-      const u = unit();
-      if (!u) return requestAnimationFrame(init);
-      el.scrollLeft = u;
-      pos = u;
+      measure();
+      if (!unit) return requestAnimationFrame(init);
+      el.scrollLeft = unit;
+      pos = unit;
       if (reduceMotion) return;
       const tick = t => {
         const dt = last ? Math.min(t - last, 100) : 0;
         last = t;
-        if (!paused && visible && !document.hidden && !isModalOpen()) {
+        if (!paused && !dragging && visible && !document.hidden && unit && !isModalOpen()) {
           pos += (SPEED * dt) / 1000;
-          const u2 = unit();
-          if (pos >= 2 * u2) pos -= u2;
+          // Si mientras tanto la clienta arrastró la tira a mano, se retoma
+          // desde ahí (resumeLater ya actualizó "pos" a su scrollLeft real).
+          while (pos >= 2 * unit) pos -= unit;
+          while (pos < unit) pos += unit;
           el.scrollLeft = pos;
         } else {
           pos = el.scrollLeft;
