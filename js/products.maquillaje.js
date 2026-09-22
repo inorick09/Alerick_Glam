@@ -404,7 +404,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 25000,
   image: "images/productos/Maquillaje/Rostro/PCF2054.jpg",
   description: "Maquilla tu piel logrando un acabado suave y completamente mate con los polvos compactos Golden. Podrás encontrar 7 tonos perfectos para una amplia gama de pieles.\n¡No es necesario aplicar base!\nEstos polvos te ayudan a unificar visiblemente el tono de tu piel.\nSu excelente pigmentación permite que con una sola aplicación notes la diferencia. Son de textura suave, logrando una piel tersa y un acabado aterciopelado.\nSu diseño premium y compacto es perfecto para llevar en tu cosmetiquera o bolso y retocar tu maquillaje en cualquier momento. Incluye un pomito aplicador, el cual te da una mayor cobertura.",
-  category_new: "Nueva colección"
+  category_new: "Nueva colección",
   tonos: ["01", "02", "03"]
 },
 {
