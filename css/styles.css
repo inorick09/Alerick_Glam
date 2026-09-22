@@ -1746,3 +1746,30 @@ em {
 .pd__price { font-family: var(--font-mono); color: var(--color-rose-deep); font-size: 1.1rem; margin: 0 0 10px; }
 .pd__desc { color: var(--color-ink-soft); font-size: 0.9rem; line-height: 1.5; margin: 0 0 14px; }
 .pd__add { position: sticky; bottom: 0; width: 100%; padding: 0.85em 1.2em; font-size: 0.95rem; margin: 0 0 16px; box-shadow: 0 -10px 14px -6px var(--color-card); }
+
+/* ---------- Submenú de subcategorías en el menú (Maquillaje/Bisutería) ----------
+   En el menú del celular, los tipos de producto quedan ya visibles debajo
+   del nombre de la categoría, sin necesidad de tocar nada aparte. En
+   escritorio se ocultan (ahí ya está el catálogo con sus propios chips) y
+   el nombre de la categoría sigue siendo un enlace normal. */
+.nav-group { display: flex; flex-direction: column; }
+.nav-group__title { font-size: 0.92rem; font-weight: 600; padding: 4px 0; }
+
+.nav-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+.nav-group__list a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-bg-alt);
+}
+.nav-group__list a:hover, .nav-group__list a:focus-visible { background: var(--color-gold-light); }
+
+@media (min-width: 901px) {
+  .nav-group__list { display: none; }
+}

@@ -587,13 +587,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Si se llegó desde el menú del celular con un tipo de producto ya
+  // elegido (maquillaje.html?sub=Rostro), se activa ese chip de una vez y
+  // se muestran sus productos, sin esperar a que la clienta lo toque.
+  let preSelected = false;
+  const wantedSub = new URLSearchParams(location.search).get('sub');
+  if (wantedSub && hasSubcategoryFilter) {
+    const chip = filtersElSubcategory.querySelector(`.filter-chip[data-filter="${CSS.escape(wantedSub)}"]`);
+    if (chip) {
+      chip.classList.add('is-active');
+      state.subcategory = wantedSub;
+      applyFilters();
+      preSelected = true;
+      document.getElementById('catalogo')?.scrollIntoView({ block: 'start' });
+    }
+  }
+
   // Si hay al menos un grupo de chips, el catálogo empieza sin
   // productos visibles: solo se muestran al elegir uno. Si no hay
   // ningún dato de filtro, no hay nada que elegir y se muestran todos
   // los productos ya mismo (paginados de a PAGE_SIZE).
-  if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter) {
+  if (preSelected) {
+    // ya se mostraron los productos del chip de arriba
+  } else if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter) {
     showCatalogPlaceholder(category);
   } else {
     renderPage(grid, pagerEl, items, 1);
   }
+});
+
+// ============================================
+// Submenú de subcategorías en el menú del celular (Maquillaje/Bisutería)
+// Arma, debajo del nombre de cada categoría, la lista de tipos de producto
+// que sí tienen productos cargados (mismo criterio que los chips del
+// catálogo), ya visible sin necesidad de tocar nada más. Cada uno enlaza a
+// "maquillaje.html?sub=Rostro" / "bisuteria.html?sub=..." para que esa
+// página abra directo con ese filtro activo.
+// Vive en catalog.js (no en script.js) porque necesita PRODUCTS y
+// SUBCATEGORY_ORDER, que ya están cargados para cuando este archivo corre.
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof PRODUCTS === 'undefined') return;
+
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  const nav = document.getElementById('nav');
+  const navToggle = document.getElementById('navToggle');
+  const closeMobileNav = () => {
+    nav?.classList.remove('is-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+  };
+
+  [
+    { category: 'maquillaje', page: 'maquillaje.html', listId: 'navSubMaquillaje' },
+    { category: 'bisuteria', page: 'bisuteria.html', listId: 'navSubBisuteria' }
+  ].forEach(({ category, page, listId }) => {
+    const list = document.getElementById(listId);
+    if (!list) return;
+    const items = PRODUCTS.filter(p => p.category === category);
+    const values = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
+    if (values.length === 0) return;
+
+    list.innerHTML = values.map(v => `<a href="${page}?sub=${encodeURIComponent(v)}">${esc(v)}</a>`).join('');
+    list.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
+  });
 });
