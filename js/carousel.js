@@ -135,59 +135,116 @@
     }
   }
 
-  // ---------- Desplazamiento automático ----------
-  // El carrusel es un contenedor con scroll horizontal normal (así se puede
-  // deslizar con el dedo en el celular). Esta función lo mueve solo, y se
-  // detiene mientras alguien lo toca / pasa el mouse por encima, o hay una
-  // ventana abierta. Con "reducir movimiento" activado no se mueve solo.
-  const SPEED = 40; // píxeles por segundo
-  const RESUME_DELAY = 2500; // ms después de soltar el dedo
+  // ---------- Movimiento del carrusel ----------
+  // Ojo: esto NO usa el scroll nativo del navegador (scrollLeft). Se mueve
+  // aplicando "transform" con JavaScript, y el arrastre con el dedo también
+  // se calcula a mano con eventos "pointer". Se hizo así porque con scroll
+  // nativo, en Android Chrome tocar una tarjeta mientras la tira se mueve
+  // sola hace que el navegador interprete el toque como "frenar el scroll":
+  // ni dispara el clic para abrir el producto, ni deja pasar el gesto para
+  // que la página baje. Manejando el movimiento nosotros mismos evitamos
+  // ese conflicto: un toque corto siempre abre el producto, arrastrar de
+  // lado mueve el carrusel, y un gesto vertical se le deja completo a la
+  // página (ver también "touch-action: pan-y" en el CSS).
+  const SPEED = 40; // píxeles por segundo, movimiento solo
+  const RESUME_DELAY = 2500; // ms después de soltar el dedo (tras arrastrar)
+  const TAP_SLOP = 8; // px de margen para distinguir un toque de un arrastre
 
   const isModalOpen = () =>
     !!document.querySelector('.pd-overlay.is-open, .tone-modal-overlay.is-open, .lightbox-overlay.is-open');
 
-  function startAutoScroll(el) {
-    const track = el.firstElementChild;
+  function startCarouselMotion(viewport, track) {
     const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
     // El ancho de una copia se mide una sola vez (al iniciar y si cambia el
     // tamaño de pantalla), nunca dentro del bucle de animación: leerlo en
-    // cada cuadro obliga al navegador a recalcular el diseño constantemente,
-    // y en celulares eso es lo que dejaba la página pegada al tocar.
+    // cada cuadro obliga al navegador a recalcular el diseño constantemente.
     let unit = 0;
     const measure = () => { unit = track.scrollWidth / 3; };
 
-    let paused = false;   // dedo/mouse encima: no se mueve solo
-    let dragging = false; // dedo abajo: además, no se corrige el scroll
+    let offset = 0;   // px ya recorridos hacia la izquierda
+    let paused = false;
+    let dragging = false;
     let resumeTimer = null;
-    let pos = 0;
     let last = 0;
     let visible = true;
 
+    const applyTransform = () => { track.style.transform = `translateX(${-offset}px)`; };
+    const wrapOffset = () => {
+      if (!unit) return;
+      while (offset >= 2 * unit) offset -= unit;
+      while (offset < unit) offset += unit;
+    };
     const pause = () => { paused = true; clearTimeout(resumeTimer); };
     const resumeLater = delay => {
       clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(() => { pos = el.scrollLeft; paused = false; }, delay);
+      resumeTimer = setTimeout(() => { paused = false; }, delay);
     };
 
-    // Dedo / lápiz: mientras está abajo no se toca el scroll para nada (así
-    // el navegador maneja el gesto de arrastre sin que JS interfiera), y
-    // sigue solo unos segundos después de soltar.
-    el.addEventListener('touchstart', () => { dragging = true; pause(); }, { passive: true });
-    el.addEventListener('touchend', () => { dragging = false; resumeLater(RESUME_DELAY); }, { passive: true });
-    el.addEventListener('touchcancel', () => { dragging = false; resumeLater(RESUME_DELAY); }, { passive: true });
+    // ---- Arrastre manual (dedo, mouse o lápiz, todo con Pointer Events) ----
+    let pointerId = null, startX = 0, startY = 0, startOffset = 0, isDrag = false, startTarget = null;
+
+    viewport.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pointerId = e.pointerId;
+      startX = e.clientX;
+      startY = e.clientY;
+      startOffset = offset;
+      startTarget = e.target;
+      isDrag = false;
+      dragging = true;
+      pause();
+    });
+
+    viewport.addEventListener('pointermove', e => {
+      if (e.pointerId !== pointerId) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (!isDrag) {
+        if (Math.abs(dx) < TAP_SLOP && Math.abs(dy) < TAP_SLOP) return; // podría ser aún un toque
+        if (Math.abs(dx) <= Math.abs(dy)) {
+          // Gesto vertical: se suelta para que la página haga scroll normal.
+          pointerId = null;
+          dragging = false;
+          resumeLater(0);
+          return;
+        }
+        isDrag = true;
+        try { viewport.setPointerCapture(pointerId); } catch {}
+      }
+      offset = startOffset - dx;
+      wrapOffset();
+      applyTransform();
+    });
+
+    const endDrag = e => {
+      if (pointerId === null || e.pointerId !== pointerId) return;
+      const wasTap = !isDrag;
+      const target = startTarget;
+      pointerId = null;
+      dragging = false;
+      resumeLater(wasTap ? 400 : RESUME_DELAY);
+      if (wasTap && e.pointerType !== 'mouse') {
+        // En touch/lápiz se abre directo (sin esperar el "click" nativo):
+        // así no depende de que el navegador decida disparar el clic.
+        const card = target?.closest?.('.new-card');
+        card?.click();
+      }
+    };
+    viewport.addEventListener('pointerup', endDrag);
+    viewport.addEventListener('pointercancel', endDrag);
+
     // Mouse: pausa mientras está encima. (No se usa :hover de CSS porque en
     // el celular se queda "pegado" después de tocar.)
-    el.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') pause(); });
-    el.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') resumeLater(0); });
-    // Rueda / trackpad
-    el.addEventListener('wheel', () => { pause(); resumeLater(RESUME_DELAY); }, { passive: true });
+    viewport.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') pause(); });
+    viewport.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !dragging) resumeLater(0); });
+    viewport.addEventListener('wheel', () => { pause(); resumeLater(RESUME_DELAY); }, { passive: true });
 
     if ('IntersectionObserver' in window) {
-      new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(el);
+      new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(viewport);
     }
     if ('ResizeObserver' in window) {
-      new ResizeObserver(measure).observe(track);
+      new ResizeObserver(() => { measure(); wrapOffset(); applyTransform(); }).observe(track);
     } else {
       window.addEventListener('resize', measure);
     }
@@ -196,21 +253,16 @@
     const init = () => {
       measure();
       if (!unit) return requestAnimationFrame(init);
-      el.scrollLeft = unit;
-      pos = unit;
+      offset = unit;
+      applyTransform();
       if (reduceMotion) return;
       const tick = t => {
         const dt = last ? Math.min(t - last, 100) : 0;
         last = t;
         if (!paused && !dragging && visible && !document.hidden && unit && !isModalOpen()) {
-          pos += (SPEED * dt) / 1000;
-          // Si mientras tanto la clienta arrastró la tira a mano, se retoma
-          // desde ahí (resumeLater ya actualizó "pos" a su scrollLeft real).
-          while (pos >= 2 * unit) pos -= unit;
-          while (pos < unit) pos += unit;
-          el.scrollLeft = pos;
-        } else {
-          pos = el.scrollLeft;
+          offset += (SPEED * dt) / 1000;
+          wrapOffset();
+          applyTransform();
         }
         requestAnimationFrame(tick);
       };
@@ -240,8 +292,12 @@
     // tanto al moverse sola como al deslizar con el dedo).
     track.innerHTML = cardsHTML(false) + cardsHTML(true) + cardsHTML(true);
     section.hidden = false;
-    startAutoScroll(viewport);
+    startCarouselMotion(viewport, track);
 
+    // "click" cubre el toque en mouse/teclado; en touch/lápiz, el toque ya
+    // se detectó a mano en startCarouselMotion (ver comentario ahí arriba),
+    // que dispara este mismo evento con card.click() — así solo hay un
+    // lugar que decide qué producto abrir.
     track.addEventListener('click', e => {
       const card = e.target.closest('.new-card');
       const product = card && items.find(p => p.id === card.dataset.id);

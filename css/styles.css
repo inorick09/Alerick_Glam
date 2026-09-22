@@ -1613,22 +1613,24 @@ em {
 
 /* La tira es un contenedor con scroll horizontal (se puede deslizar con el
    dedo); carousel.js la mueve sola y se detiene cuando alguien la toca. */
+/* El carrusel NO usa el scroll nativo del navegador: se mueve moviendo
+   "transform" con JavaScript (ver carousel.js). Así, tocar una tarjeta se
+   puede distinguir siempre de arrastrar la tira, y un gesto vertical sobre
+   el carrusel sigue bajando la página en vez de quedarse atascado (con
+   scroll nativo, Android a veces "atrapa" el toque para frenar el
+   desplazamiento y ni abre el producto ni deja pasar el scroll). */
 .new-carousel {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
+  overflow: hidden;
+  touch-action: pan-y;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.new-carousel::-webkit-scrollbar { display: none; }
 .new-carousel__track {
   display: flex;
   gap: 18px;
   width: max-content;
   padding: 8px 9px;
+  will-change: transform;
 }
 
 .new-card {
@@ -1668,7 +1670,6 @@ em {
 
 @media (max-width: 600px) {
   .new-card { flex-basis: 160px; }
-}
 }
 
 /* ---------- Detalle de producto (carrusel Recién llegados) ---------- */
