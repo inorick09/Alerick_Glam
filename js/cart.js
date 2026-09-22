@@ -15,7 +15,7 @@
 // ============================================
 
 const CART_KEY = 'alerickglam-cart';
-const WHATSAPP_NUMBER = '573112894267';
+const WHATSAPP_NUMBER = '573143478483';
 
 // Pega aquí la URL que te da Google al desplegar el Apps Script
 // como aplicación web (termina en /exec). Mientras diga
