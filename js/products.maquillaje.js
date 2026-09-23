@@ -719,7 +719,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 30000,
   image: "images/productos/Maquillaje/Rostro/BAQ564.jpg",
   description: "La base ideal para tus looks diarios\nUna de nuestras marcas favoritas para el cuidado de la piel y una de las más vendidas en la tienda.\nPerfecta para todo tipo de piel, especialmente si buscas un acabado natural y uniforme.\nOfrece una cobertura media, de larga duración, con una textura ligera y formulación semicremosa que se adapta fácilmente a tu rutina diaria.",
-  tonos: ["04", "06"]
+  tonos: ["04"]
 },
 {
   id: "IPU1654",
@@ -2668,6 +2668,28 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Rostro/BAT2272.jpg",
   description: "La base de maquillaje que logra lo que pocas consiguen: acabado mate profesional y cobertura buildable sin sensación grasa ni pesada durante todo el día\n\n- Su fórmula está desarrollada para pieles mixtas a grasas que necesitan control del brillo sin sacrificar comodidad.\n- El acabado mate mantiene la piel pulida durante horas sin que necesites retocar constantemente.\n- La cobertura es buildable: una capa da un resultado de piel unificada y natural; dos capas en zonas específicas dan mayor intensidad sin el efecto \"máscara\" que dan las bases de cobertura plana.\n- La sensación en la piel es ligera y cómoda — el maquillaje que se olvida que se lleva puesto hasta que te ves al espejo.\n- Disponible en varios tonos para la diversidad de pieles colombianas.",
   category_new: "Nueva colección",
-  tonos: ["00", "01", "02"]
+  tonos: ["00", "01", "02", "2.5", "03", "04", "05", "06", "07"]
+},
+{
+  id: "Bqf2053",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Base Queen Face Tint - Bqf2053",
+  price: 25000,
+  image: "images/productos/Maquillaje/Rostro/Bqf2053.jpg",
+  description: "¡La estabas esperando para complementar tu maquillaje diario! La base tinta, también conocida como skin tint o tinte para la piel, sirve para unificar el tono y aportar luminosidad con una cobertura muy ligera para el día a día. A diferencia de las bases tradicionales, parece una segunda piel y añade un efecto de hidratación en el rostro Su fórmula permite que tu piel no se sienta pesada, dejando un acabado radiante durante su uso. No es necesario que apliques mucho producto para obtener un excelente resultado. La durabilidad de esta tinta sobre tu piel te va a sorprender. Al ser ligera, es de fácil aplicación e ideal cuando no te gusta lucir una piel acartonada o pesada.",
+  category_new: "Nueva colección",
+  tonos: ["04", "05", "06", "07"]
+},
+{
+  id: "BMT1675",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Base Mousse - BMT1675",
+  price: 25000,
+  image: "images/productos/Maquillaje/Rostro/BMT1675.jpg",
+  description: "¡Una base diferente pero mágnifica! La piel de porcelana sin aplicar tanto producto ya es una realidad. La base mousse le aporta a tu rostro una cobertura baja/media sin la necesidad de aplicar mucho producto. Su textura es muy suave literalmente es mousse. Se difumina a la perfección sobre la piel sin dejar parches. Disponible en 6 tonos. En definitiva será una de tus bases favoritas.",
+  category_new: "Nueva colección",
+  tonos: ["02", "03"]
 },
 ];
