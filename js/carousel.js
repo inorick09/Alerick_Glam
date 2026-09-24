@@ -33,7 +33,11 @@
   // juntar "count" productos, para que no salgan todos del mismo tipo.
   function pickAcrossSubcategories(products, count) {
     const groups = {};
-    products.forEach(p => { (groups[p.subcategory || ''] ||= []).push(p); });
+    products.forEach(p => {
+      const key = p.subcategory || '';
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(p);
+    });
     const queues = shuffle(Object.values(groups)).map(shuffle);
     const picked = [];
     while (picked.length < count && queues.some(q => q.length)) {
