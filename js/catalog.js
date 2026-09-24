@@ -652,17 +652,23 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle?.setAttribute('aria-expanded', 'false');
   };
 
+  // Accesos directos a "Nueva colección" y "Oferta": van antes de las
+  // subcategorías (Rostro, Labios...), solo en el desplegable de Maquillaje.
+  const newBadgesHTML =
+    '<a href="maquillaje.html?new=Nueva%20colecci%C3%B3n" class="nav__badge nav__badge--new">Nueva colección</a>' +
+    '<a href="maquillaje.html?new=Oferta" class="nav__badge nav__badge--offer">Oferta</a>';
+
   [
-    { category: 'maquillaje', page: 'maquillaje.html', listId: 'navSubMaquillaje' },
-    { category: 'bisuteria', page: 'bisuteria.html', listId: 'navSubBisuteria' }
-  ].forEach(({ category, page, listId }) => {
+    { category: 'maquillaje', page: 'maquillaje.html', listId: 'navSubMaquillaje', extraHTML: newBadgesHTML },
+    { category: 'bisuteria', page: 'bisuteria.html', listId: 'navSubBisuteria', extraHTML: '' }
+  ].forEach(({ category, page, listId, extraHTML }) => {
     const list = document.getElementById(listId);
     if (!list) return;
     const items = PRODUCTS.filter(p => p.category === category);
     const values = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
-    if (values.length === 0) return;
+    if (values.length === 0 && !extraHTML) return;
 
-    list.innerHTML = values.map(v => `<a href="${page}?sub=${encodeURIComponent(v)}">${esc(v)}</a>`).join('');
+    list.innerHTML = extraHTML + values.map(v => `<a href="${page}?sub=${encodeURIComponent(v)}">${esc(v)}</a>`).join('');
     list.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
   });
 });

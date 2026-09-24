@@ -281,6 +281,21 @@ em {
 .nav a[aria-current="page"] { color: var(--color-rose-deep); }
 .nav a[aria-current="page"]::after { width: 100%; }
 
+/* Accesos directos a "Nueva colección" y "Oferta": se distinguen del resto
+   del menú (que es solo texto) con una pastilla de color, cada una con el
+   mismo color que su etiqueta en las tarjetas de producto. */
+.nav__badge {
+  padding: 5px 14px;
+  border-radius: 999px;
+  color: #fff !important;
+  font-size: 0.8rem;
+}
+.nav__badge::after { content: none; }
+.nav__badge--new { background: var(--color-rose) !important; }
+.nav__badge--new:hover { background: var(--color-rose-deep) !important; }
+.nav__badge--offer { background: var(--color-aqua) !important; }
+.nav__badge--offer:hover { background: var(--color-aqua-deep) !important; }
+
 .header__cta { flex-shrink: 0; }
 
 .nav-toggle {
