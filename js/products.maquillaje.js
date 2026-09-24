@@ -77,26 +77,6 @@
 // ============================================
 
 const PRODUCTS_MAQUILLAJE = [
-
-  // Ejemplo — descomenta y edita este bloque para tu primer producto real:
-  // {
-  //   id: "labial-mate-rosa",
-  //   category: "maquillaje",
-  //   name: "Labial mate Rosa Nude - labial-mate-rosa",
-  //   price: 35000,
-  //   image: "images/productos/Maquillaje/Rostro/labial-rosa-nude.jpg",
-  //   description: "Acabado mate de larga duración, tono rosado nude."
-  // },
-  // Ejemplo de producto con varios tonos:
-  // {
-  //   id: "base-aqua-smooth",
-  //   category: "maquillaje",
-  //   name: "Base Aqua Smooth - base-aqua-smooth",
-  //   price: 30000,
-  //   image: "images/productos/Maquillaje/Rostro/base-aqua-smooth.jpg",
-  //   description: "Acabado natural, fresca y sin peso.",
-  //   tonos: ["Claro", "Medio", "Oscuro"]
-  // },
 {
   id: "MT2418",
   category: "maquillaje",
@@ -229,15 +209,16 @@ const PRODUCTS_MAQUILLAJE = [
   price: 4000,
   image: "images/productos/Maquillaje/Accesorios/MTT2515.jpg",
   description: "Ahora tu Mini TrendyLover tendrá los peinados más chic e icónicos.\n\n- Este hermoso kit de moños está inspirado en Barbie, e incluye dos moños en tela de tamaño ideal para complementar su look.\n\n- Tendrá un acabado delicado, feminino y moderno en sus peinados, que combinará perfecto con personalidad.",
-  colaboracion: "Mattel"
+  colaboracion: "Mattel",
+  category_new: "Oferta"
 },
 {
   id: "MTT2516",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Kit Cepillo Barbie Dreams - MTT2516",
   price: 8000,
-  image: "images/productos/Maquillaje/Accesorios/MTT2516.jpg",
+  image: "images/productos/Maquillaje/Capilar/MTT2516.jpg",
   description: "¡Ten tu cabello on point en todo momento!.\n\n- Este práctico kit inspirado en Barbie incluye un cepillo portátil y un scrunchie, perfectos para llevar en el bolso y crear peinados rápidos con mucho estilo.\n\n- Su diseño le dará un toque femenino, moderno y divertido a todos tus looks.",
   colaboracion: "Mattel"
 },
@@ -249,7 +230,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2425.jpg",
   description: "- Está inspirado en Toy Story y su icónico personaje, el Señor Cara de Papa.\n- Perfecto para darle un toque auténtico a tus bolsos, chaquetas, cosmetiqueras, cartucheras o cualquier accesorio que quieras personalizar con mucho estilo.\n- Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de broche te permite mantenerlo seguro siempre.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "MNT2389",
@@ -264,7 +246,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "MRT2388",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Mascarilla Romantica - MRT2388",
+  name: "Mascarilla Romántica - MRT2388",
   price: 15000,
   image: "images/productos/Maquillaje/Rostro/MRT2388.jpg",
   description: "- Esta mascarilla facial de textura ligera tipo gel está enriquecida con ingredientes que ayudan a mantener la piel suave, humectada y revitalizada, brindando una sensación refrescante desde la primera aplicación.\n- Contiene ingredientes reconocidos por sus beneficios hidratantes y calmantes como el aloe vera, que ayuda a refrescar y suavizar la piel; pantenol, conocido por aportar hidratación y confort; y vitamina E, ideal para ayudar a proteger y mantener la piel con una apariencia saludable y luminosa.\n- Ideal para complementar tu rutina de skincare y devolverle al rostro una apariencia luminosa, descansada y saludable."
@@ -286,7 +268,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2346.jpg",
   description: "Perfecto para amantes de la música y de los accesorios con personalidad.\nUn detalle ideal para darle un toque juvenil y creativo a tus prendas o accesorios favoritos.\nDiseño coleccionable inspirado en Disney, ideal para regalar o coleccionar.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "Crg1420",
@@ -394,7 +377,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Contorno En Crema Queen - CQT1981",
   price: 10000,
   image: "images/productos/Maquillaje/Rostro/CQT1981.jpg",
-  description: "Un contorno que no puede faltarte. ¡Este contorno líquido está hecho justo para ti!\n\n- Maquillajes de piel completos y glamourosos con el contorno en crema Queen.\n- Viene en un tono universal de acabado mate, perfecto para aportar calidez y definición a tu rostro.\n- Su aplicador de esponja es ultrasuave y te permite tener una aplicación más precisa.\n- Recuerda aplicar a toques en pequeñas cantidades de producto e ir difuminando con tu esponja o brocha favorita, así podrás controlar la saturación del producto y tener más precisión."
+  description: "Un contorno que no puede faltarte. ¡Este contorno líquido está hecho justo para ti!\n\n- Maquillajes de piel completos y glamourosos con el contorno en crema Queen.\n- Viene en un tono universal de acabado mate, perfecto para aportar calidez y definición a tu rostro.\n- Su aplicador de esponja es ultrasuave y te permite tener una aplicación más precisa.\n- Recuerda aplicar a toques en pequeñas cantidades de producto e ir difuminando con tu esponja o brocha favorita, así podrás controlar la saturación del producto y tener más precisión.",
+  category_new: "Oferta"
 },
 {
   id: "PCF2054",
@@ -404,8 +388,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 25000,
   image: "images/productos/Maquillaje/Rostro/PCF2054.jpg",
   description: "Maquilla tu piel logrando un acabado suave y completamente mate con los polvos compactos Golden. Podrás encontrar 7 tonos perfectos para una amplia gama de pieles.\n¡No es necesario aplicar base!\nEstos polvos te ayudan a unificar visiblemente el tono de tu piel.\nSu excelente pigmentación permite que con una sola aplicación notes la diferencia. Son de textura suave, logrando una piel tersa y un acabado aterciopelado.\nSu diseño premium y compacto es perfecto para llevar en tu cosmetiquera o bolso y retocar tu maquillaje en cualquier momento. Incluye un pomito aplicador, el cual te da una mayor cobertura.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02", "03"]
+  category_new: "Nueva colección"
 },
 {
   id: "Scr1892",
@@ -515,7 +498,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Pct1798",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Pompon Cotton - Pct1798",
+  name: "Pompón Cotton - Pct1798",
   price: 10000,
   image: "images/productos/Maquillaje/Rostro/Pct1798.jpg",
   description: "Si amas una piel glowy, este pompón será tu nuevo favorito. Su pigmento plateado brillante aporta un toque de luminosidad que transforma cualquier look.\n\nSu diseño inspirado en el algodón de azúcar no solo es adorable: evita derrames y mantiene el producto en su lugar, para llevarlo contigo sin preocupaciones.",
@@ -561,7 +544,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "BST1412",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Contorno en Barra Individual Bronzer Stick - BST1412",
+  name: "Contorno En Barra Individual Bronzer Stick - BST1412",
   price: 15000,
   image: "images/productos/Maquillaje/Rostro/BST1412.jpg",
   description: "El bronzer es el producto perfecto para definir tu rostro en cuestión de minutos. Ya está aquí el Bronzer Stick, es un producto que se difumina con facilidad en la piel y te deja un acabado natural y cálido en el rostro. Si buscar darle color, vida y un brillo saludable a la piel, este tono café universal te lo brinda. Es un producto muy práctico y versátil. Su tamaño compacto te permite llevarlo a todos lados con facilidad y su diseño tipo lápiz retráctil te asegura un mayor rendimiento."
@@ -644,7 +627,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "SSS1158",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Sachet Primer Serum Summer - SSS1158",
+  name: "Sachet Primer Sérum Summer - SSS1158",
   price: 15000,
   image: "images/productos/Maquillaje/Rostro/SSS1158.jpg",
   description: "Su textura en aqua gel te deja un acabado mate pero levemente iluminado, por sus partículas lucirás radiante, juvenil y fresca. Puede usarse en todo tipo de piel pero es ideal para piel mixta, seca o madura. Deja una sensación suave, seca y de acabado mate sobre la piel, logrando obtener un maquillaje perfecto. Puede ser utilizado todos los días, por su textura no obstruye el poro y permite la ‘respiración’ normal de la piel, mientras le aporta nutrientes. Tiene un olor delicioso."
@@ -657,6 +640,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Rostro/ABT1742.jpg",
   description: "¡Todos los rubores son perfección en el rostro!\nRubor para crear looks completos y hermosos.\nEste rubor multipropósito es versátil, ya que funciona también como sombra de ojos.\nSe difumina a la perfección sin dejar parches.\nAporta jugosidad a la piel, haciéndola ver más saludable.",
+  category_new: "Oferta",
   tonos: ["01", "02"]
 },
 {
@@ -719,7 +703,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 30000,
   image: "images/productos/Maquillaje/Rostro/BAQ564.jpg",
   description: "La base ideal para tus looks diarios\nUna de nuestras marcas favoritas para el cuidado de la piel y una de las más vendidas en la tienda.\nPerfecta para todo tipo de piel, especialmente si buscas un acabado natural y uniforme.\nOfrece una cobertura media, de larga duración, con una textura ligera y formulación semicremosa que se adapta fácilmente a tu rutina diaria.",
-  tonos: ["04"]
+  tonos: ["04", "06"]
 },
 {
   id: "IPU1654",
@@ -734,7 +718,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Slb1927",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Iluminador Liquido Brilla - Slb1927",
+  name: "Iluminador Líquido Brilla - Slb1927",
   price: 8000,
   image: "images/productos/Maquillaje/Rostro/Slb1927.jpg",
   description: "¡Deslumbra tus maquillajes de la mano de este iluminador!\n\nAgrega un glowy perfecto pero con un plus y es que es que se ve muy sutil en tus looks. Su textura es cremosa y muy ligera. Al aplicarlo se difumina fácil. No te deja sensación pesada. Viene en un tono único champán precioso.",
@@ -776,7 +760,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Lip Balm Glitter Ham - Dyt2683",
   price: 15000,
   image: "images/productos/Maquillaje/Labios/Dyt2683.jpg",
-  description: "Mágico desde el empaque hasta el color. Consiente tus labios con color  y un delicado toque de brillo. El Lip Balm Ham combina cuidado, belleza e innovación gracias a su textura de gelatina; son 3 tonos diferentes en su barra, pero el color es el mismo. Te ayuda a mantener los labios suaves, cómodos y con una apariencia saludable. Su textura ligera se desliza fácilmente, proporcionando una sensación confortable y un acabado natural ideal para cualquier ocasión.",
+  description: "Mágico desde el empaque hasta el color. Consiente tus labios con color y un delicado toque de brillo. El Lip Balm Ham combina cuidado, belleza e innovación gracias a su textura de gelatina; son 3 tonos diferentes en su barra, pero el color es el mismo. Te ayuda a mantener los labios suaves, cómodos y con una apariencia saludable. Su textura ligera se desliza fácilmente, proporcionando una sensación confortable y un acabado natural ideal para cualquier ocasión.",
   colaboracion: "Disney",
   tonos: ["02", "03"]
 },
@@ -794,10 +778,10 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Gcg2577",
   category: "maquillaje",
   subcategory: "Labios",
-  name: "Gloss Cafe Garden - Gcg2577",
+  name: "Gloss Café Garden - Gcg2577",
   price: 10000,
   image: "images/productos/Maquillaje/Labios/Gcg2577.jpg",
-  description: "- El aliado perfecto para lograr unos labios con un tono cálido, elegante y versátil.\n- El tono café, protagonista de las tendencias actuales, se ha convertido en un imprescindible por su capacidad de realzar cualquier look, desde los más naturales hasta los más sofisticados.\n -Aporta profundidad y un estilo moderno que favorece todos los tonos de piel.\n- Su acabado brillante realza el color natural de los labios, dejando un efecto luminoso y jugoso. Además, su textura es cómoda, ligera y no pegajosa, permitiendo una aplicación uniforme. Perfecto para usar solo o sobre tu labial favorito para potenciar el color.",
+  description: "- El aliado perfecto para lograr unos labios con un tono cálido, elegante y versátil.\n- El tono café, protagonista de las tendencias actuales, se ha convertido en un imprescindible por su capacidad de realzar cualquier look, desde los más naturales hasta los más sofisticados.\n-Aporta profundidad y un estilo moderno que favorece todos los tonos de piel.\n- Su acabado brillante realza el color natural de los labios, dejando un efecto luminoso y jugoso. Además, su textura es cómoda, ligera y no pegajosa, permitiendo una aplicación uniforme. Perfecto para usar solo o sobre tu labial favorito para potenciar el color.",
   category_new: "Nueva colección"
 },
 {
@@ -889,6 +873,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Labios/Dy2099.jpg",
   description: "Nos inspiramos en Intensamente y en cada uno de sus icónicos personajes.\nCada brillo representa una emoción, ¡Elige tu favorito!\nSu diferencia es que varían sus tonos entre rosaditos y transparentes con una leve escarchita.\nSu fragancia te encantará. Aporta un leve tono rosa a tus labios y viene con destellos dorados que le darán un plus a cualquier maquillaje.\nPerfecto para llevar en la cosmetiquera o bolso.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas",
   tonos: ["Alegría", "Ansiedad", "Furia"]
 },
@@ -930,7 +915,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 8000,
   image: "images/productos/Maquillaje/Labios/Dy2075.jpg",
   description: "Su diseño adorable es el match perfecto para tus maquillajes diarios. Son dos diseños que se envían surtidos.\nCada uno es perfecto para utilizarlos solos o aplicar sobre cualquier labial y crear un look apto para cualquier ocasión.\nContiene leves partículas escarchadas holográficas que le dan brillo y un acabado jugoso a tus labios. Sentirás una deliciosa fragancia al destaparlo.\nDejan una sensación suave y ligera en tus labios sin aportar un acabado pegajoso.\nSe envía Surtido",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2098",
@@ -989,7 +975,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brillo Cherry Color - BCC1366",
   price: 5000,
   image: "images/productos/Maquillaje/Labios/BCC1366.jpg",
-  description: "- Nunca pasan de moda y los Gloss Cherry tienen todo lo que amamos de un buen brillo labial.\n- Vienen en 5 tonalidades nude perfectas para el día a día, maquillajes naturales o cualquier ocasión.\n- Su textura es suave, cómoda y ligera sobre los labios, aportando un acabado brillante sin sensación pesada o pegajosa.\n- Son ideales para usar solos o sobre tu labial favorito si quieres unos labios mucho más protagonistas.\n- Se envían surtidos, pero seguro te encantará el que te llegue."
+  description: "- Nunca pasan de moda y los Gloss Cherry tienen todo lo que amamos de un buen brillo labial.\n- Vienen en 5 tonalidades nude perfectas para el día a día, maquillajes naturales o cualquier ocasión.\n- Su textura es suave, cómoda y ligera sobre los labios, aportando un acabado brillante sin sensación pesada o pegajosa.\n- Son ideales para usar solos o sobre tu labial favorito si quieres unos labios mucho más protagonistas.\n- Se envían surtidos, pero seguro te encantará el que te llegue.",
+  category_new: "Oferta"
 },
 {
   id: "KSC1737",
@@ -999,13 +986,14 @@ const PRODUCTS_MAQUILLAJE = [
   price: 20000,
   image: "images/productos/Maquillaje/Labios/KSC1737.jpg",
   description: "- Este set de tres piezas es el sueño de cualquier amante de los labiales nude.\n- Cada brillo cuenta con la tendencia de lip glosses con aplicador grueso, lo que permite una aplicación generosa que envuelve los labios en una capa de suavidad extrema.\n- Su fórmula cremosa es ideal para quienes sufren de labios resecos, aportando un efecto volumen visual y una sensación de confort que dura horas sin ser pegajosa.",
+  category_new: "Oferta",
   tonos: ["01", "02", "03", "04", "05"]
 },
 {
   id: "Hl15",
   category: "maquillaje",
   subcategory: "Labios",
-  name: "Brillo Magico Honey - Hl15",
+  name: "Brillo Mágico Honey - Hl15",
   price: 6000,
   image: "images/productos/Maquillaje/Labios/Hl15.jpg",
   description: "Labios hermosos, con color en segundos y una sensación hidratante desde la primera aplicación. Este brillo mágico reacciona al pH natural de tus labios, creando un tono único que se adapta a ti y realza tu color natural. Su fórmula enriquecida con aceites ayuda a mantener los labios suaves e hidratados, mientras aporta un acabado luminoso y fresco. Disfruta de una textura cómoda, ligera y agradable de llevar durante todo el día, con un toque de color personalizado y un brillo que resalta la belleza natural de tus labios.",
@@ -1107,7 +1095,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Bpm1426",
   category: "maquillaje",
   subcategory: "Labios",
-  name: "Brillo Magico Doble Perfect Match - Bpm1426",
+  name: "Brillo Mágico Doble Perfect Match - Bpm1426",
   price: 8000,
   image: "images/productos/Maquillaje/Labios/Bpm1426.jpg",
   description: "Los labios son y serán siempre tendencia.Acabado: Semi Mate\nTipo de labial: Brillo\nFórmula cosmética: Líquida",
@@ -1326,7 +1314,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Dyt2654",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Lápiz Ojos y Cejas Toy Story - Dyt2654",
+  name: "Lápiz Ojos Y Cejas Toy Story - Dyt2654",
   price: 15000,
   image: "images/productos/Maquillaje/Ojos/Dyt2654.jpg",
   description: "La herramienta que buscas para unos ojos de impacto. Consigue cejas definidas y de apariencia natural con este Lápiz de Cejas. Sus dos puntas permiten crear trazos precisos con los que puedes rellenar espacios; por un costado encontrarás un lápiz retráctil de textura cremosa y, por el otro lado un plumón delineador de larga duración resistente al agua, ayudando a dar forma a las cejas con facilidad o perfecto para delinear tus ojos. Son 3 tonos disponibles en el lápiz cremoso.",
@@ -1347,7 +1335,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Dct2573",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Delineador Cafe Rainbow - Dct2573",
+  name: "Delineador Café Rainbow - Dct2573",
   price: 10000,
   image: "images/productos/Maquillaje/Ojos/Dct2573.jpg",
   description: "Seamos muy sinceras: amamos el delineador negro, pero hay días en los que queremos un look más fresco, sutil y natural para ir a la oficina o la universidad, y el negro puede verse muy fuerte o endurecer la mirada. Intentar un delineado café con sombras a veces termina en un manchón que se borra a las dos horas, y los lápices tradicionales suelen ser rígidos, raspan el párpado y se corren con el sudor. ¡Por eso rescatamos a este rey del famoso kit Rainbow para traerlo de forma individual! Este delineador líquido café es una absoluta joya para lograr acabados ultra suaves, cálidos y elegantes. Su aplicador en pincel de alta precisión te da el control total para diseñar desde líneas milimétricas hasta colitas de gato intensas. Además, su fórmula es de secado rápido, tiene una duración espectacular y se asienta de forma homogénea para que tu mirada se vea impecable, despierta y hermosa todo el día sin cuartearse.",
@@ -1366,7 +1354,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Slt2203",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Sombra Liquida Glow Beat - Slt2203",
+  name: "Sombra Líquida Glow Beat - Slt2203",
   price: 8000,
   image: "images/productos/Maquillaje/Ojos/Slt2203.jpg",
   description: "La Sombra Líquida Glow es la elegida para darle a tu mirada un acabado luminoso y divertido.\n\n- Su fórmula ligera y de fácil aplicación se desliza suavemente sobre el párpado o mejillas, dejando un efecto radiante con destellos en tonos lilas, morados y dorados que transforman cualquier look en un estilo lleno de magia y único.",
@@ -1379,7 +1367,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Sombra En Polvo X12 Urban - Sut2170",
   price: 12000,
   image: "images/productos/Maquillaje/Ojos/Sut2170.jpg",
-  description: "Seguro te ha pasado: tienes boletas para un festival o una salida emocionante con tus amigas, te sientas a maquillarte y te das cuenta de que todas tus paletas tienen los mismos tonos cafés clásicos de siempre. ¡Es momento de dejar atrás los looks planos y darle la bienvenida a la paleta más urbana y cool de tu colección! La paleta Urban reúne 12 tonos espectaculares entre mates y satinados, con una armonía genial enfocada principalmente en la gama de los verdes. Diseñada con una calidad premium y una pigmentación de locura, esta paleta te permite construir desde un delineado difuminado, clásico para el diario hasta los sombreados más vanguardistas y potentes para bailar toda la noche. Su polvo sedoso se adhiere a tus párpados como un imán, asegurándote que tu mirada se quede on point e intacta sin importar qué tan intenso se ponga el evento."
+  description: "Seguro te ha pasado: tienes boletas para un festival o una salida emocionante con tus amigas, te sientas a maquillarte y te das cuenta de que todas tus paletas tienen los mismos tonos cafés clásicos de siempre. ¡Es momento de dejar atrás los looks planos y darle la bienvenida a la paleta más urbana y cool de tu colección! La paleta Urban reúne 12 tonos espectaculares entre mates y satinados, con una armonía genial enfocada principalmente en la gama de los verdes. Diseñada con una calidad premium y una pigmentación de locura, esta paleta te permite construir desde un delineado difuminado, clásico para el diario hasta los sombreados más vanguardistas y potentes para bailar toda la noche. Su polvo sedoso se adhiere a tus párpados como un imán, asegurándote que tu mirada se quede on point e intacta sin importar qué tan intenso se ponga el evento.",
+  category_new: "Oferta"
 },
 {
   id: "Slu2171",
@@ -1574,7 +1563,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Sombra Escarcha Party Glitter - SPG176",
   price: 5000,
   image: "images/productos/Maquillaje/Ojos/SPG176.jpg",
-  description: "Brillar ya no es un problema! Los Party Glitter son el alido más conveniente si te vas de fiesta.\nGlitter de excelente pigmentación y calidad.\nContiene 6 tonos diferentes.\nSus tonos son entre rosas, dorados y violetas tornasol.\nLlevar tus looks a otro nivel con estos glitters serán tu nueva personalidad.\nRecuerda: Los glitters prensados contienen partículas más grandes que las de los iluminadores normales, lo que te da un acabado más potente y con más textura."
+  description: "Brillar ya no es un problema! Los Party Glitter son el alido más conveniente si te vas de fiesta.\nGlitter de excelente pigmentación y calidad.\nContiene 6 tonos diferentes.\nSus tonos son entre rosas, dorados y violetas tornasol.\nLlevar tus looks a otro nivel con estos glitters serán tu nueva personalidad.\nRecuerda: Los glitters prensados contienen partículas más grandes que las de los iluminadores normales, lo que te da un acabado más potente y con más textura.",
+  category_new: "Oferta"
 },
 {
   id: "Sct1767",
@@ -1600,7 +1590,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Ac30",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Delineador Plumon Artist - Ac30",
+  name: "Delineador Plumón Artist - Ac30",
   price: 20000,
   image: "images/productos/Maquillaje/Ojos/Ac30.jpg",
   description: "¡Pigmento y duración que impacta!\nDelineador individual con fórmula premium, tan bueno como los de alta gama.\nPigmentos súper intenso en color negro.\nFácil de usar.\nSecado rápido con acabado matte total.\nFormula aprueba de agua.\n¡Ideal para crear looks creativos, atrevidos y duraderos!",
@@ -1611,7 +1601,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "EY15",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Lápiz de Ojos Trendy - EY15",
+  name: "Lápiz De Ojos Trendy - EY15",
   price: 10000,
   image: "images/productos/Maquillaje/Ojos/EY15.jpg",
   description: "Salir a la calle feliz con un delineado espectacular y descubrir a mitad del día que el producto se corrió hacia abajo, dejándote ojos de panda y un aspecto cansado, es una de las peores batallas del maquillaje diario. ¡Es hora de ganarle la guerra a los ojos manchados con un toque de magia y nostalgia! Este increíble lápiz de ojos, inspirado en Woody y Buzz Lightyear de Toy Story, es colorido, divertido y está lleno de personalidad. Su fórmula profesional cuenta con una textura súper suave y cremosa que se desliza como seda sin necesidad de jalar el párpado ni causar lágrimas, depositando un color negro ultra pigmentado desde la primera pasada. Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de fijación te permite mantener tu delineado seguro siempre, convirtiéndose en el secreto infalible para un look intacto y perfecto que resiste todo tu día."
@@ -1652,6 +1642,7 @@ const PRODUCTS_MAQUILLAJE = [
   price: 10000,
   image: "images/productos/Maquillaje/Cejas/B69.jpg",
   description: "Salir de casa con unas cejas divinas y notar a mitad del día que el calor, el sudor o la grasita de la piel borraron la mitad del diseño, dejándote parches o una mirada sin fuerza, es una verdadera pesadilla. ¡Es hora de ganarle la batalla al clima y lucir unas cejas impecables sin estresarte por retoques! Este lápiz doble punta es la solución definitiva para lograr un nivel de detalle único con un aspecto súper natural. Por un lado, cuenta con una punta delgada perfecta para pintar y simular vellitos pelo por pelo en las zonas más despobladas. Por el otro costado, su lado angular más ancho te permite rellenar los espacios grandes con total facilidad y rapidez. Su fórmula profesional es ultra suave al momento de aplicar pero se sella con un poder de larga duración increíble. Es totalmente a prueba de agua, sudor, calor y piel grasa, manteniendo su acabado intacto hasta por 12 horas para que disfrutes tu rutina con total tranquilidad.",
+  category_new: "Oferta",
   tonos: ["04"]
 },
 {
@@ -1663,8 +1654,8 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Rostro/MT2384.jpg",
   description: "Regala un momento lleno de color, creatividad y brillo diseñado especialmente para las más pequeñas. Inspirado en Barbie, este kit reúne varios productos para decorar las uñas y complementar cualquier estilo: incluye una hoja de stickers, dos esmaltes con destellos en tonos azul y rosado, un separador de dedos, una lima, un hidratante de labios sin color de aroma suave y un gloss con toque de tono rosado. Lima suavemente las uñas, coloca el separador para aplicar los esmaltes sin manchar, decora con los stickers y finaliza aplicando el hidratante y el gloss sobre la boca. Deja secar por completo la primera capa de esmalte antes de pegar los stickers para asegurarte de que se adhieran muy bien a la uña. ¡Un súper tip: cuida tu Kit Niñas Mascotas Barbie de la luz solar directa guardándolo en un sitio fresco y seco para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Mattel",
-  category_age: "Para niñas",
-  category_new: "Nueva colección"
+  category_new: "Nueva colección",
+  category_age: "Para niñas"
 },
 {
   id: "DY2289",
@@ -1675,6 +1666,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2289.jpg",
   description: "El accesorio chic infaltable para elevar tus looks. Este collar cuenta con una cadena delgada pero altamente resistente en tono dorado y un dije redondo de material firme con una impresión de alta resolución de tu princesa favorita. Es la pieza perfecta para añadir un detalle brillante y divertido a cualquier atuendo. Colócalo alrededor del cuello y asegura el cierre de forma correcta. Tip de Experta: Elige el dije de tu princesa preferida para combinarlo con tus prendas de tonos neutros o pastel.\n\n¡Un súper tip: cuida tu Collar Dorado Princesas de fuentes de calor o de olor para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas",
   tonos: ["Ariel", "Bella", "Rapunzel"]
 },
@@ -1687,6 +1679,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2290.jpg",
   description: "El accesorio soñado para complementar los atuendos infantiles y fomentar el juego creativo de tu Mini Trendylover. Este kit incluye 2 pulseras con hermosos detalles en forma de flores, corazones o estrellas y 1 collar a juego; cada pieza lleva el dije de su princesa favorita de Disney (puedes escoger entre Bella, Cenicienta o Rapunzel). Los dijes están elaborados en un material resistente con impresiones de alta calidad sobre plástico y cauchos de nylon. Utiliza el collar y las pulseras directamente sobre sus atuendos. Tip de Experta: Escoge la versión de su princesa preferida y combina las pulseras con sus vestidos favoritos.\n\n¡Un súper tip: cuida tu Kit Collar Niñas Princesas almacenándolo en un lugar limpio, fresco y libre de contaminación, y no lo guardes cerca de fuentes de calor ni de olor para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas",
   tonos: ["Bella", "Blanca Niueves", "Cenicienta", "Rapunzel"]
 },
@@ -1699,6 +1692,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2299.jpg",
   description: "La opción más tierna y versátil para complementar tu estilo diario. Esta cadena plateada resistente destaca por incluir 5 dijes impresos a alta calidad con colores y siluetas del personaje Stitch en diferentes formas. Su largo adaptable te permite lucirla como pulsera en la muñeca o usarla como tobillera para looks frescos y relajados. Ubica la cadena en la muñeca o tobillo y asegura el cierre. Tip de Experta: Llévala junto a tus prendas casuales favoritas para resaltar los dijes a color.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -1710,6 +1704,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2292.jpg",
   description: "El toque único para resaltar cualquier prenda y lucir fabulosa. Esta cadena plateada resistente incluye 5 dijes con colores vivos de princesas y siluetas en varias formas y tamaños, elaborados en materiales resistentes de alta calidad. Gracias a su diseño adaptable, puedes usarla cómodamente en la muñeca como pulsera o en el tobillo como tobillera casual. Ajusta el cierre de la cadena al tamaño deseado. Tip de Experta: Ajusta el cierre más holgado si decides usarla como tobillera durante días de sol.\n\n¡Un súper tip: cuida tu Pulsera Plateada Princesas de fuentes de calor o de olor para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -1721,6 +1716,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2297.jpg",
   description: "El kit ideal para llevar peinados lindos, divertidos y accesorios de moda a todos lados. Incluye un cepillo para mantener el cabello hermoso, 2 hebillas, 4 moñas y 2 ganchos para crear peinados espectaculares, además de una manilla con 2 dijes y un anillo a juego. Todo viene empacado en una práctica maletica con tiras fácil de transportar. Utiliza los accesorios en tu rutina diaria y guárdalos en la maleta al terminar. Tip de Experta: Usa la maletica para guardar tus juguetes o accesorios pequeños favoritos cuando salgas de paseo.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -1732,6 +1728,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2298.jpg",
   description: "Todo lo que una Mini Trendylover necesita para ir a la moda viene en este fabuloso kit inspirado en Stitch. Incluye un kit de 6 ligas de colores, 2 pulseras en espiral (que también sirven para atar el pelo), 1 bandana con caucho y moñito, 1 scrunchy de seda, 4 ganchitos invisibles (dos forrados en tela con pin y dos metálicos) y 2 mini caimanes. Todo viene en un hermoso bolso de plástico en forma de corazón perfecto para transportar los accesorios o decorar el tocador. Abre la maleta, utiliza sus accesorios y guárdalos nuevamente tras su uso. Tip de Experta: Usa la bandana de moñito para despejar su rostro mientras realiza sus peinados favoritos.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -1743,29 +1740,32 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2293.jpg",
   description: "Las más pequeñitas de casa ahora tendrán mucho más estilo.\n- Ya no tienes que escoger, con estas pulseras de dije intercambiable llevarán las princesas a todas partes.\n- Cada empaque incluye 2 pulseras de diferentes tonalidades y 5 dijes intercambiables.\n- Son 3 referencias disponibles para que elijas tu color preferido.\n- Cada dije tiene forma de corazón, brillitos y el diseño de tu Princesa Disney favorita.\nModo de uso: Elige a tu princesa favorita y coloca el dije en la pulsera con ayuda del ganchito metálico.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
   id: "DY2294",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Kit Moño Y Hebilla Princesas - DY2294",
   price: 4000,
-  image: "images/productos/Maquillaje/Accesorios/DY2294.jpg",
+  image: "images/productos/Maquillaje/Capilar/DY2294.jpg",
   description: "Los adornos perfectos para lograr peinados hermosos, coquetos y prolijos sin maltratar el cabello. Este kit combina un moñito de tela rosa que da un acabado impecable con 2 hebillas decoradas con princesas, ideales para armar coletas altas o sujetar cabellitos rebeldes. Coloca el moño o las hebillas directamente sobre la sección de cabello según el estilo que quieras lucir. Tip de Experta: Usa las dos hebillas a los laterales para despejar la cara de forma súper coqueta.\n\n¡Un súper tip: cuida tu Kit Moño Y Hebilla Princesas de fuentes de calor o de olor para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas",
   tonos: ["Morado", "Rosado"]
 },
 {
   id: "DY2291",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Kit Hebillas Princesas - DY2291",
   price: 5000,
-  image: "images/productos/Maquillaje/Accesorios/DY2291.jpg",
+  image: "images/productos/Maquillaje/Capilar/DY2291.jpg",
   description: "Crea peinados lindos y coquetos con los diseños de tus princesas favoritas luciendo en primer plano.\nEste kit x 10 de hebillas es perfecto para llevar en la cosmetiquera o bolso y retocar tus peinados o darle un plus en cualquier momento.\nSon 5 pares de hebillas con diseños de Blancanieves, Rapunzel, Cenicienta, Ariel y Bella.\nCombínalas a tu gusto y mantén en su lugar esos cabellitos rebeldes.\nExcelente agarre, suaves con tu cabello.\nMaterial: Plástico.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -1855,7 +1855,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Kit Corporal Polly Pocket Morado - MT2397",
   price: 20000,
   image: "images/productos/Maquillaje/Corporal/MT2397.jpg",
-  description: "El secreto perfecto para sentirte sofisticada, romántica y femenina al salir de la ducha. Este kit morado posee una fragancia encantadora que combina notas dulces con un toque floral envolvente: contiene un body splash que perfuma suavemente la piel y una mantequilla corporal enriquecida con brillitos que la nutre mientras le aporta un glow delicado que resalta su luminosidad natural. Aplica la mantequilla sobre la piel limpia y seca hasta su completa absorción y luego rocía el body splash corporal. Tip de Experta: Rocía el splash en las muñecas y detrás de las orejas para dejar una estela floral sofisticada."
+  description: "El secreto perfecto para sentirte sofisticada, romántica y femenina al salir de la ducha. Este kit morado posee una fragancia encantadora que combina notas dulces con un toque floral envolvente: contiene un body splash que perfuma suavemente la piel y una mantequilla corporal enriquecida con brillitos que la nutre mientras le aporta un glow delicado que resalta su luminosidad natural. Aplica la mantequilla sobre la piel limpia y seca hasta su completa absorción y luego rocía el body splash corporal. Tip de Experta: Rocía el splash en las muñecas y detrás de las orejas para dejar una estela floral sofisticada.",
+  category_new: "Oferta"
 },
 {
   id: "MT2396",
@@ -1864,7 +1865,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Kit Corporal Polly Pocket Rosado - MT2396",
   price: 20000,
   image: "images/productos/Maquillaje/Corporal/MT2396.jpg",
-  description: "El secreto perfecto para sentirte sofisticada, romántica y femenina al salir de la ducha. Este kit morado posee una fragancia encantadora que combina notas dulces con un toque floral envolvente: contiene un body splash que perfuma suavemente la piel y una mantequilla corporal enriquecida con brillitos que la nutre mientras le aporta un glow delicado que resalta su luminosidad natural. Aplica la mantequilla sobre la piel limpia y seca hasta su completa absorción y luego rocía el body splash corporal. Tip de Experta: Rocía el splash en las muñecas y detrás de las orejas para dejar una estela floral sofisticada."
+  description: "El secreto perfecto para sentirte sofisticada, romántica y femenina al salir de la ducha. Este kit morado posee una fragancia encantadora que combina notas dulces con un toque floral envolvente: contiene un body splash que perfuma suavemente la piel y una mantequilla corporal enriquecida con brillitos que la nutre mientras le aporta un glow delicado que resalta su luminosidad natural. Aplica la mantequilla sobre la piel limpia y seca hasta su completa absorción y luego rocía el body splash corporal. Tip de Experta: Rocía el splash en las muñecas y detrás de las orejas para dejar una estela floral sofisticada.",
+  category_new: "Oferta"
 },
 {
   id: "MT2398",
@@ -1873,7 +1875,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Kit Corporal Polly Pocket Aguamarina - MT2398",
   price: 20000,
   image: "images/productos/Maquillaje/Corporal/MT2398.jpg",
-  description: "Una experiencia divertida, alegre y llena de personalidad para destacar todos los días. Este kit aguamarina combina un aroma frutal delicioso y dulce con notas frescas: incluye un body splash ligero que brinda una sensación refrescante al instante y una mantequilla corporal con brillitos que nutre intensamente dejando tu piel suave, luminosa y con un brillo encantador. Extiende la mantequilla corporal sobre la piel limpia y seca hasta absorberla por completo y finaliza rociando el body splash corporal. Tip de Experta: Úsalo después de salir de la ducha para sellar la humedad e intensificar el aroma dulce."
+  description: "Una experiencia divertida, alegre y llena de personalidad para destacar todos los días. Este kit aguamarina combina un aroma frutal delicioso y dulce con notas frescas: incluye un body splash ligero que brinda una sensación refrescante al instante y una mantequilla corporal con brillitos que nutre intensamente dejando tu piel suave, luminosa y con un brillo encantador. Extiende la mantequilla corporal sobre la piel limpia y seca hasta absorberla por completo y finaliza rociando el body splash corporal. Tip de Experta: Úsalo después de salir de la ducha para sellar la humedad e intensificar el aroma dulce.",
+  category_new: "Oferta"
 },
 {
   id: "CMO2402",
@@ -1916,7 +1919,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "Deb2487",
   category: "maquillaje",
   subcategory: "Cuidado Facial",
-  name: "Duo Exfoliante Mascarilla de Labios Bob Esponja - Deb2487",
+  name: "Dúo Exfoliante Mascarilla De Labios Bob Esponja - Deb2487",
   price: 10000,
   image: "images/productos/Maquillaje/Cuidado_Facial/Deb2487.jpg",
   description: "Con un diseño exclusivo de la colección de Bob Esponja, este dúo reparador es perfecto para mantener tus labios suaves, renovados y listos para cualquier maquillaje.\nIncluye un exfoliante labial que ayuda a remover suavemente la resequedad y las células muertas, dejando los labios más lisos y uniformes.\nAdemás, cuenta con una mascarilla reparadora que ayuda a acondicionarlos y aportarles una sensación de suavidad y confort.\nEs ideal para usar antes de labiales o glosses, o simplemente como parte de tu rutina diaria de cuidado.",
@@ -1944,7 +1947,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "DBB2485",
   category: "maquillaje",
   subcategory: "Cuidado Facial",
-  name: "Desmaquillante Bifasico Bob Esponja - DBB2485",
+  name: "Desmaquillante Bifásico Bob Esponja - DBB2485",
   price: 25000,
   image: "images/productos/Maquillaje/Cuidado_Facial/DBB2485.jpg",
   description: "¡Desmaquillarte nunca fue tan fácil!\n\nEste desmaquillante bifásico combina una fase acuosa y una fase oleosa que, al agitarse, trabajan juntas para remover eficazmente el maquillaje, incluso aquellos productos de larga duración o resistentes al agua.\n\nSu fórmula ayuda a retirar impurezas sin necesidad de frotar excesivamente la piel, dejando una sensación cómoda y limpia después de cada uso.\nEs ideal para el rostro, ojos y labios, convirtiéndose en un básico infaltable en tu rutina de limpieza facial.",
@@ -1964,10 +1967,11 @@ const PRODUCTS_MAQUILLAJE = [
   id: "SP2",
   category: "maquillaje",
   subcategory: "Ojos",
-  name: "Serum Crecimiento De Pestañas Trendy - SP2",
+  name: "Sérum Crecimiento De Pestañas Trendy - SP2",
   price: 15000,
   image: "images/productos/Maquillaje/Ojos/SP2.jpg",
-  description: "¡Logra las pestañas de tus sueños con nuestro Serum Para Pestañas Trendy! Refuerza la estructura capilar y previene la caída de tus pestañas. Estimula la síntesis de queratina, aportando elasticidad, resistencia y brillo. Textura en gel."
+  description: "¡Logra las pestañas de tus sueños con nuestro Serum Para Pestañas Trendy! Refuerza la estructura capilar y previene la caída de tus pestañas. Estimula la síntesis de queratina, aportando elasticidad, resistencia y brillo. Textura en gel.",
+  category_new: "Oferta"
 },
 {
   id: "MAT1314",
@@ -1992,7 +1996,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "DSH1761",
   category: "maquillaje",
   subcategory: "Cuidado Facial",
-  name: "Doypack Serum Hidratante Morado - DSH1761",
+  name: "Doypack Sérum Hidratante Morado - DSH1761",
   price: 10000,
   image: "images/productos/Maquillaje/Cuidado_Facial/DSH1761.jpg",
   description: "¡Tu suero hidratante favorito ahora en sachet!\n\n- La fórmula es exactamente igual a la presentación que ya conoces.\n- Su textura es en gel.\n- Es de absorción rápida."
@@ -2028,7 +2032,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "P108",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Brocha Individual Doble Angular y Gota - P108",
+  name: "Brocha Individual Doble Angular Y Gota - P108",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P108.jpg",
   description: "¿Cansada de abrir tu bolso de maquillaje y encontrar un desorden eterno de herramientas que te quitan espacio, o de tener que cargar mil brochas diferentes cuando viajas o sales de fiesta solo para un retoque express?. ¡Es hora de facilitarte la vida con inteligencia! Las brochas dobles siempre serán una alternativa que optimiza el espacio en tu cosmetiquera y te da los mejores acabados. Por un extremo tienes un cabezal en forma de gota perfecto para sellar y unificar zonas delicadas, y por el otro, un corte angular ideal para dar color y definir. Es una herramienta de calidad profesional, y es tan increíblemente suave al tacto con el rostro que sentirás una caricia deliciosa cada vez que la pases. Sus colores en negro y dorado la hacen ver muy luxury, aportando todo el estilo y glamour que te mereces en tu rutina diaria."
@@ -2183,7 +2187,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "BT015",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Kit Brocha Trendy Ojos x 6 Generica - BT015",
+  name: "Kit Brocha Trendy Ojos X 6 Genérica - BT015",
   price: 20000,
   image: "images/productos/Maquillaje/Accesorios/BT015.jpg",
   description: "Intentar hacer un sombreado espectacular para esa ocasión especial y terminar con un parche oscuro en el párpado o un delineado grueso y torcido porque estás usando la misma brocha gigante de rostro es el mayor miedo de todas. ¡Es momento de dejar de improvisar y darle a tus ojos las herramientas que se merecen! Este set reúne las 6 piezas clave que necesitas para crear cualquier look desde cero y como toda una profesional. Contiene 6 brochas de pelo sintético premium que son un absoluto sueño por su suavidad, lo que significa que no van a pullar tus párpados ni a levantar tus productos en crema. El kit incluye: 1 brocha dual para cejas, 1 brocha fina para delineador, 1 brocha difuminadora grande para integrar colores, 1 brocha plana pequeña para cortes de cuenca milimétricos, 1 brocha plana grande para depositar pigmento con fuerza y 1 brocha en punta para máxima precisión en el lagrimal. Recuerda que son libres de crueldad animal."
@@ -2192,7 +2196,7 @@ const PRODUCTS_MAQUILLAJE = [
   id: "KG5",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Kit Brochas Ojos Metalica Oro Rosa - KG5",
+  name: "Kit Brochas Ojos Metálica Oro Rosa - KG5",
   price: 25000,
   image: "images/productos/Maquillaje/Accesorios/KG5.jpg",
   description: "Lleva este kit a donde quiera que vayas sin ocupar mucho espacio en tu bolso o cosmetiquera diaria. Incluye las brochas básicas para maquillar tus ojos y sacarte de cualquier apuro: difuminadoras para crear transiciones suaves, una lengua de gato para depositar color y una brocha para cejas que te dará una definición de impacto. Su empaque metálico es premium, súper sofisticado y resistente, diseñado para proteger tus herramientas y con la versatilidad de que puedes darle diferentes usos según tu estilo de vida. Disfruta de una calidad profesional que mima tus párpados y hace que aplicar tus sombras sea una experiencia ultra suave y divertida."
@@ -2234,16 +2238,18 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/Dy2336.jpg",
   description: "Lleva la aventura, la diversión y la amistad a todas partes con este accesorio colorido y lleno de personalidad. Inspirado en Woody y Buzz Lightyear de Toy Story, este pin es la opción perfecta para darle un toque auténtico y llamativo a tus bolsos, chaquetas, cosmetiqueras o cartucheras. Su material resistente y tamaño práctico te permiten usarlo diariamente, mientras que su sistema de broche mantiene la pieza firme sobre cualquier tela. Coloca el pin en la superficie elegida y ajusta el broche posterior. Tip de Experta: Llévalo en tu cartuchera o mochila para resaltar tu estilo con el dúo icónico de Disney.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "Lct2387",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Luxe Clean Trendy - Lct2387",
+  name: "Luxé Clean Trendy - Lct2387",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/Lct2387.jpg",
-  description: "- Este spray es tu mejor aliado para eliminar esas manchas inesperadas especialmente de maquillaje sin arruinar tu prenda favorita.\n- Práctico y muy fácil de usar, es perfecto para esos momentos en los que necesitas una solución rápida y efectiva.\n- Remueve desde base y labial hasta pequeños accidentes del día a día, LuxeClean actúa sin complicaciones, ayudándote a mantener tu ropa como nueva.\nLo vas a amar porque:"
+  description: "- Este spray es tu mejor aliado para eliminar esas manchas inesperadas especialmente de maquillaje sin arruinar tu prenda favorita.\n- Práctico y muy fácil de usar, es perfecto para esos momentos en los que necesitas una solución rápida y efectiva.\n- Remueve desde base y labial hasta pequeños accidentes del día a día, LuxeClean actúa sin complicaciones, ayudándote a mantener tu ropa como nueva.\nLo vas a amar porque:",
+  category_new: "Oferta"
 },
 {
   id: "DY2349",
@@ -2253,7 +2259,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2349.jpg",
   description: "El detalle más dulce, romántico y encantador para llevar en tus pertenencias. Este pin coleccionable muestra a Stitch y Angel juntos, convirtiéndose en el accesorio perfecto para quienes aman los detalles con personalidad chic. Coloca el pin sobre la superficie deseada de tu bolso o chaqueta y asegura el broche. Tip de Experta: Es el regalo perfecto para compartir o llevar junto a tu persona favorita.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2347",
@@ -2263,7 +2270,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2347.jpg",
   description: "El detalle más dulce y emotivo para expresar tu personalidad con ternura. Este pin coleccionable enamora por su tierno diseño de Stitch en un abrazo, perfecto para personalizar chaquetas, bolsos o mochilas con un estilo cute pero chic. Coloca el pin en la prenda o accesorio que prefieras y asegura el broche por detrás. Tip de Experta: Regálalo a tu persona favorita como un detalle lindo que recuerde un abrazo constante.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2333",
@@ -2273,7 +2281,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2333.jpg",
   description: "El accesorio ideal para darle un toque increíble de aventura a tu look diario. Este pin inspirado en el vaquero más querido del viejo oeste cuenta con acabados metalizados de alta calidad que destacan a simple vista. Es la opción perfecta para personalizar chaquetas, mochilas, bolsos o estuches con un estilo alegre y valiente. Fija el pin en la superficie elegida y ajusta el broche posterior. Tip de Experta: Combínalo con otros pines de la colección Toy Story para crear un conjunto temático en tu estuche.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2426",
@@ -2283,7 +2292,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2426.jpg",
   description: "Este pin de Buzz te encantará por su diseño clásico, que transmite fuerza y toda la magia de Toy Story y de este personaje.\n\nUn detalle lleno de nostalgia que aporta un toque divertido y chic a cualquier accesorio. Dile adiós a los bolsos, prendas o accesorios aburridos.\nLos pines más lindos y coleccionables llegaron para darle vida a tu estilo.\nDecora tus prendas o accesorios favoritos con este hermoso pin, inspirado en una de las películas de Disney más queridas.\nIdeal para fans que aman los detalles con historia.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2345",
@@ -2293,7 +2303,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2345.jpg",
   description: "Lleva la frescura, la alegría y la vibra tropical del verano a donde vayas. Este pin coleccionable muestra a Stitch en un estilo hawaiano súper colorido, siendo el accesorio ideal para transformar gorras, mochilas o chaquetas con un aire relajado y chic. Fija el pin en la superficie de tu preferencia y ajusta el broche en la parte posterior. Tip de Experta: Ponlo en una gorra o vicera de tela para tus salidas de fin de semana.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2343",
@@ -2303,7 +2314,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2343.jpg",
   description: "Una combinación súper original que refleja humor, estilo y amor por el universo de Toy Story. Este pin coleccionable destaca por su diseño divertido del clásico Marcianito sosteniendo un taco, perfecto para quienes buscan darle un toque cool y moderno a sus prendas favoritas. Coloca el pin sobre la prenda o accesorio seleccionado y asegura el broche posterior. Tip de Experta: Adórnalo en tu cartuchera o cosmetiquera para sacarle una sonrisa a todos.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2348",
@@ -2313,17 +2325,19 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2348.jpg",
   description: "Transmite alegría, frescura y diversión en cada uno de tus atuendos. Con un diseño colorido de Stitch disfrutando de un helado, este pin es la opción perfecta para darle un toque dulce, fresco y juvenil a tus chaquetas, bolsos o mochilas. Fija el pin sobre la superficie que prefieras y asegura el broche en la parte trasera. Tip de Experta: Agrégalo al asa de tu estuche favorito para darle vida a tu escritorio.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2350",
   category: "maquillaje",
   subcategory: "Accesorios",
-  name: "Pin Stitch Sandia - DY2350",
+  name: "Pin Stitch Sandía - DY2350",
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2350.jpg",
   description: "Llena de color, ternura y alegría tus prendas y accesorios favoritos. Este pin coleccionable destaca por su divertido diseño de Stitch disfrazado de sandía, convirtiéndose en el detalle ideal para acompañar looks relajados pero cargados de estilo. Simplemente coloca el pin sobre la tela del accesorio seleccionado y asegúralo. Tip de Experta: Llévalo en gorras o mochilas de tela en días soleados para un toque veraniego.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2369",
@@ -2333,7 +2347,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2369.jpg",
   description: "Llena de vida, color y recuerdos divertidos cualquiera de tus accesorios favoritos. Inspirado en una de las escenas más famosas de Monsters Inc, este pin coleccionable destaca por sus tonos alegres, siendo la opción ideal para personalizar chaquetas, estuches o mochilas. Fija el pin en el lugar deseado utilizando el broche posterior. Tip de Experta: Combínalo con prendas de color neutro para que los tonos vivos del código 3312 resalten de inmediato.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2300",
@@ -2344,6 +2359,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/DY2300.jpg",
   description: "Eleva cualquier look con el encanto de Disney. Esta cadena inspirada en Stitch es perfecta para darle un toque moderno, delicado y único a tus outfits. Su diseño delgado, elegante, ligero y cómodo la convierte en la pieza chic ideal para usar a diario. Ofrece una impresión de alta calidad que le aporta ese toque final perfecto a tu ropa. Solo colócalo alrededor del cuello y ajusta el cierre. Llévalo con prendas de escote sencillo para que el dije de Stitch sea el centro de atención.",
   colaboracion: "Disney",
+  category_new: "Oferta",
   category_age: "Para niñas"
 },
 {
@@ -2354,7 +2370,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2371.jpg",
   description: "Captura el momento más tierno y tranquilo de tus personajes favoritos para acompañarte en tus días de descanso. Este pin coleccionable de Monsters Inc cuenta con una impresión y grabado de alta calidad sobre Aleación de Zinc, destacando por su diseño único inspirado en Disney. Olvídate de los bolsos sencillos: su cierre de plástico duro te asegura una fijación ligera, firme y resistente sin maltratar tus prendas. Simplemente fija el pin sobre el accesorio deseado y asegura su broche posterior. Tip de Experta: Agrégalo a tu estuche o cosmetiquera favorita para personalizar tus esenciales de belleza.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2367",
@@ -2364,7 +2381,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2367.jpg",
   description: "Haz que tu estilo se robe todas las miradas con la ternura gigante y el inconfundible pelaje azul de Sullivan. Este pin coleccionable inspirado en Monsters Inc de Disney combina la mejor calidad de grabado sobre Aleación de Zinc con un acabado lleno de color. Incluye un sistema de cierre en plástico duro que garantiza una sujeción firme, ligera y muy resistente sobre tus prendas o bolsos preferidos. Simplemente fija el pin sobre la tela o accesorio seleccionado y asegura el broche. Tip de Experta: Úsalo en tu mochila escolar o de trabajo para llevar a Sullivan a todas partes.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2335",
@@ -2374,7 +2392,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2335.jpg",
   description: "Recuerda a uno de los personajes más icónicos de Toy Story con un pin lleno de nostalgia y magia. La carita adorable y el traje verde del Marcianito están capturados con una impresión y grabado de alta calidad sobre Aleación de Zinc. Este pin coleccionable de Disney incluye un cierre de plástico duro de ajuste ligero, firme y muy resistente para personalizar tus prendas o mochilas. Fija el pin sobre el accesorio deseado y asegura su broche. Tip de Experta: Junta varios pines de la colección de Disney en tu chaqueta para armar un look temático increíble.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2366",
@@ -2384,7 +2403,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2366.jpg",
   description: "Este pin Monsters Inc te va a encantar porque te transporta al mundo lleno de aventuras, risas y recuerdos tras las puertas.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2338",
@@ -2394,7 +2414,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2338.jpg",
   description: "Trae toda la energía del Viejo Oeste con el espíritu valiente y alegre de los personajes principales de Toy Story. Este pin coleccionable de Disney es perfecto para personalizar prendas o bolsos, destacando por su grabado e impresión de alta calidad. Está fabricado en Aleación de Zinc y cuenta con un sistema de cierre en plástico duro que te garantiza un ajuste firme, ligero y resistente sin que se caiga. Fija el pin sobre la prenda o accesorio que prefieras. Tip de Experta: Agrégalo al bolsillo de tu chaqueta de mezclilla para darle un toque vaquero y divertido.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2344",
@@ -2404,7 +2425,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2344.jpg",
   description: "Este pin de Marcianito Pizza te va a encantar porque combina lo mejor del universo y la pizza en un diseño muy divertido y coleccionable.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2370",
@@ -2414,7 +2436,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2370.jpg",
   description: "Muestra el lado más divertido e icónico de tus monstruos preferidos en tus atuendos diarios. Este pin coleccionable de Disney destaca por su estilo cómico, contando con un grabado e impresión de alta resolución sobre Aleación de Zinc. Su sistema de cierre de plástico duro te ofrece una sujeción firme, ligera y muy resistente sobre cualquier accesorio para que no tengas que preocuparte por extraviarlo. Fija el pin sobre la prenda o accesorio que elijas y asegura su broche por detrás. Tip de Experta: Llévalo en la solapa de tu abrigo para agregar un toque de humor a tu look del día.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "DY2339",
@@ -2424,7 +2447,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 5000,
   image: "images/productos/Maquillaje/Accesorios/DY2339.jpg",
   description: "Reúne a los personajes más icónicos de Toy Story en un solo accesorio lleno de color, estilo y diversión. Este pin de formato rectangular incluye a Buzz, el Marcianito, Ducky y Bunny en un diseño coleccionable de Disney. Está fabricado en Aleación de Zinc con grabado e impresión de alta calidad, contando con un cierre de plástico duro que brinda un ajuste firme, ligero y muy resistente. Fija el pin sobre la prenda o accesorio deseado. Tip de Experta: Engánchalo en la correa de tu bolso o cosmetiquera para presumir a tus personajes favoritos.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "Lmt2256",
@@ -2433,7 +2457,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Libreta Emprendedora - Lmt2256",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/Lmt2256.jpg",
-  description: "¡Mayorista, esta libreta llegó para hacerte la vida más fácil! Es la herramienta ideal para organizar presupuestos, llevar cuenta de tus pedidos y clientes sobre tu negocio con mucha practicidad y estilo. Su tamaño es ideal y su material resistente permite llevarla en el bolso. Trae impresión a full color, argolla rosada de excelente calidad y 80 hojas microperforadas con diferentes diseños. Incluye calendario 2025 y 2026 con festivos, lista para anotación de productos más vendidos y agotados, registro de recompras e inversión, 20 hojas para crear facturas y 10 hojas extra para fidelizar clientes. Además, te ayuda a programar e idear tu contenido para redes sociales. Escribe tus apuntes utilizando bolígrafo o lápiz. Arranca las facturas fácilmente gracias a su borde microperforado cuando realices un envío."
+  description: "¡Mayorista, esta libreta llegó para hacerte la vida más fácil! Es la herramienta ideal para organizar presupuestos, llevar cuenta de tus pedidos y clientes sobre tu negocio con mucha practicidad y estilo. Su tamaño es ideal y su material resistente permite llevarla en el bolso. Trae impresión a full color, argolla rosada de excelente calidad y 80 hojas microperforadas con diferentes diseños. Incluye calendario 2025 y 2026 con festivos, lista para anotación de productos más vendidos y agotados, registro de recompras e inversión, 20 hojas para crear facturas y 10 hojas extra para fidelizar clientes. Además, te ayuda a programar e idear tu contenido para redes sociales. Escribe tus apuntes utilizando bolígrafo o lápiz. Arranca las facturas fácilmente gracias a su borde microperforado cuando realices un envío.",
+  category_new: "Oferta"
 },
 {
   id: "Edt660",
@@ -2463,16 +2488,18 @@ const PRODUCTS_MAQUILLAJE = [
   price: 8000,
   image: "images/productos/Maquillaje/Accesorios/DYT2513.jpg",
   description: "Un kit ideal para tener tu cabello en el mejor mood.\nDale un toque adorable a cada peinado con el Kit de Cabello Lotso.\nDiseñado para combinar funcionalidad y estilo, incluye accesorios ideales para crear looks prácticos, divertidos y llenos de personalidad.\nEl complemento perfecto para quienes aman destacar hasta en los pequeños detalles.\n\nIncluye:\n4 Hebillas. 3 Ligas. 2 Scrunchies. 1 Cartuchera.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "HCM2330",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Hairclips Mini X8 - HCM2330",
   price: 3000,
-  image: "images/productos/Maquillaje/Accesorios/HCM2330.jpg",
-  description: "Sujeta pequeñas secciones de cabello y dale un toque coqueto y moderno a tus peinados. Este set de mini pinzas incluye 4 pares con diseños y tonos versátiles para cada mood: Negro, Miel, Café claro y Nude. Son supercómodas, suaves y combinan con todo, siendo ideales para usar a diario en detalles pequeños como coletas o moñitos. Coloca las mini pinzas directamente sobre los mechones de cabello según el peinado que quieras armar. Usa dos tonos diferentes en el mismo peinado para lograr un contraste súper coqueto."
+  image: "images/productos/Maquillaje/Capilar/HCM2330.jpg",
+  description: "Sujeta pequeñas secciones de cabello y dale un toque coqueto y moderno a tus peinados. Este set de mini pinzas incluye 4 pares con diseños y tonos versátiles para cada mood: Negro, Miel, Café claro y Nude. Son supercómodas, suaves y combinan con todo, siendo ideales para usar a diario en detalles pequeños como coletas o moñitos. Coloca las mini pinzas directamente sobre los mechones de cabello según el peinado que quieras armar. Usa dos tonos diferentes en el mismo peinado para lograr un contraste súper coqueto.",
+  category_new: "Oferta"
 },
 {
   id: "Dyt2517",
@@ -2496,37 +2523,37 @@ const PRODUCTS_MAQUILLAJE = [
 {
   id: "Hmg2327",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Hair Clip Mariposa Grande - Hmg2327",
   price: 10000,
-  image: "images/productos/Maquillaje/Accesorios/Hmg2327.jpg",
+  image: "images/productos/Maquillaje/Capilar/Hmg2327.jpg",
   description: "Sujeta todo tu cabello con total firmeza y un diseño que se robará todas las miradas. Esta pinza en formato grande con silueta de mariposa está pensada para recoger melenas abundantes o hacer moños completos de manera rápida, segura y sin halar el cuero cabelludo. Enrolla tu cabello, abre la pinza y engánchala en el centro del recogido. Haz un giro suave en tu cabello hacia arriba y sujétalo completo con la mariposa para un peinado veraniego en segundos."
 },
 {
   id: "Hct2329",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Hair Clip X2 - Hct2329",
   price: 15000,
-  image: "images/productos/Maquillaje/Accesorios/Hct2329.jpg",
+  image: "images/productos/Maquillaje/Capilar/Hct2329.jpg",
   description: "Dale un detalle especial a tu peinado con este dúo de pinzas que combinan perfectamente. El kit incluye 2 hair clips prácticos para sujetar el flequillo, despejar el rostro o decorar cualquier look en pocos segundos. Se deslizan y abren con facilidad para brindarte comodidad durante todo el día. Coloca cada clip en el mechón de cabello seleccionado y presiona para asegurar. Úsalos juntos en un mismo lateral del cabello para un estilo moderno y en tendencia."
 },
 {
   id: "Ctt2270",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Cepillo Pulidor Clean Look - Ctt2270",
   price: 12000,
-  image: "images/productos/Maquillaje/Accesorios/Ctt2270.jpg",
+  image: "images/productos/Maquillaje/Capilar/Ctt2270.jpg",
   description: "¡Tu aliado perfecto para lograr un look sofisticado! Este cepillo profesional es lo que necesitas para alisar, pulir y fijar tu cabello con total precisión. Cuenta con cerdas suaves y compactas que ayudan a reducir el frizz dejando un acabado impecable en peinados recogidos o sueltos. Su mango ergonómico ofrece un agarre muy cómodo para darte mejor control sobre cada mechón de pelo. Simplemente utilízalo cepillando directamente sobre el cabello seco o húmedo según el peinado que desees. Úsalo junto a tu cera o fijador favorito para pulir los vellitos rebeldes de la frente y los laterales."
 },
 {
   id: "Cet1985",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Cepillo Espiral - Cet1985",
   price: 15000,
-  image: "images/productos/Maquillaje/Accesorios/Cet1985.jpg",
+  image: "images/productos/Maquillaje/Capilar/Cet1985.jpg",
   description: "¡Un cabello saludable! La parte más importante es: ¿Con qué y cómo lo peinas? Este cepillo controlará el frizz y no maltratará tu cabello.\nSus cerdas especiales ayudan a peinar el cabello, aportando un acabado suave y manejable.\nEs de un material ligero y flexible.\nPeina suavemente cualquier tipo de cabello sin maltratarlo.\nPuede ser usado en cabello seco o mojado.",
   category_new: "Nueva colección"
 },
@@ -2538,7 +2565,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 12000,
   image: "images/productos/Maquillaje/Accesorios/Dy2082.jpg",
   description: "Luce y lleva con comodidad todos tus artículos personales con estilo Disney. Esta tote bag te ayuda a dejar el plástico atrás para unirte a un estilo relajado con gran capacidad de almacenamiento y costuras muy resistentes. Está fabricada en material 100% poliéster sin forro interno, destacando por un diseño exclusivo con tonos vibrantes y llamativos del personaje de la película. Sus medidas son de 36 cm de alto por 31 cm de ancho aproximadamente. Guarda tus pertenencias e introduce tus hombros o manos en las asas para transportarla. Para lavarla correctamente y mantener sus colores vivos, lávala a mano utilizando agua fría o a temperatura ambiente.",
-  colaboracion: "Disney"
+  colaboracion: "Disney",
+  category_new: "Oferta"
 },
 {
   id: "Dyt2514",
@@ -2568,7 +2596,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 10000,
   image: "images/productos/Maquillaje/Labios/MT2393.jpg",
   description: "- Lo necesitas para el cuidado de tus labios.\n- Logra unos labios suaves, saludables y de impacto.\n- Con este kit lograrás hidratación con un toque de brillo.\n- Incluye una mascarilla/bálsamo labial diseñada para nutrir, suavizar y proteger los labios, ayudando a mantenerlos cómodos y con apariencia saludable.\n- Se complementa con un brillo de textura ligera que aporta un acabado luminoso y natural, perfecto para usar solo o sobre el bálsamo.\n- Un dúo práctico muy ideal para el uso diario.",
-  colaboracion: "Mattel"
+  colaboracion: "Mattel",
+  category_new: "Oferta"
 },
 {
   id: "Cpt1891",
@@ -2582,10 +2611,10 @@ const PRODUCTS_MAQUILLAJE = [
 {
   id: "Cst1977",
   category: "maquillaje",
-  subcategory: "Accesorios",
+  subcategory: "Capilar",
   name: "Cepillo Snake - Cst1977",
   price: 15000,
-  image: "images/productos/Maquillaje/Accesorios/Cst1977.jpg",
+  image: "images/productos/Maquillaje/Capilar/Cst1977.jpg",
   description: "¡Mantén tu cabello perfecto siempre! Trendy un cepillo especialmente diseñado para facilitar tu rutina capilar.\nSu material y sus cerdas desenreda el cabello de una forma suave, aportando un acabado brillante.\nSu tamaño es perfecto para llevar a todas partes, es ligero y flexible.\nSus cerdas son suaves y gracias a su flexibilidad se deslizan fácilmente sobre cualquier tipo de cabello.",
   category_new: "Nueva colección"
 },
@@ -2656,7 +2685,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Organizador Retro Rock - Orr2390",
   price: 25000,
   image: "images/productos/Maquillaje/Accesorios/Orr2390.jpg",
-  description: "Organiza tus cosméticos favoritos y dale un toque único a tu tocador. Organizador Retro Rock está pensado para solucionar el desorden en tu mesa, permitiéndote clasificar tus productos para tenerlos siempre a la mano. Fabricado en un material resistente, cuenta con el espacio ideal para mantener todo en su lugar de forma práctica. Coloca tus cosméticos en los compartimentos según tus necesidades. Clasifica tus labiales y brochas de uso diario en la zona frontal para alistarte mucho más rápido.",
+  description: "Organiza tus cosméticos favoritos y dale un toque único a tu tocador. El Organizador Retro Rock está pensado para solucionar el desorden en tu mesa, permitiéndote clasificar tus productos para tenerlos siempre a la mano. Fabricado en un material resistente, cuenta con el espacio ideal para mantener todo en su lugar de forma práctica. Coloca tus cosméticos en los compartimentos según tus necesidades. Clasifica tus labiales y brochas de uso diario en la zona frontal para alistarte mucho más rápido.",
   category_new: "Nueva colección"
 },
 {
@@ -2671,6 +2700,17 @@ const PRODUCTS_MAQUILLAJE = [
   tonos: ["00", "01", "02", "2.5", "03", "04", "05", "06", "07"]
 },
 {
+  id: "BMT1675",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Base Mousse - BMT1675",
+  price: 25000,
+  image: "images/productos/Maquillaje/Rostro/BMT1675.jpg",
+  description: "¡Una base diferente pero mágnifica! La piel de porcelana sin aplicar tanto producto ya es una realidad. La base mousse le aporta a tu rostro una cobertura baja/media sin la necesidad de aplicar mucho producto. Su textura es muy suave literalmente es mousse. Se difumina a la perfección sobre la piel sin dejar parches. Disponible en 6 tonos. En definitiva será una de tus bases favoritas.",
+  category_new: "Nueva colección",
+  tonos: ["02", "03"]
+},
+{
   id: "Bqf2053",
   category: "maquillaje",
   subcategory: "Rostro",
@@ -2682,14 +2722,215 @@ const PRODUCTS_MAQUILLAJE = [
   tonos: ["04", "05", "06", "07"]
 },
 {
-  id: "BMT1675",
+  id: "CMT649",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Cosmetiquera Mármol Trendy - CMT649",
+  price: 8000,
+  image: "images/productos/Maquillaje/Accesorios/CMT649.jpg",
+  description: "La cosmetiquera Trendy Mármol es el complemento perfecto para llevar tus esenciales de maquillaje y cuidado personal de forma práctica y con mucho estilo. Su diseño moderno con acabado tipo mármol le da un toque elegante y sofisticado, ideal para usar todos los días o llevar de viaje.\nCuenta con el espacio ideal para organizar tus productos favoritos sin ocupar demasiado espacio en el bolso, maleta o escritorio. Además, está elaborada con materiales resistentes y de fácil limpieza, pensados para brindar mayor durabilidad y comodidad en el uso diario",
+  category_new: "Oferta"
+},
+{
+  id: "Mdn2578",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Morral Matte Negro Tvb - Mdn2578",
+  price: 65000,
+  image: "images/productos/Maquillaje/Accesorios/Mdn2578.jpg",
+  description: "Morral Matte Negro Tvb Mdn2578",
+  category_new: "Oferta"
+},
+{
+  id: "SGA1740",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Sachet Gel Aloe Vera Fresh Aloe 70g - SGA1740",
+  price: 8000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/SGA1740.jpg",
+  description: "El Aloe Vera es el \"multiusos\" de la naturaleza y este gel en sachet de 70g captura toda su potencia. Con una textura ligera que se absorbe en segundos, este gel calma la irritación, refresca la piel tras la exposición solar y proporciona una hidratación libre de aceites. Su formato en sachet con tapa dosificadora lo hace ideal para el botiquín de belleza, viajes a la playa o como un paso hidratante ligero en tu rutina de skincare diaria.l.",
+  category_new: "Oferta"
+},
+{
+  id: "BMT1666",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Baúl Mediano Negro - BMT1666",
+  price: 40000,
+  image: "images/productos/Maquillaje/Accesorios/BMT1666.jpg",
+  description: "Organiza tus productos favoritos de maquillaje y cuidado facial de la manera más práctica. Este baúl mediano te ofrece un amplio espacio para almacenar diferentes artículos de forma ordenada y optimizar espacios en tu tocador. En su interior cuenta con un separador para una organización superior, un compartimento especial para acomodar tus brochas y un bolsillo extra con borde en caucho para tus productos infaltables. Su exterior es negro, su interior en color piel y está fabricado en un material muy resistente. Coloca los objetos en su interior y cierra adecuadamente. Usa el bolsillo con caucho para esos productos pequeños que necesitas tener a la mano sin que se muevan."
+},
+{
+  id: "DY2140",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Borlas Intensamente Alegría - DY2140",
+  price: 8000,
+  image: "images/productos/Maquillaje/Accesorios/DY2140.jpg",
+  description: "Unas borlas nunca antes vistas en 4 diseños diferentes.\nDescubre la suavidad de nuestras borlas de maquillaje inspiradas en Intensamente 2, perfectas para aplicar y difuminar productos en polvo.\nSu diseño se adapta a la forma de tu rostro, estas borlas te permiten un acabado profesional en tu maquillaje, asegurando una aplicación uniforme.\nIdeal para uso diario y acabados profesionales.\nSon el complemento perfecto para tu kit de maquillaje.",
+  colaboracion: "Disney"
+},
+{
+  id: "BAM2430",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Aura Mocca - BAM2430",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/BAM2430.jpg",
+  description: "¡El gloss más viral ahora en tonos cafés!.\n\n- El Gloss Mocca llega para darle a tus labios un tono elegante, hermoso y en tendencia.\n\n- Disponible en 6 tonos que van desde moccas claros hasta opciones más intensas y con matices rojizos.\n- Son ideales para complementar cualquier look.\n- Cada tono ofrece un acabado único que realza la belleza natural de los labios.\n\n- Su fórmula proporciona un suave efecto mentolado, aportando una agradable sensación de frescura y suavidad.\n- Cuenta con aplicador chunky, diseñado para lograr una aplicación uniforme, cómoda y precisa.",
+  tonos: ["03"]
+},
+{
+  id: "BLS2258",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo Lip Oil Sandía - BLS2258",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/BLS2258.jpg",
+  description: "Brillo Lip Oil Sandía Trendy: un aceite labial ligero, fresco y con aroma a sandía que hidrata profundamente mientras aporta un brillo jugoso. Disponible en 4 tonos que realzan tus labios con un acabado natural y saludable.",
+  tonos: ["04"]
+},
+{
+  id: "KBC2163",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Doble Cejas Cepillo - KBC2163",
+  price: 8000,
+  image: "images/productos/Maquillaje/Accesorios/KBC2163.jpg",
+  description: "Brocha dual para cejas con cepillo.\nEs una brocha dual de línea económica, con excelente calidad y de pelo sintético.\nCon el extremo de cerdas diagonales puedes perfilar y rellenar los espacios aplicando sombra o betún de cejas.\nCon el cepillo puedes peinar y dar un acabado difuminado y natural a tus cejas.\nEstá hecha con fibra de nylon y tiene mango de mad"
+},
+{
+  id: "CS04",
   category: "maquillaje",
   subcategory: "Rostro",
-  name: "Base Mousse - BMT1675",
+  name: "Contorno En Barra Con Rubor - CS04",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/CS04.jpg",
+  description: "Contorno y rubor en barra en 1 solo producto"
+},
+{
+  id: "MTT2391",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Corrector Rosado Barbie - MTT2391",
+  price: 10000,
+  image: "images/productos/Maquillaje/Rostro/MTT2391.jpg",
+  description: "Ilumina y neutraliza las ojeras con el Corrector Rosado Barbie de Trendy.",
+  colaboracion: "Mattel"
+},
+{
+  id: "CAM02",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Delineador En Plumón Doble - CAM02",
+  price: 15000,
+  image: "images/productos/Maquillaje/Ojos/CAM02.jpg",
+  description: "Color negro.\nFácil aplicación.\nLarga duración a prueba de agua, sudor, o calor.\nDOBLE PUNTA: una punta delgada (como nuestro otro delineador Pin Up), pero también trae una punta mediana, la cual facilita la aplicación en la parte exterior del ojo, ya que permite trazar la línea gruesa más rápido y con mayor precisión.\nTrae bastante producto por ambos lados."
+},
+{
+  id: "DAD1276",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Aceite Desmaquillante Doypack - DAD1276",
+  price: 15000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/DAD1276.jpg",
+  description: "Unidades por pack: 1\nVolumen de la unidad: 100 mL\nTipo de piel: Todo tipo de piel\nComponente destacado: Vitamina E.\nÁrea de aplicación: ojos y rostro."
+},
+{
+  id: "DYT2657",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Iluminador Morado Buzz - DYT2657",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/DYT2657.jpg",
+  description: "El iluminador Buzz aporta un brillo radiante con efecto tornasol que cambia sutilmente según la luz, creando destellos únicos que realzan la belleza natural del rostro.\nSu textura suave permite una aplicación uniforme y un difuminado fácil para lograr un acabado luminoso, fresco y lleno de dimensión. Ideal para resaltar los puntos altos del rostro y añadir un toque especial a cualquier maquillaje, desde looks naturales hasta propuestas más llamativas.",
+  colaboracion: "Disney"
+},
+{
+  id: "DY2217",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Labios Gloss Princesas - DY2217",
   price: 25000,
-  image: "images/productos/Maquillaje/Rostro/BMT1675.jpg",
-  description: "¡Una base diferente pero mágnifica! La piel de porcelana sin aplicar tanto producto ya es una realidad. La base mousse le aporta a tu rostro una cobertura baja/media sin la necesidad de aplicar mucho producto. Su textura es muy suave literalmente es mousse. Se difumina a la perfección sobre la piel sin dejar parches. Disponible en 6 tonos. En definitiva será una de tus bases favoritas.",
-  category_new: "Nueva colección",
-  tonos: ["02", "03"]
+  image: "images/productos/Maquillaje/Labios/DY2217.jpg",
+  description: "Este kit está inspirado en Disney Princesas y reúne todo lo que necesitas para que estén definidos y brillantes.\n- Incluye un lápiz retráctil de textura suave y a prueba de agua . Tambien viene un gloss en tono nude que se desliza fácilmente sobre tus labios, brindando un efecto visual más voluminoso.\n- Su fórmula ligera aporta un brillo hermoso, uniforme y tiene un aroma delicioso.\n- Ideal para llevar en tu bolso y retocar tu maquillaje en cualquier momento del día.",
+  colaboracion: "Disney"
+},
+{
+  id: "LVT1589",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Labial Matte Teddy - LVT1589",
+  price: 10000,
+  image: "images/productos/Maquillaje/Labios/LVT1589.jpg",
+  description: "Te enamorarás de su excelente calidad y tonos.\nVienen 6 tonalidades entre rosas, rojizos y neutros que de seguro querrás en tu cosmetiquera.\nSu textura es ultra suave, cremosa y se difumina a la perfección sobre los labios.\nSon de acabado mate y ultra pigmentados.\nNo deja sensación pegajosa, ni reseca tus labios.\nTienen un aroma delicioso.",
+  tonos: ["05"]
+},
+{
+  id: "DY2212",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Lip Balm Princesas Aurora - DY2212",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/DY2212.jpg",
+  description: "- Este bálsamo labial inspirado en Disney Princesas mantendrá tus labios suaves, protegidos y con una sensación de humectación, mientras aporta un delicado tono rosado que realza su apariencia natural.\n- Su textura cremosa se siente ligera, ideal para utilizar solo o antes de aplicar otros productos labiales; si amas tener unos labios saludables con un acabado fresco y natural, este será tu nuevo favorito.",
+  colaboracion: "Disney"
+},
+{
+  id: "EM15",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Mascarilla De Hidrogel Para Ojos Pepino - EM15",
+  price: 20000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/EM15.jpg",
+  description: "Con su uso continuo disminuyen las líneas de expresión, suavizan el contorno de los ojos, lo mantienen hidratado y ayudan a que esta zona se vea mucho mejor y no se cuartee el maquillaje.\nSon desechables, sólamente puedes usar cada par una vez y debes desecharlo, ya que todos los demás quedan en el mismo empaque y debemos evitar que se contaminen.\nDebes ponerlo sobre tus ojeras con el rostro limpio, dejarlos alrededor de 20 minutos y desecharlos."
+},
+{
+  id: "LC002",
+  category: "maquillaje",
+  subcategory: "Capilar",
+  name: "Primer Termoprotector Para El Cabello - LC002",
+  price: 30000,
+  image: "images/productos/Maquillaje/Capilar/LC002.jpg",
+  description: "Primer HairSpray a base de agua que prepara tu cabello para la plancha, rizadora o secador mientras lo protege, hidrata y controla el frizz. Su fórmula crea una película ligera sobre la fibra capilar que ayuda a reducir el daño térmico y mejora el resultado del peinado."
+},
+{
+  id: "RBS1312",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Rubor En Crema Blush Stamp - RBS1312",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/RBS1312.jpg",
+  description: "¡El rubor estampita que necesitabas en tus mejillas!\nRubor cremoso de alta pigmentación.\nTe deja un efecto mate con destellitos de brillo dorado muy sutil.\nEs muy fácil de difuminar.\nSi deseas mayor pigmentación puedes aplicar una segunda capa.\nEs de larga duración.\nViene en un tono universal perfecto para cualquier tipo de piel.\nSu tamaño es perfecto para llevar en tu cosmetiquera"
+},
+{
+  id: "DOX888",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Suero Detox Niacinamida + Zinc - DOX888",
+  price: 18000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/DOX888.jpg",
+  description: "Puede ser utilizado en todo tipo de piel, pero es ideal en pieles mixtas a grasas.\nConcentración del 10%: es el % ideal en productos cosméticos, es la más común del mercado en las marcas más reconocidas y más premium, colocar más de un 10% es desperdiciar el activo ya que la piel no tiene cómo procesar más que esto, y colocar menos del 10% puede ser funcional pero no se va a notar la diferencia de usarlo o no usarlo."
+},
+{
+  id: "DYT2557",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Vaqueras Toy Story - DYT2557",
+  price: 20000,
+  image: "images/productos/Maquillaje/Labios/DYT2557.jpg",
+  description: "Añade un toque de frescura y color duradero a tus labios y mejillas con la Tinta Vaquera de Trendy. Inspirada en la estética del viejo oeste y el icónico personaje de Jessie de Toy Story, esta tinta de labios ofrece un tono vibrante con una sensación tan ligera que olvidarás que la llevas puesta.",
+  colaboracion: "Disney"
+},
+{
+  id: "DY2101",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Tinta Villanos - DY2101",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/DY2101.jpg",
+  description: "Labios con un rojo leve, perfecto para cualquier ocasión con las nuevas tintas edición villanas de Disney.\nSu fórmula ligeramente oleosa la hace fácil de difuminar y controlar su pigmentación.\nPigmento de excelente calidad y duración.\nTonos rojizos versátiles que combinan con TODO.\nDiseños exclusivos que querrás llevar a todas partes.",
+  colaboracion: "Disney",
+  tonos: ["Queen"]
 },
 ];

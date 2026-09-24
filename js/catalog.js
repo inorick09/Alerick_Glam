@@ -67,6 +67,7 @@ function renderProductCards(grid, items) {
       <div class="product-card__img" data-zoom-image="${p.image}" data-zoom-name="${p.name}" data-category="${p.category}">
         <img src="${p.image}" alt="${p.name}" loading="lazy">
         ${p.category_new === 'Nueva colección' ? '<span class="tag">Nuevo</span>' : ''}
+        ${p.category_new === 'Oferta' ? '<span class="tag tag--aqua">Oferta</span>' : ''}
         ${p.category === 'maquillaje' ? `
         <button type="button" class="product-card__nav product-card__nav--prev" aria-label="Foto anterior" hidden>&#8249;</button>
         <button type="button" class="product-card__nav product-card__nav--next" aria-label="Foto siguiente" hidden>&#8250;</button>
