@@ -4,6 +4,7 @@
 //     (maquillaje y bisutería).
 //   - "Bisutería": 15 productos al azar de products.bisuteria.js, repartidos
 //     entre sus categorías (subcategory). Cambian en cada visita.
+//   - "Ofertas": productos con category_new: "Oferta" (maquillaje y bisutería).
 // Cada uno es una tira que se desplaza sola y se pausa al pasar el mouse o
 // tocar. Al hacer clic en una tarjeta se abre el detalle del producto (foto,
 // precio, descripción) con el botón de agregar al carrito, que usa
@@ -272,7 +273,7 @@
   }
 
   // ---------- Carrusel ----------
-  function initCarousel({ sectionId, trackId, items, showTag }) {
+  function initCarousel({ sectionId, trackId, items, tag }) {
     const section = document.getElementById(sectionId);
     const track = document.getElementById(trackId);
     const viewport = track?.parentElement;
@@ -281,7 +282,7 @@
     const cardsHTML = hidden => items.map(p => `
       <button type="button" class="new-card" data-id="${esc(p.id)}"
          ${hidden ? 'tabindex="-1" aria-hidden="true"' : ''}>
-        ${showTag ? '<span class="tag">Nuevo</span>' : ''}
+        ${tag ? `<span class="tag${tag.className ? ' ' + tag.className : ''}">${tag.label}</span>` : ''}
         <img src="${esc(p.image)}" alt="${hidden ? '' : esc(p.name)}" loading="lazy" draggable="false">
         <span class="new-card__name">${esc(p.name)}</span>
         <span class="new-card__price">${price(p.price)}</span>
@@ -309,13 +310,20 @@
     sectionId: 'recien-llegados',
     trackId: 'newCarouselTrack',
     items: PRODUCTS.filter(p => p.category_new === 'Nueva colección').slice(0, MAX_NEW),
-    showTag: true
+    tag: { label: 'Nuevo' }
   });
 
   initCarousel({
     sectionId: 'bisuteria-destacada',
     trackId: 'bisuteriaCarouselTrack',
     items: pickAcrossSubcategories(PRODUCTS.filter(p => p.category === 'bisuteria'), BISUTERIA_COUNT),
-    showTag: false
+    tag: null
+  });
+
+  initCarousel({
+    sectionId: 'ofertas-destacadas',
+    trackId: 'ofertasCarouselTrack',
+    items: PRODUCTS.filter(p => p.category_new === 'Oferta').slice(0, MAX_NEW),
+    tag: { label: 'Oferta', className: 'tag--aqua' }
   });
 })();
