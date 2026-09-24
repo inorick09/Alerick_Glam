@@ -604,6 +604,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Igual que "sub" arriba, pero para los botones "Ver más" de los
+  // carruseles del inicio (maquillaje.html?new=Oferta).
+  const wantedNew = new URLSearchParams(location.search).get('new');
+  if (!preSelected && wantedNew && hasNewFilter) {
+    const chip = filtersElNew.querySelector(`.filter-chip[data-filter="${CSS.escape(wantedNew)}"]`);
+    if (chip) {
+      chip.classList.add('is-active');
+      state.categoryNew = wantedNew;
+      applyFilters();
+      preSelected = true;
+      document.getElementById('catalogo')?.scrollIntoView({ block: 'start' });
+    }
+  }
+
   // Si hay al menos un grupo de chips, el catálogo empieza sin
   // productos visibles: solo se muestran al elegir uno. Si no hay
   // ningún dato de filtro, no hay nada que elegir y se muestran todos

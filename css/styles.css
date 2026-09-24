@@ -1675,6 +1675,8 @@ em {
 }
 .new-card__price { padding: 0 14px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-rose-deep); }
 
+.new-carousel__more { text-align: center; margin-top: 28px; }
+
 @media (max-width: 600px) {
   .new-card { flex-basis: 160px; }
 }
