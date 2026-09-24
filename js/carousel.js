@@ -276,8 +276,16 @@
     init();
   }
 
+  // Misma insignia que usa el catálogo (catalog.js): "Nuevo" en rosa para
+  // category_new "Nueva colección" y "Oferta" en aqua para "Oferta".
+  function productTagHTML(p) {
+    if (p.category_new === 'Nueva colección') return '<span class="tag">Nuevo</span>';
+    if (p.category_new === 'Oferta') return '<span class="tag tag--aqua">Oferta</span>';
+    return '';
+  }
+
   // ---------- Carrusel ----------
-  function initCarousel({ sectionId, trackId, items, tag }) {
+  function initCarousel({ sectionId, trackId, items }) {
     const section = document.getElementById(sectionId);
     const track = document.getElementById(trackId);
     const viewport = track?.parentElement;
@@ -286,7 +294,7 @@
     const cardsHTML = hidden => items.map(p => `
       <button type="button" class="new-card" data-id="${esc(p.id)}"
          ${hidden ? 'tabindex="-1" aria-hidden="true"' : ''}>
-        ${tag ? `<span class="tag${tag.className ? ' ' + tag.className : ''}">${tag.label}</span>` : ''}
+        ${productTagHTML(p)}
         <img src="${esc(p.image)}" alt="${hidden ? '' : esc(p.name)}" loading="lazy" draggable="false">
         <span class="new-card__name">${esc(p.name)}</span>
         <span class="new-card__price">${price(p.price)}</span>
@@ -313,21 +321,18 @@
   initCarousel({
     sectionId: 'recien-llegados',
     trackId: 'newCarouselTrack',
-    items: PRODUCTS.filter(p => p.category_new === 'Nueva colección').slice(0, MAX_NEW),
-    tag: { label: 'Nuevo' }
+    items: PRODUCTS.filter(p => p.category_new === 'Nueva colección').slice(0, MAX_NEW)
   });
 
   initCarousel({
     sectionId: 'bisuteria-destacada',
     trackId: 'bisuteriaCarouselTrack',
-    items: pickAcrossSubcategories(PRODUCTS.filter(p => p.category === 'bisuteria'), BISUTERIA_COUNT),
-    tag: null
+    items: pickAcrossSubcategories(PRODUCTS.filter(p => p.category === 'bisuteria'), BISUTERIA_COUNT)
   });
 
   initCarousel({
     sectionId: 'ofertas-destacadas',
     trackId: 'ofertasCarouselTrack',
-    items: PRODUCTS.filter(p => p.category_new === 'Oferta').slice(0, MAX_NEW),
-    tag: { label: 'Oferta', className: 'tag--aqua' }
+    items: PRODUCTS.filter(p => p.category_new === 'Oferta').slice(0, MAX_NEW)
   });
 })();
