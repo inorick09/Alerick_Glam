@@ -295,7 +295,7 @@
       <button type="button" class="new-card" data-id="${esc(p.id)}"
          ${hidden ? 'tabindex="-1" aria-hidden="true"' : ''}>
         ${productTagHTML(p)}
-        <img src="${esc(p.image)}" alt="${hidden ? '' : esc(p.name)}" draggable="false">
+        <img src="${esc(p.image)}" alt="${hidden ? '' : esc(p.name)}" ${hidden ? 'loading="lazy"' : ''} draggable="false">
         <span class="new-card__name">${esc(p.name)}</span>
         <span class="new-card__price">${price(p.price)}</span>
       </button>`).join('');
