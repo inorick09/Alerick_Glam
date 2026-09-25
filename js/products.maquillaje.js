@@ -1681,7 +1681,7 @@ const PRODUCTS_MAQUILLAJE = [
   colaboracion: "Disney",
   category_new: "Oferta",
   category_age: "Para niñas",
-  tonos: ["Bella", "Blanca Niueves", "Cenicienta", "Rapunzel"]
+  tonos: ["Bella", "Blanca Nieves", "Cenicienta", "Rapunzel"]
 },
 {
   id: "DY2299",
