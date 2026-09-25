@@ -48,14 +48,15 @@ function normalizeSearchText(str) {
     .replace(/[̀-ͯ]/g, '');
 }
 
-// El nombre del producto debe contener CADA palabra escrita en la
-// búsqueda (en cualquier orden) — así "labial mate" encuentra
-// "Labial Mate Trendy" pero no "Labial Trendy" a secas.
+// El nombre del producto debe contener AL MENOS UNA de las palabras
+// escritas en la búsqueda — así "delineador azul" encuentra tanto los
+// delineadores como los productos azules, sin importar cuántas palabras
+// se escriban ni el orden.
 function matchesSearch(name, query) {
   const words = normalizeSearchText(query).trim().split(/\s+/).filter(Boolean);
   if (words.length === 0) return true;
   const normalizedName = normalizeSearchText(name);
-  return words.every(word => normalizedName.includes(word));
+  return words.some(word => normalizedName.includes(word));
 }
 
 function renderProductCards(grid, items) {
