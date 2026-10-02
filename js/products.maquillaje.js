@@ -1165,6 +1165,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Labios",
   name: "Brillo Reparador Rosas - HRT1461",
   price: 6000,
+  category_new: "Agotado",
   image: "images/productos/Maquillaje/Labios/HRT1461.jpg",
   description: "¡El cuidado diario que tus labios necesitan! Este bálsamo reparador en barra ayuda a mantener los labios suaves, protegidos y con una apariencia saludable. Su fórmula se desliza fácilmente, brindando una sensación cómoda e hidratante desde la primera aplicación. No aporta color, por lo que es perfecto para usar solo o como preparación antes de tu labial favorito. Además, su delicioso aroma hace que reaplicarlo durante el día sea aún más agradable. Llévalo siempre contigo y dale a tus labios el cuidado que merecen en cualquier momento."
 },
