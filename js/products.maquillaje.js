@@ -418,6 +418,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Iluminador Líquido The Sun - ILS1473",
   price: 6000,
   image: "images/productos/Maquillaje/Rostro/ILS1473.jpg",
+  category_new: "Agotado",
   description: "- Este iluminador líquido está diseñado para darle a tu maquillaje un acabado luminoso y lleno de destellos.\n- Su fórmula tiene partículas tipo glitter muy finas que reflejan la luz hermoso sobre la piel, logrando un efecto glow mucho más llamativo y brillante.\n- Su textura es ligera, suave y fácil de difuminar en rostro y cuerpo, mientras su excelente pigmentación permite que el brillo se note desde la primera aplicación.\n- Disponible en 2 tonos dorados perfectos para resaltar cualquier look y llevar tu glow al siguiente nivel.\n- Se envían surtidos.",
   tonos: ["01", "02"]
 },
@@ -1278,6 +1279,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brillo Retráctil Beauty Glazed - B177",
   price: 15000,
   image: "images/productos/Maquillaje/Labios/B177.jpg",
+  category_new: "Agotado",
   description: "No sufras más porque tu labial favorito se rompió, Con el Lip Plump de Beauty Glazed podrás mantener a raya tu labial favorito evitando que se quiebre. Solo debes dar click a medida que vas gastando el producto y saldrá como nuevo.\nEsta fórmula cremosa y suave te dará un brillo y suavidad excepcional.\nDeja una sensación de hidratación inmediata y cero pegajosa.\nMantiene su brillo durante horas.\nTonos de excelente pigmentación y calidad."
 },
 {
@@ -1604,6 +1606,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Lápiz De Ojos Trendy - EY15",
   price: 10000,
   image: "images/productos/Maquillaje/Ojos/EY15.jpg",
+  category_new: "Agotado",
   description: "Salir a la calle feliz con un delineado espectacular y descubrir a mitad del día que el producto se corrió hacia abajo, dejándote ojos de panda y un aspecto cansado, es una de las peores batallas del maquillaje diario. ¡Es hora de ganarle la guerra a los ojos manchados con un toque de magia y nostalgia! Este increíble lápiz de ojos, inspirado en Woody y Buzz Lightyear de Toy Story, es colorido, divertido y está lleno de personalidad. Su fórmula profesional cuenta con una textura súper suave y cremosa que se desliza como seda sin necesidad de jalar el párpado ni causar lágrimas, depositando un color negro ultra pigmentado desde la primera pasada. Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de fijación te permite mantener tu delineado seguro siempre, convirtiéndose en el secreto infalible para un look intacto y perfecto que resiste todo tu día."
 },
 {
@@ -2900,6 +2903,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Rostro",
   name: "Rubor En Crema Blush Stamp - RBS1312",
   price: 20000,
+  category_new: "Agotado",
   image: "images/productos/Maquillaje/Rostro/RBS1312.jpg",
   description: "¡El rubor estampita que necesitabas en tus mejillas!\nRubor cremoso de alta pigmentación.\nTe deja un efecto mate con destellitos de brillo dorado muy sutil.\nEs muy fácil de difuminar.\nSi deseas mayor pigmentación puedes aplicar una segunda capa.\nEs de larga duración.\nViene en un tono universal perfecto para cualquier tipo de piel.\nSu tamaño es perfecto para llevar en tu cosmetiquera"
 },
@@ -2931,6 +2935,7 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Labios/DY2101.jpg",
   description: "Labios con un rojo leve, perfecto para cualquier ocasión con las nuevas tintas edición villanas de Disney.\nSu fórmula ligeramente oleosa la hace fácil de difuminar y controlar su pigmentación.\nPigmento de excelente calidad y duración.\nTonos rojizos versátiles que combinan con TODO.\nDiseños exclusivos que querrás llevar a todas partes.",
   colaboracion: "Disney",
+  category_new: "Agotado",
   tonos: ["Queen"]
 },
 ];

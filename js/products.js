@@ -12,4 +12,6 @@
 // bisuteria.html — el sitio junta todo solo.
 // ============================================
 
-const PRODUCTS = [...PRODUCTS_MAQUILLAJE, ...PRODUCTS_BISUTERIA];
+const PRODUCTS = [...PRODUCTS_MAQUILLAJE, ...PRODUCTS_BISUTERIA].filter(
+  (p) => p.category_new !== "Agotado"
+);
