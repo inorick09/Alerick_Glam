@@ -78,169 +78,6 @@
 
 const PRODUCTS_MAQUILLAJE = [
 {
-  id: "CHT1253",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador en Trío Cloud - CHT1253",
-  price: 5000,
-  image: "images/productos/Maquillaje/Rostro/CHT1253.jpg",
-  description: "¡Dale un glowy espectacular a tu piel con este trío de iluminadores!\nConsigue una piel radiante y el brilli brilli perfecto con este set de 3 iluminadores en tonos: Rosa tornasol, dorado, plateado.\nTextura suave y de excelente pigmentación.\nAcabado luminoso y natural.\nEmpaque compacto, ideal para llevar en tu cartera o cosmetiquera.\nSe difumina fácilmente, dejando la piel tersa y con efecto glow.",
-  category_new: "Oferta"
-},
-{
-  id: "DTR1753",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Doypack Tonico De Rosas 235ml - DTR1753",
-  price: 15000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/DTR1753.jpg",
-  description: "Frescura e hidratación para tu piel Refresca, hidrata y prepara tu piel con nuestra Agua de Rosas y Manzanilla, una fórmula ligera de aroma agradable que combina estos dos extractos para dejar el rostro suave, fresco y confortable. Puedes usarla antes del maquillaje para preparar la piel, después de la base para darle un aspecto más natural y fresco, o durante el día para refrescarla cuando la sientas seca o acartonada. También puedes aplicarla en tu esponja o brocha para intensificar sombras satinadas o potenciar el efecto de tu iluminador. Su fórmula se absorbe fácilmente sin dejar sensación grasosa y es perfecta para complementar tu rutina de cuidado facial. Un básico versátil para cuidar y refrescar tu piel en cualquier momento del día.",
-  category_new: "Nueva colección"
-},
-{
-  id: "ADT862",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Aceite Desmaquillante Trendy - ADT862",
-  price: 20000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/ADT862.jpg",
-  description: "Desmaquilla fácil, sin sensación pesada Retira tu maquillaje de forma práctica y efectiva con nuestro aceite desmaquillante, una fórmula de textura ligera y fluida que se desliza fácilmente sobre la piel sin dejar una sensación pesada o pegajosa. Es ideal para retirar incluso el maquillaje de larga duración y a prueba de agua, ayudando a eliminar productos difíciles de retirar sin necesidad de frotar excesivamente. Puedes utilizarlo en todo el rostro, incluyendo ojos y piel, y es apto para todo tipo de piel. Su fórmula no comedogénica está diseñada para no obstruir los poros, convirtiéndolo en una opción práctica para incorporar a tu rutina de desmaquillado. Puedes aplicarlo con un pomo de algodón, nuestra Toalla Mágica o el accesorio que prefieras. TIP TRENDY: Para una limpieza más completa, después de desmaquillar siempre recomendamos realizar una segunda limpieza con tu jabón facial Trendy. Así ayudas a retirar los residuos de maquillaje, grasa, contaminación y suciedad que pueden permanecer sobre la piel.",
-  category_new: "Nueva colección"
-},
-{
-  id: "KFL2243",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Kit Labios Frutti Gloss - KFL2243",
-  price: 8000,
-  image: "images/productos/Maquillaje/Labios/KFL2243.jpg",
-  description: "El dúo de gloss que tus labios necesitan diariamente. Textura ultrasuave que se desliza fácilmente, dando un acabado brillante sin aportar color: Ideal para usar solo o sobre tu labial favorito. Estos glosses o brillos labiales sirven para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios. No son pesados, ni pegajosos. Brindan una sensación ligera y confortable todo el día. Aromas frutales a uva y sandía. Ideal para llevar en el bolso y usar cuando quieras un toque extra de glow.",
-  category_new: "Nueva colección"
-},
-{
-  id: "KPN2248",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Kit Rubor y Gloss Pinky News - KPN2248",
-  price: 15000,
-  image: "images/productos/Maquillaje/Rostro/KPN2248.jpg",
-  description: "Dale color y brillo a tu look diario con el Set Pinky News, una edición especial que reúne dos esenciales de maquillaje en un solo paquete: un blush compacto y un lip gloss de acabado brillante. Ideal para quienes aman un estilo fresco, juvenil y lleno de encanto.\n\nCada referencia incluye:\n\n1 blush compacto de tono natural y fácil de difuminar (uno de ellos con acabado satinado).\n1 lip gloss con brillo suave y textura ligera.\n\nVariaciones por tono:\nTono 1: Gloss rosa + blush satinado en rosa claro.\nTono 2: Gloss en oro rosa oscuro + blush durazno mate.\nPerfecto para el maquillaje diario o para llevar siempre en el bolso.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02"]
-},
-{
-  id: "KMF2247",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Kit Piel Mistic Face - KMF2247",
-  price: 20000,
-  image: "images/productos/Maquillaje/Rostro/KMF2247.jpg",
-  description: "El kit esencial para lograr una piel uniforme, iluminada y natural. Ideal para corregir, resaltar y sellar el maquillaje en pocos pasos, adaptándose a tu rutina diaria.\n\nIncluye un corrector en barra de baja cobertura, perfecto para aportar puntos de luz y un acabado fresco; un corrector líquido de cobertura media, ideal para corregir y neutralizar ojeras e imperfecciones; y un polvo compacto que aporta color y ayuda a sellar los productos líquidos y en crema, prolongando su duración.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02", "03"]
-},
-{
-  id: "Hmm2328",
-  category: "maquillaje",
-  subcategory: "Capilar",
-  name: "Hair Clip Mariposa Mediana - Hmm2328",
-  price: 8000,
-  image: "images/productos/Maquillaje/Capilar/Hmm2328.jpg",
-  description: "Dale un toque femenino y sofisticado a tus peinados con este Hair Clip en forma de mariposa. Su diseño grande ofrece un agarre firme y cómodo para diferentes tipos de cabello. Está fabricado en un material resistente, ligero y de acabado brillante, disponible en colores versátiles. Es ideal para recogidos, semirrecogidos o como accesorio decorativo en peinados sueltos.",
-  category_new: "Nueva colección"
-},
-{
-  id: "CMW2401",
-  category: "maquillaje",
-  subcategory: "Corporal",
-  name: "Crema Mantequilla Watermelon - CMW2401",
-  price: 28000,
-  image: "images/productos/Maquillaje/Corporal/CMW2401.jpg",
-  description: "Déjate envolver por su aroma dulce y refrescante a sandía, acompañado de brillos dorados que aportan un toque luminoso a la piel. Su fórmula ayuda a mantener la hidratación, dejando la piel suave, tersa y con destellos sutiles. Los brillos y la fragancia ofrecen una durabilidad prolongada, ideal para el uso diario.",
-  category_new: "Nueva colección"
-},
-{
-  id: "GCD2283",
-  category: "maquillaje",
-  subcategory: "Cejas",
-  name: "Betún De Cejas Doble Dreams - GCD2283",
-  price: 10000,
-  image: "images/productos/Maquillaje/Cejas/GCD2283.jpg",
-  description: "Cejas definidas con un solo producto. Este betún está diseñado para maquillar y definir las cejas con facilidad. Incluye dos tonos café para crear looks naturales o más intensos. Su textura cremosa es fácil de trabajar y difuminar, y su duración ayuda a mantener las cejas intactas durante el día. Incluye una brocha mini para aplicar y difuminar el producto con precisión.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02"]
-},
-{
-  id: "CE10",
-  category: "maquillaje",
-  subcategory: "Ojos",
-  name: "Delineador Doble Trendy Cat Eye - CE10",
-  price: 15000,
-  image: "images/productos/Maquillaje/Ojos/CE10.jpg",
-  description: "Consigue un delineado perfecto en menos tiempo con este delineador de doble punta. Un extremo cuenta con un plumón de alta precisión que te permite crear trazos finos o gruesos, adaptándose al estilo que prefieras. En el otro extremo encontrarás un práctico sello en forma de cat eye, diseñado para facilitar la creación de un delineado simétrico, definido y profesional de manera rápida y sencilla. El delineador de ojos sirve para definir, enmarcar y resaltar la mirada, lo que permite modificar visualmente la forma del ojo, haciéndolo lucir más grande, almendrado o alargado, aportar intensidad al maquillaje y hacer que tus pestañas se vean mucho más pobladas. Dependiendo de la técnica y el tipo de producto que uses, tiene distintos usos específicos: Efecto de ojos grandes, Mirada intensa, Efecto de pestañas más tupidas o Estilos y acabados.",
-  category_new: "Nueva colección"
-},
-{
-  id: "BMT1497",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Barra Multipropósito Mejillas Y Labios - BMT1497",
-  price: 15000,
-  image: "images/productos/Maquillaje/Labios/BMT1497.jpg",
-  description: "Un solo producto, múltiples posibilidades. Esta barra multiuso aporta un toque de color a mejillas, labios y ojos, para crear looks completos de forma rápida y práctica. Su fórmula ligera y fácil de difuminar no deja sensación grasa ni pesada, mientras sus destellos dorados aportan un toque de luminosidad al look. Su tamaño compacto la convierte en el producto perfecto para llevar contigo a todas partes.",
-  category_new: "Nueva colección"
-},
-{
-  id: "Sa11",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Serum Hidratante Morado Trendy - Sa11",
-  price: 20000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/Sa11.jpg",
-  description: "Mantén tu piel hidratada, suave y luminosa con este hidratante facial de textura en gel. Su fórmula de rápida absorción hidrata sin dejar una sensación pesada o grasa, ayudando a mantener la piel fresca y con una apariencia saludable durante el día. Ideal para incorporar a tu rutina diaria de cuidado facial, en la mañana y en la noche.",
-  category_new: "Nueva colección"
-},
-{
-  id: "HD26",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador Donut - HD26",
-  price: 10000,
-  image: "images/productos/Maquillaje/Rostro/HD26.jpg",
-  description: "Este iluminador perlado en forma de donita combina diseño y rendimiento en un solo producto. Su acabado natural aporta luz y dimensión, resaltando tus facciones con un brillo elegante y favorecedor. Está disponible en dos tonos: oro rosa y champaña, ideal para diferentes estilos de maquillaje y tonos de piel. Su alta pigmentación y excelente adherencia permiten que el glow se mantenga visible durante más tiempo. Gracias a su práctica presentación mini, es perfecto para llevar en tu cosmetiquera, bolso o incluso en el bolsillo para retoques durante el día.",
-  category_new: "Nueva colección"
-},
-{
-  id: "HCG1283",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Brillo Candy Voluminizador en Barra - HCG1283",
-  price: 6000,
-  image: "images/productos/Maquillaje/Labios/HCG1283.jpg",
-  description: "Un toque de color, brillo y volumen para tus labios. Este labial voluminizador aporta un acabado brillante y naturalmente rosado. Su fórmula proporciona un efecto de volumen sutil y un ligero efecto de picor, ideal para quienes quieren probar un voluminizador por primera vez. Es un producto práctico para llevar a todas partes.",
-  category_new: "Nueva colección"
-},
-{
-  id: "PBB1462",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Polvos Banana Boom - PBB1462",
-  price: 12000,
-  image: "images/productos/Maquillaje/Rostro/PBB1462.jpg",
-  description: "¡El aliado perfecto para un maquillaje impecable durante todo el día! Este polvo compacto translúcido ayuda a sellar y retocar el maquillaje cuando lo necesites, dejando un acabado mate y natural. Su fórmula sedosa se difumina fácilmente, ayudando a mantener la piel con una apariencia más uniforme y fresca, mientras controla el brillo durante el día. No deja sensación pesada. Cuenta con excelente calidad y duración, convirtiéndose en un imprescindible para llevar siempre contigo. Tono único, subtono cálido.",
-  category_new: "Nueva colección"
-},
-{
-  id: "SFC1760",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Doypack Fijador Cosmic Night - SFC1760",
-  price: 15000,
-  image: "images/productos/Maquillaje/Rostro/SFC1760.jpg",
-  description: "Una presentación práctica del Fijador Cosmic Night en sachet. Por su tamaño, permite llenar dos tarros de Cosmic Night. Ayuda a prolongar la duración del maquillaje y mejora su adherencia a la piel. Es ideal para todo tipo de piel y deja un acabado mate.",
-  category_new: "Nueva colección"
-},
-{
   id: "BLP1370",
   category: "maquillaje",
   subcategory: "Rostro",
@@ -667,8 +504,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Polvo De Hadas Trendy - PH03",
   price: 12000,
   image: "images/productos/Maquillaje/Rostro/PH03.jpg",
-  description: "El polvo de hadas es un producto indispensable si te gusta el brillo. Este es el clásico, de tonalidad plateada. Su aplicador es en forma de 'lengüita' y no necesitas hacer mucha fuerza o presión para que salga el producto. Puedes aplicarlo en el rostro, pecho, hombro, brazos, y si quieres que te dure mucho más puedes sellarlo con un poquito de fijador o tónico de rosas. Trae muchísimo contenido y el aplicador deposita en tu piel la cantidad necesaria para lucir brillitos en la zona aplicada.",
-  category_new: "Nueva colección"
+  description: "El polvo de hadas es un producto indispensable si te gusta el brillo. Este es el clásico, de tonalidad plateada. Su aplicador es en forma de 'lengüita' y no necesitas hacer mucha fuerza o presión para que salga el producto. Puedes aplicarlo en el rostro, pecho, hombro, brazos, y si quieres que te dure mucho más puedes sellarlo con un poquito de fijador o tónico de rosas. Trae muchísimo contenido y el aplicador deposita en tu piel la cantidad necesaria para lucir brillitos en la zona aplicada."
 },
 {
   id: "Cct1870",
@@ -1008,8 +844,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Voluminizador Boutique - BTT2221",
   price: 10000,
   image: "images/productos/Maquillaje/Labios/BTT2221.jpg",
-  description: "Es ideal para dar volumen de forma natural. Su fórmula ligera ofrece un efecto voluminizador suave. Cuenta con aplicador de silicona, que permite una aplicación uniforme, precisa y delicada, adaptándose perfectamente a la forma de los labios. Disponible en tonos transparentes y un poco más rojizos, perfectos para el uso diario o para complementar cualquier look. Producto no apto para niñas menores de 13 años.",
-  category_new: "Nueva colección"
+  description: "Es ideal para dar volumen de forma natural. Su fórmula ligera ofrece un efecto voluminizador suave. Cuenta con aplicador de silicona, que permite una aplicación uniforme, precisa y delicada, adaptándose perfectamente a la forma de los labios. Disponible en tonos transparentes y un poco más rojizos, perfectos para el uso diario o para complementar cualquier look. Producto no apto para niñas menores de 13 años."
 },
 {
   id: "DYT2572",
@@ -1046,12 +881,11 @@ const PRODUCTS_MAQUILLAJE = [
   category: "maquillaje",
   subcategory: "Labios",
   name: "Brillo Twist Villanos - Dy2105",
-  price: 5000,
+  price: 15000,
   image: "images/productos/Maquillaje/Labios/Dy2105.jpg",
   description: "Los brillos pueden transformar cualquier look así como lo harán los de la nueva colección inspirada en Villanos que le dan el toque a las historias, ahora también pueden darte ese toque de poder y encanto que necesitas.\n\n- ¡3 tonos encantadores para que elijas tu favorito!\n- Tus villanos favoritos se unen para darle un acabado mágico a tus labios.\n- Su textura suave y ligera se difumina a la perfección.\n- Tonos rositas con leves destellos que aportan un acabado más jugoso y suave a tus labios.\n- Diseños únicos que llamarán la atención donde quieras que vayas.",
   colaboracion: "Disney",
-  tonos: ["Úrsula"],
-  category_new: "Oferta"
+  tonos: ["Hades", "Queen", "Úrsula"]
 },
 {
   id: "Dy2080",
@@ -1373,7 +1207,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Labios",
   name: "Brillo Reparador Rosas - HRT1461",
   price: 6000,
-  category_new: "Nueva colección",
+  category_new: "Agotado",
   image: "images/productos/Maquillaje/Labios/HRT1461.jpg",
   description: "¡El cuidado diario que tus labios necesitan! Este bálsamo reparador en barra ayuda a mantener los labios suaves, protegidos y con una apariencia saludable. Su fórmula se desliza fácilmente, brindando una sensación cómoda e hidratante desde la primera aplicación. No aporta color, por lo que es perfecto para usar solo o como preparación antes de tu labial favorito. Además, su delicioso aroma hace que reaplicarlo durante el día sea aún más agradable. Llévalo siempre contigo y dale a tus labios el cuidado que merecen en cualquier momento."
 },
@@ -1559,8 +1393,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Lápiz Delineador Ojos Safari - DST2259",
   price: 5000,
   image: "images/productos/Maquillaje/Ojos/DST2259.jpg",
-  description: "Aceptémoslo: no hay nada más frustrante que intentar delinear tu línea del agua con un lápiz viejo, duro y seco que te raspa el ojo, te hace llorar y termina dejando un trazo grisáceo y parchado que desaparece a las dos horas, dejándote un manchón oscuro fatal en la ojera. ¡Es momento de despedirse de las batallas del diario y darle la bienvenida al trazo más dócil del planeta! El Lápiz Safari llegó para rescatar tus looks con su pigmento negro intenso que aporta un color profundo desde la primera pasada. Su textura es deliciosamente cremosa, lo que facilita un deslizamiento ultra suave y uniforme tanto si buscas un trazo gráfico súper preciso como si quieres difuminar los bordes para crear esos ahumados espectaculares que roban miradas. Un básico versátil y salvavidas que no puede faltar en tu colección.",
-  tonos: ["Café claro", "Café oscuro", "Negro"]
+  description: "Aceptémoslo: no hay nada más frustrante que intentar delinear tu línea del agua con un lápiz viejo, duro y seco que te raspa el ojo, te hace llorar y termina dejando un trazo grisáceo y parchado que desaparece a las dos horas, dejándote un manchón oscuro fatal en la ojera. ¡Es momento de despedirse de las batallas del diario y darle la bienvenida al trazo más dócil del planeta! El Lápiz Safari llegó para rescatar tus looks con su pigmento negro intenso que aporta un color profundo desde la primera pasada. Su textura es deliciosamente cremosa, lo que facilita un deslizamiento ultra suave y uniforme tanto si buscas un trazo gráfico súper preciso como si quieres difuminar los bordes para crear esos ahumados espectaculares que roban miradas. Un básico versátil y salvavidas que no puede faltar en tu colección."
 },
 {
   id: "Slt2203",
@@ -1816,9 +1649,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Lápiz De Ojos Trendy - EY15",
   price: 10000,
   image: "images/productos/Maquillaje/Ojos/EY15.jpg",
-  category_new: "Nueva colección",
-  description: "Salir a la calle feliz con un delineado espectacular y descubrir a mitad del día que el producto se corrió hacia abajo, dejándote ojos de panda y un aspecto cansado, es una de las peores batallas del maquillaje diario. ¡Es hora de ganarle la guerra a los ojos manchados con un toque de magia y nostalgia! Este increíble lápiz de ojos, inspirado en Woody y Buzz Lightyear de Toy Story, es colorido, divertido y está lleno de personalidad. Su fórmula profesional cuenta con una textura súper suave y cremosa que se desliza como seda sin necesidad de jalar el párpado ni causar lágrimas, depositando un color negro ultra pigmentado desde la primera pasada. Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de fijación te permite mantener tu delineado seguro siempre, convirtiéndose en el secreto infalible para un look intacto y perfecto que resiste todo tu día.",
-  tonos: ["Cafe", "Negro"]
+  category_new: "Agotado",
+  description: "Salir a la calle feliz con un delineado espectacular y descubrir a mitad del día que el producto se corrió hacia abajo, dejándote ojos de panda y un aspecto cansado, es una de las peores batallas del maquillaje diario. ¡Es hora de ganarle la guerra a los ojos manchados con un toque de magia y nostalgia! Este increíble lápiz de ojos, inspirado en Woody y Buzz Lightyear de Toy Story, es colorido, divertido y está lleno de personalidad. Su fórmula profesional cuenta con una textura súper suave y cremosa que se desliza como seda sin necesidad de jalar el párpado ni causar lágrimas, depositando un color negro ultra pigmentado desde la primera pasada. Gracias a su material resistente y tamaño práctico, podrás usarlo diariamente mientras complementas tus looks con un detalle original y llamativo. Además, su práctico sistema de fijación te permite mantener tu delineado seguro siempre, convirtiéndose en el secreto infalible para un look intacto y perfecto que resiste todo tu día."
 },
 {
   id: "LCD2284",
@@ -2213,8 +2045,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Doypack Sérum Hidratante Morado - DSH1761",
   price: 10000,
   image: "images/productos/Maquillaje/Cuidado_Facial/DSH1761.jpg",
-  description: "¡Tu suero hidratante favorito ahora en sachet!\n\n- La fórmula es exactamente igual a la presentación que ya conoces.\n- Su textura es en gel.\n- Es de absorción rápida.",
-  category_new: "Nueva colección"
+  description: "¡Tu suero hidratante favorito ahora en sachet!\n\n- La fórmula es exactamente igual a la presentación que ya conoces.\n- Su textura es en gel.\n- Es de absorción rápida."
 },
 {
   id: "P103",
@@ -3098,8 +2929,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Mascarilla De Hidrogel Para Ojos Pepino - EM15",
   price: 20000,
   image: "images/productos/Maquillaje/Cuidado_Facial/EM15.jpg",
-  description: "Con su uso continuo disminuyen las líneas de expresión, suavizan el contorno de los ojos, lo mantienen hidratado y ayudan a que esta zona se vea mucho mejor y no se cuartee el maquillaje.\nSon desechables, sólamente puedes usar cada par una vez y debes desecharlo, ya que todos los demás quedan en el mismo empaque y debemos evitar que se contaminen.\nDebes ponerlo sobre tus ojeras con el rostro limpio, dejarlos alrededor de 20 minutos y desecharlos.",
-  category_new: "Nueva colección"
+  description: "Con su uso continuo disminuyen las líneas de expresión, suavizan el contorno de los ojos, lo mantienen hidratado y ayudan a que esta zona se vea mucho mejor y no se cuartee el maquillaje.\nSon desechables, sólamente puedes usar cada par una vez y debes desecharlo, ya que todos los demás quedan en el mismo empaque y debemos evitar que se contaminen.\nDebes ponerlo sobre tus ojeras con el rostro limpio, dejarlos alrededor de 20 minutos y desecharlos."
 },
 {
   id: "LC002",
@@ -3116,7 +2946,7 @@ const PRODUCTS_MAQUILLAJE = [
   subcategory: "Rostro",
   name: "Rubor En Crema Blush Stamp - RBS1312",
   price: 20000,
-  category_new: "Nueva colección",
+  category_new: "Agotado",
   image: "images/productos/Maquillaje/Rostro/RBS1312.jpg",
   description: "¡El rubor estampita que necesitabas en tus mejillas!\nRubor cremoso de alta pigmentación.\nTe deja un efecto mate con destellitos de brillo dorado muy sutil.\nEs muy fácil de difuminar.\nSi deseas mayor pigmentación puedes aplicar una segunda capa.\nEs de larga duración.\nViene en un tono universal perfecto para cualquier tipo de piel.\nSu tamaño es perfecto para llevar en tu cosmetiquera"
 },

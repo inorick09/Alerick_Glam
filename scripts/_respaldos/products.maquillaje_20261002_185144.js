@@ -78,78 +78,6 @@
 
 const PRODUCTS_MAQUILLAJE = [
 {
-  id: "CHT1253",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador en Trío Cloud - CHT1253",
-  price: 5000,
-  image: "images/productos/Maquillaje/Rostro/CHT1253.jpg",
-  description: "¡Dale un glowy espectacular a tu piel con este trío de iluminadores!\nConsigue una piel radiante y el brilli brilli perfecto con este set de 3 iluminadores en tonos: Rosa tornasol, dorado, plateado.\nTextura suave y de excelente pigmentación.\nAcabado luminoso y natural.\nEmpaque compacto, ideal para llevar en tu cartera o cosmetiquera.\nSe difumina fácilmente, dejando la piel tersa y con efecto glow.",
-  category_new: "Oferta"
-},
-{
-  id: "DTR1753",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Doypack Tonico De Rosas 235ml - DTR1753",
-  price: 15000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/DTR1753.jpg",
-  description: "Frescura e hidratación para tu piel Refresca, hidrata y prepara tu piel con nuestra Agua de Rosas y Manzanilla, una fórmula ligera de aroma agradable que combina estos dos extractos para dejar el rostro suave, fresco y confortable. Puedes usarla antes del maquillaje para preparar la piel, después de la base para darle un aspecto más natural y fresco, o durante el día para refrescarla cuando la sientas seca o acartonada. También puedes aplicarla en tu esponja o brocha para intensificar sombras satinadas o potenciar el efecto de tu iluminador. Su fórmula se absorbe fácilmente sin dejar sensación grasosa y es perfecta para complementar tu rutina de cuidado facial. Un básico versátil para cuidar y refrescar tu piel en cualquier momento del día.",
-  category_new: "Nueva colección"
-},
-{
-  id: "ADT862",
-  category: "maquillaje",
-  subcategory: "Cuidado Facial",
-  name: "Aceite Desmaquillante Trendy - ADT862",
-  price: 20000,
-  image: "images/productos/Maquillaje/Cuidado_Facial/ADT862.jpg",
-  description: "Desmaquilla fácil, sin sensación pesada Retira tu maquillaje de forma práctica y efectiva con nuestro aceite desmaquillante, una fórmula de textura ligera y fluida que se desliza fácilmente sobre la piel sin dejar una sensación pesada o pegajosa. Es ideal para retirar incluso el maquillaje de larga duración y a prueba de agua, ayudando a eliminar productos difíciles de retirar sin necesidad de frotar excesivamente. Puedes utilizarlo en todo el rostro, incluyendo ojos y piel, y es apto para todo tipo de piel. Su fórmula no comedogénica está diseñada para no obstruir los poros, convirtiéndolo en una opción práctica para incorporar a tu rutina de desmaquillado. Puedes aplicarlo con un pomo de algodón, nuestra Toalla Mágica o el accesorio que prefieras. TIP TRENDY: Para una limpieza más completa, después de desmaquillar siempre recomendamos realizar una segunda limpieza con tu jabón facial Trendy. Así ayudas a retirar los residuos de maquillaje, grasa, contaminación y suciedad que pueden permanecer sobre la piel.",
-  category_new: "Nueva colección"
-},
-{
-  id: "KFL2243",
-  category: "maquillaje",
-  subcategory: "Labios",
-  name: "Kit Labios Frutti Gloss - KFL2243",
-  price: 8000,
-  image: "images/productos/Maquillaje/Labios/KFL2243.jpg",
-  description: "El dúo de gloss que tus labios necesitan diariamente. Textura ultrasuave que se desliza fácilmente, dando un acabado brillante sin aportar color: Ideal para usar solo o sobre tu labial favorito. Estos glosses o brillos labiales sirven para aportar luminosidad, dar un efecto de volumen y crear un acabado jugoso en los labios. No son pesados, ni pegajosos. Brindan una sensación ligera y confortable todo el día. Aromas frutales a uva y sandía. Ideal para llevar en el bolso y usar cuando quieras un toque extra de glow.",
-  category_new: "Nueva colección"
-},
-{
-  id: "KPN2248",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Kit Rubor y Gloss Pinky News - KPN2248",
-  price: 15000,
-  image: "images/productos/Maquillaje/Rostro/KPN2248.jpg",
-  description: "Dale color y brillo a tu look diario con el Set Pinky News, una edición especial que reúne dos esenciales de maquillaje en un solo paquete: un blush compacto y un lip gloss de acabado brillante. Ideal para quienes aman un estilo fresco, juvenil y lleno de encanto.\n\nCada referencia incluye:\n\n1 blush compacto de tono natural y fácil de difuminar (uno de ellos con acabado satinado).\n1 lip gloss con brillo suave y textura ligera.\n\nVariaciones por tono:\nTono 1: Gloss rosa + blush satinado en rosa claro.\nTono 2: Gloss en oro rosa oscuro + blush durazno mate.\nPerfecto para el maquillaje diario o para llevar siempre en el bolso.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02"]
-},
-{
-  id: "KMF2247",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Kit Piel Mistic Face - KMF2247",
-  price: 20000,
-  image: "images/productos/Maquillaje/Rostro/KMF2247.jpg",
-  description: "El kit esencial para lograr una piel uniforme, iluminada y natural. Ideal para corregir, resaltar y sellar el maquillaje en pocos pasos, adaptándose a tu rutina diaria.\n\nIncluye un corrector en barra de baja cobertura, perfecto para aportar puntos de luz y un acabado fresco; un corrector líquido de cobertura media, ideal para corregir y neutralizar ojeras e imperfecciones; y un polvo compacto que aporta color y ayuda a sellar los productos líquidos y en crema, prolongando su duración.",
-  category_new: "Nueva colección",
-  tonos: ["01", "02", "03"]
-},
-{
-  id: "Hmm2328",
-  category: "maquillaje",
-  subcategory: "Capilar",
-  name: "Hair Clip Mariposa Mediana - Hmm2328",
-  price: 8000,
-  image: "images/productos/Maquillaje/Capilar/Hmm2328.jpg",
-  description: "Dale un toque femenino y sofisticado a tus peinados con este Hair Clip en forma de mariposa. Su diseño grande ofrece un agarre firme y cómodo para diferentes tipos de cabello. Está fabricado en un material resistente, ligero y de acabado brillante, disponible en colores versátiles. Es ideal para recogidos, semirrecogidos o como accesorio decorativo en peinados sueltos.",
-  category_new: "Nueva colección"
-},
-{
   id: "CMW2401",
   category: "maquillaje",
   subcategory: "Corporal",
@@ -1046,12 +974,11 @@ const PRODUCTS_MAQUILLAJE = [
   category: "maquillaje",
   subcategory: "Labios",
   name: "Brillo Twist Villanos - Dy2105",
-  price: 5000,
+  price: 15000,
   image: "images/productos/Maquillaje/Labios/Dy2105.jpg",
   description: "Los brillos pueden transformar cualquier look así como lo harán los de la nueva colección inspirada en Villanos que le dan el toque a las historias, ahora también pueden darte ese toque de poder y encanto que necesitas.\n\n- ¡3 tonos encantadores para que elijas tu favorito!\n- Tus villanos favoritos se unen para darle un acabado mágico a tus labios.\n- Su textura suave y ligera se difumina a la perfección.\n- Tonos rositas con leves destellos que aportan un acabado más jugoso y suave a tus labios.\n- Diseños únicos que llamarán la atención donde quieras que vayas.",
   colaboracion: "Disney",
-  tonos: ["Úrsula"],
-  category_new: "Oferta"
+  tonos: ["Hades", "Queen", "Úrsula"]
 },
 {
   id: "Dy2080",
@@ -1559,8 +1486,7 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Lápiz Delineador Ojos Safari - DST2259",
   price: 5000,
   image: "images/productos/Maquillaje/Ojos/DST2259.jpg",
-  description: "Aceptémoslo: no hay nada más frustrante que intentar delinear tu línea del agua con un lápiz viejo, duro y seco que te raspa el ojo, te hace llorar y termina dejando un trazo grisáceo y parchado que desaparece a las dos horas, dejándote un manchón oscuro fatal en la ojera. ¡Es momento de despedirse de las batallas del diario y darle la bienvenida al trazo más dócil del planeta! El Lápiz Safari llegó para rescatar tus looks con su pigmento negro intenso que aporta un color profundo desde la primera pasada. Su textura es deliciosamente cremosa, lo que facilita un deslizamiento ultra suave y uniforme tanto si buscas un trazo gráfico súper preciso como si quieres difuminar los bordes para crear esos ahumados espectaculares que roban miradas. Un básico versátil y salvavidas que no puede faltar en tu colección.",
-  tonos: ["Café claro", "Café oscuro", "Negro"]
+  description: "Aceptémoslo: no hay nada más frustrante que intentar delinear tu línea del agua con un lápiz viejo, duro y seco que te raspa el ojo, te hace llorar y termina dejando un trazo grisáceo y parchado que desaparece a las dos horas, dejándote un manchón oscuro fatal en la ojera. ¡Es momento de despedirse de las batallas del diario y darle la bienvenida al trazo más dócil del planeta! El Lápiz Safari llegó para rescatar tus looks con su pigmento negro intenso que aporta un color profundo desde la primera pasada. Su textura es deliciosamente cremosa, lo que facilita un deslizamiento ultra suave y uniforme tanto si buscas un trazo gráfico súper preciso como si quieres difuminar los bordes para crear esos ahumados espectaculares que roban miradas. Un básico versátil y salvavidas que no puede faltar en tu colección."
 },
 {
   id: "Slt2203",

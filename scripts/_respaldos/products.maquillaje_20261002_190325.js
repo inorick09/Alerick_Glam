@@ -1046,11 +1046,11 @@ const PRODUCTS_MAQUILLAJE = [
   category: "maquillaje",
   subcategory: "Labios",
   name: "Brillo Twist Villanos - Dy2105",
-  price: 5000,
+  price: 15000,
   image: "images/productos/Maquillaje/Labios/Dy2105.jpg",
   description: "Los brillos pueden transformar cualquier look así como lo harán los de la nueva colección inspirada en Villanos que le dan el toque a las historias, ahora también pueden darte ese toque de poder y encanto que necesitas.\n\n- ¡3 tonos encantadores para que elijas tu favorito!\n- Tus villanos favoritos se unen para darle un acabado mágico a tus labios.\n- Su textura suave y ligera se difumina a la perfección.\n- Tonos rositas con leves destellos que aportan un acabado más jugoso y suave a tus labios.\n- Diseños únicos que llamarán la atención donde quieras que vayas.",
   colaboracion: "Disney",
-  tonos: ["Úrsula"],
+  tonos: ["Hades", "Queen", "Úrsula"],
   category_new: "Oferta"
 },
 {

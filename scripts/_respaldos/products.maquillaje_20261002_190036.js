@@ -78,16 +78,6 @@
 
 const PRODUCTS_MAQUILLAJE = [
 {
-  id: "CHT1253",
-  category: "maquillaje",
-  subcategory: "Rostro",
-  name: "Iluminador en Trío Cloud - CHT1253",
-  price: 5000,
-  image: "images/productos/Maquillaje/Rostro/CHT1253.jpg",
-  description: "¡Dale un glowy espectacular a tu piel con este trío de iluminadores!\nConsigue una piel radiante y el brilli brilli perfecto con este set de 3 iluminadores en tonos: Rosa tornasol, dorado, plateado.\nTextura suave y de excelente pigmentación.\nAcabado luminoso y natural.\nEmpaque compacto, ideal para llevar en tu cartera o cosmetiquera.\nSe difumina fácilmente, dejando la piel tersa y con efecto glow.",
-  category_new: "Oferta"
-},
-{
   id: "DTR1753",
   category: "maquillaje",
   subcategory: "Cuidado Facial",
@@ -1046,12 +1036,11 @@ const PRODUCTS_MAQUILLAJE = [
   category: "maquillaje",
   subcategory: "Labios",
   name: "Brillo Twist Villanos - Dy2105",
-  price: 5000,
+  price: 15000,
   image: "images/productos/Maquillaje/Labios/Dy2105.jpg",
   description: "Los brillos pueden transformar cualquier look así como lo harán los de la nueva colección inspirada en Villanos que le dan el toque a las historias, ahora también pueden darte ese toque de poder y encanto que necesitas.\n\n- ¡3 tonos encantadores para que elijas tu favorito!\n- Tus villanos favoritos se unen para darle un acabado mágico a tus labios.\n- Su textura suave y ligera se difumina a la perfección.\n- Tonos rositas con leves destellos que aportan un acabado más jugoso y suave a tus labios.\n- Diseños únicos que llamarán la atención donde quieras que vayas.",
   colaboracion: "Disney",
-  tonos: ["Úrsula"],
-  category_new: "Oferta"
+  tonos: ["Hades", "Queen", "Úrsula"]
 },
 {
   id: "Dy2080",
