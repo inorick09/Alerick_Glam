@@ -1266,7 +1266,8 @@ em {
 }
 .checkout-status--ok { color: var(--color-aqua-deep); font-weight: 600; }
 .checkout-status--error { color: var(--color-rose-deep); }
-.checkout-status--error a { text-decoration: underline; }
+.checkout-status--error a,
+.checkout-status--ok a { text-decoration: underline; }
 
 /* ---------- 9c. Lupa de producto ---------- */
 .product-card__img { cursor: zoom-in; }

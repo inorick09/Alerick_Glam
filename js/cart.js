@@ -364,19 +364,32 @@ async function submitOrder(customer) {
     throw new Error('endpoint-no-configurado');
   }
 
-  const res = await fetch(ORDER_ENDPOINT, {
-    method: 'POST',
-    // text/plain evita el preflight CORS que Google Apps Script no responde bien.
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify(payload)
-  });
-  if (!res.ok) throw new Error('respuesta-no-ok');
+  // Apps Script ejecuta doPost (y guarda la fila) ANTES de responder con
+  // una redirección a script.googleusercontent.com, de donde sale el
+  // JSON. Si esa segunda petición falla (red móvil inestable, bloqueador,
+  // CORS intermitente de Google), fetch lanza error aunque el pedido ya
+  // haya quedado en la hoja. Por eso un fallo de red aquí es "incierto",
+  // no "rechazado".
+  let res;
+  try {
+    res = await fetch(ORDER_ENDPOINT, {
+      method: 'POST',
+      // text/plain evita el preflight CORS que Google Apps Script no responde bien.
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload)
+    });
+  } catch {
+    return 'incierto';
+  }
+  if (!res.ok) return 'incierto';
 
   // Apps Script siempre responde HTTP 200, incluso cuando el script
   // rechaza el pedido (token inválido, límite de envíos alcanzado,
   // etc.) — por eso hay que revisar el cuerpo de la respuesta también.
   const data = await res.json().catch(() => null);
-  if (!data || data.ok !== true) throw new Error('pedido-rechazado');
+  if (!data) return 'incierto';
+  if (data.ok !== true) throw new Error('pedido-rechazado');
+  return 'ok';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -452,8 +465,20 @@ document.addEventListener('DOMContentLoaded', () => {
     setCheckoutStatus('', null);
 
     try {
-      await submitOrder(customer);
-      setCheckoutStatus('¡Pedido enviado! Te contactaremos pronto por WhatsApp para confirmar. 💌', 'ok');
+      const result = await submitOrder(customer);
+      if (result === 'ok') {
+        setCheckoutStatus('¡Pedido enviado! Te contactaremos pronto por WhatsApp para confirmar. 💌', 'ok');
+      } else {
+        // Casi siempre el pedido sí llegó a la hoja; solo falló la
+        // confirmación. Se trata como enviado (para que no lo reenvíe y
+        // quede duplicado), pero se deja el WhatsApp como respaldo.
+        const link = whatsAppLink(cart, customer);
+        const el = document.getElementById('checkoutStatus');
+        if (el) {
+          el.className = 'checkout-status checkout-status--ok';
+          el.innerHTML = `¡Pedido enviado! Te contactaremos pronto por WhatsApp para confirmar. 💌 Si no te escribimos hoy, <a href="${link}" target="_blank" rel="noopener">envíanoslo por WhatsApp</a>.`;
+        }
+      }
       saveCart([]);
       form.reset();
       renderCart();

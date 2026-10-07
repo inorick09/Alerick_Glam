@@ -324,7 +324,7 @@ function showCatalogPlaceholder(category) {
 }
 
 // Máximo de productos por página, para no cargar todo el catálogo de una vez.
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 25;
 
 // Números de página a mostrar: siempre primera, última, la actual y sus
 // vecinas inmediatas; el resto se resume con "…".
