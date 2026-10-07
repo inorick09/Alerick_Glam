@@ -5478,4 +5478,85 @@ const PRODUCTS_BISUTERIA = [
   image: "images/productos/Bisuteria/Pulseras/TP336.jpg",
   description: "Material: Fantasia"
 },
+{
+  id: "SP396",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario San Benito - SP396",
+  price: 35900,
+  image: "images/productos/Bisuteria/Rosarios/SP396.png",
+  description: "Medidas: 64 cm x 5 mm"
+},
+{
+  id: "MC961",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Ros27000ario Guadalupe - MC961",
+  price: 27000,
+  image: "images/productos/Bisuteria/Rosarios/MC961.png",
+  description: "Medidas: 50 cm x 3 mm"
+},
+{
+  id: "MC960",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario San Benito - MC960",
+  price: 27000,
+  image: "images/productos/Bisuteria/Rosarios/MC960.png",
+  description: "Medidas: 54 cm x 3 mm"
+},
+{
+  id: "NP529",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario San Benito - NP529",
+  price: 30000,
+  image: "images/productos/Bisuteria/Rosarios/NP529.png",
+  description: "Medidas: 64 cm x 5 mm"
+},
+{
+  id: "NP528",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario San Benito Dorado - NP528",
+  price: 30000,
+  image: "images/productos/Bisuteria/Rosarios/NP528.png",
+  description: "Medidas: 53 cm x 3 mm"
+},
+{
+  id: "MC959",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario San Benito Tricolor - MC959",
+  price: 27000,
+  image: "images/productos/Bisuteria/Rosarios/MC959.png",
+  description: "Medidas: 56 cm x 3 mm"
+},
+{
+  id: "MC914",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario Dorado - MC914",
+  price: 27000,
+  image: "images/productos/Bisuteria/Rosarios/MC914.png",
+  description: "Medidas: 67 cm x 6 mm"
+},
+{
+  id: "RO070",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario Murano Negro - RO070",
+  price: 24000,
+  image: "images/productos/Bisuteria/Rosarios/RO070.png",
+  description: "Medidas: 63 cm x 4 mm"
+},
+{
+  id: "OR011",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Camandula - OR011",
+  price: 24000,
+  image: "images/productos/Bisuteria/Rosarios/OR011.png",
+  description: "Medidas: 52 cm"
+},
 ];
