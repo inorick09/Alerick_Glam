@@ -29,10 +29,11 @@
 //      "Earcuff", "Empaques", "Pulseras", "Rosarios", "Tobilleras"
 //    - material: de qué está hecha la pieza. Se muestra debajo de la
 //      descripción ("Material: Rodio") y activa el filtro por material.
-//      Usa uno de estos textos: "Plata Ley 925", "Rodio", "Oro Goldfield", "Acero",
-//      "Covergold", "Zamak", "Acrílico", "Fantasía". Si la pieza combina
-//      dos, sepáralos con " - " (ej: "Acero - Oro Goldfield") y aparece
-//      en el filtro de ambos. Los empaques no lo llevan.
+//      Usa uno de estos textos: "Plata Ley 925", "Oro Laminado 18K", "Rodio",
+//      "Oro Goldfield", "Acero", "Covergold", "Zamak", "Acrílico", "Fantasía".
+//      Si la pieza combina dos, sepáralos con " - " (ej: "Acero - Oro
+//      Goldfield") y aparece en el filtro de ambos. Los empaques no lo
+//      llevan.
 //    - medidas: opcional; tamaño, largo o talla
 //      (ej: "38 cm + 6 cm extensión", "1,4 cm x 4 mm", "Talla 7").
 //    - description: opcional; un detalle corto que no sea el material
@@ -10857,5 +10858,3394 @@ const PRODUCTS_BISUTERIA = [
   image: "images/productos/Bisuteria/Tobilleras/12052P-JOV.jpg",
   medidas: "24 cm x 4,5 mm",
   material: "Plata Ley 925"
+},
+{
+  id: "30404-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Balín Italy",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30404-JOG.jpg",
+  medidas: "4 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30406-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Balín Italy",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30406-JOG.jpg",
+  medidas: "6 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30408-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Balín Italy",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30408-JOH.jpg",
+  medidas: "8 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "33032-JOC",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo a presión",
+  price: 25000,
+  image: "images/productos/Bisuteria/Aretes/33032-JOC.jpg",
+  medidas: "2 mm",
+  description: "Broche a presión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "33033-JOC",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos a presión",
+  price: 25000,
+  image: "images/productos/Bisuteria/Aretes/33033-JOC.jpg",
+  medidas: "3 mm",
+  description: "Broche a presión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "33034-JOE",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos balín",
+  price: 35000,
+  image: "images/productos/Bisuteria/Aretes/33034-JOE.jpg",
+  medidas: "4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34011-JOF",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo balín",
+  price: 40000,
+  image: "images/productos/Bisuteria/Aretes/34011-JOF.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34012-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos balín",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/34012-JOG.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31053BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Milagrosa",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31053BD-JOQ.jpg",
+  medidas: "6 mm x 8 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31037BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Verde",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31037BD-JOQ.jpg",
+  medidas: "6 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31058DB-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Virgen del Carmen Clásica",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31058DB-JOQ.jpg",
+  medidas: "6 mm x 9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34313-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Oso Cristal",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34313-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30070-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Cristal",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/30070-JOQ.jpg",
+  medidas: "24 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30069-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Wave",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30069-JOK.jpg",
+  medidas: "18 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30068-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Élite",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30068-JOH.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30078-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Cristal",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30078-JOG.jpg",
+  medidas: "3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30079-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Cristal",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30079-JOH.jpg",
+  medidas: "4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30077-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Esmerald",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/30077-JOJ.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30076-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Esmerald",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30076-JOH.jpg",
+  medidas: "4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30072-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Dalia",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30072-JOL.jpg",
+  medidas: "1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30073-JON",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Circón Verde",
+  price: 75000,
+  image: "images/productos/Bisuteria/Aretes/30073-JON.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30064-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Amare",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/30064-JOJ.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30062-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Codice",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30062-JOK.jpg",
+  medidas: "15 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30061-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Hexa Grial",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/30061-JOJ.jpg",
+  medidas: "13 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30059-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Avalon",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30059-JOH.jpg",
+  medidas: "1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30057-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Coeur",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30057-JOK.jpg",
+  medidas: "1,7 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31112BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31112BD-JOQ.jpg",
+  medidas: "8 mm x 5 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31110BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31110BD-JOQ.jpg",
+  medidas: "4 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31093BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31093BD-JOQ.jpg",
+  medidas: "7 mm x 6 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30054-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Regina",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30054-JOG.jpg",
+  medidas: "7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30055-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Love CTR",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30055-JOG.jpg",
+  medidas: "5 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31026BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Doré",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31026BD-JOQ.jpg",
+  medidas: "3 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31116BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Guadalupe",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31116BD-JOQ.jpg",
+  medidas: "8 mm x 6 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31117BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos María Auxiliadora",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31117BD-JOQ.jpg",
+  medidas: "8 mm x 6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31109BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo San Benito",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31109BD-JOQ.jpg",
+  medidas: "8 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31111BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo San Miguel",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31111BD-JOQ.jpg",
+  medidas: "7 mm x 6 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31036BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Verde",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31036BD-JOQ.jpg",
+  medidas: "4 mm",
+  description: "Rosca de seguridad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31084BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo rosca de seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31084BD-JOQ.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31083BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo rosca de seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31083BD-JOQ.jpg",
+  medidas: "5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "31025BD-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo rosca de seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/31025BD-JOQ.jpg",
+  medidas: "4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30052-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos Balón de Fútbol",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30052-JOL.jpg",
+  medidas: "5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30369-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Aretes Corazón Mini",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30369-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30044-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Corazón Crystal",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30044-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30049-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga CC",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30049-JOK.jpg",
+  medidas: "13 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30048-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Clover Luxe",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30048-JOK.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30046-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Amore Halo",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30046-JOL.jpg",
+  medidas: "9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30027-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Link GC",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30027-JOK.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30022-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Parallel Circones",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30022-JOK.jpg",
+  medidas: "1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30013-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Facet",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/30013-JOH.jpg",
+  medidas: "1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30007-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Coeur París",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30007-JOG.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34208-JOF",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Gucci",
+  price: 40000,
+  image: "images/productos/Bisuteria/Aretes/34208-JOF.jpg",
+  medidas: "3 mm x 4 mm",
+  description: "Broche a presión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34215-JOF",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete calavera",
+  price: 40000,
+  image: "images/productos/Bisuteria/Aretes/34215-JOF.jpg",
+  medidas: "6 mm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34060-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos alas",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34060-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34036-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Gucci",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/34036-JOG.jpg",
+  medidas: "7 mm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35012-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Amour",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35012-JOQ.jpg",
+  medidas: "6 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35011-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Roya",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35011-JOQ.jpg",
+  medidas: "5 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35009-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Amour",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35009-JOQ.jpg",
+  medidas: "6 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35008-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Amour",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35008-JOQ.jpg",
+  medidas: "5 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35007-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Amour",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35007-JOQ.jpg",
+  medidas: "4 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35005-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Star",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35005-JOQ.jpg",
+  medidas: "5 mm",
+  description: "Rosca de seguridad, base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35002-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo rosca de seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35002-JOQ.jpg",
+  medidas: "6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35001-JOQ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo rosca de seguridad",
+  price: 90000,
+  image: "images/productos/Bisuteria/Aretes/35001-JOQ.jpg",
+  medidas: "5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30040-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Royal Green",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/30040-JOK.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30090-JOP",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Move",
+  price: 85000,
+  image: "images/productos/Bisuteria/Aretes/30090-JOP.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30037-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Cat Mini",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/30037-JOG.jpg",
+  medidas: "6 mm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30051-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Corazón Sol",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/30051-JOJ.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30021-JOR",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Pavé Circle",
+  price: 100000,
+  image: "images/productos/Bisuteria/Aretes/30021-JOR.jpg",
+  medidas: "1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30009-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Árbol de la Vida",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/30009-JOJ.jpg",
+  medidas: "1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34306-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga Clip",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34306-JOK.jpg",
+  medidas: "1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "30003-JOC",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo mini Double",
+  price: 25000,
+  image: "images/productos/Bisuteria/Aretes/30003-JOC.jpg",
+  medidas: "2 mm x 3,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "60000-JOK",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto dije y aretes",
+  price: 70000,
+  image: "images/productos/Bisuteria/Conjuntos/60000-JOK.jpg",
+  medidas: "Dije 7 mm x 5 mm",
+  description: "No incluye cadena",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "60001-JOK",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto dije y aretes",
+  price: 70000,
+  image: "images/productos/Bisuteria/Conjuntos/60001-JOK.jpg",
+  medidas: "Aretes 6 mm, dije 8 mm",
+  description: "No incluye cadena",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35672-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/35672-JOG.jpg",
+  medidas: "1,4 cm x 1,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34136-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga G",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34136-JOH.jpg",
+  medidas: "1,8 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "35616-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga textura",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/35616-JOG.jpg",
+  medidas: "1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34132-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34132-JOK.jpg",
+  medidas: "2,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34259-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Virgen de Guadalupe",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34259-JOH.jpg",
+  medidas: "9 mm x 5 mm",
+  description: "No incluye topo",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34250-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Avión",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34250-JOL.jpg",
+  medidas: "1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34249-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete herradura",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34249-JOJ.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34254-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete trébol",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34254-JOJ.jpg",
+  medidas: "1 cm",
+  description: "No incluye earcuff",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "63002-JOQ",
+  category: "bisuteria",
+  subcategory: "Conjuntos",
+  name: "Conjunto dije y aretes trébol",
+  price: 90000,
+  image: "images/productos/Bisuteria/Conjuntos/63002-JOQ.jpg",
+  medidas: "1 cm",
+  description: "Incluye dije y aretes",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34237-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete gota",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34237-JOJ.jpg",
+  medidas: "1,2 cm x 9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34206-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Bright Star",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34206-JOH.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "33542-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos mini Virgen del Carmen",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/33542-JOH.jpg",
+  medidas: "9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34244-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Tri Balín",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34244-JOH.jpg",
+  medidas: "7 mm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34241-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Celtic",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34241-JOK.jpg",
+  medidas: "1 cm x 1,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34240-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Ancla de Mar",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34240-JOK.jpg",
+  medidas: "9 mm x 7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34063-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete San Miguel Arcángel",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34063-JOK.jpg",
+  medidas: "9 mm x 7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34230-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Arete Espíritu Santo",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34230-JOH.jpg",
+  medidas: "1 cm x 6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34210-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo palmera",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34210-JOJ.jpg",
+  medidas: "1 cm x 9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34207-JOI",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo hoja",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34207-JOI.jpg",
+  medidas: "8 mm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34212-JOH",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topo Triángulo",
+  price: 50000,
+  image: "images/productos/Bisuteria/Aretes/34212-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34168-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos cara feliz",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/34168-JOG.jpg",
+  medidas: "5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "33023N-JOF",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos corazón circón negro",
+  price: 40000,
+  image: "images/productos/Bisuteria/Aretes/33023N-JOF.jpg",
+  medidas: "4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34171-JON",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Candonga lisa",
+  price: 75000,
+  image: "images/productos/Bisuteria/Aretes/34171-JON.jpg",
+  medidas: "2,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34146-JOK",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos sol",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34146-JOK.jpg",
+  medidas: "7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34122-JOG",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos triángulo",
+  price: 45000,
+  image: "images/productos/Bisuteria/Aretes/34122-JOG.jpg",
+  medidas: "5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34156-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos perro inflable",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34156-JOL.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34162-JOL",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos tortugas",
+  price: 70000,
+  image: "images/productos/Bisuteria/Aretes/34162-JOL.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "34098-JOJ",
+  category: "bisuteria",
+  subcategory: "Aretes",
+  name: "Topos rayo",
+  price: 60000,
+  image: "images/productos/Bisuteria/Aretes/34098-JOJ.jpg",
+  medidas: "9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45208-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubana Cruzada",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/45208-JXC.jpg",
+  medidas: "65 cm x 2,4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45173-JOZ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Escalera con Destellos IT",
+  price: 230000,
+  image: "images/productos/Bisuteria/Collares/45173-JOZ.jpg",
+  medidas: "65 cm x 2,1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "47033-JXH",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar Italy",
+  price: 580000,
+  image: "images/productos/Bisuteria/Collares/47033-JXH.jpg",
+  medidas: "60 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45003-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar IT",
+  price: 480000,
+  image: "images/productos/Bisuteria/Collares/45003-JXG.jpg",
+  medidas: "65 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45883-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 500000,
+  image: "images/productos/Bisuteria/Collares/45883-JXG.jpg",
+  medidas: "65 cm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46889-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/46889-JXB.jpg",
+  medidas: "60 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46882-JOZ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 230000,
+  image: "images/productos/Bisuteria/Collares/46882-JOZ.jpg",
+  medidas: "50 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45159-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubanita IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45159-JOY.jpg",
+  medidas: "60 cm x 1,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45049-JOZ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Singapur IT",
+  price: 230000,
+  image: "images/productos/Bisuteria/Collares/45049-JOZ.jpg",
+  medidas: "60 cm x 1,7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45048-JOZ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Singapur IT",
+  price: 230000,
+  image: "images/productos/Bisuteria/Collares/45048-JOZ.jpg",
+  medidas: "65 cm x 1,7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45153-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubanita",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45153-JOY.jpg",
+  medidas: "65 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46033-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cuban Link IT",
+  price: 460000,
+  image: "images/productos/Bisuteria/Collares/46033-JXG.jpg",
+  medidas: "65 cm x 3,1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45038-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Gucci IT",
+  price: 460000,
+  image: "images/productos/Bisuteria/Collares/45038-JXG.jpg",
+  medidas: "65 cm x 2,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45068-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Marine IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45068-JXB.jpg",
+  medidas: "65 cm x 2,8 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45063-JOU",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Marine IT",
+  price: 140000,
+  image: "images/productos/Bisuteria/Collares/45063-JOU.jpg",
+  medidas: "65 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45223-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Tube Gold IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45223-JXB.jpg",
+  medidas: "65 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45213-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Tube Rose IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45213-JXB.jpg",
+  medidas: "65 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45043-JXJ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Barril Italy",
+  price: 900000,
+  image: "images/productos/Bisuteria/Collares/45043-JXJ.jpg",
+  medidas: "65 cm x 3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45313-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Station Redonda 3C IT",
+  price: 460000,
+  image: "images/productos/Bisuteria/Collares/45313-JXG.jpg",
+  medidas: "65 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46883-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/46883-JXB.jpg",
+  medidas: "65 cm x 2 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45078-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubana Continua IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45078-JXB.jpg",
+  medidas: "65 cm x 2,3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45303-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar Espaciada Ovalada Italy IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45303-JXB.jpg",
+  medidas: "65 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45308-JXF",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar Ovalada Italy IT",
+  price: 400000,
+  image: "images/productos/Bisuteria/Collares/45308-JXF.jpg",
+  medidas: "65 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45028-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Arrow IT",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/45028-JXB.jpg",
+  medidas: "65 cm x 2,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45128-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena 3x1 IT",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/45128-JXB.jpg",
+  medidas: "65 cm x 2,9 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45888-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/45888-JXC.jpg",
+  medidas: "65 cm x 3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43058-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Aros",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/43058-JOY.jpg",
+  medidas: "65 cm x 3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43788-JXF",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido franco",
+  price: 400000,
+  image: "images/productos/Bisuteria/Collares/43788-JXF.jpg",
+  medidas: "65 cm x 3,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "42108-JOW",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena espejo cuadrada",
+  price: 160000,
+  image: "images/productos/Bisuteria/Collares/42108-JOW.jpg",
+  medidas: "65 cm x 2,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44768-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena veneciana gruesa",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/44768-JXC.jpg",
+  medidas: "65 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44853-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido cordón",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/44853-JOY.jpg",
+  medidas: "65 cm x 1,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44833-JOT",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido serpiente plana",
+  price: 130000,
+  image: "images/productos/Bisuteria/Collares/44833-JOT.jpg",
+  medidas: "65 cm x 1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43833-JXB",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido serpiente",
+  price: 280000,
+  image: "images/productos/Bisuteria/Collares/43833-JXB.jpg",
+  medidas: "65 cm x 1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44468-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena continua",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/44468-JXC.jpg",
+  medidas: "65 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44068-JXF",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido serpiente",
+  price: 400000,
+  image: "images/productos/Bisuteria/Collares/44068-JXF.jpg",
+  medidas: "65 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44293-JOW",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido escalera plana",
+  price: 160000,
+  image: "images/productos/Bisuteria/Collares/44293-JOW.jpg",
+  medidas: "65 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "41413-JOU",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena cubana destellos",
+  price: 140000,
+  image: "images/productos/Bisuteria/Collares/41413-JOU.jpg",
+  medidas: "60 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43033-JOX",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena cubana sol",
+  price: 170000,
+  image: "images/productos/Bisuteria/Collares/43033-JOX.jpg",
+  medidas: "65 cm x 1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45101-JOQ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Veneciana IT",
+  price: 90000,
+  image: "images/productos/Bisuteria/Collares/45101-JOQ.jpg",
+  medidas: "45 cm x 0,64 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45172-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Escalera con Destellos IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45172-JOY.jpg",
+  medidas: "50 cm x 2,1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45150-JOT",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubanita IT",
+  price: 130000,
+  image: "images/productos/Bisuteria/Collares/45150-JOT.jpg",
+  medidas: "40 cm x 1,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "47031-JXG",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar Italy",
+  price: 480000,
+  image: "images/productos/Bisuteria/Collares/47031-JXG.jpg",
+  medidas: "45 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "47001-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Caracol Plana",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/47001-JOR.jpg",
+  medidas: "45 cm x 1,8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "40012-JOS",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Gargantilla Sparkle Heart",
+  price: 120000,
+  image: "images/productos/Bisuteria/Collares/40012-JOS.jpg",
+  medidas: "45 cm, dije 12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45001-JXD",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Militar Italy IT",
+  price: 350000,
+  image: "images/productos/Bisuteria/Collares/45001-JXD.jpg",
+  medidas: "45 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45046-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Singapur IT",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/45046-JOR.jpg",
+  medidas: "45 cm x 1,2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45156-JOQ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubanita IT",
+  price: 90000,
+  image: "images/productos/Bisuteria/Collares/45156-JOQ.jpg",
+  medidas: "45 cm x 1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45151-JOU",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Cubanita",
+  price: 140000,
+  image: "images/productos/Bisuteria/Collares/45151-JOU.jpg",
+  medidas: "45 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45121-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena 3x1 IT",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/45121-JOR.jpg",
+  medidas: "45 cm x 1,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45006B-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena con dije trébol blanco",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/45006B-JOR.jpg",
+  medidas: "42 cm + extensión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45036-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Gucci IT",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/45036-JXC.jpg",
+  medidas: "45 cm x 2,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45331-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Lazito IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45331-JOY.jpg",
+  medidas: "45 cm x 1,3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45041-JXH",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Barril Italy",
+  price: 560000,
+  image: "images/productos/Bisuteria/Collares/45041-JXH.jpg",
+  medidas: "45 cm x 3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46881-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/46881-JOY.jpg",
+  medidas: "45 cm x 2 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45881-JXD",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 350000,
+  image: "images/productos/Bisuteria/Collares/45881-JXD.jpg",
+  medidas: "45 cm x 5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45026-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Arrow IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45026-JOY.jpg",
+  medidas: "45 cm x 2,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45066-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Marine IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/45066-JOY.jpg",
+  medidas: "45 cm x 2,8 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45006N-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena con dije trébol negro",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/45006N-JOR.jpg",
+  medidas: "42 cm + extensión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45061-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Marine IT",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/45061-JOR.jpg",
+  medidas: "45 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "45886-JOZ",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena China IT",
+  price: 230000,
+  image: "images/productos/Bisuteria/Collares/45886-JOZ.jpg",
+  medidas: "45 cm x 3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "40002-JOT",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Clover",
+  price: 130000,
+  image: "images/productos/Bisuteria/Collares/40002-JOT.jpg",
+  medidas: "45 cm + extensión",
+  description: "Incluye dije de 1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "71562-JOX",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena con dije Jesús",
+  price: 170000,
+  image: "images/productos/Bisuteria/Collares/71562-JOX.jpg",
+  description: "Incluye dije y cadena",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43786-JXC",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido franco",
+  price: 320000,
+  image: "images/productos/Bisuteria/Collares/43786-JXC.jpg",
+  medidas: "45 cm x 3,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43886-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido chino",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/43886-JOY.jpg",
+  medidas: "45 cm x 3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43106-JOS",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena espejo",
+  price: 120000,
+  image: "images/productos/Bisuteria/Collares/43106-JOS.jpg",
+  medidas: "45 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "43831-JOY",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena tejido serpiente",
+  price: 210000,
+  image: "images/productos/Bisuteria/Collares/43831-JOY.jpg",
+  medidas: "45 cm x 1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "46521-JOX",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Caracol Gruesa",
+  price: 170000,
+  image: "images/productos/Bisuteria/Collares/46521-JOX.jpg",
+  medidas: "45 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44986-JOR",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena militar",
+  price: 100000,
+  image: "images/productos/Bisuteria/Collares/44986-JOR.jpg",
+  medidas: "45 cm x 1,1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44751-JOU",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena Destellos",
+  price: 140000,
+  image: "images/productos/Bisuteria/Collares/44751-JOU.jpg",
+  medidas: "45 cm x 2,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "44936-JOT",
+  category: "bisuteria",
+  subcategory: "Collares",
+  name: "Cadena escalera",
+  price: 130000,
+  image: "images/productos/Bisuteria/Collares/44936-JOT.jpg",
+  medidas: "45 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20016-JOP",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Atlético Nacional",
+  price: 85000,
+  image: "images/productos/Bisuteria/Dijes/20016-JOP.jpg",
+  medidas: "15 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24001-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Oso T Shine",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/24001-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23153-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Sol y Luna",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23153-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20010-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz L Mini",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/20010-JOG.jpg",
+  medidas: "9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20012-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Milagrosa",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/20012-JOG.jpg",
+  medidas: "12 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20009-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz L",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/20009-JOG.jpg",
+  medidas: "16 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20008-JOF",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Corazón Sol Mini",
+  price: 40000,
+  image: "images/productos/Bisuteria/Dijes/20008-JOF.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20006-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Royal Green",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20006-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23329-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cristo INRI Mediano",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/23329-JON.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23400-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije INRI Redentor",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/23400-JON.jpg",
+  medidas: "3,1 cm x 1,8 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23401-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije INRI Redentor Mini",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23401-JOG.jpg",
+  medidas: "7 mm x 1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23319C-JOR",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije medalla Virgen de Guadalupe colores",
+  price: 100000,
+  image: "images/productos/Bisuteria/Dijes/23319C-JOR.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20005-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Signo Peso",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/20005-JOK.jpg",
+  medidas: "1,8 cm x 1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23339-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Elefant",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23339-JOG.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23354-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Wuff",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23354-JOG.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23368-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Blessed Love",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23368-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23390-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Benito Red Circonias",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23390-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23393-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Lottus",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23393-JOJ.jpg",
+  medidas: "1,5 cm x 1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23383-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Silueta",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23383-JOG.jpg",
+  medidas: "2,2 cm x 1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23372-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Lisa Slim",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23372-JOH.jpg",
+  medidas: "2,3 cm x 1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23386-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Torre Eiffel",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23386-JOH.jpg",
+  medidas: "1,7 cm x 1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23361-JOE",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije tortuga mini",
+  price: 35000,
+  image: "images/productos/Bisuteria/Dijes/23361-JOE.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23352-JOL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Ankh",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23352-JOL.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23350-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije cruz infinity",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23350-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "27360-N-JOE",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije placa letra N",
+  price: 35000,
+  image: "images/productos/Bisuteria/Dijes/27360-N-JOE.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23336-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Cristo",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23336-JOJ.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23326-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Nuestra Señora Milagrosa",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23326-JOG.jpg",
+  medidas: "1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23325-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Medalla de San Benito",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23325-JOJ.jpg",
+  medidas: "2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23321-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Santa Cruz grande",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23321-JOK.jpg",
+  medidas: "3,7 cm x 2,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23318-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen Milagrosa",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23318-JOK.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23298-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije dólar",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23298-JOK.jpg",
+  medidas: "2,2 cm x 0,9 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23228-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Match",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/23228-JON.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23249-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Corazón",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23249-JOK.jpg",
+  medidas: "8 mm x 1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24350-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije mano Hamsa",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/24350-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24259-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen de Guadalupe",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/24259-JOG.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23310-JOW",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen de Guadalupe",
+  price: 160000,
+  image: "images/productos/Bisuteria/Dijes/23310-JOW.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23305-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Lúmen",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23305-JOK.jpg",
+  medidas: "4,7 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23306-JOQ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Cruz Lúmen",
+  price: 90000,
+  image: "images/productos/Bisuteria/Dijes/23306-JOQ.jpg",
+  medidas: "5,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23303-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije escapulario San Benito",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23303-JOJ.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23276-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije flor de loto",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23276-JOJ.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23271-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Paloma",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23271-JOG.jpg",
+  medidas: "1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24476-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Benito",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/24476-JOH.jpg",
+  medidas: "1,3 cm x 1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23122-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije bolsa de dinero",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23122-JOK.jpg",
+  medidas: "1,5 cm x 8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-I-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa I",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-I-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-N-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa N",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-N-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-O-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa O",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-O-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-P-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa P",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-P-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-T-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa T",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-T-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "26360-W-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra lisa W",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/26360-W-JOC.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23154-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Caballo",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23154-JOH.jpg",
+  medidas: "1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24463-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen Milagrosa",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/24463-JOG.jpg",
+  medidas: "1,3 cm x 9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23101-JOE",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Benito",
+  price: 35000,
+  image: "images/productos/Bisuteria/Dijes/23101-JOE.jpg",
+  medidas: "1,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23155-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije rayo liso",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23155-JOJ.jpg",
+  medidas: "5 mm x 1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23262-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Corazón",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23262-JOJ.jpg",
+  medidas: "1,2 cm x 9,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23295-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije crucifijo pequeño",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/23295-JON.jpg",
+  medidas: "1,8 cm x 3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23294-JOQ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Crucifijo",
+  price: 90000,
+  image: "images/productos/Bisuteria/Dijes/23294-JOQ.jpg",
+  medidas: "4,3 cm x 2,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23043-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije estrella lisa",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23043-JOH.jpg",
+  medidas: "1 cm x 1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23370-I-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije letra I con circones",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23370-I-JOG.jpg",
+  medidas: "1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23242-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije caballo herradura",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23242-JOH.jpg",
+  medidas: "2,1 cm x 1,8 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23201C-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Bulldog francés circón cristal",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23201C-JOH.jpg",
+  medidas: "1,3 cm x 1,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23247-JOP",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije escapulario",
+  price: 85000,
+  image: "images/productos/Bisuteria/Dijes/23247-JOP.jpg",
+  medidas: "9 mm x 1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23218-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije perro inflable",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23218-JOK.jpg",
+  medidas: "1,5 cm x 2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23448-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije tres gracias",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23448-JOH.jpg",
+  medidas: "1,8 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24541-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen de Guadalupe",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/24541-JOG.jpg",
+  medidas: "1,1 cm x 1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23145-JOR",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen de Guadalupe colores",
+  price: 100000,
+  image: "images/productos/Bisuteria/Dijes/23145-JOR.jpg",
+  medidas: "8 mm x 2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23134-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije cruz lisa",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23134-JOG.jpg",
+  medidas: "1 cm x 1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23003-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije oso circones mini",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23003-JOH.jpg",
+  medidas: "8 mm x 1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24900-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Miguel Arcángel",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/24900-JOK.jpg",
+  medidas: "1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23210-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Miguel Arcángel",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23210-JOJ.jpg",
+  medidas: "1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23208-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen Milagrosa",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23208-JOK.jpg",
+  medidas: "1,1 cm x 1,7 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23207-JOL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen del Carmen silueta",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23207-JOL.jpg",
+  medidas: "1,1 cm x 1,6 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23198-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije delfín",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23198-JOJ.jpg",
+  medidas: "8 mm x 1,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23105-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Virgen del Carmen",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23105-JOH.jpg",
+  medidas: "9 mm x 1,4 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23090-JOL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije cruz tubular circones",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23090-JOL.jpg",
+  medidas: "1,7 cm x 2,8 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23142-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije Guadalupe",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23142-JOJ.jpg",
+  medidas: "1,5 cm x 9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23037-JOQ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Dije San Miguel Silueta",
+  price: 90000,
+  image: "images/productos/Bisuteria/Dijes/23037-JOQ.jpg",
+  medidas: "2,1 cm x 1,9 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55206-JOR",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubana Cruzada",
+  price: 100000,
+  image: "images/productos/Bisuteria/Pulseras/55206-JOR.jpg",
+  medidas: "16 cm x 2,4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55172-JOR",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Escalera con Destellos IT",
+  price: 100000,
+  image: "images/productos/Bisuteria/Pulseras/55172-JOR.jpg",
+  medidas: "19,5 cm x 2,1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "57032-JXA",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Militar Italy",
+  price: 240000,
+  image: "images/productos/Bisuteria/Pulseras/57032-JXA.jpg",
+  medidas: "19 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "57031-JOY",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Militar Italy",
+  price: 210000,
+  image: "images/productos/Bisuteria/Pulseras/57031-JOY.jpg",
+  medidas: "16,5 cm x 4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "57001-JOG",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Caracol Plana",
+  price: 45000,
+  image: "images/productos/Bisuteria/Pulseras/57001-JOG.jpg",
+  medidas: "16,5 cm x 1,8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55207-JOT",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubana Cruzada",
+  price: 130000,
+  image: "images/productos/Bisuteria/Pulseras/55207-JOT.jpg",
+  medidas: "19,5 cm x 2,4 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55176-JOK",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Escalerita con Destellos IT",
+  price: 70000,
+  image: "images/productos/Bisuteria/Pulseras/55176-JOK.jpg",
+  medidas: "16,5 cm x 1,7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55162-JOW",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubana IT",
+  price: 160000,
+  image: "images/productos/Bisuteria/Pulseras/55162-JOW.jpg",
+  medidas: "19,5 cm x 3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54546-JOG",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Singapur",
+  price: 45000,
+  image: "images/productos/Bisuteria/Pulseras/54546-JOG.jpg",
+  medidas: "16 cm + extensión x 1,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55062-JON",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Marine IT",
+  price: 75000,
+  image: "images/productos/Bisuteria/Pulseras/55062-JON.jpg",
+  medidas: "19,5 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55002-JOY",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Militar IT",
+  price: 210000,
+  image: "images/productos/Bisuteria/Pulseras/55002-JOY.jpg",
+  medidas: "19,5 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "56032-JOX",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cuban Link IT",
+  price: 170000,
+  image: "images/productos/Bisuteria/Pulseras/56032-JOX.jpg",
+  medidas: "19 cm x 3,1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54041-JOL",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Vintage",
+  price: 70000,
+  image: "images/productos/Bisuteria/Pulseras/54041-JOL.jpg",
+  medidas: "16 cm + extensión x 1,2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55067-JOT",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Marine IT",
+  price: 130000,
+  image: "images/productos/Bisuteria/Pulseras/55067-JOT.jpg",
+  medidas: "19,5 cm x 2,8 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "90006-JOS",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Denario Benedictus",
+  price: 120000,
+  image: "images/productos/Bisuteria/Pulseras/90006-JOS.jpg",
+  medidas: "16 cm + extensión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55332-JOS",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Lazito IT",
+  price: 120000,
+  image: "images/productos/Bisuteria/Pulseras/55332-JOS.jpg",
+  medidas: "19,5 cm x 1,3 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55222-JOT",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Tube Gold IT",
+  price: 130000,
+  image: "images/productos/Bisuteria/Pulseras/55222-JOT.jpg",
+  medidas: "19,5 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55212-JOT",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Tube Rose IT",
+  price: 130000,
+  image: "images/productos/Bisuteria/Pulseras/55212-JOT.jpg",
+  medidas: "19,5 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55312-JOW",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Station Redonda 3C IT",
+  price: 160000,
+  image: "images/productos/Bisuteria/Pulseras/55312-JOW.jpg",
+  medidas: "19,5 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55151-JOK",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubanita IT",
+  price: 70000,
+  image: "images/productos/Bisuteria/Pulseras/55151-JOK.jpg",
+  medidas: "16 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55061-JOK",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Marine IT",
+  price: 70000,
+  image: "images/productos/Bisuteria/Pulseras/55061-JOK.jpg",
+  medidas: "16 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55152-JON",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubanita IT",
+  price: 75000,
+  image: "images/productos/Bisuteria/Pulseras/55152-JON.jpg",
+  medidas: "19,5 cm x 1,5 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55157-JOH",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubanita IT",
+  price: 50000,
+  image: "images/productos/Bisuteria/Pulseras/55157-JOH.jpg",
+  medidas: "19 cm x 1 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55031-JOH",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Aros IT",
+  price: 50000,
+  image: "images/productos/Bisuteria/Pulseras/55031-JOH.jpg",
+  medidas: "15,5 cm + extensión x 2 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55121-JOK",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera 3x1 IT",
+  price: 70000,
+  image: "images/productos/Bisuteria/Pulseras/55121-JOK.jpg",
+  medidas: "16 cm x 1,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55026-JOR",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Arrow IT",
+  price: 100000,
+  image: "images/productos/Bisuteria/Pulseras/55026-JOR.jpg",
+  medidas: "16 cm x 2,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55027-JOS",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Arrow IT",
+  price: 120000,
+  image: "images/productos/Bisuteria/Pulseras/55027-JOS.jpg",
+  medidas: "19,5 cm x 2,6 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55011-JOH",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Grumetta Rada IT",
+  price: 50000,
+  image: "images/productos/Bisuteria/Pulseras/55011-JOH.jpg",
+  medidas: "16 cm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50030-JOR",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Heart",
+  price: 100000,
+  image: "images/productos/Bisuteria/Pulseras/50030-JOR.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55127-JOS",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera 3x1 IT",
+  price: 120000,
+  image: "images/productos/Bisuteria/Pulseras/55127-JOS.jpg",
+  medidas: "19,5 cm x 2,9 mm",
+  description: "Base plata ley 925",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50096-JOR",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Cubana Clover",
+  price: 100000,
+  image: "images/productos/Bisuteria/Pulseras/50096-JOR.jpg",
+  medidas: "15 cm + extensión x 1,1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50027-NEGRA-JOU",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Circonias Negra",
+  price: 140000,
+  image: "images/productos/Bisuteria/Pulseras/50027-NEGRA-JOU.jpg",
+  medidas: "20 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50007-JON",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Vintage",
+  price: 75000,
+  image: "images/productos/Bisuteria/Pulseras/50007-JON.jpg",
+  medidas: "20 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50002-JOT",
+  category: "bisuteria",
+  subcategory: "Pulseras",
+  name: "Pulsera Escalera G",
+  price: 130000,
+  image: "images/productos/Bisuteria/Pulseras/50002-JOT.jpg",
+  medidas: "19,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "55179-JOQ",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera Escalerita con Destellos IT",
+  price: 90000,
+  image: "images/productos/Bisuteria/Tobilleras/55179-JOQ.jpg",
+  medidas: "24,5 cm x 1,7 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "50029-JOQ",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera Coeur",
+  price: 90000,
+  image: "images/productos/Bisuteria/Tobilleras/50029-JOQ.jpg",
+  medidas: "25 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54119-JOR",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera perla",
+  price: 100000,
+  image: "images/productos/Bisuteria/Tobilleras/54119-JOR.jpg",
+  medidas: "23 cm + extensión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "52889-JOQ",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera tejido chino",
+  price: 90000,
+  image: "images/productos/Bisuteria/Tobilleras/52889-JOQ.jpg",
+  medidas: "25 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54874-JOL",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera",
+  price: 70000,
+  image: "images/productos/Bisuteria/Tobilleras/54874-JOL.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54989-JOL",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera militar delgada",
+  price: 70000,
+  image: "images/productos/Bisuteria/Tobilleras/54989-JOL.jpg",
+  medidas: "24,5 cm x 1,1 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54039-JOY",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera",
+  price: 210000,
+  image: "images/productos/Bisuteria/Tobilleras/54039-JOY.jpg",
+  medidas: "24,5 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "53889-JOT",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera tejido chino",
+  price: 130000,
+  image: "images/productos/Bisuteria/Tobilleras/53889-JOT.jpg",
+  medidas: "24,5 cm x 3 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "54294-JOQ",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera escalera plana lisa",
+  price: 90000,
+  image: "images/productos/Bisuteria/Tobilleras/54294-JOQ.jpg",
+  medidas: "24,5 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "53834-JOR",
+  category: "bisuteria",
+  subcategory: "Tobilleras",
+  name: "Tobillera tejido serpiente",
+  price: 100000,
+  image: "images/productos/Bisuteria/Tobilleras/53834-JOR.jpg",
+  medidas: "25 cm x 2 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "95036-JXC",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario IT Balín",
+  price: 320000,
+  image: "images/productos/Bisuteria/Rosarios/95036-JXC.jpg",
+  medidas: "45 cm x 2,5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "90008-JOX",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario Benedictus",
+  price: 170000,
+  image: "images/productos/Bisuteria/Rosarios/90008-JOX.jpg",
+  medidas: "43 cm + extensión",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "94036-JXG",
+  category: "bisuteria",
+  subcategory: "Rosarios",
+  name: "Rosario Hombre",
+  price: 550000,
+  image: "images/productos/Bisuteria/Rosarios/94036-JXG.jpg",
+  medidas: "65 cm x 6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20086BD-JOL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje letra",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/20086BD-JOL.jpg",
+  medidas: "1,2 cm",
+  description: "Escoge la letra que más te guste",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20017-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Atlético Nacional",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/20017-JON.jpg",
+  medidas: "1 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20052BD-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Avión",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20052BD-JOH.jpg",
+  medidas: "1,5 cm x 1,9 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20360R-BD-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje pasador corona Rolex",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20360R-BD-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20360C-BD-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje pasador corazón",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20360C-BD-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20360L-BD-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje pasador letra",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20360L-BD-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20360BD-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje bolsa de dinero",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20360BD-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "22550-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Guadalupe tallada",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/22550-JOJ.jpg",
+  medidas: "9 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20047-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje cruz lisa",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20047-JOH.jpg",
+  medidas: "10 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20046-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje balón de fútbol",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/20046-JOH.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24100-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje dólar",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/24100-JOK.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23076V-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje bola de fuego verde",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23076V-JOK.jpg",
+  medidas: "6 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20011-JOF",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje cruz mini",
+  price: 40000,
+  image: "images/productos/Bisuteria/Dijes/20011-JOF.jpg",
+  medidas: "11 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20491-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje San Benito",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/20491-JOG.jpg",
+  medidas: "10 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "20429-JOE",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje San Benito",
+  price: 35000,
+  image: "images/productos/Bisuteria/Dijes/20429-JOE.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23344-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Beatly",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23344-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23342-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Zirclove",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23342-JOG.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23343-JOF",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Lovix",
+  price: 40000,
+  image: "images/productos/Bisuteria/Dijes/23343-JOF.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23376-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Lottus",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23376-JOJ.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23399-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Clover Sol esfera cristal",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/23399-JOH.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23398-JOF",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje trébol circonia",
+  price: 40000,
+  image: "images/productos/Bisuteria/Dijes/23398-JOF.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23366-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Cristo San Benito",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23366-JOG.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23338-JNC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje redondo italiano",
+  price: 7500,
+  image: "images/productos/Bisuteria/Dijes/23338-JNC.jpg",
+  medidas: "4 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23328-JNB",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje redondo",
+  price: 10000,
+  image: "images/productos/Bisuteria/Dijes/23328-JNB.jpg",
+  medidas: "5 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23327-JNC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje cubo",
+  price: 7500,
+  image: "images/productos/Bisuteria/Dijes/23327-JNC.jpg",
+  medidas: "3,5 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24800-CRISTAL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje rondel circonias cristal",
+  price: 16000,
+  image: "images/productos/Bisuteria/Dijes/24800-CRISTAL.jpg",
+  medidas: "5 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24813C-JON",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Virgen de Guadalupe cristal",
+  price: 75000,
+  image: "images/productos/Bisuteria/Dijes/24813C-JON.jpg",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23180-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje corazón cristal",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/23180-JOC.jpg",
+  medidas: "4 mm x 8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23255-JOC",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje circona redonda",
+  price: 25000,
+  image: "images/productos/Bisuteria/Dijes/23255-JOC.jpg",
+  medidas: "9 mm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24477-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje San Benito",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/24477-JOH.jpg",
+  medidas: "1,3 cm x 1,9 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24075C-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje bola de fuego circones cristal",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/24075C-JOJ.jpg",
+  medidas: "5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23237-JOJ",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje bicicleta",
+  price: 60000,
+  image: "images/productos/Bisuteria/Dijes/23237-JOJ.jpg",
+  medidas: "1,7 cm x 8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23241-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje caballo y herradura",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/23241-JOG.jpg",
+  medidas: "1,6 cm x 1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "22799-JOG",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje rondel circones cristal",
+  price: 45000,
+  image: "images/productos/Bisuteria/Dijes/22799-JOG.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24799-CRISTAL",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje rondel circones cristal",
+  price: 12000,
+  image: "images/productos/Bisuteria/Dijes/24799-CRISTAL.jpg",
+  medidas: "4 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24544-JOH",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje Virgen Milagrosa",
+  price: 50000,
+  image: "images/productos/Bisuteria/Dijes/24544-JOH.jpg",
+  medidas: "8 mm x 1,2 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24901-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje San Miguel Arcángel",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/24901-JOK.jpg",
+  medidas: "1,3 cm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23078-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje bola de fuego",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23078-JOK.jpg",
+  medidas: "8 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24343-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje infinito circones",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/24343-JOK.jpg",
+  medidas: "2 cm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "23048-JOK",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje ala circones",
+  price: 70000,
+  image: "images/productos/Bisuteria/Dijes/23048-JOK.jpg",
+  medidas: "1,6 cm x 5 mm",
+  material: "Oro Laminado 18K"
+},
+{
+  id: "24800-VERDE",
+  category: "bisuteria",
+  subcategory: "Dijes",
+  name: "Herraje rondel circonias verde",
+  price: 16000,
+  image: "images/productos/Bisuteria/Dijes/24800-VERDE.jpg",
+  medidas: "5 mm",
+  description: "Precio por unidad",
+  material: "Oro Laminado 18K"
 }
 ];

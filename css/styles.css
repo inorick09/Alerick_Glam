@@ -921,10 +921,7 @@ em {
   gap: 24px;
   margin-bottom: 32px;
 }
-/* 8 materiales: en pantallas anchas van en 2 filas de 4. */
-@media (min-width: 1100px) {
-  .materials-grid { grid-template-columns: repeat(4, 1fr); }
-}
+/* 9 materiales: 3 filas de 3. */
 
 .material-card {
   background: var(--color-card);

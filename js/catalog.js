@@ -54,12 +54,13 @@ const FILTER_ICONS = {
   'Tobilleras': 'tobilleras',
   'Rodio': 'rodio', 'Oro Goldfield': 'oro-goldfield', 'Acero': 'acero',
   'Covergold': 'covergold', 'Zamak': 'zamak', 'Acrílico': 'acrilico',
-  'Fantasía': 'fantasia', 'Plata Ley 925': 'plata-925'
+  'Fantasía': 'fantasia', 'Plata Ley 925': 'plata-925',
+  'Oro Laminado 18K': 'oro-laminado'
 };
 
 // Orden fijo de los chips de material; los que no estén en la lista van
 // al final, en orden alfabético.
-const MATERIAL_ORDER = ['Plata Ley 925', 'Rodio', 'Oro Goldfield', 'Acero', 'Covergold', 'Zamak', 'Acrílico', 'Fantasía'];
+const MATERIAL_ORDER = ['Plata Ley 925', 'Oro Laminado 18K', 'Rodio', 'Oro Goldfield', 'Acero', 'Covergold', 'Zamak', 'Acrílico', 'Fantasía'];
 
 // Una pieza puede combinar materiales ("Acero - Oro Goldfield"): se
 // separan para que aparezca en el filtro de cada uno.
