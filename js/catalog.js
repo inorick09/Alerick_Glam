@@ -603,6 +603,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Al tocar un chip de filtro, la página baja hasta los productos (la
+  // barra "Filtros aplicados"), dejando espacio para el encabezado fijo.
+  // Solo con toques reales: "Limpiar todo" y la × de cada pastilla
+  // desmarcan chips por código y no deben mover la página.
+  document.addEventListener('click', e => {
+    if (!e.isTrusted || !e.target.closest('.catalog-filters .filter-chip')) return;
+    if (activeBar.hidden) return;
+    const headerH = document.querySelector('.header')?.offsetHeight || 0;
+    const top = activeBar.getBoundingClientRect().top + window.scrollY - headerH - 12;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+
   function clearSearch() {
     const input = document.getElementById('catalogSearch');
     if (input) input.value = '';
