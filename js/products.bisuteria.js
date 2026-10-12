@@ -39,6 +39,16 @@
 //      ni las medidas (ej: "Anillo ajustable").
 //    En la tarjeta se ve en este orden: nombre, código, medidas,
 //    descripción y material.
+//    - tallas: opcional, para el mismo anillo en varias tallas (cada
+//      talla con su propio código y precio). Se deja un solo producto con
+//      "price" igual al precio más bajo y una línea por talla:
+//        medidas: "Talla 6, 7, 8",
+//        tallas: [
+//          { talla: "6", id: "11092P-JOQ", price: 90000 },
+//          { talla: "7", id: "11093P-JOQ", price: 90000 }
+//        ],
+//      Al tocar "Agregar", la clienta elige la talla y al carrito llega
+//      el código y el precio de esa talla.
 // 4. Guarda el archivo y sube los cambios a GitHub — listo,
 //    ya aparece en la página con su botón "Agregar" funcionando.
 //
@@ -320,23 +330,17 @@ const PRODUCTS_BISUTERIA = [
   material: "Plata Ley 925"
 },
 {
-  id: "11903P-JOL",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo circón verde",
-  price: 70000,
-  image: "images/productos/Bisuteria/Anillos/11903P-JOL.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
   id: "11902P-JOL",
   category: "bisuteria",
   subcategory: "Anillos",
   name: "Anillo circón verde",
   price: 70000,
   image: "images/productos/Bisuteria/Anillos/11902P-JOL.jpg",
-  medidas: "Talla 7",
+  medidas: "Talla 7, 8",
+  tallas: [
+    { talla: "7", id: "11902P-JOL", price: 70000 },
+    { talla: "8", id: "11903P-JOL", price: 70000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -350,33 +354,17 @@ const PRODUCTS_BISUTERIA = [
   material: "Plata Ley 925"
 },
 {
-  id: "11892P-JOQ",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Argolla lisa",
-  price: 90000,
-  image: "images/productos/Bisuteria/Anillos/11892P-JOQ.jpg",
-  medidas: "Talla 10",
-  material: "Plata Ley 925"
-},
-{
-  id: "11850P-JOP",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo corazón",
-  price: 85000,
-  image: "images/productos/Bisuteria/Anillos/11850P-JOP.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
   id: "11849P-JOP",
   category: "bisuteria",
   subcategory: "Anillos",
   name: "Anillo corazón",
   price: 85000,
   image: "images/productos/Bisuteria/Anillos/11849P-JOP.jpg",
-  medidas: "Talla 7",
+  medidas: "Talla 7, 8",
+  tallas: [
+    { talla: "7", id: "11849P-JOP", price: 85000 },
+    { talla: "8", id: "11850P-JOP", price: 85000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -543,53 +531,18 @@ const PRODUCTS_BISUTERIA = [
   material: "Plata Ley 925"
 },
 {
-  id: "11179P-JOT",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Cristal",
-  price: 130000,
-  image: "images/productos/Bisuteria/Anillos/11179P-JOT.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
-  id: "11178P-JOS",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Cristal",
-  price: 120000,
-  image: "images/productos/Bisuteria/Anillos/11178P-JOS.jpg",
-  medidas: "Talla 7",
-  material: "Plata Ley 925"
-},
-{
   id: "11177P-JOS",
   category: "bisuteria",
   subcategory: "Anillos",
   name: "Anillo Cristal",
   price: 120000,
   image: "images/productos/Bisuteria/Anillos/11177P-JOS.jpg",
-  medidas: "Talla 6",
-  material: "Plata Ley 925"
-},
-{
-  id: "11176P-JOQ",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Cruz",
-  price: 90000,
-  image: "images/productos/Bisuteria/Anillos/11176P-JOQ.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
-  id: "11175P-JOP",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Cruz",
-  price: 85000,
-  image: "images/productos/Bisuteria/Anillos/11175P-JOP.jpg",
-  medidas: "Talla 7",
+  medidas: "Talla 6, 7, 8",
+  tallas: [
+    { talla: "6", id: "11177P-JOS", price: 120000 },
+    { talla: "7", id: "11178P-JOS", price: 120000 },
+    { talla: "8", id: "11179P-JOT", price: 130000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -599,7 +552,12 @@ const PRODUCTS_BISUTERIA = [
   name: "Anillo Cruz",
   price: 85000,
   image: "images/productos/Bisuteria/Anillos/11174P-JOP.jpg",
-  medidas: "Talla 6",
+  medidas: "Talla 6, 7, 8",
+  tallas: [
+    { talla: "6", id: "11174P-JOP", price: 85000 },
+    { talla: "7", id: "11175P-JOP", price: 85000 },
+    { talla: "8", id: "11176P-JOQ", price: 90000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -623,53 +581,18 @@ const PRODUCTS_BISUTERIA = [
   material: "Plata Ley 925"
 },
 {
-  id: "11094P-JOQ",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Copo de Nieve",
-  price: 90000,
-  image: "images/productos/Bisuteria/Anillos/11094P-JOQ.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
-  id: "11093P-JOQ",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Copo de Nieve",
-  price: 90000,
-  image: "images/productos/Bisuteria/Anillos/11093P-JOQ.jpg",
-  medidas: "Talla 7",
-  material: "Plata Ley 925"
-},
-{
   id: "11092P-JOQ",
   category: "bisuteria",
   subcategory: "Anillos",
   name: "Anillo Copo de Nieve",
   price: 90000,
   image: "images/productos/Bisuteria/Anillos/11092P-JOQ.jpg",
-  medidas: "Talla 6",
-  material: "Plata Ley 925"
-},
-{
-  id: "11091P-JOS",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Gota",
-  price: 120000,
-  image: "images/productos/Bisuteria/Anillos/11091P-JOS.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
-  id: "11090P-JOR",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Gota",
-  price: 100000,
-  image: "images/productos/Bisuteria/Anillos/11090P-JOR.jpg",
-  medidas: "Talla 7",
+  medidas: "Talla 6, 7, 8",
+  tallas: [
+    { talla: "6", id: "11092P-JOQ", price: 90000 },
+    { talla: "7", id: "11093P-JOQ", price: 90000 },
+    { talla: "8", id: "11094P-JOQ", price: 90000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -679,27 +602,12 @@ const PRODUCTS_BISUTERIA = [
   name: "Anillo Gota",
   price: 100000,
   image: "images/productos/Bisuteria/Anillos/11089P-JOR.jpg",
-  medidas: "Talla 6",
-  material: "Plata Ley 925"
-},
-{
-  id: "11088P-JOS",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Circón Rojo",
-  price: 120000,
-  image: "images/productos/Bisuteria/Anillos/11088P-JOS.jpg",
-  medidas: "Talla 8",
-  material: "Plata Ley 925"
-},
-{
-  id: "11087P-JOS",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Circón Rojo",
-  price: 120000,
-  image: "images/productos/Bisuteria/Anillos/11087P-JOS.jpg",
-  medidas: "Talla 7",
+  medidas: "Talla 6, 7, 8",
+  tallas: [
+    { talla: "6", id: "11089P-JOR", price: 100000 },
+    { talla: "7", id: "11090P-JOR", price: 100000 },
+    { talla: "8", id: "11091P-JOS", price: 120000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -709,17 +617,12 @@ const PRODUCTS_BISUTERIA = [
   name: "Anillo Circón Rojo",
   price: 100000,
   image: "images/productos/Bisuteria/Anillos/11086P-JOR.jpg",
-  medidas: "Talla 6",
-  material: "Plata Ley 925"
-},
-{
-  id: "11085P-JOT",
-  category: "bisuteria",
-  subcategory: "Anillos",
-  name: "Anillo Doble Cruz",
-  price: 130000,
-  image: "images/productos/Bisuteria/Anillos/11085P-JOT.jpg",
-  medidas: "Talla 6",
+  medidas: "Talla 6, 7, 8",
+  tallas: [
+    { talla: "6", id: "11086P-JOR", price: 100000 },
+    { talla: "7", id: "11087P-JOS", price: 120000 },
+    { talla: "8", id: "11088P-JOS", price: 120000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -729,7 +632,11 @@ const PRODUCTS_BISUTERIA = [
   name: "Anillo Doble Cruz",
   price: 100000,
   image: "images/productos/Bisuteria/Anillos/11084P-JOR.jpg",
-  medidas: "Talla 5",
+  medidas: "Talla 5, 6",
+  tallas: [
+    { talla: "5", id: "11084P-JOR", price: 100000 },
+    { talla: "6", id: "11085P-JOT", price: 130000 }
+  ],
   material: "Plata Ley 925"
 },
 {
@@ -739,7 +646,11 @@ const PRODUCTS_BISUTERIA = [
   name: "Argolla lisa",
   price: 85000,
   image: "images/productos/Bisuteria/Anillos/11080P-JOP.jpg",
-  medidas: "Talla 6",
+  medidas: "Talla 6, 10",
+  tallas: [
+    { talla: "6", id: "11080P-JOP", price: 85000 },
+    { talla: "10", id: "11892P-JOQ", price: 90000 }
+  ],
   material: "Plata Ley 925"
 },
 {

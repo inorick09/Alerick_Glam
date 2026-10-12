@@ -67,6 +67,12 @@ function getMaterials(p) {
   return (p.material || '').split(' - ').map(m => m.trim()).filter(Boolean);
 }
 
+// Anillos con varias tallas a distinto precio: la tarjeta muestra
+// "Desde" con el precio más bajo (el campo price).
+function hasPriceRange(p) {
+  return Array.isArray(p.tallas) && new Set(p.tallas.map(t => t.price)).size > 1;
+}
+
 function formatPriceCOP(value) {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
 }
@@ -117,7 +123,7 @@ function renderProductCards(grid, items) {
         <h3 title="${p.name}">${p.name}</h3>
         ${p.category === 'bisuteria' ? `
         <p class="product-card__desc product-card__details">
-          <span class="product-card__code">${p.id}</span>
+          <span class="product-card__code">${p.tallas ? 'Código según la talla' : p.id}</span>
           ${p.medidas ? `<span>Medidas: ${p.medidas}</span>` : ''}
           ${p.description ? `<span>${p.description}</span>` : ''}
           ${p.material ? `<span class="product-card__material">Material: ${p.material}</span>` : ''}
@@ -125,7 +131,7 @@ function renderProductCards(grid, items) {
         <p class="product-card__desc">${p.description || ''}</p>`}
         ${p.category === 'maquillaje' ? '<button type="button" class="product-card__more" hidden>Ver más</button>' : ''}
         <div class="product-card__foot">
-          <span class="price">${formatPriceCOP(p.price)}</span>
+          <span class="price">${hasPriceRange(p) ? '<small>Desde</small> ' : ''}${formatPriceCOP(p.price)}</span>
           <button type="button" class="btn-cart"
                   data-id="${p.id}" data-name="${p.category === 'bisuteria' ? `${p.name} ${p.id}` : p.name}"
                   data-price="${p.price}" data-image="${p.image}">
@@ -542,7 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
       (!state.categoryAge || p.category_age === state.categoryAge) &&
       (!state.categoryNew || p.category_new === state.categoryNew) &&
       (!state.material || getMaterials(p).includes(state.material)) &&
-      matchesSearch(`${p.name} ${p.id}`, state.search)
+      matchesSearch(`${p.name} ${p.id} ${(p.tallas || []).map(t => t.id).join(' ')}`, state.search)
     );
     renderPage(grid, pagerEl, filtered, 1);
   };

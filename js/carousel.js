@@ -122,9 +122,9 @@
     m.show(0);
     m.prev.hidden = m.next.hidden = true;
     m.name.textContent = product.name;
-    m.price.textContent = price(product.price);
+    m.price.textContent = (typeof hasPriceRange === 'function' && hasPriceRange(product) ? 'Desde ' : '') + price(product.price);
     const descText = [
-      product.category === 'bisuteria' && product.id,
+      product.category === 'bisuteria' && !product.tallas && product.id,
       product.medidas && `Medidas: ${product.medidas}`,
       product.description,
       product.material && `Material: ${product.material}`

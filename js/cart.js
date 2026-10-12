@@ -122,11 +122,11 @@ function pulseCartIcon() {
   cartBtn.addEventListener('animationend', () => cartBtn.classList.remove('cart-toggle--bump'), { once: true });
 }
 
-// ---------- Selección de tono obligatoria ----------
-// Si un producto trae "tonos" en products.js (una lista de opciones),
-// el botón "Agregar" no lo mete directo al carrito: primero abre esta
-// ventanita para que la clienta elija uno. Los productos sin "tonos"
-// siguen agregándose igual que siempre, sin este paso de más.
+// ---------- Selección de tono o talla obligatoria ----------
+// Si un producto trae "tonos" (maquillaje) o "tallas" (anillos) en su
+// archivo de productos, el botón "Agregar" no lo mete directo al carrito:
+// primero abre esta ventanita para que la clienta elija una opción. Los
+// productos sin "tonos" ni "tallas" se agregan directo, sin este paso.
 let toneModalEls = null;
 let toneModalRequestId = 0;
 
@@ -188,8 +188,21 @@ function ensureToneModal() {
   return toneModalEls;
 }
 
-function openToneModal(product, sourceEl) {
-  const { overlay, optionsEl, stageEl, extraImgEl, prevBtn, nextBtn, imgState, showToneImage } = ensureToneModal();
+// "options" es la lista de botones de la ventanita: { label, item }, donde
+// item es lo que se agrega al carrito al elegir esa opción.
+function openToneModal(product, sourceEl, { title = 'Tonos disponibles:', options } = {}) {
+  const { overlay, optionsEl, close, stageEl, extraImgEl, prevBtn, nextBtn, imgState, showToneImage } = ensureToneModal();
+  overlay.querySelector('.tone-modal__eyebrow').textContent = title;
+  overlay.querySelector('.tone-modal').setAttribute('aria-label', title.replace(/:$/, ''));
+  options = options || product.tonos.map(tono => ({
+    label: tono,
+    item: {
+      id: `${product.id}::${tono}`,
+      name: `${product.name} — Tono: ${tono}`,
+      price: product.price,
+      image: product.image
+    }
+  }));
 
   stageEl.hidden = true;
   prevBtn.hidden = true;
@@ -214,17 +227,12 @@ function openToneModal(product, sourceEl) {
     }
   });
 
-  optionsEl.innerHTML = product.tonos.map(tono => `
-    <button type="button" class="tone-modal__option" data-tono="${tono}">${tono}</button>
+  optionsEl.innerHTML = options.map((opt, i) => `
+    <button type="button" class="tone-modal__option" data-index="${i}">${opt.label}</button>
   `).join('');
   optionsEl.querySelectorAll('.tone-modal__option').forEach(btn => {
     btn.addEventListener('click', () => {
-      addToCart({
-        id: `${product.id}::${btn.dataset.tono}`,
-        name: `${product.name} — Tono: ${btn.dataset.tono}`,
-        price: product.price,
-        image: product.image
-      });
+      addToCart(options[Number(btn.dataset.index)].item);
       close();
       flyToCart(sourceEl, product.image);
     });
@@ -241,6 +249,17 @@ function openToneModal(product, sourceEl) {
 function addProductToCart(product, sourceEl) {
   if (Array.isArray(product.tonos) && product.tonos.length > 0) {
     openToneModal(product, sourceEl);
+    return;
+  }
+  // Anillos con varias tallas: cada talla tiene su propio código y precio.
+  if (Array.isArray(product.tallas) && product.tallas.length > 0) {
+    openToneModal(product, sourceEl, {
+      title: 'Tallas disponibles:',
+      options: product.tallas.map(t => ({
+        label: `Talla ${t.talla} · ${formatPrice(t.price)}`,
+        item: { id: t.id, name: `${product.name} Talla ${t.talla} ${t.id}`, price: t.price, image: product.image }
+      }))
+    });
     return;
   }
   addToCart({

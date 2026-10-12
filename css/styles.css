@@ -958,6 +958,7 @@ em {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.price small { font-size: 0.7em; font-weight: 600; opacity: 0.8; }
 .product-card__code {
   font-family: var(--font-mono);
   font-size: 0.78rem;
