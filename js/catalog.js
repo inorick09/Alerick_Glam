@@ -74,6 +74,15 @@ function hasPriceRange(p) {
   return Array.isArray(p.tallas) && new Set(p.tallas.map(t => t.price)).size > 1;
 }
 
+// Mezcla el arreglo en su lugar (Fisher–Yates).
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function formatPriceCOP(value) {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
 }
@@ -505,10 +514,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const category = grid.dataset.category;
   const items = PRODUCTS.filter(p => p.category === category);
-  // Todo el catálogo va en orden alfabético por nombre ("numeric" para que
-  // "Talla 6" vaya antes que "Talla 10"); a igual nombre, por código.
-  const byName = (a, b) => a.localeCompare(b, 'es', { sensitivity: 'base', numeric: true });
-  items.sort((a, b) => byName(a.name, b.name) || byName(a.id, b.id));
   if (items.length === 0) return;
 
   const pagerEl = document.createElement('div');
@@ -552,6 +557,9 @@ document.addEventListener('DOMContentLoaded', () => {
       (!state.material || getMaterials(p).includes(state.material)) &&
       matchesSearch(`${p.name} ${p.id} ${(p.tallas || []).map(t => t.id).join(' ')}`, state.search)
     );
+    // Cada vez que cambia un filtro los productos salen en orden aleatorio;
+    // al pasar de página se conserva ese mismo orden.
+    shuffle(filtered);
     renderActiveFilters(filtered.length);
     renderPage(grid, pagerEl, filtered, 1);
   };
