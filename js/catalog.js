@@ -12,8 +12,12 @@
 //   - #catalogFiltersColaboracion → colección/colaboración (campo colaboracion)
 //   - #catalogFiltersAge       → categoría por edad (campo category_age)
 //   - #catalogFiltersNew       → novedades (campo category_new)
+//   - #catalogFiltersMaterial  → material (campo material, solo bisutería)
 // Elegir un chip de un grupo desactiva el que estuviera elegido en los
-// otros grupos — solo un filtro manda a la vez, nunca dos juntos.
+// otros grupos — solo un filtro manda a la vez, nunca dos juntos. Las
+// excepciones: en tipo de producto se pueden marcar varios chips a la vez
+// (Anillos + Aretes), y material (uno solo) se combina con esos tipos
+// (Anillos + Aretes en Rodio) para afinar lo que ya está filtrado.
 // Volver a hacer clic en el chip activo lo desactiva y vuelve al
 // catálogo sin filtrar. Solo aparecen los valores que ya tienen
 // productos cargados. Mientras haya al menos un grupo de chips, el
@@ -33,6 +37,35 @@ const SUBCATEGORY_ORDER = {
     'Earcuff', 'Empaques', 'Pulseras', 'Rosarios', 'Tobilleras'
   ]
 };
+
+// Icono redondo (images/iconos/<archivo>.svg) que acompaña a cada chip de
+// filtro. Los valores que no estén aquí se muestran como pastilla de texto.
+const FILTER_ICONS = {
+  'Nueva colección': 'nueva-coleccion', 'Oferta': 'oferta',
+  'Rostro': 'rostro', 'Labios': 'labios', 'Cejas': 'cejas', 'Ojos': 'ojos',
+  'Colaboraciones': 'colaboraciones', 'Cuidado Facial': 'cuidado-facial',
+  'Capilar': 'capilar', 'Corporal': 'corporal', 'Accesorios': 'accesorios',
+  'Brochas': 'brochas',
+  'Disney': 'disney', 'Mattel': 'mattel', 'Barbie': 'mattel', 'Paramount': 'paramount',
+  'Para niñas': 'para-ninas', 'Niñas': 'para-ninas',
+  'Anillos': 'anillos', 'Aretes': 'aretes', 'Collares': 'collares',
+  'Conjuntos': 'conjuntos', 'Dijes': 'dijes', 'Earcuff': 'earcuff',
+  'Empaques': 'empaques', 'Pulseras': 'pulseras', 'Rosarios': 'rosarios',
+  'Tobilleras': 'tobilleras',
+  'Rodio': 'rodio', 'Oro Goldfield': 'oro-goldfield', 'Acero': 'acero',
+  'Covergold': 'covergold', 'Zamak': 'zamak', 'Acrílico': 'acrilico',
+  'Fantasía': 'fantasia', 'Plata Ley 925': 'plata-925'
+};
+
+// Orden fijo de los chips de material; los que no estén en la lista van
+// al final, en orden alfabético.
+const MATERIAL_ORDER = ['Plata Ley 925', 'Rodio', 'Oro Goldfield', 'Acero', 'Covergold', 'Zamak', 'Acrílico', 'Fantasía'];
+
+// Una pieza puede combinar materiales ("Acero - Oro Goldfield"): se
+// separan para que aparezca en el filtro de cada uno.
+function getMaterials(p) {
+  return (p.material || '').split(' - ').map(m => m.trim()).filter(Boolean);
+}
 
 function formatPriceCOP(value) {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
@@ -82,12 +115,19 @@ function renderProductCards(grid, items) {
       </div>
       <div class="product-card__body">
         <h3 title="${p.name}">${p.name}</h3>
-        <p class="product-card__desc">${p.description || ''}</p>
+        ${p.category === 'bisuteria' ? `
+        <p class="product-card__desc product-card__details">
+          <span class="product-card__code">${p.id}</span>
+          ${p.medidas ? `<span>Medidas: ${p.medidas}</span>` : ''}
+          ${p.description ? `<span>${p.description}</span>` : ''}
+          ${p.material ? `<span class="product-card__material">Material: ${p.material}</span>` : ''}
+        </p>` : `
+        <p class="product-card__desc">${p.description || ''}</p>`}
         ${p.category === 'maquillaje' ? '<button type="button" class="product-card__more" hidden>Ver más</button>' : ''}
         <div class="product-card__foot">
           <span class="price">${formatPriceCOP(p.price)}</span>
           <button type="button" class="btn-cart"
-                  data-id="${p.id}" data-name="${p.name}"
+                  data-id="${p.id}" data-name="${p.category === 'bisuteria' ? `${p.name} ${p.id}` : p.name}"
                   data-price="${p.price}" data-image="${p.image}">
             Agregar
           </button>
@@ -373,6 +413,12 @@ function renderPager(pagerEl, items, page, onPageChange) {
 }
 
 function renderPage(grid, pagerEl, items, page) {
+  if (items.length === 0) {
+    grid.innerHTML = '<p class="catalog-empty">No encontramos productos con esos filtros.</p>';
+    pagerEl.hidden = true;
+    pagerEl.innerHTML = '';
+    return;
+  }
   const start = (page - 1) * PAGE_SIZE;
   renderProductCards(grid, items.slice(start, start + PAGE_SIZE));
   renderPager(pagerEl, items, page, newPage => {
@@ -397,8 +443,10 @@ function getPresentFilterValues(items, field, order) {
 
 // Arma un grupo de chips dentro de filtersEl. onToggle(value) se llama
 // cada vez que cambia la selección de este grupo — con el valor elegido,
-// o null si el usuario desactivó el chip que tenía activo.
-function setupFilterGroup(filtersEl, values, onToggle) {
+// o null si el usuario desactivó el chip que tenía activo. Con
+// { multiple: true } se pueden marcar varios chips a la vez y onToggle
+// recibe la lista de valores marcados (o null si no queda ninguno).
+function setupFilterGroup(filtersEl, values, onToggle, { multiple = false } = {}) {
   if (!filtersEl || values.length === 0) {
     if (filtersEl) filtersEl.hidden = true;
     return false;
@@ -407,15 +455,28 @@ function setupFilterGroup(filtersEl, values, onToggle) {
   filtersEl.hidden = false;
   // Ningún chip empieza activo: el catálogo solo muestra productos
   // cuando el usuario elige uno.
-  filtersEl.innerHTML = values.map(label => `
-    <button type="button" class="filter-chip" data-filter="${label}">
-      ${label}
-    </button>
-  `).join('');
+  filtersEl.innerHTML = values.map(label => {
+    const icon = FILTER_ICONS[label];
+    if (!icon) {
+      return `<button type="button" class="filter-chip" data-filter="${label}">${label}</button>`;
+    }
+    return `
+      <button type="button" class="filter-chip filter-chip--icon" data-filter="${label}">
+        <img class="filter-chip__icon" src="images/iconos/${icon}.svg" alt="" width="72" height="72">
+        <span class="filter-chip__label">${label}</span>
+      </button>`;
+  }).join('');
 
   filtersEl.addEventListener('click', e => {
     const chip = e.target.closest('.filter-chip');
     if (!chip) return;
+
+    if (multiple) {
+      chip.classList.toggle('is-active');
+      const selected = [...filtersEl.querySelectorAll('.filter-chip.is-active')].map(b => b.dataset.filter);
+      onToggle(selected.length ? selected : null);
+      return;
+    }
 
     const alreadyActive = chip.classList.contains('is-active');
     filtersEl.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('is-active'));
@@ -437,11 +498,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const category = grid.dataset.category;
   const items = PRODUCTS.filter(p => p.category === category);
-  // Solo maquillaje va en orden alfabético por nombre — bisutería se queda
-  // en el orden en que aparece en products.js.
-  if (category === 'maquillaje') {
-    items.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
-  }
+  // Todo el catálogo va en orden alfabético por nombre ("numeric" para que
+  // "Talla 6" vaya antes que "Talla 10"); a igual nombre, por código.
+  const byName = (a, b) => a.localeCompare(b, 'es', { sensitivity: 'base', numeric: true });
+  items.sort((a, b) => byName(a.name, b.name) || byName(a.id, b.id));
   if (items.length === 0) return;
 
   const pagerEl = document.createElement('div');
@@ -452,10 +512,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Estado de los dos filtros de chip — nunca los dos a la vez: elegir
   // uno limpia el otro (ver más abajo) — más la búsqueda por nombre, que
   // sí se combina con cualquiera de los dos (afina lo que ya esté filtrado).
-  const state = { subcategory: null, colaboracion: null, categoryAge: null, categoryNew: null, search: '' };
+  const state = { subcategory: null, colaboracion: null, categoryAge: null, categoryNew: null, material: null, search: '' };
 
   const applyFilters = () => {
-    const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.categoryNew || state.search.trim();
+    const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.categoryNew || state.material || state.search.trim();
 
     if (!hasFilter) {
       // Sin ningún chip activo: se vuelve al estado inicial, con el
@@ -477,11 +537,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.page-hero__contact')?.setAttribute('hidden', '');
 
     const filtered = items.filter(p =>
-      (!state.subcategory || p.subcategory === state.subcategory) &&
+      (!state.subcategory || state.subcategory.includes(p.subcategory)) &&
       (!state.colaboracion || p.colaboracion === state.colaboracion) &&
       (!state.categoryAge || p.category_age === state.categoryAge) &&
       (!state.categoryNew || p.category_new === state.categoryNew) &&
-      matchesSearch(p.name, state.search)
+      (!state.material || getMaterials(p).includes(state.material)) &&
+      matchesSearch(`${p.name} ${p.id}`, state.search)
     );
     renderPage(grid, pagerEl, filtered, 1);
   };
@@ -490,11 +551,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const colaboracionValues = getPresentFilterValues(items, 'colaboracion');
   const categoryAgeValues = getPresentFilterValues(items, 'category_age');
   const categoryNewValues = getPresentFilterValues(items, 'category_new');
+  const presentMaterials = new Set(items.flatMap(getMaterials));
+  const materialValues = [
+    ...MATERIAL_ORDER.filter(m => presentMaterials.has(m)),
+    ...[...presentMaterials].filter(m => !MATERIAL_ORDER.includes(m)).sort((a, b) => a.localeCompare(b, 'es'))
+  ];
 
   const filtersElSubcategory = document.getElementById('catalogFilters');
   const filtersElColaboracion = document.getElementById('catalogFiltersColaboracion');
   const filtersElAge = document.getElementById('catalogFiltersAge');
   const filtersElNew = document.getElementById('catalogFiltersNew');
+  const filtersElMaterial = document.getElementById('catalogFiltersMaterial');
 
   // Quita el chip activo (si hay uno) del otro grupo, para que los dos
   // grupos nunca filtren a la vez.
@@ -502,12 +569,13 @@ document.addEventListener('DOMContentLoaded', () => {
     filtersEl?.querySelectorAll('.filter-chip.is-active').forEach(b => b.classList.remove('is-active'));
   };
 
+  // Tipo de producto: se pueden marcar varios a la vez (Anillos + Aretes).
   const hasSubcategoryFilter = setupFilterGroup(
     filtersElSubcategory,
     subcategoryValues,
-    value => {
-      state.subcategory = value;
-      if (value) {
+    values => {
+      state.subcategory = values;
+      if (values) {
         state.colaboracion = null;
         state.categoryAge = null;
         state.categoryNew = null;
@@ -516,7 +584,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearActiveChip(filtersElNew);
       }
       applyFilters();
-    }
+    },
+    { multiple: true }
   );
   const hasColaboracionFilter = setupFilterGroup(
     filtersElColaboracion,
@@ -527,9 +596,11 @@ document.addEventListener('DOMContentLoaded', () => {
         state.subcategory = null;
         state.categoryAge = null;
         state.categoryNew = null;
+        state.material = null;
         clearActiveChip(filtersElSubcategory);
         clearActiveChip(filtersElAge);
         clearActiveChip(filtersElNew);
+        clearActiveChip(filtersElMaterial);
       }
       applyFilters();
     }
@@ -543,9 +614,11 @@ document.addEventListener('DOMContentLoaded', () => {
         state.subcategory = null;
         state.colaboracion = null;
         state.categoryNew = null;
+        state.material = null;
         clearActiveChip(filtersElSubcategory);
         clearActiveChip(filtersElColaboracion);
         clearActiveChip(filtersElNew);
+        clearActiveChip(filtersElMaterial);
       }
       applyFilters();
     }
@@ -559,9 +632,28 @@ document.addEventListener('DOMContentLoaded', () => {
         state.subcategory = null;
         state.colaboracion = null;
         state.categoryAge = null;
+        state.material = null;
         clearActiveChip(filtersElSubcategory);
         clearActiveChip(filtersElColaboracion);
         clearActiveChip(filtersElAge);
+        clearActiveChip(filtersElMaterial);
+      }
+      applyFilters();
+    }
+  );
+  // Material no limpia el tipo de producto: se combinan (Anillos + Rodio).
+  const hasMaterialFilter = setupFilterGroup(
+    filtersElMaterial,
+    materialValues,
+    value => {
+      state.material = value;
+      if (value) {
+        state.colaboracion = null;
+        state.categoryAge = null;
+        state.categoryNew = null;
+        clearActiveChip(filtersElColaboracion);
+        clearActiveChip(filtersElAge);
+        clearActiveChip(filtersElNew);
       }
       applyFilters();
     }
@@ -598,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const chip = filtersElSubcategory.querySelector(`.filter-chip[data-filter="${CSS.escape(wantedSub)}"]`);
     if (chip) {
       chip.classList.add('is-active');
-      state.subcategory = wantedSub;
+      state.subcategory = [wantedSub];
       applyFilters();
       preSelected = true;
       document.getElementById('catalogo')?.scrollIntoView({ block: 'start' });
@@ -625,7 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // los productos ya mismo (paginados de a PAGE_SIZE).
   if (preSelected) {
     // ya se mostraron los productos del chip de arriba
-  } else if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter) {
+  } else if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter || hasMaterialFilter) {
     showCatalogPlaceholder(category);
   } else {
     renderPage(grid, pagerEl, items, 1);

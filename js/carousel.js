@@ -123,8 +123,14 @@
     m.prev.hidden = m.next.hidden = true;
     m.name.textContent = product.name;
     m.price.textContent = price(product.price);
-    m.desc.textContent = product.description || '';
-    m.desc.hidden = !product.description;
+    const descText = [
+      product.category === 'bisuteria' && product.id,
+      product.medidas && `Medidas: ${product.medidas}`,
+      product.description,
+      product.material && `Material: ${product.material}`
+    ].filter(Boolean).join(' · ');
+    m.desc.textContent = descText;
+    m.desc.hidden = !descText;
     m.overlay.classList.add('is-open');
     document.body.style.overflow = 'hidden';
 

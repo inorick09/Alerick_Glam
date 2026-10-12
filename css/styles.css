@@ -643,6 +643,64 @@ em {
 .filter-chip:hover { border-color: var(--color-rose); color: var(--color-rose); }
 .filter-chip.is-active { background: var(--color-rose); border-color: var(--color-rose); color: #fff; }
 
+/* Fila de chips de material (campo material, solo bisutería) — misma
+   etiqueta centrada que las demás filas. */
+.catalog-filters--material { margin-top: -14px; }
+.catalog-filters--material::before {
+  content: "Materiales:";
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.catalog-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-ink-soft);
+  padding: 24px 0;
+}
+
+/* Chip con icono redondo: el círculo es el botón y el texto va debajo. */
+.filter-chip--icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 92px;
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 1.2;
+}
+.filter-chip__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 0 0 3px transparent;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.filter-chip__label { font-size: 0.8rem; text-align: center; }
+.filter-chip--icon:hover { color: var(--color-rose); }
+.filter-chip--icon:hover .filter-chip__icon { transform: translateY(-3px); border-color: var(--color-rose); }
+.filter-chip--icon.is-active { background: none; color: var(--color-rose); }
+.filter-chip--icon.is-active .filter-chip__icon {
+  border-color: var(--color-rose);
+  box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-rose);
+}
+.filter-chip--icon:focus-visible { outline: none; }
+.filter-chip--icon:focus-visible .filter-chip__icon { box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-aqua); }
+
+@media (max-width: 600px) {
+  .filter-chip--icon { width: 74px; }
+  .filter-chip__icon { width: 58px; height: 58px; }
+  .filter-chip__label { font-size: 0.74rem; }
+}
+
 /* Segunda fila de chips (colección/colaboración) — es un filtro
    independiente del de arriba (tipo de producto), así que lleva una
    etiqueta corta para diferenciarla. */
@@ -780,6 +838,10 @@ em {
   gap: 24px;
   margin-bottom: 32px;
 }
+/* 8 materiales: en pantallas anchas van en 2 filas de 4. */
+@media (min-width: 1100px) {
+  .materials-grid { grid-template-columns: repeat(4, 1fr); }
+}
 
 .material-card {
   background: var(--color-card);
@@ -893,6 +955,31 @@ em {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+/* Bisutería: código, medidas, descripción y material, uno por línea. */
+.product-card__body p.product-card__details {
+  display: flex;
+  flex-direction: column;
+  height: 6em;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.product-card__details span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-card__code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.product-card__material {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-rose-deep);
 }
 .product-card__body p.is-expanded {
   height: auto;

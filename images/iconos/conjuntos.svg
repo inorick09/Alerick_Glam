@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<defs><radialGradient id="bg" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2E1B8"/></radialGradient></defs>
+<circle cx="50" cy="50" r="48" fill="url(#bg)"/>
+<path d="M30 20 Q32 52 50 54 Q68 52 70 20" fill="none" stroke="#B8935A" stroke-width="2.5"/>
+<line x1="50" y1="54" x2="50" y2="58" stroke="#B8935A" stroke-width="2"/>
+<polygon points="43,62 46.15,57.8 53.85,57.8 57,62 50,68.3" fill="#C2416B"/><polygon points="46.15,57.8 50,62 53.85,57.8" fill="#fff" opacity=".35"/>
+<circle cx="20" cy="56" r="3.5" fill="#B8935A"/><path d="M20 58 C14 68 15 74 20 74 C25 74 26 68 20 58Z" fill="#2A9D8F"/>
+<circle cx="80" cy="56" r="3.5" fill="#B8935A"/><path d="M80 58 C74 68 75 74 80 74 C85 74 86 68 80 58Z" fill="#2A9D8F"/>
+<circle cx="50" cy="80" r="7" fill="none" stroke="#B8935A" stroke-width="3.5"/><circle cx="50" cy="73" r="2.5" fill="#C2416B"/>
+</svg>

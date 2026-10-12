@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<defs><radialGradient id="bg" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2E1B8"/></radialGradient></defs>
+<circle cx="50" cy="50" r="48" fill="url(#bg)"/>
+<path d="M38 14 H56 V50 Q58 62 72 66 Q84 70 82 78 Q80 83 70 83 H40 Q34 83 35 76 L38 50Z" fill="#F1B9A6"/>
+<path d="M40 83 H70 Q80 83 82 78" fill="none" stroke="#D99A86" stroke-width="2"/>
+<path d="M36 46 Q47 54 58 46" fill="none" stroke="#B8935A" stroke-width="1.5"/>
+<circle cx="36.0" cy="46.0" r="2.3" fill="#B8935A"/><circle cx="39.7" cy="50.4" r="2.3" fill="#B8935A"/><circle cx="43.3" cy="53.1" r="2.3" fill="#B8935A"/><circle cx="47.0" cy="54.0" r="2.3" fill="#B8935A"/><circle cx="50.7" cy="53.1" r="2.3" fill="#B8935A"/><circle cx="54.3" cy="50.4" r="2.3" fill="#B8935A"/><circle cx="58.0" cy="46.0" r="2.3" fill="#B8935A"/>
+<line x1="47" y1="54" x2="47" y2="58" stroke="#B8935A" stroke-width="1.5"/>
+<path d="M47 57 Q47 62 52 62 Q47 62 47 67 Q47 62 42 62 Q47 62 47 57Z" fill="#C2416B"/><path d="M76 22 Q76 28 82 28 Q76 28 76 34 Q76 28 70 28 Q76 28 76 22Z" fill="#B8935A"/><path d="M22 60 Q22 64 26 64 Q22 64 22 68 Q22 64 18 64 Q22 64 22 60Z" fill="#2A9D8F"/>
+</svg>

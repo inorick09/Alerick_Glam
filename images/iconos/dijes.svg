@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<defs><radialGradient id="bg" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2E1B8"/></radialGradient></defs>
+<circle cx="50" cy="50" r="48" fill="url(#bg)"/>
+<circle cx="50" cy="22" r="6" fill="none" stroke="#B8935A" stroke-width="3.5"/>
+<rect x="46" y="27" width="8" height="7" rx="2" fill="#B8935A"/>
+<path d="M50 84 C14.799999999999997 62 23.6 37.8 39.0 37.8 C45.6 37.8 50 44.4 50 51.0 C50 44.4 54.4 37.8 61.0 37.8 C76.4 37.8 85.2 62 50 84Z" fill="#B8935A"/><path d="M50 77 C22.799999999999997 60 29.6 41.3 41.5 41.3 C46.6 41.3 50 46.4 50 51.5 C50 46.4 53.4 41.3 58.5 41.3 C70.4 41.3 77.2 60 50 77Z" fill="#C2416B"/><polygon points="43,52 46.15,47.8 53.85,47.8 57,52 50,58.3" fill="#fff"/><polygon points="46.15,47.8 50,52 53.85,47.8" fill="#fff" opacity=".35"/><path d="M78 28 Q78 34 84 34 Q78 34 78 40 Q78 34 72 34 Q78 34 78 28Z" fill="#B8935A"/><path d="M22 67 Q22 72 27 72 Q22 72 22 77 Q22 72 17 72 Q22 72 22 67Z" fill="#2A9D8F"/>
+</svg>

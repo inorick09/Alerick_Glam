@@ -12,6 +12,8 @@
 // bisuteria.html — el sitio junta todo solo.
 // ============================================
 
+// Se ocultan los productos agotados: en maquillaje con
+// category_new: "Agotado" y en bisutería con agotado: true.
 const PRODUCTS = [...PRODUCTS_MAQUILLAJE, ...PRODUCTS_BISUTERIA].filter(
-  (p) => p.category_new !== "Agotado"
+  (p) => p.category_new !== "Agotado" && !p.agotado
 );

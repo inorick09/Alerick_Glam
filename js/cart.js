@@ -245,7 +245,9 @@ function addProductToCart(product, sourceEl) {
   }
   addToCart({
     id: product.id,
-    name: product.name,
+    // En bisutería el código ya no va en el nombre: se agrega aquí para
+    // que el pedido diga, por ejemplo, "Anillo cadena LL584".
+    name: product.category === 'bisuteria' ? `${product.name} ${product.id}` : product.name,
     price: product.price,
     image: product.image
   });
