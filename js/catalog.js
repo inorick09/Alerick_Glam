@@ -526,6 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!hasFilter) {
       // Sin ningún chip activo: se vuelve al estado inicial, con el
       // aviso de "elige..." y las secciones extra visibles de nuevo.
+      renderActiveFilters(null);
       grid.innerHTML = '';
       pagerEl.hidden = true;
       pagerEl.innerHTML = '';
@@ -550,8 +551,56 @@ document.addEventListener('DOMContentLoaded', () => {
       (!state.material || getMaterials(p).includes(state.material)) &&
       matchesSearch(`${p.name} ${p.id} ${(p.tallas || []).map(t => t.id).join(' ')}`, state.search)
     );
+    renderActiveFilters(filtered.length);
     renderPage(grid, pagerEl, filtered, 1);
   };
+
+  // Barra "Filtros aplicados" encima de los productos: repite como
+  // pastillas los chips que están marcados (y la búsqueda), con una × para
+  // quitar cada uno y "Limpiar todo". Quitar una pastilla equivale a tocar
+  // su chip, así que reutiliza la misma lógica de cada grupo.
+  const activeBar = document.createElement('div');
+  activeBar.className = 'active-filters';
+  activeBar.hidden = true;
+  grid.insertAdjacentElement('beforebegin', activeBar);
+
+  function renderActiveFilters(count) {
+    if (count === null) {
+      activeBar.hidden = true;
+      activeBar.innerHTML = '';
+      return;
+    }
+    const chips = [...document.querySelectorAll('.catalog-filters .filter-chip.is-active')];
+    const search = state.search.trim();
+    const pill = (label, attr) => `
+      <button type="button" class="active-filters__pill" ${attr} aria-label="Quitar filtro ${label}">
+        ${label}<span aria-hidden="true">×</span>
+      </button>`;
+    activeBar.innerHTML = `
+      <span class="active-filters__count">${count} ${count === 1 ? 'producto' : 'productos'}</span>
+      <span class="active-filters__label">Filtros aplicados:</span>
+      ${chips.map((chip, i) => pill(chip.dataset.filter, `data-chip="${i}"`)).join('')}
+      ${search ? pill(`“${search}”`, 'data-search') : ''}
+      <button type="button" class="active-filters__clear">Limpiar todo</button>`;
+    activeBar.hidden = false;
+
+    activeBar.querySelectorAll('[data-chip]').forEach(btn => {
+      btn.addEventListener('click', () => chips[Number(btn.dataset.chip)].click());
+    });
+    activeBar.querySelector('[data-search]')?.addEventListener('click', clearSearch);
+    activeBar.querySelector('.active-filters__clear').addEventListener('click', () => {
+      chips.forEach(chip => { if (chip.classList.contains('is-active')) chip.click(); });
+      if (state.search.trim()) clearSearch();
+    });
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('catalogSearch');
+    if (input) input.value = '';
+    document.getElementById('catalogSearchClear')?.setAttribute('hidden', '');
+    state.search = '';
+    applyFilters();
+  }
 
   const subcategoryValues = getPresentFilterValues(items, 'subcategory', SUBCATEGORY_ORDER[category]);
   const colaboracionValues = getPresentFilterValues(items, 'colaboracion');

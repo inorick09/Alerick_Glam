@@ -674,10 +674,106 @@ em {
 .filter-chip__label { font-size: 0.8rem; text-align: center; }
 .filter-chip--icon:hover { color: var(--color-rose); }
 .filter-chip--icon:hover .filter-chip__icon { transform: translateY(-3px); border-color: var(--color-rose); }
-.filter-chip--icon.is-active { background: none; color: var(--color-rose); }
+/* Chip marcado: el círculo crece, lleva un anillo grueso y un ✓, y el
+   nombre queda en una pastilla de color. Los demás chips de esa misma
+   fila se atenúan para que resalte lo que está elegido. */
+.filter-chip--icon { position: relative; }
+.filter-chip--icon::after {
+  content: "✓";
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--color-bg);
+  background: var(--color-rose-deep);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+.filter-chip--icon.is-active::after { transform: scale(1); }
+.filter-chip--icon.is-active { background: none; color: var(--color-rose-deep); }
 .filter-chip--icon.is-active .filter-chip__icon {
-  border-color: var(--color-rose);
-  box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-rose);
+  border-color: var(--color-rose-deep);
+  box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 7px var(--color-rose-deep), 0 10px 22px -8px rgba(43, 22, 32, 0.45);
+  transform: scale(1.08);
+}
+.filter-chip--icon.is-active .filter-chip__label {
+  background: var(--color-rose-deep);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+.catalog-filters:has(.filter-chip.is-active) .filter-chip:not(.is-active) { opacity: 0.5; }
+.catalog-filters:has(.filter-chip.is-active) .filter-chip:not(.is-active):hover { opacity: 1; }
+
+/* Barra "Filtros aplicados" encima de los productos */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: 0 0 24px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: var(--color-card);
+  border: 1.5px solid var(--color-gold-light);
+  box-shadow: 0 10px 24px -18px rgba(43, 22, 32, 0.45);
+}
+.active-filters[hidden] { display: none; }
+.active-filters__count {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  padding-right: 10px;
+  border-right: 1px solid var(--color-gold-light);
+}
+.active-filters__label { font-size: 0.82rem; font-weight: 600; color: var(--color-ink-soft); }
+.active-filters__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px 5px 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-rose-deep);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.active-filters__pill span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+.active-filters__pill:hover span { background: rgba(255, 255, 255, 0.45); }
+.active-filters__clear {
+  margin-left: auto;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-rose-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
 }
 .filter-chip--icon:focus-visible { outline: none; }
 .filter-chip--icon:focus-visible .filter-chip__icon { box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-aqua); }
