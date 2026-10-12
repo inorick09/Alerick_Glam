@@ -12,8 +12,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alerick Glam — Maquillaje y Bisutería</title>
-<meta name="description" content="Alerick Glam: distribuidores mayoristas de maquillaje Trendy y bisutería que resalta tu brillo natural. Pide por WhatsApp.">
+<title>Alerick Glam — Maquillaje y Joyas</title>
+<meta name="description" content="Alerick Glam: distribuidores mayoristas de maquillaje Trendy y joyas que resaltan tu brillo natural. Pide por WhatsApp.">
 
 <!-- Favicon -->
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -41,19 +41,10 @@
     </a>
 
     <nav class="nav" id="nav">
-      <a href="#inicio" aria-current="page">Inicio</a>
-
-      <div class="nav-group">
-        <a href="maquillaje.html" class="nav-group__title">Maquillaje</a>
-        <div class="nav-group__list" id="navSubMaquillaje"></div>
-      </div>
-
-      <div class="nav-group">
-        <a href="bisuteria.html" class="nav-group__title">Bisutería</a>
-        <div class="nav-group__list" id="navSubBisuteria"></div>
-      </div>
-
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" class="nav__link nav__link--inicio" aria-current="page"><span class="nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg></span>Inicio</a>
+      <a href="maquillaje.html" class="nav__link nav__link--maquillaje"><img class="nav__icon" src="images/iconos/labios.svg" alt="">Maquillaje</a>
+      <a href="bisuteria.html" class="nav__link nav__link--bisuteria"><img class="nav__icon" src="images/iconos/anillos.svg" alt="">Joyas</a>
+      <a href="#contacto" class="nav__link nav__link--contacto"><span class="nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12Z"/></svg></span>Contacto</a>
     </nav>
 
     <a href="https://wa.me/573143478483"
@@ -129,7 +120,7 @@
 
   <div class="top-glam">
   <div class="container top-glam__eyebrow">
-    <p class="eyebrow">Maquillaje &amp; bisutería · Bogotá</p>
+    <p class="eyebrow">Maquillaje &amp; joyas · Bogotá</p>
   </div>
 
   <!-- ===== HERO ===== -->
@@ -186,16 +177,16 @@
     </div>
   </section>
 
-  <!-- ===== BISUTERÍA DESTACADA ===== -->
+  <!-- ===== JOYAS DESTACADAS ===== -->
   <section class="section section--new" id="bisuteria-destacada" hidden>
     <div class="container">
       <div class="section__head reveal">
-        <p class="eyebrow">Bisutería</p>
+        <p class="eyebrow">Joyas</p>
         <h2>Detalles que brillan 💍</h2>
-        <p>Una probadita de nuestra bisutería. ¡Hay mucho más en el catálogo!</p>
+        <p>Una probadita de nuestras joyas. ¡Hay mucho más en el catálogo!</p>
       </div>
     </div>
-    <div class="new-carousel" aria-label="Productos de bisutería">
+    <div class="new-carousel" aria-label="Joyas destacadas">
       <div class="new-carousel__track" id="bisuteriaCarouselTrack"></div>
     </div>
     <div class="container new-carousel__more">
@@ -246,7 +237,7 @@
         </a>
         <a href="bisuteria.html" class="category-card reveal">
           <span class="category-card__icon" aria-hidden="true">💍</span>
-          <h3>Bisutería</h3>
+          <h3>Joyas</h3>
           <p>Aretes, collares y accesorios para complementar cada look.</p>
           <span class="category-card__link">Ver catálogo →</span>
         </a>
@@ -269,7 +260,7 @@
           <div class="steps__num">1</div>
           <div class="steps__body">
             <h3>Explora nuestros catálogos 🛍️</h3>
-            <p>Descubre todos nuestros productos en nuestras categorías de <a href="maquillaje.html">Maquillaje</a> y <a href="bisuteria.html">Bisutería</a>, y encuentra tus favoritos.</p>
+            <p>Descubre todos nuestros productos en nuestras categorías de <a href="maquillaje.html">Maquillaje</a> y <a href="bisuteria.html">Joyas</a>, y encuentra tus favoritos.</p>
           </div>
         </li>
 
@@ -372,7 +363,7 @@
 <footer class="footer" id="contacto">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <p>Maquillaje y bisutería con carácter propio.</p>
+      <p>Maquillaje y joyas con carácter propio.</p>
       <span class="footer__location">Bogotá, Colombia</span>
     </div>
 

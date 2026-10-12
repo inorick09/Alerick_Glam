@@ -301,7 +301,7 @@ function renderCart() {
   }
 
   if (cart.length === 0) {
-    body.innerHTML = '<p class="cart-empty">Tu carrito está vacío. Muy pronto vas a poder agregar productos desde Maquillaje, Bisutería y Lo nuevo. 🛍️</p>';
+    body.innerHTML = '<p class="cart-empty">Tu carrito está vacío. Muy pronto vas a poder agregar productos desde Maquillaje, Joyas y Lo nuevo. 🛍️</p>';
   } else {
     body.innerHTML = cart.map(item => `
       <div class="cart-item" data-id="${item.id}">
