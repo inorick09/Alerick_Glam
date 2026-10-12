@@ -54,7 +54,7 @@
 <!-- ================= WORDMARK ================= -->
 <text x="250" y="398" text-anchor="middle" font-family="Georgia, serif" font-size="21" letter-spacing="5" fill="#C2416B">MAQUILLAJE</text>
 <circle cx="250" cy="411" r="2.6" fill="#2A9D8F"/>
-<text x="250" y="435" text-anchor="middle" font-family="Georgia, serif" font-size="21" letter-spacing="4" fill="#2A9D8F">BISUTERÍA</text>
+<text x="250" y="435" text-anchor="middle" font-family="Georgia, serif" font-size="21" letter-spacing="6" fill="#2A9D8F">JOYAS</text>
 
 <!-- ================= MAKEUP BRUSH + LIPSTICK (left) ================= -->
 <g transform="translate(6,4)">

@@ -1182,6 +1182,38 @@ em {
 }
 .category-card:hover .category-card__link { color: var(--color-rose); }
 
+/* Accesos a Maquillaje y Joyas dentro de la bienvenida del inicio:
+   versión compacta y horizontal (icono, texto y flecha). */
+.categories-grid--hero { max-width: 580px; gap: 14px; }
+.categories-grid--hero .category-card {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 24px -18px rgba(43, 22, 32, 0.4);
+}
+.categories-grid--hero .category-card:hover { transform: translateY(-3px); }
+.categories-grid--hero .category-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-bg-alt);
+  font-size: 1.5rem;
+}
+.categories-grid--hero .category-card__text { display: flex; flex-direction: column; gap: 2px; }
+.categories-grid--hero .category-card h3 { font-size: 1.15rem; }
+.categories-grid--hero .category-card p { font-size: 0.82rem; }
+.categories-grid--hero .category-card__link { margin: 0 0 0 auto; font-size: 1.2rem; }
+
+@media (max-width: 560px) {
+  .categories-grid--hero { grid-template-columns: 1fr; }
+}
+
 /* ---------- 9. Footer ---------- */
 .footer { background: var(--color-black); color: var(--color-gold-light); padding: 64px 0 0; }
 
