@@ -1459,6 +1459,16 @@ em {
   outline: none;
   border-color: var(--color-rose);
 }
+.checkout-note {
+  margin: 4px 0 0;
+  padding: 0.6em 0.8em;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--color-ink);
+  background: rgba(184, 147, 90, 0.1);
+  border-left: 3px solid var(--color-rose);
+  border-radius: 8px;
+}
 .checkout-status {
   margin: 4px 0 0;
   font-size: 0.85rem;
