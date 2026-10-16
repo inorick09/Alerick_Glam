@@ -515,14 +515,17 @@ em {
   padding: 0;
   display: flex;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 8px;
 }
 
+/* Los 4 pasos caben en una sola fila con sus flechas (en pantallas
+   de hasta 900px pasan a una cuadrícula de 2x2, ver Responsive). */
 .steps__item {
-  flex: 1 1 220px;
-  max-width: 260px;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 250px;
   list-style: none;
   background: var(--color-card);
   border: 1px solid rgba(184, 147, 90, 0.25);
@@ -1325,10 +1328,11 @@ em {
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: transform 0.35s ease;
-  box-shadow: -20px 0 48px -16px rgba(20, 16, 15, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.cart-drawer.is-open { transform: translateX(0); }
+/* La sombra va solo con el carrito abierto: cerrado queda justo fuera de
+   la pantalla y su sombra se asomaba como una franja gris a la derecha. */
+.cart-drawer.is-open { transform: translateX(0); box-shadow: -20px 0 48px -16px rgba(20, 16, 15, 0.35); }
 
 .cart-drawer__head {
   display: flex;
@@ -1797,8 +1801,8 @@ em {
 /* ---------- 10. Animación de aparición ---------- */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(12px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
@@ -1877,9 +1881,9 @@ em {
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .materials-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .steps__list { flex-direction: column; align-items: center; }
-  .steps__item { max-width: 340px; width: 100%; }
-  .steps__arrow { transform: rotate(90deg); }
+  .steps__list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .steps__item { max-width: none; }
+  .steps__arrow { display: none; }
 }
 
 @media (max-width: 560px) {
@@ -2124,4 +2128,111 @@ em {
   .section--new .section__head p { font-size: 0.9rem; }
   .new-carousel__more { margin-top: 18px; }
   .welcome { padding: 0 0 40px; }
+}
+
+/* ---------- 14. Franja de beneficios (arriba de todo) ---------- */
+.perks-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 7px 16px;
+  background: var(--color-rose-deep);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+.perks-bar strong { font-weight: 800; }
+.perks-bar__sep { opacity: 0.6; }
+
+/* ---------- 15. Botón flotante de WhatsApp ---------- */
+.wa-float {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  z-index: 45;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px -8px rgba(20, 16, 15, 0.45);
+  transition: transform 0.2s ease;
+}
+.wa-float:hover { transform: scale(1.06); }
+.wa-float svg { width: 30px; height: 30px; }
+/* Con el carrito abierto el botón se esconde para no tapar "Enviar pedido". */
+body:has(.cart-drawer.is-open) .wa-float { display: none; }
+
+/* ---------- 16. Confianza: opiniones e Instagram ---------- */
+.trust { padding: 16px 0 72px; }
+.reviews-block { margin-bottom: 40px; }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+.review-card {
+  margin: 0;
+  background: var(--color-card);
+  border: 1px solid rgba(184, 147, 90, 0.25);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.review-card__photo { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; }
+.review-card__stars { color: var(--color-gold); letter-spacing: 2px; }
+.review-card blockquote { margin: 0; color: var(--color-ink); font-size: 0.95rem; }
+.review-card figcaption { font-size: 0.85rem; color: var(--color-ink-soft); }
+.review-card__product { display: block; margin-top: 2px; font-size: 0.78rem; }
+
+.ig-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: linear-gradient(120deg, #F58529 0%, #DD2A7B 45%, #8134AF 100%);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 16px 32px -18px rgba(129, 52, 175, 0.6);
+  transition: transform 0.25s ease;
+}
+.ig-card:hover { transform: translateY(-3px); }
+.ig-card__icon svg { width: 40px; height: 40px; display: block; }
+.ig-card__text { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.ig-card__text strong { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; }
+.ig-card__text span { font-size: 0.88rem; opacity: 0.95; }
+.ig-card__text em { font-style: normal; font-weight: 700; color: #fff; }
+.ig-card__cta {
+  flex: 0 0 auto;
+  background: #fff;
+  color: #8E2F52;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.6em 1.1em;
+  border-radius: 999px;
+}
+
+@media (max-width: 560px) {
+  .perks-bar { font-size: 0.74rem; padding: 6px 12px; }
+  .wa-float { width: 52px; height: 52px; right: 14px; bottom: 14px; }
+  .steps__item { padding: 16px 12px; }
+  .steps__num { width: 32px; height: 32px; font-size: 0.9rem; margin-bottom: 10px; }
+  .steps__body h3 { font-size: 0.92rem; }
+  .steps__body p { font-size: 0.8rem; }
+  .steps__summary { margin-top: 28px; }
+  .ig-card { flex-wrap: wrap; gap: 12px; padding: 16px; }
+  .ig-card__icon svg { width: 34px; height: 34px; }
+  .ig-card__text { flex: 1 1 calc(100% - 50px); }
+  .ig-card__cta { flex: 1 1 100%; text-align: center; }
 }

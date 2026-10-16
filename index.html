@@ -33,6 +33,13 @@
 </head>
 <body class="page-home">
 
+<!-- ===== FRANJA DE BENEFICIOS ===== -->
+<div class="perks-bar">
+  <span>🚚 Domicilio <strong>gratis</strong> en Bogotá</span>
+  <span class="perks-bar__sep" aria-hidden="true">·</span>
+  <span>💳 Pagas al recibir</span>
+</div>
+
 <!-- ===== HEADER ===== -->
 <header class="header" id="header">
   <div class="container header__inner">
@@ -253,8 +260,8 @@
         <li class="steps__item reveal">
           <div class="steps__num">1</div>
           <div class="steps__body">
-            <h3>Explora nuestros catálogos 🛍️</h3>
-            <p>Descubre todos nuestros productos en nuestras categorías de <a href="maquillaje.html">Maquillaje</a> y <a href="bisuteria.html">Joyas</a>, y encuentra tus favoritos.</p>
+            <h3>Elige tus favoritos 🛍️</h3>
+            <p>Explora <a href="maquillaje.html">Maquillaje</a> y <a href="bisuteria.html">Joyas</a> y agrega al carrito lo que te encante.</p>
           </div>
         </li>
 
@@ -263,8 +270,8 @@
         <li class="steps__item reveal">
           <div class="steps__num">2</div>
           <div class="steps__body">
-            <h3>Elige tus productos 💕</h3>
-            <p>Navega por las diferentes categorías y, cuando encuentres algo que te guste, agrégalo a tu carrito de compras.</p>
+            <h3>Envía tu pedido 🛒</h3>
+            <p>En el carrito completa tus datos y toca <strong>Enviar pedido</strong>.</p>
           </div>
         </li>
 
@@ -273,8 +280,8 @@
         <li class="steps__item reveal">
           <div class="steps__num">3</div>
           <div class="steps__body">
-            <h3>Completa tus datos 🛒</h3>
-            <p>Una vez hayas seleccionado los productos que deseas, dirígete al carrito de compras y completa el formulario con tus datos.</p>
+            <h3>Te escribimos por WhatsApp 📲</h3>
+            <p>Confirmamos tu pedido, resolvemos tus dudas y te avisamos cuando esté listo para la entrega.</p>
           </div>
         </li>
 
@@ -283,60 +290,46 @@
         <li class="steps__item reveal">
           <div class="steps__num">4</div>
           <div class="steps__body">
-            <h3>Te contactamos por WhatsApp 📲</h3>
-            <p>Uno de nuestros vendedores te contactará por WhatsApp para confirmar la compra y aclarar cualquier duda que tengas.</p>
-          </div>
-        </li>
-
-        <div class="steps__arrow reveal" aria-hidden="true">➜</div>
-
-        <li class="steps__item reveal">
-          <div class="steps__num">5</div>
-          <div class="steps__body">
-            <h3>¡Nosotros nos encargamos! 💖</h3>
-            <p>Una vez recibamos tu pedido, te enviaremos una confirmación. Luego comenzaremos a gestionar tus productos.</p>
-            <p>📦 Cuando tengamos todo listo, te avisaremos para coordinar la entrega.</p>
-          </div>
-        </li>
-
-        <div class="steps__arrow reveal" aria-hidden="true">➜</div>
-
-        <li class="steps__item reveal">
-          <div class="steps__num">6</div>
-          <div class="steps__body">
-            <h3>¡Domicilio GRATIS en Bogotá! 🚚</h3>
-            <p>Disfruta de domicilio totalmente gratis dentro de Bogotá. 💕</p>
-            <p>¿Estás fuera de Bogotá? ¡También podemos enviarte tu pedido! En este caso, se cobrará un valor adicional correspondiente al costo de la empresa de mensajería.</p>
-          </div>
-        </li>
-
-        <div class="steps__arrow reveal" aria-hidden="true">➜</div>
-
-        <li class="steps__item reveal">
-          <div class="steps__num">7</div>
-          <div class="steps__body">
-            <h3>Paga al recibir tu pedido 💳</h3>
-            <p>¡Compra con tranquilidad! Puedes realizar tu pago contra entrega utilizando cualquiera de nuestros medios de pago disponibles, excepto tarjeta.</p>
+            <h3>Recibe y paga 💖</h3>
+            <p><strong>Domicilio GRATIS en Bogotá.</strong> Fuera de Bogotá también te lo enviamos (la mensajería cobra el envío).</p>
+            <p>Pagas contra entrega con cualquiera de nuestros medios de pago, excepto tarjeta.</p>
           </div>
         </li>
       </ol>
 
       <div class="steps__summary reveal">
-        <p class="steps__flow">
-          <span>Tú eliges</span>
-          <span aria-hidden="true">→</span>
-          <span>Nosotros lo conseguimos</span>
-          <span aria-hidden="true">→</span>
-          <span>Te lo entregamos</span>
-          <span aria-hidden="true">→</span>
-          <span>¡Tú lo disfrutas! ✨</span>
-        </p>
         <p class="steps__note">
           ¿Tienes alguna duda antes de comprar? Escríbenos al
           <a href="https://wa.me/573143478483" target="_blank" rel="noopener">WhatsApp</a>
           y te daremos atención personalizada. 💬
         </p>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== CONFIANZA: OPINIONES + INSTAGRAM =====
+       Las opiniones salen de js/reviews.js; si está vacío, ese bloque
+       no se muestra y queda solo la invitación a Instagram. -->
+  <section class="section trust" id="clientas">
+    <div class="container">
+      <div class="reviews-block" id="reviewsBlock" hidden>
+        <div class="section__head reveal">
+          <p class="eyebrow">Clientas felices</p>
+          <h2>Lo que dicen nuestras clientas 💕</h2>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+      </div>
+
+      <a href="https://www.instagram.com/alerickglam/" target="_blank" rel="noopener" class="ig-card reveal">
+        <span class="ig-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M11.56 2.67h8.88c4.91 0 8.89 3.98 8.89 8.89v8.88c0 4.91-3.98 8.89-8.89 8.89h-8.88c-4.91 0-8.89-3.98-8.89-8.89v-8.88c0-4.91 3.98-8.89 8.89-8.89Zm-.22 2.67a6 6 0 0 0-6 6v8.44a6 6 0 0 0 6 6h9.32a6 6 0 0 0 6-6v-8.44a6 6 0 0 0-6-6h-9.32ZM16 9.61A6.39 6.39 0 1 1 9.61 16 6.4 6.4 0 0 1 16 9.61Zm0 2.67A3.72 3.72 0 1 0 19.72 16 3.72 3.72 0 0 0 16 12.28Zm6.65-4.7a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5Z"/></svg>
+        </span>
+        <span class="ig-card__text">
+          <strong>Síguenos en Instagram</strong>
+          <span>Novedades, looks y las fotos de nuestras clientas en <em>@alerickglam</em></span>
+        </span>
+        <span class="ig-card__cta">Ver perfil →</span>
+      </a>
     </div>
   </section>
 
@@ -413,6 +406,13 @@
   </div>
 </footer>
 
+<!-- ===== WHATSAPP FLOTANTE ===== -->
+<a href="https://wa.me/573143478483" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16.02 2.67c-7.35 0-13.32 5.97-13.32 13.32 0 2.35.62 4.64 1.79 6.66L2.67 29.33l6.83-1.79a13.27 13.27 0 0 0 6.52 1.71h.01c7.35 0 13.32-5.97 13.32-13.32S23.37 2.67 16.02 2.67Zm0 24.36h-.01a11.06 11.06 0 0 1-5.63-1.54l-.4-.24-4.05 1.06 1.08-3.95-.26-.4a11.04 11.04 0 0 1-1.69-5.9c0-6.1 4.96-11.06 11.07-11.06 2.96 0 5.74 1.15 7.83 3.24a11 11 0 0 1 3.24 7.83c0 6.1-4.97 11.06-11.18 10.96Zm6.07-8.29c-.33-.17-1.96-.97-2.27-1.08-.3-.11-.53-.17-.75.17s-.86 1.08-1.06 1.3c-.19.22-.39.25-.72.08-.33-.17-1.4-.52-2.66-1.65-.98-.88-1.65-1.96-1.84-2.29-.19-.33-.02-.51.15-.68.15-.15.33-.39.5-.58.17-.2.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.81-1.03-2.48-.27-.65-.55-.56-.75-.57h-.64c-.22 0-.58.08-.88.42-.3.33-1.15 1.13-1.15 2.75s1.18 3.18 1.34 3.4c.17.22 2.32 3.55 5.62 4.98.79.34 1.4.54 1.88.7.79.25 1.51.21 2.08.13.63-.1 1.96-.8 2.24-1.58.28-.77.28-1.44.19-1.58-.08-.14-.3-.22-.63-.39Z"/>
+              </svg>
+</a>
+
 <script src="js/products.maquillaje.js"></script>
 <script src="js/products.bisuteria.js"></script>
 <script src="js/products.js"></script>
@@ -420,5 +420,6 @@
 <script src="js/script.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>

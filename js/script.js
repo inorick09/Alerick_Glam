@@ -29,7 +29,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.05 });
 
 revealEls.forEach(el => revealObserver.observe(el));
 
