@@ -376,6 +376,10 @@ em {
 }
 .hero__welcome p:last-child { margin-bottom: 0; }
 
+/* Bienvenida como sección propia, después de los carruseles del inicio */
+.welcome { padding: 8px 0 56px; }
+.welcome .hero__welcome { margin: 0 auto; text-align: center; }
+
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .hero__gallery {
@@ -1092,10 +1096,11 @@ em {
 }
 
 .price {
-  font-family: var(--font-mono);
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--color-gold);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--color-rose-deep);
 }
 
 .btn-wa {
@@ -1378,7 +1383,7 @@ em {
 }
 .cart-item__img img { width: 100%; height: 100%; object-fit: cover; }
 .cart-item__name { font-weight: 600; font-size: 0.92rem; margin: 0 0 0.2em; }
-.cart-item__price { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-gold); }
+.cart-item__price { font-family: var(--font-body); font-size: 0.9rem; font-weight: 800; color: var(--color-rose-deep); }
 .cart-item__qty { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
 .cart-item__qty button {
   width: 24px;
@@ -1878,7 +1883,7 @@ em {
 }
 
 @media (max-width: 560px) {
-  .products-grid, .categories-grid, .materials-grid { grid-template-columns: 1fr; }
+  .categories-grid, .materials-grid { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { text-align: center; }
   .steps__flow { flex-direction: column; gap: 4px; }
@@ -1951,7 +1956,7 @@ em {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.new-card__price { padding: 0 14px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-rose-deep); }
+.new-card__price { padding: 0 14px 14px; font-family: var(--font-body); font-size: 1rem; font-weight: 800; color: var(--color-rose-deep); }
 
 .new-carousel__more { text-align: center; margin-top: 28px; }
 
@@ -2030,7 +2035,93 @@ em {
   -webkit-overflow-scrolling: touch;
 }
 .pd__name { font-family: var(--font-display); font-size: 1.2rem; margin: 0 0 6px; }
-.pd__price { font-family: var(--font-mono); color: var(--color-rose-deep); font-size: 1.1rem; margin: 0 0 10px; }
+.pd__price { font-family: var(--font-body); font-weight: 800; color: var(--color-rose-deep); font-size: 1.35rem; margin: 0 0 10px; }
 .pd__desc { color: var(--color-ink-soft); font-size: 0.9rem; line-height: 1.5; margin: 0 0 14px; }
 .pd__add { position: sticky; bottom: 0; width: 100%; padding: 0.85em 1.2em; font-size: 0.95rem; margin: 0 0 16px; box-shadow: 0 -10px 14px -6px var(--color-card); }
 
+/* ---------- 12. Catálogo en el celular ----------
+   Dos productos por fila (como las tiendas de belleza), tarjetas más
+   compactas y filtros en filas que se deslizan de lado, para que los
+   productos aparezcan apenas se entra a la página. */
+@media (max-width: 560px) {
+  .page-hero { padding: 36px 0 8px; }
+  .page-hero h1 { margin-bottom: 0.25em; }
+  .page-hero p { font-size: 0.95rem; margin-bottom: 0.8em; }
+  .page-hero .page-hero__catalog-note { display: none; }
+  .page-hero .catalog-search { margin-top: 14px; }
+  #catalogo { padding-top: 8px; }
+
+  /* Cada grupo de filtros es una tira horizontal con su etiqueta al
+     inicio; sale hasta el borde de la pantalla para que se note que se
+     puede deslizar. */
+  .page-hero .catalog-filters {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 14px -16px 0;
+    padding: 8px 16px 4px;
+  }
+  .page-hero .catalog-filters::-webkit-scrollbar { display: none; }
+  .page-hero .catalog-filters::before {
+    flex: 0 0 auto;
+    align-self: center;
+    width: 62px;
+    margin-top: -18px;
+    font-size: 0.72rem;
+    text-align: left;
+    line-height: 1.2;
+    white-space: normal;
+  }
+  .page-hero .catalog-filters--age::before { content: "Mini trendy:"; }
+  .filter-chip--icon { flex: 0 0 auto; width: 66px; }
+  .filter-chip__icon { width: 52px; height: 52px; }
+  .filter-chip__label { font-size: 0.7rem; }
+  .page-hero .catalog-filters > .filter-chip:not(.filter-chip--icon) { flex: 0 0 auto; align-self: center; }
+
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .product-card__img { aspect-ratio: 1/1; }
+  .product-card:hover { transform: none; }
+  .product-card__body { padding: 12px; display: flex; flex-direction: column; }
+  .product-card__body h3 { font-size: 0.92rem; line-height: 1.25; height: 2.5em; margin-bottom: 0.35em; }
+  .product-card__body p { font-size: 0.78rem; height: 3em; -webkit-line-clamp: 2; line-clamp: 2; }
+  .product-card__body p.product-card__details { font-size: 0.74rem; height: 6em; }
+  .product-card__code { font-size: 0.7rem; }
+  .product-card__material { font-size: 0.74rem; }
+  .product-card__more { margin-bottom: 0.6em; font-size: 0.72rem; }
+  .product-card__foot { flex-direction: column; align-items: stretch; gap: 8px; margin-top: auto; }
+  .price { font-size: 1.1rem; }
+  .btn-cart { width: 100%; padding: 0.7em 0.5em; }
+  .tag { top: 8px; left: 8px; font-size: 0.6rem; padding: 4px 8px; }
+  .product-card__nav { width: 26px; height: 26px; font-size: 1.1rem; }
+  .product-card__nav--prev { left: 6px; }
+  .product-card__nav--next { right: 6px; }
+  .product-card__zoom-hint { display: none; }
+  .catalog-pager { flex-wrap: wrap; }
+}
+
+/* ---------- 13. Inicio en el celular ----------
+   Encabezado más corto para que los carruseles de productos asomen
+   en la primera pantalla. */
+@media (max-width: 560px) {
+  body.page-home .top-glam__eyebrow { padding-top: 18px; }
+  body.page-home .top-glam__eyebrow .eyebrow { text-align: center; }
+  .hero { padding-top: 12px; }
+  .hero__inner { gap: 12px; text-align: center; }
+  .hero__logo { width: 76px; }
+  .hero__title { font-size: 2.3rem; margin-bottom: 0.45em; }
+  .hero .deco-divider { margin-top: 28px; }
+  .categories-grid--hero { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .categories-grid--hero .category-card { padding: 12px; gap: 10px; text-align: left; }
+  .categories-grid--hero .category-card__icon { width: 38px; height: 38px; font-size: 1.15rem; flex: 0 0 auto; }
+  .categories-grid--hero .category-card p,
+  .categories-grid--hero .category-card__link { display: none; }
+  .categories-grid--hero .category-card h3 { font-size: 1.05rem; }
+  .section--new { padding: 16px 0 40px; }
+  .section--new .section__head { margin-bottom: 16px; }
+  .section--new .section__head p { font-size: 0.9rem; }
+  .new-carousel__more { margin-top: 18px; }
+  .welcome { padding: 0 0 40px; }
+}

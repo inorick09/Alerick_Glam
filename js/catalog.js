@@ -20,9 +20,9 @@
 // (Anillos + Aretes en Rodio) para afinar lo que ya está filtrado.
 // Volver a hacer clic en el chip activo lo desactiva y vuelve al
 // catálogo sin filtrar. Solo aparecen los valores que ya tienen
-// productos cargados. Mientras haya al menos un grupo de chips, el
-// catálogo empieza sin productos visibles: solo se muestran al elegir
-// un chip.
+// productos cargados. Sin ningún chip elegido se muestra todo el
+// catálogo (primero lo de "Nueva colección", luego el resto, cada parte
+// en orden aleatorio), paginado de a PAGE_SIZE.
 // ============================================
 
 // Orden fijo en el que deben aparecer los chips de filtro, por
@@ -371,14 +371,6 @@ function openLightbox(src, name) {
   });
 }
 
-// El aviso "Elige una categoría..." vive fijo en el HTML, justo antes
-// de los chips de filtro — aquí solo se muestra/oculta según la página.
-function showCatalogPlaceholder(category) {
-  const placeholder = document.getElementById('catalogPlaceholder');
-  if (!placeholder) return;
-  placeholder.hidden = category === 'bisuteria';
-}
-
 // Máximo de productos por página, para no cargar todo el catálogo de una vez.
 const PAGE_SIZE = 25;
 
@@ -469,8 +461,8 @@ function setupFilterGroup(filtersEl, values, onToggle, { multiple = false } = {}
   }
 
   filtersEl.hidden = false;
-  // Ningún chip empieza activo: el catálogo solo muestra productos
-  // cuando el usuario elige uno.
+  // Ningún chip empieza activo: sin filtro se muestra todo el catálogo
+  // y cada chip lo va afinando.
   filtersEl.innerHTML = values.map(label => {
     const icon = FILTER_ICONS[label];
     if (!icon) {
@@ -524,28 +516,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // Estado de los dos filtros de chip — nunca los dos a la vez: elegir
   // uno limpia el otro (ver más abajo) — más la búsqueda por nombre, que
   // sí se combina con cualquiera de los dos (afina lo que ya esté filtrado).
+  // Catálogo sin filtrar: primero lo nuevo, luego el resto, cada parte
+  // en orden aleatorio para que la vitrina se vea distinta en cada visita.
+  const getDefaultOrder = () => [
+    ...shuffle(items.filter(p => p.category_new === 'Nueva colección')),
+    ...shuffle(items.filter(p => p.category_new !== 'Nueva colección'))
+  ];
+
   const state = { subcategory: null, colaboracion: null, categoryAge: null, categoryNew: null, material: null, search: '' };
 
   const applyFilters = () => {
     const hasFilter = state.subcategory || state.colaboracion || state.categoryAge || state.categoryNew || state.material || state.search.trim();
 
     if (!hasFilter) {
-      // Sin ningún chip activo: se vuelve al estado inicial, con el
-      // aviso de "elige..." y las secciones extra visibles de nuevo.
+      // Sin ningún chip activo: se vuelve al catálogo completo, con las
+      // secciones extra visibles de nuevo.
       renderActiveFilters(null);
-      grid.innerHTML = '';
-      pagerEl.hidden = true;
-      pagerEl.innerHTML = '';
-      showCatalogPlaceholder(category);
+      renderPage(grid, pagerEl, getDefaultOrder(), 1);
       document.querySelector('.catalog-extra')?.removeAttribute('hidden');
       document.querySelector('.page-hero__contact')?.removeAttribute('hidden');
       return;
     }
 
     // Al elegir un chip, la página se enfoca solo en los productos: se
-    // ocultan el aviso de "elige...", la sección extra (materiales /
-    // marcas) y la nota de contacto por WhatsApp.
-    document.getElementById('catalogPlaceholder')?.setAttribute('hidden', '');
+    // ocultan la sección extra (materiales / marcas) y la nota de
+    // contacto por WhatsApp.
     document.querySelector('.catalog-extra')?.setAttribute('hidden', '');
     document.querySelector('.page-hero__contact')?.setAttribute('hidden', '');
 
@@ -663,7 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { multiple: true }
   );
-  const hasColaboracionFilter = setupFilterGroup(
+  setupFilterGroup(
     filtersElColaboracion,
     colaboracionValues,
     value => {
@@ -681,7 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
       applyFilters();
     }
   );
-  const hasAgeFilter = setupFilterGroup(
+  setupFilterGroup(
     filtersElAge,
     categoryAgeValues,
     value => {
@@ -718,7 +713,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   );
   // Material no limpia el tipo de producto: se combinan (Anillos + Rodio).
-  const hasMaterialFilter = setupFilterGroup(
+  setupFilterGroup(
     filtersElMaterial,
     materialValues,
     value => {
@@ -787,15 +782,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Si hay al menos un grupo de chips, el catálogo empieza sin
-  // productos visibles: solo se muestran al elegir uno. Si no hay
-  // ningún dato de filtro, no hay nada que elegir y se muestran todos
-  // los productos ya mismo (paginados de a PAGE_SIZE).
-  if (preSelected) {
-    // ya se mostraron los productos del chip de arriba
-  } else if (hasSubcategoryFilter || hasColaboracionFilter || hasAgeFilter || hasNewFilter || hasMaterialFilter) {
-    showCatalogPlaceholder(category);
-  } else {
-    renderPage(grid, pagerEl, items, 1);
+  // Sin chip elegido desde la URL, el catálogo arranca mostrando todos
+  // los productos (paginados de a PAGE_SIZE) para que la clienta vea
+  // productos apenas entra.
+  if (!preSelected) {
+    renderPage(grid, pagerEl, getDefaultOrder(), 1);
   }
 });
