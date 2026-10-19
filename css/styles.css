@@ -1909,15 +1909,10 @@ em {
 .new-carousel {
   overflow: hidden;
   touch-action: pan-y;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  /* Sin esto, Safari calcula mal el tamaño del degradado usado como
-     máscara y termina recortando casi todo el carrusel en vez de solo
-     desvanecer los bordes (se ve un espacio vacío en iPhone). */
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
+  /* Sin "mask-image" para desvanecer las orillas: en Safari (iPhone/Mac),
+     una máscara sobre un contenedor cuyo contenido se mueve con transform
+     se aplica en el lugar equivocado y deja todo el carrusel invisible
+     (solo se veía el espacio vacío). */
 }
 .new-carousel__track {
   display: flex;
