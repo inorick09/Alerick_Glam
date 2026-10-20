@@ -1925,6 +1925,11 @@ em {
 .new-card {
   position: relative;
   flex: 0 0 220px;
+  /* Ancho explícito además de flex-basis: con "width: max-content" en la
+     tira, Safari/WebKit (todos los navegadores de iPhone) mide cada tarjeta
+     por el ancho del nombre en una sola línea e infla la tira a ~45.000 px;
+     el carrusel se desplazaba fuera de las tarjetas y se veía vacío. */
+  width: 220px;
   display: flex;
   flex-direction: column;
   background: var(--color-card);
@@ -1960,7 +1965,7 @@ em {
 .new-carousel__more { text-align: center; margin-top: 28px; }
 
 @media (max-width: 600px) {
-  .new-card { flex-basis: 160px; }
+  .new-card { flex-basis: 160px; width: 160px; }
 }
 
 /* ---------- Detalle de producto (carrusel Recién llegados) ---------- */
