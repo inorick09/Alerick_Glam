@@ -78,6 +78,179 @@
 
 const PRODUCTS_MAQUILLAJE = [
 {
+  id: "CD05",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Cosmetiquera Cuerina - CD05",
+  price: 30000,
+  image: "images/productos/Maquillaje/Accesorios/CD05.jpg",
+  description: "Enamórate de una cosmetiquera premium y súper funcional, perfecta para llevar de viaje o en el bolso diario. Viene completamente forrada con una calidad top y está hecha en un material muy fácil de limpiar para organizar tu maquillaje y accesorios. Tiene dos compartimentos: uno diseñado para guardar brochas y otro más amplio perfecto para bases, rubores, kits de contornos y paletas pequeñas. Guarda tus productos y cierra después de usar. Organiza tus brochas en su sección para evitar que ensucien tus demás cosméticos.",
+  category_new: "Nueva colección"
+},
+{
+  id: "CD01",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Cosmetiquera Pastel - CD01",
+  price: 25000,
+  image: "images/productos/Maquillaje/Accesorios/CD01.jpg",
+  description: "La Cosmetiquera Trendy Pastel es ideal para llevar todos tus productos dentro del bolso de forma práctica. Dispone de un espacio superior amplio con bolsillos interiores para brindarte mayor comodidad, y un nivel inferior equipado con bandas de caucho para organizar tus brochas o artículos pequeños. Está fabricada con materiales de alta calidad y fácil limpieza para mantenerse impecable. Se encuentra disponible en color morado o rosado y se envían en tonos surtidos. Guarda tus cosméticos y cierra correctamente el broche o cierre. Guarda las brochas en las bandas inferiores para mantenerlas separadas de tus bases o cremas.",
+  category_new: "Nueva colección",
+  tonos: ["Morado", "Rosado"]
+},
+{
+  id: "CVN1731",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Cosmetiquera Plegable - CVN1731",
+  price: 25000,
+  image: "images/productos/Maquillaje/Accesorios/CVN1731.jpg",
+  description: "Nada se compara con la tranquilidad de tener tu maquillaje ordenado. Esta cosmetiquera plegable te da la mano para guardar todo: contiene 3 bolsillos internos (1 con cremallera, 1 doble y 1 grande con borde de caucho) y dos espacios muy amplios. Su cremallera diagonal te permite guardarla con mayor facilidad y optimizar el espacio en tu bolso. Solo guarda tus productos y despliégala cuando la necesites. Es el accesorio ideal para organizar todo tu maquillaje y tener tus esenciales a la mano.",
+  category_new: "Nueva colección"
+},
+{
+  id: "KAP2505",
+  category: "maquillaje",
+  subcategory: "Capilar",
+  name: "Kit Accesorios Pelo Luxé - KAP2505",
+  price: 2000,
+  image: "images/productos/Maquillaje/Capilar/KAP2505.jpg",
+  description: "El set de cuatro piezas esenciales para un cabello siempre organizado, estilizado y con ese toque elegante que marca la diferencia en el día a día.\n\n- Incluye peine, cepillo, scrunchie (moña) y hebillas — los accesorios que más usas en la rutina diaria reunidos en un solo kit resistente y con acabado moderno.\n- El peine desenreda sin romper comenzando desde las puntas; el cepillo pule y aporta brillo en cabello seco; el scrunchie sujeta el cabello siendo mucho más amable que las ligas convencionales que quiebran y dejan marcas, clave para cabellos rizados, teñidos o con tratamientos; las hebillas fijan mechones, crean patillas o dan ese detalle de estilo al recogido. Todo apto para cabello liso, ondulado, rizado o colocho.\n- Compacto y portátil para el bolso, la mochila o el gym — porque el cabello bien cuidado no tiene excusas ni espera.",
+  category_new: "Nueva colección"
+},
+{
+  id: "KBL2274",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Kit Brochas Basico Lila - KBL2274",
+  price: 15000,
+  image: "images/productos/Maquillaje/Accesorios/KBL2274.jpg",
+  description: "Salir de casa con el look perfecto y notar a mitad del día que el corrector se acumuló en las líneas de expresión, o que tus cejas se despeinaron por el viento, y darte cuenta de que no tienes cómo retocarte porque tus brochas profesionales son gigantescas y pesadas, es una verdadera batalla diaria. ¡Es momento de ganarle el juego al desorden y darle la bienvenida a la practicidad con más estilo! Este kit reúne 3 brochas esenciales que son una absoluta bomba para rostro y ojos, diseñadas con un mango efecto cristal hermoso y cerdas de Nylon premium que son ultra suaves con tu piel. Incluye una brocha tipo kabuki mini perfecta para cremas, una difuminadora angular para ojos y una brocha doble para cejas con fibras súper finitas que te dan trazos prolijos. Es el set soñado para llevar en tu bolso diario, irte de viaje o sacarte de cualquier apuro en segundos, asegurándote un acabado profesional sin esfuerzo.",
+  category_new: "Nueva colección"
+},
+{
+  id: "OMT1667",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Cosmetiquera Viajera Rosada - OMT1667",
+  price: 30000,
+  image: "images/productos/Maquillaje/Accesorios/OMT1667.jpg",
+  description: "¡La organización llegó a tu vida! Esta cosmetiquera viajera es amplia para guardar tu maquillaje y cuidarlo de la mejor manera. Diseñada en exterior rosado con letras negras e interior beige, incluye compartimentos para brochas y uno transparente para ver tus infaltables a la primera. Además, trae una cosmetiquera removible con separador doble interno para llevar en tu bolso de mano. Guarda tus productos de belleza y cierra correctamente antes de transportar. Usa la mini cosmetiquera removible para llevar retocar tus labios y polvo durante el día.",
+  category_new: "Nueva colección"
+},
+{
+  id: "ICU2172",
+  category: "maquillaje",
+  subcategory: "Corporal",
+  name: "Iluminador Líquido Corporal Urban - ICU2172",
+  price: 10000,
+  image: "images/productos/Maquillaje/Corporal/ICU2172.jpg",
+  description: "Un glow tornasolado para brillar de pies a cabeza Dale a tu piel un toque de brillo espectacular con el Iluminador Líquido Corporal Urban, perfecto para resaltar tus mejores looks con destellos violetas que reflejan la luz y crean un hermoso efecto tornasolado. Su textura suave se adhiere fácilmente a la piel, dejando un acabado luminoso sin sensación tirante ni pegajosa. Su pigmentación permite destacar las zonas que más te gustan, como hombros, brazos y escote, para complementar tus outfits y robarte todas las miradas. Viene en una práctica presentación tipo gotero que facilita la aplicación. Está disponible en dos referencias que ofrecen el mismo efecto brillante. Un toque de glow en tu piel para que brilles por donde pases.",
+  category_new: "Nueva colección"
+},
+{
+  id: "BPP1923",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Brillo De Labios Pool Party - BPP1923",
+  price: 6000,
+  image: "images/productos/Maquillaje/Labios/BPP1923.jpg",
+  description: "Labios glossy, jugosos y con un toque mágico. ¡Un brillo que tiene mucho más de lo que ves! Este gloss transparente de Trendy es perfecto para conseguir unos labios de apariencia jugosa con un acabado ultrabrillante y delicados destellos tornasolados que reflejan la luz para darle un toque mágico a tu maquillaje. Su textura ligeramente densa aporta una sensación de brillo envolvente y lo convierte en el complemento ideal para llevar solo o aplicar sobre tu labial favorito y transformar su acabado. Aunque es transparente y no aporta color, esconde una sorpresa: destellos en tonos violeta, rosa o verde que crean un efecto tornasolado sutil y encantador. Además, su delicioso aroma a chicle hace que cada aplicación sea aún más dulce y especial. El toque perfecto para quienes aman los labios brillantes, los detalles únicos y los looks llenos de personalidad.",
+  category_new: "Nueva colección"
+},
+{
+  id: "ICT1971",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Sombra Iluminador Cosmos - ICT1971",
+  price: 25000,
+  image: "images/productos/Maquillaje/Rostro/ICT1971.jpg",
+  description: "El glow que tanto estaban esperando. ¡El Iluminador Cosmos de Trendy está de regreso! Un favorito que se hizo extrañar y vuelve para darle un toque de luz y color a tus looks de maquillaje. Su combinación de cuatro tonos, con matices dorados, rosados y morados, te permite crear diferentes efectos de luminosidad según tu estilo. Úsalos por separado para destacar cada matiz o mézclalos para conseguir un glow personalizado que haga brillar tu maquillaje. Aplícalo en los puntos altos del rostro para resaltar visualmente tus facciones y aportar un toque luminoso, o combina tus tonos favoritos para experimentar con diferentes acabados y looks. Un favorito que vuelve con más formas de brillar.",
+  category_new: "Nueva colección"
+},
+{
+  id: "CTT2229",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Corrector De Ojeras Aura - CTT2229",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/CTT2229.jpg",
+  description: "El favorito que volvió a tu cosmetiquera. ¡Sí, regresó uno de los favoritos de Trendy! El Corrector Aura vuelve para ayudarte a conseguir una piel de apariencia fresca, uniforme y natural. Su fórmula cremosa de cobertura ligera y construible te permite corregir pequeñas imperfecciones, iluminar zonas estratégicas y unificar visualmente el tono de la piel sin una sensación pesada. Su textura se difumina fácilmente para conseguir un acabado natural o construir mayor cobertura donde quieras más definición. Además, cuenta con 7 tonos para que encuentres el que mejor se adapte a tu piel y un aplicador práctico que facilita una aplicación rápida y precisa. Un favorito que regresa para convertirse nuevamente en tu aliado de maquillaje.",
+  category_new: "Nueva colección",
+  tonos: ["01", "02", "03", "04", "05", "06", "07"]
+},
+{
+  id: "CPT1252",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Sombra Cloud Trendy - CPT1252",
+  price: 10000,
+  image: "images/productos/Maquillaje/Rostro/CPT1252.jpg",
+  description: "Tu próxima combinación favorita. Descubre las paletas de sombras de Trendy, diseñadas para crear looks que van contigo, desde un maquillaje de ojos suave y natural para el día hasta una mirada intensa y sofisticada para cualquier ocasión. Cada paleta combina tonos mate y satinados que puedes mezclar, combinar y adaptar a tu estilo. Su pigmentación construible te permite jugar con la intensidad del color, mientras su textura facilita una aplicación suave y uniforme para lograr diferentes acabados y darle personalidad a cada look. Dos opciones, múltiples combinaciones y toda la creatividad para experimentar con el color. Encuentra tu paleta de sombras favorita y transforma tu mirada con Trendy.",
+  category_new: "Nueva colección"
+},
+{
+  id: "CBT1500",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Rubor Cat - CBT1500",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/CBT1500.jpg",
+  description: "El best seller que todos quieren en su cosmetiquera. El Cat Blush de Trendy conquista con su adorable diseño en forma de manito de gatito y el toque de color que transforma cualquier look. Este rubor es ideal para darle vida a tus mejillas y conseguir un acabado bonito que resalte tu maquillaje. Su pigmentación construible te permite adaptar la intensidad del color a tu estilo, desde un toque sutil para el día a día hasta un look más intenso. Además, su textura se difumina fácilmente para lograr un resultado uniforme y natural. Encuéntralo en tres tonos para crear looks diferentes: coral oscuro, rosa frío y rosa satinado. Elige tu favorito y dale a tus mejillas ese toque de color que hace la diferencia.",
+  category_new: "Nueva colección"
+},
+{
+  id: "PSB1688",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Polvos Sueltos Bakery Grande - PSB1688",
+  price: 20000,
+  image: "images/productos/Maquillaje/Rostro/PSB1688.jpg",
+  description: "Tus Bakery favoritos, ahora en una presentación más grande. Disfruta por más tiempo de tus Polvos Sueltos Bakery de Trendy con su presentación de mayor tamaño, ideal para acompañar tu rutina de maquillaje. Su fórmula traslúcida ayuda a sellar la base sin aportar color ni cobertura adicional, para conseguir un acabado suave, uniforme y de apariencia profesional. Su textura facilita la aplicación y el difuminado, convirtiéndolos en el complemento perfecto para tus looks diarios o para realizar la técnica de baking cuando buscas un maquillaje más definido y pulido. Además, su presentación premium incluye pomito para facilitar la aplicación y hacer que tu rutina sea aún más práctica.",
+  category_new: "Nueva colección"
+},
+{
+  id: "BF23",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Polvo Suelto Bakery Pequeño - BF23",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/BF23.jpg",
+  description: "El efecto filtro que tu maquillaje estaba esperando. Lleva tu maquillaje a otro nivel con los Polvos Sueltos Bakery de Trendy, ideales para sellar el maquillaje, controlar el brillo y conseguir un acabado mate, suave y natural. Su textura ultrafina se integra delicadamente con la piel para lograr una apariencia más uniforme y tersa. Estos polvos sueltos ayudan a suavizar visualmente la apariencia de los poros y las líneas de expresión, prolongando la duración del maquillaje sin dejar una sensación pesada ni acartonada. Son el complemento perfecto para conseguir un efecto piel pulida y un maquillaje impecable por más tiempo.",
+  category_new: "Nueva colección"
+},
+{
+  id: "DY2334",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Pin Tiro Al Blanco Toy Story - DY2334",
+  price: 5000,
+  image: "images/productos/Maquillaje/Accesorios/DY2334.jpg",
+  description: "Dile adiós a los bolsos o prendas aburridas con este detalle lleno de nostalgia, aventura y estilo chic. Inspirado en una de las películas de Disney más queridas, este pin coleccionable rinde homenaje a la magia de Toy Story con un diseño clásico y lleno de detalles. Su sistema de cierre garantiza un ajuste firme, ligero y resistente sobre cualquier tela. Fija la punta metálica sobre tu prenda o accesorio y asegura la tapa trasera. Tip de Experta: Agrégalo al bolsillo delantero de tu mochila para mostrar tu amor por las historias de Disney.",
+  colaboracion: "Disney",
+  category_new: "Nueva colección"
+},
+{
+  id: "Pet2841",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Pinzas Largas Encanto - Pet2841",
+  price: 12000,
+  image: "images/productos/Maquillaje/Accesorios/Pet2841.jpg",
+  description: "¡Pequeños detalles que elevan tu estilo! Dale un toque chic a tus peinados con este set de 5 pinzas largas para el cabello tipo bobby pins de Trendy, ideales para sujetar mechones y complementar tus looks con un detalle moderno y lleno de personalidad. Su combinación de tonos nude y tierra con estampados animal print aporta un estilo versátil que puedes combinar fácilmente con diferentes outfits y peinados. Son el accesorio perfecto para darle un toque especial a tu cabello, desde looks casuales hasta estilos más sofisticados.",
+  category_new: "Nueva colección"
+},
+{
+  id: "Hme2843",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Hair Clip X3 Marmolado Encanto - Hme2843",
+  price: 12000,
+  image: "images/productos/Maquillaje/Accesorios/Hme2843.jpg",
+  description: "¡Dale un toque Trendy a tus peinados favoritos! Completa tus looks con este set de 3 hair clips mini de Trendy, ideales para sujetar pequeños mechones de cabello y darle un toque especial a tus peinados. Su diseño combina una opción en tono rosado y dos con estampado animal print, perfectas para añadir un detalle divertido y lleno de estilo a cualquier ocasión. Elaborados en material resistente, estos accesorios para el cabello son el complemento ideal para crear peinados sencillos, destacar pequeños detalles y combinar con diferentes outfits. Su tamaño mini los hace perfectos para llevar en tu cosmetiquera y tener siempre a la mano ese accesorio que transforma tu look.",
+  category_new: "Nueva colección"
+},
+{
   id: "CHT1253",
   category: "maquillaje",
   subcategory: "Rostro",
@@ -1607,7 +1780,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Sombra Hollywood - SHT1310",
   price: 15000,
   image: "images/productos/Maquillaje/Ojos/SHT1310.jpg",
-  description: "- Esta paleta incluye tonos muy versátiles y cálidos entre naranjas, rojizos y cafés, con acabados mate y satinados, ideales para cualquier ocasión.\n- Pigmentación construible que se adapta a cualquier maquillaje sea de día o noche.\n- Textura suave y fácil de difuminar.\n- Presentación inspirada en una cinta de película: ¡compacta y hermosa!\nSe envían surtidas."
+  description: "- Esta paleta incluye tonos muy versátiles y cálidos entre naranjas, rojizos y cafés, con acabados mate y satinados, ideales para cualquier ocasión.\n- Pigmentación construible que se adapta a cualquier maquillaje sea de día o noche.\n- Textura suave y fácil de difuminar.\n- Presentación inspirada en una cinta de película: ¡compacta y hermosa!\nSe envían surtidas.",
+  category_new: "Nueva colección"
 },
 {
   id: "RROt10",

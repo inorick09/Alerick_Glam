@@ -10645,7 +10645,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario San Benito",
   price: 35900,
-  image: "images/productos/Bisuteria/Rosarios/SP396.png",
+  image: "images/productos/Bisuteria/Rosarios/SP396.jpg",
   medidas: "64 cm x 5 mm",
   material: "Acero"
 },
@@ -10655,7 +10655,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario Guadalupe",
   price: 27000,
-  image: "images/productos/Bisuteria/Rosarios/MC961.png",
+  image: "images/productos/Bisuteria/Rosarios/MC961.jpg",
   medidas: "50 cm x 3 mm",
   material: "Acero"
 },
@@ -10665,7 +10665,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario San Benito",
   price: 27000,
-  image: "images/productos/Bisuteria/Rosarios/MC960.png",
+  image: "images/productos/Bisuteria/Rosarios/MC960.jpg",
   medidas: "54 cm x 3 mm",
   material: "Acero"
 },
@@ -10675,7 +10675,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario San Benito",
   price: 30000,
-  image: "images/productos/Bisuteria/Rosarios/NP529.png",
+  image: "images/productos/Bisuteria/Rosarios/NP529.jpg",
   medidas: "64 cm x 5 mm",
   material: "Acero"
 },
@@ -10685,7 +10685,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario San Benito Dorado",
   price: 30000,
-  image: "images/productos/Bisuteria/Rosarios/NP528.png",
+  image: "images/productos/Bisuteria/Rosarios/NP528.jpg",
   medidas: "53 cm x 3 mm",
   material: "Acero"
 },
@@ -10695,7 +10695,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario San Benito Tricolor",
   price: 27000,
-  image: "images/productos/Bisuteria/Rosarios/MC959.png",
+  image: "images/productos/Bisuteria/Rosarios/MC959.jpg",
   medidas: "56 cm x 3 mm",
   material: "Rodio"
 },
@@ -10705,7 +10705,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario Dorado",
   price: 27000,
-  image: "images/productos/Bisuteria/Rosarios/MC914.png",
+  image: "images/productos/Bisuteria/Rosarios/MC914.jpg",
   medidas: "67 cm x 6 mm",
   material: "Rodio"
 },
@@ -10715,7 +10715,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Rosario Murano Negro",
   price: 24000,
-  image: "images/productos/Bisuteria/Rosarios/RO070.png",
+  image: "images/productos/Bisuteria/Rosarios/RO070.jpg",
   medidas: "63 cm x 4 mm",
   material: "Rodio"
 },
@@ -10725,7 +10725,7 @@ const PRODUCTS_BISUTERIA = [
   subcategory: "Rosarios",
   name: "Camandula",
   price: 24000,
-  image: "images/productos/Bisuteria/Rosarios/OR011.png",
+  image: "images/productos/Bisuteria/Rosarios/OR011.jpg",
   medidas: "52 cm",
   material: "Acero"
 },
