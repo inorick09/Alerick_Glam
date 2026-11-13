@@ -78,6 +78,198 @@
 
 const PRODUCTS_MAQUILLAJE = [
 {
+  id: "Ksb2285",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Kit Suero Y Brillo Petite Fruticas - Ksb2285",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Ksb2285.jpg",
+  description: "Descubre la frescura de estos kits brillo + Suero de Sandía y Uva que su fórmula ligera y delicada te enamorará ya que está creada para brindar una sensación de hidratación esencial desde el primer uso. Enriquecido con agua, ingrediente clave para mantener la piel suave y equilibrada, y vitamina E, un antioxidante que ayuda a proteger y realzar la luminosidad natural del rostro.\nSu textura suave y de rápida absorción lo convierte en el aliado ideal para adolescentes o para quienes están empezando a construir su rutina de cuidado facial, ofreciendo un acabado fresco, cómodo y perfecto para el uso diario.\nEl must de este kit es un lip oil con aroma a Sandia y Uva (puedes escoger tu favorito), diseñado para aportar un acabado luminoso mientras deja los labios suaves y con un toque irresistible.\nUn dúo fresco, práctico y perfecto para iniciar o complementar tu cuidado facial diario.",
+  category_new: "Nueva colección",
+  tonos: ["Uva", "Sandia"]
+},
+{
+  id: "Bmt2271",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Borrador De Maquillaje - Bmt2271",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/Bmt2271.jpg",
+  description: "Corrige tu maquillaje con precisión y consigue un look impecable con este borrador de maquillaje en plumón. Es ideal para retocar pequeños errores en el delineado, limpiar trazos y perfeccionar detalles sin tener que retirar todo el maquillaje. Su formato práctico permite trabajar sobre zonas específicas del rostro y retirar restos de maquillaje, incluso de fórmulas resistentes, con pocas pasadas. Úsalo para definir el delineado, corregir líneas y darle el acabado que buscas a tu look. Incluye 3 puntas de repuesto para acompañarte en más rutinas de maquillaje. Recuerda que está diseñado para correcciones puntuales y no reemplaza el uso de un desmaquillante. ¡Tu aliado para esos retoques que hacen toda la diferencia!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Ge18",
+  category: "maquillaje",
+  subcategory: "Ojos",
+  name: "Kit Duo Pestañina + Fortalecedora Gold Eyes - Ge18",
+  price: 25000,
+  image: "images/productos/Maquillaje/Ojos/Ge18.jpg",
+  description: "Realza tu mirada con el Kit Dúo Pestañina + Fortalece Gold Trendy. Este set combina una pestañina negra de alta pigmentación con un tratamiento transparente para complementar tu rutina de cuidado y maquillaje de pestañas y cejas. La pestañina cuenta con fórmula lavable y cepillo de plástico que ayuda a alargar y definir las pestañas, separándolas para conseguir un acabado uniforme y sin grumos. El tratamiento transparente con colágeno ayuda a acondicionar las pestañas y cejas y a mantener una apariencia saludable. Dos productos que se complementan para definir tu mirada y darle a tus pestañas el protagonismo que merecen. ¡Un dúo práctico para completar tu rutina de belleza!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Sc8",
+  category: "maquillaje",
+  subcategory: "Rostro",
+  name: "Corrector Y Tratamiento Super Concealer - Sc8",
+  price: 15000,
+  image: "images/productos/Maquillaje/Rostro/Sc8.jpg",
+  description: "Unifica la apariencia del rostro con el Corrector y Tratamiento Super Concealer Trendy. Su cobertura alta y modulable ayuda a disimular visualmente ojeras, manchas e imperfecciones, para que puedas conseguir desde un acabado más natural hasta un maquillaje de mayor cobertura. Su textura ligera se difumina fácilmente y permite aplicar capas según el resultado que quieras lograr, sin una sensación pesada. Además, aporta una sensación hidratante para mantener una apariencia fresca y cómoda durante el uso. Ideal para trabajar la zona de las ojeras y perfeccionar el maquillaje del rostro. ¡Cobertura y una sensación confortable en un solo paso!",
+  category_new: "Nueva colección",
+  tonos: ["02", "03"]
+},
+{
+  id: "Sfr1279",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Kit Primer Y Fijador Rose - Sfr1279",
+  price: 20000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/Sfr1279.jpg",
+  description: "Prepara tu piel y ayuda a prolongar la duración de tu maquillaje con el Kit Primer y Fijador Rose Trendy. Este dúo reúne dos esenciales de maquillaje para conseguir una aplicación más uniforme y darle el toque final a tu look. Incluye un primer tipo sérum, ideal para aplicar antes de la base y ayudar a suavizar e hidratar la piel, y un fijador de textura ligera y sensación refrescante que se utiliza al terminar el maquillaje. Ambos tienen un delicado aroma a rosas que acompaña tu rutina de belleza. ¿Cómo usarlo? Aplica el primer después de tu rutina de cuidado facial y antes del maquillaje. Cuando termines, rocía el fijador para completar tu look. Dos pasos sencillos para preparar y finalizar tu maquillaje. ¡Un dúo que no puede faltar en tu cosmetiquera!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Bmn1972",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Kit Brochas Mini Negro - Bmn1972",
+  price: 50000,
+  image: "images/productos/Maquillaje/Accesorios/Bmn1972.jpg",
+  description: "Lleva tus herramientas de maquillaje a todas partes con el Kit Mini de 6 Brochas Negro de Trendy. Su presentación compacta reúne brochas versátiles para rostro y ojos, ideales para crear looks naturales, maquillajes más elaborados o hacer retoques durante el día. El kit incluye herramientas para aplicar diferentes productos y una brocha especial para maquillar y peinar las cejas. Además, viene con una cosmetiquera práctica que te permite organizar tus brochas y guardarlas fácilmente en el bolso o el equipaje. ¡Perfecto para acompañarte en casa, en el trabajo o de viaje!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Kbm1979",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Kit Brochas Piel Morado - Kbm1979",
+  price: 50000,
+  image: "images/productos/Maquillaje/Accesorios/Kbm1979.jpg",
+  description: "Empieza a crear tus looks con el Kit de 5 Brochas Piel Morado de Trendy. Es una opción práctica para quienes están comenzando en el mundo del maquillaje. Incluye cinco brochas de diferentes formas y densidades: las de cerdas más sueltas son ideales para aplicar productos en polvo, mientras que las más compactas facilitan la aplicación de base, corrector y otros productos en crema. Además, sus cerdas suaves permiten trabajar los productos cómodamente y conseguir un acabado uniforme. Gracias a su tamaño práctico, puedes guardarlas en tu cosmetiquera y llevarlas contigo a donde quieras. ¡Cinco brochas para practicar, experimentar y encontrar tu propio estilo!",
+  category_new: "Nueva colección"
+},
+{
+  id: "P107",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Rubor - P107",
+  price: 12000,
+  image: "images/productos/Maquillaje/Accesorios/P107.jpg",
+  description: "Aplica y difumina tu rubor con facilidad con la Brocha Individual para Rubor P107. Su forma redonda está diseñada para distribuir el producto suavemente sobre las mejillas y conseguir un acabado uniforme y de apariencia natural. Sus cerdas suaves ayudan a integrar el color sin dejar marcas y permiten construir la intensidad que prefieras: desde un toque sutil hasta unas mejillas más protagonistas. Es una herramienta práctica para aplicar rubor en polvo y completar diferentes estilos de maquillaje. ¡El complemento ideal para darle a tus mejillas el toque de color que más te gusta!",
+  category_new: "Nueva colección"
+},
+{
+  id: "P105",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Contorno - P105",
+  price: 10000,
+  image: "images/productos/Maquillaje/Accesorios/P105.jpg",
+  description: "Logra un contorno definido y bien difuminado con la Brocha Individual para Contorno P105. Está diseñada para aplicar y distribuir productos de maquillaje con precisión, ayudándote a enmarcar las facciones y conseguir un acabado uniforme. Sus cerdas ultrasuaves facilitan el difuminado y permiten trabajar el producto cómodamente, para crear contornos definidos sin dejar líneas marcadas. Es una herramienta práctica para complementar tu rutina de maquillaje y controlar la aplicación del producto. Su diseño en negro y dorado añade un toque elegante a tu colección de brochas. ¡Precisión y suavidad para esculpir tu look a tu manera!",
+  category_new: "Nueva colección"
+},
+{
+  id: "P210",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Corrector Mini - P210",
+  price: 10000,
+  image: "images/productos/Maquillaje/Accesorios/P210.jpg",
+  description: "No hay nada más frustrante que aplicarte el corrector con los dedos o con una esponja gigante y terminar con la zona de las ojeras cuarteada, llena de pliegues o con un parche denso que te hace ver cansada. ¡Es hora de cambiar las reglas del juego! Te presentamos la herramienta definitiva para iluminar tu mirada en segundos. Esta brocha tipo kabuki tiene el tamaño perfecto para aplicar y difuminar tu corrector favorito, llegando con precisión milimétrica a las esquinas más difíciles del lagrimal y las aletas de la nariz. Te aporta un acabado aterciopelado de alta cobertura digno de una pasarela. Es de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, dándole un toque súper chic, elegante y costoso a tu cosmetiquera de diario.",
+  category_new: "Nueva colección"
+},
+{
+  id: "P216",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Multiusos - P216",
+  price: 10000,
+  image: "images/productos/Maquillaje/Accesorios/P216.jpg",
+  description: "Nuestra brocha multiusos es lo que necesitas. Admítelo: estás cansada de abrir tu cosmetiquera y ver un mar de herramientas que solo te quitan espacio, o de enredarte por las mañanas pensando cuál sirve para qué. ¡Es hora de facilitarte la vida! Puedes aplicar todos los productos que desees con ella, convirtiéndose en el verdadero comodín de tu rutina. Su cabezal tipo kabuki es ultra suave y denso, diseñado de forma perfecta para aplicar y difuminar productos principalmente cremosos o líquidos, aunque se adapta a lo que le pongas enfrente. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportando ese toque costoso, sofisticado y chic que te mereces. Sentirás cómo acaricia tu rostro mientras dejas tu piel con un acabado de revista en tiempo récord.",
+  category_new: "Nueva colección"
+},
+{
+  id: "P211",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Kabuki Mini - P211",
+  price: 10000,
+  image: "images/productos/Maquillaje/Accesorios/P211.jpg",
+  description: "Sabemos que estás cansada de cargar una cosmetiquera gigante y pesada que casi no cierra en tu bolso diario, o de tener que aplicar tus bases y cremas con los dedos en la calle porque no tienes una herramienta adecuada a la mano. ¡Tu dilema de espacio quedó oficialmente resuelto! Te presentamos nuestra brocha kabuki mini, el secreto mejor guardado para llevar a todos lados sin ocupar espacio en tu cartera, mochila o maleta de viaje. Esta maravilla de calidad profesional esconde un superpoder que te va a volar la cabeza: el mango viene con un extremo de forma ondulada ultra inteligente que puedes utilizar como palita mezcladora para no contaminar tus productos ni ensuciarte las uñas. Además, sus colores en negro con detalles dorados la hacen ver muy luxury, aportando todo el glamour a tus retoques express cotidianos.",
+  category_new: "Nueva colección"
+},
+{
+  id: "P217",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Individual Productos En Crema - P217",
+  price: 10000,
+  image: "images/productos/Maquillaje/Accesorios/P217.jpg",
+  description: "Diles adiós a esos días frustrantes donde te aplicas el rubor o el contorno húmedo con los dedos y terminas levantando la base de abajo, o peor aún, usando brochas tradicionales que te dejan el rostro lleno de parches y líneas marcadas difíciles de borrar. Lograr ese acabado fresco, jugoso y súper natural que está en tendencia ahora es una realidad. Esta brocha perfecta para productos en crema cuenta con unas cerdas ultra suaves que se sienten como una caricia en tu rostro, y su forma redonda te ayudará a difuminar perfectamente todas tus texturas cremosas e integrarlas con tu piel en segundos. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportándole ese toque chic y costoso que tu tocador se merece. Sentirás cómo se desliza sin esfuerzo mientras pule el maquillaje como por arte de magia.",
+  category_new: "Nueva colección"
+},
+{
+  id: "Pap2484",
+  category: "maquillaje",
+  subcategory: "Cuidado Facial",
+  name: "Parches Acne Bob Esponja - Pap2484",
+  price: 15000,
+  image: "images/productos/Maquillaje/Cuidado_Facial/Pap2484.jpg",
+  description: "Dale un cuidado práctico a tu piel con los parches para acné Happy Clean de Patricio, inspirados en Bob Esponja. Estos stickers semitransparentes funcionan como pequeños apósitos que ayudan a proteger los granitos del contacto con el ambiente externo y a absorber la humedad y las secreciones. Su presentación incluye 50 parches con el divertido diseño de Patricio, disponibles en dos tamaños para adaptarse a las dimensiones de cada granito y a tus necesidades. Aplícalos sobre la piel limpia y seca, sin maquillaje ni cremas debajo, y déjalos actuar durante la noche. Una forma práctica y divertida de cuidar esos granitos inesperados mientras descansas. ¡Patricio llega a tu rutina para acompañar el cuidado de tu piel!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Kgt2832",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Kit Ojos Golden X 3Und - Kgt2832",
+  price: 20000,
+  image: "images/productos/Maquillaje/Accesorios/Kgt2832.jpg",
+  description: "Crea maquillajes de ojos naturales o más elaborados con el Kit de Ojos Golden Trendy. Este set incluye 3 brochas dobles, es decir, 6 puntas diseñadas para aplicar, integrar y difuminar sombras con diferentes niveles de precisión. Incluye una brocha con dos puntas difuminadoras amplias para suavizar e integrar los tonos; una brocha tipo lengua de gato en dos tamaños para aplicar y distribuir el color; y una brocha de doble función con una punta precisa para depositar producto y otra para difuminar y trabajar los detalles. Sus fibras extra suaves de calidad premium facilitan una aplicación cómoda y uniforme. Los mangos metálicos dorados aportan resistencia y un acabado sofisticado. ¡Seis herramientas en un solo kit para darle vida a todos tus looks de ojos!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Bgp2833",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Golden Polvos - Bgp2833",
+  price: 20000,
+  image: "images/productos/Maquillaje/Accesorios/Bgp2833.jpg",
+  description: "Completa tu rutina con la Brocha Golden Doble para Polvos de Trendy, diseñada para trabajar productos en polvo con distintos niveles de precisión. Su formato de dos puntas te permite maquillar tanto zonas amplias como áreas específicas del rostro. El lado amplio es ideal para distribuir polvos sueltos o compactos de manera uniforme, mientras que la punta en forma de gota facilita aplicar iluminador o añadir un toque de rubor en puntos estratégicos. Sus fibras extra suaves de calidad premium permiten una aplicación delicada y un difuminado uniforme. Además, su mango metálico dorado aporta resistencia y un diseño elegante. ¡Dos tamaños para darle a cada detalle de tu maquillaje el acabado que buscas!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Bga2834",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Golden Angular - Bga2834",
+  price: 20000,
+  image: "images/productos/Maquillaje/Accesorios/Bga2834.jpg",
+  description: "Aplica y difumina tus productos favoritos con la Brocha Golden Angular Doble de Trendy. Su diseño de dos puntas combina herramientas para trabajar distintas texturas y obtener un acabado uniforme en tu maquillaje. El lado amplio, con fibras más separadas, facilita la aplicación ligera de productos en polvo. Por su parte, la punta angular, de fibras compactas, se adapta a diferentes zonas del rostro, ayuda a aplicar y difuminar bases, rubores, contornos y otros productos en crema. Sus fibras extra suaves de calidad premium permiten trabajar los productos cómodamente, mientras que el mango metálico dorado aporta resistencia y un acabado sofisticado. ¡Dos formas de aplicación en una brocha versátil para crear tus looks!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Bgb2836",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Golden Crema Polvo - Bgb2836",
+  price: 20000,
+  image: "images/productos/Maquillaje/Accesorios/Bgb2836.jpg",
+  description: "Consigue una aplicación versátil con la Brocha Golden Doble para Base y Polvo Trendy. Su diseño reúne dos herramientas en una para trabajar diferentes productos de maquillaje con facilidad. El lado amplio permite distribuir polvos sueltos de manera ligera y homogénea, mientras que el lado tipo kabuki, con fibras compactas, facilita la aplicación y el difuminado de bases y otros productos en crema. Sus fibras extra suaves de calidad premium permiten trabajar el maquillaje con precisión, y su mango metálico dorado aporta resistencia y un acabado elegante. Dos funciones en una sola brocha para simplificar tu rutina y conseguir un maquillaje uniforme. ¡Más versatilidad para crear el acabado que buscas!",
+  category_new: "Nueva colección"
+},
+{
+  id: "Ltx2035",
+  category: "maquillaje",
+  subcategory: "Labios",
+  name: "Labial Trio Xoxo - Ltx2035",
+  price: 15000,
+  image: "images/productos/Maquillaje/Labios/Ltx2035.jpg",
+  description: "Lleva tres tonos de labios en una sola presentación con el Labial Trío XOXO Trendy. Este set reúne tonalidades tierra, cafés, nude y rojizas en un práctico formato de torre, ideal para crear maquillajes cálidos y combinar tus colores favoritos según la ocasión. Su fórmula cremosa se desliza suavemente sobre los labios y deja un acabado mate, con buena duración y una sensación cómoda durante el uso. Además, tiene un delicioso aroma a chocolate que hace aún más especial la experiencia. Tres tonos versátiles para jugar con diferentes estilos, desde un look natural hasta uno más intenso. ¡Tu trío de labiales favorito para cambiar de mood cuando quieras!",
+  category_new: "Nueva colección"
+},
+{
   id: "CD05",
   category: "maquillaje",
   subcategory: "Accesorios",
@@ -636,7 +828,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Encrespador Luxé Mini Plástico - EMT2504",
   price: 15000,
   image: "images/productos/Maquillaje/Rostro/EMT2504.jpg",
-  description: "- Su diseño mini cabe en cualquier bolso sin ocupar espacio, diseñado para adaptarse a la forma del ojo y proporcionar una curva progresiva y natural desde la base de la pestaña hasta las puntas.\n- La almohadilla de caucho suave trabaja la pestaña de manera amable generando la curva sin el doblado brusco que causa ruptura.\n- El básico de mirada más completo del bolso, cuatro funciones en un solo accesorio portátil de la línea Luxé."
+  description: "- Su diseño mini cabe en cualquier bolso sin ocupar espacio, diseñado para adaptarse a la forma del ojo y proporcionar una curva progresiva y natural desde la base de la pestaña hasta las puntas.\n- La almohadilla de caucho suave trabaja la pestaña de manera amable generando la curva sin el doblado brusco que causa ruptura.\n- El básico de mirada más completo del bolso, cuatro funciones en un solo accesorio portátil de la línea Luxé.",
+  category_new: "Nueva colección"
 },
 {
   id: "DY2346",
@@ -678,7 +871,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 10000,
   image: "images/productos/Maquillaje/Rostro/ILK2286.jpg",
   description: "Descubre el brillo que transforma tu look. Este iluminador líquido combina una textura ligera y de fácil aplicación con un acabado luminoso que resalta de manera natural las facciones del rostro. Su fórmula se integra perfectamente con la piel. Disponible en dos tonos versátiles que se envían surtidos: Oro rosa, ideal para un toque sutil de luz. Dorado perlado, perfecto para un efecto más intenso y radiante. Su textura líquida es de fácil difuminación. Pigmentación construible para un acabado sutil o más marcado.",
-  tonos: ["01", "02"]
+  tonos: ["01", "02"],
+  category_new: "Nueva colección"
 },
 {
   id: "Rtt2204",
@@ -1201,7 +1395,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brillo Llavero Hippie Chic - BHC2273",
   price: 10000,
   image: "images/productos/Maquillaje/Labios/BHC2273.jpg",
-  description: "Dale brillo a tus labios y estilo a tus accesorios con este gloss, que incluye un llavero metálico decorativo ideal para colgar en tu bolso, llaves o tener en tu cosmetiquera.\nSu fórmula ligera aporta un acabado brillante con destellos y deja los labios con un look fresco y divertido.\n\nGloss labial con acabado brillante y efecto glitter.\nTextura suave y fácil de aplicar.\n\nDos tonos disponibles: uno rosado y uno oro rosa perfectos que aportan unos destellos sutiles."
+  description: "Dale brillo a tus labios y estilo a tus accesorios con este gloss, que incluye un llavero metálico decorativo ideal para colgar en tu bolso, llaves o tener en tu cosmetiquera.\nSu fórmula ligera aporta un acabado brillante con destellos y deja los labios con un look fresco y divertido.\n\nGloss labial con acabado brillante y efecto glitter.\nTextura suave y fácil de aplicar.\n\nDos tonos disponibles: uno rosado y uno oro rosa perfectos que aportan unos destellos sutiles.",
+  category_new: "Nueva colección"
 },
 {
   id: "KPG2087",
@@ -1399,7 +1594,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Kit X8 Forever Gloss - BFG1776",
   price: 25000,
   image: "images/productos/Maquillaje/Labios/BFG1776.jpg",
-  description: "Tus labios requieren un color diferente cada día.\n\nCompleta tu rutina de maquillaje con este práctico kit de 8 glosses con color en tonos rosas, rojizos y nudes.\n\nSu textura suave y ligera brinda un acabado brillante que realza los labios, aportando color y frescura con una durabilidad media.\n\nPerfectos para crear diferentes looks y lucir unos labios radiantes en cualquier ocasión."
+  description: "Tus labios requieren un color diferente cada día.\n\nCompleta tu rutina de maquillaje con este práctico kit de 8 glosses con color en tonos rosas, rojizos y nudes.\n\nSu textura suave y ligera brinda un acabado brillante que realza los labios, aportando color y frescura con una durabilidad media.\n\nPerfectos para crear diferentes looks y lucir unos labios radiantes en cualquier ocasión.",
+  category_new: "Nueva colección"
 },
 {
   id: "7498B",
@@ -2002,7 +2198,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 15000,
   image: "images/productos/Maquillaje/Cejas/LCD2284.jpg",
   description: "- Sus dos tipos de punta resuelven en un solo producto lo que antes requería dos herramientas: la punta gruesa biselada rellena y da forma rápidamente a toda la ceja con trazos amplios y uniformes; la punta delgada traza líneas finas que simulan vellos individuales para ese efecto \"\"microblading casero\"\" que hace que la ceja se vea llena y completamente natural.\n- Está disponible en dos tonos versátiles diseñados para adaptarse a diferentes estilos y tonos de cabello: café claro para un acabado suave y natural, y gris oscuro para una ceja más definida y elegante.",
-  tonos: ["01", "02"]
+  tonos: ["01", "02"],
+  category_new: "Nueva colección"
 },
 {
   id: "KHT2503",
@@ -2011,7 +2208,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Kit Herramientas Básicas Luxé - KHT2503",
   price: 25000,
   image: "images/productos/Maquillaje/Cejas/KHT2503.jpg",
-  description: "- Incluye las herramientas esenciales para definir y perfilar las cejas con precisión, retirar el vello facial de forma rápida y limpia, y mantener la piel cuidada sin depender de una cosmetiquera completa.\n- Su diseño funcional, con la calidad característica de la línea Luxé de Trendy, hace que cada herramienta sea precisa y duradera para el uso diario y los retoques rápidos en cualquier momento.\n- El paso previo que marca la diferencia: con las cejas bien definidas y la piel preparada, cualquier producto de maquillaje que apliques después queda significativamente mejor.\n- Ideal para principiantes que están definiendo su técnica y para quienes ya tienen una forma establecida y quieren mantenerla con retoques eficientes."
+  description: "- Incluye las herramientas esenciales para definir y perfilar las cejas con precisión, retirar el vello facial de forma rápida y limpia, y mantener la piel cuidada sin depender de una cosmetiquera completa.\n- Su diseño funcional, con la calidad característica de la línea Luxé de Trendy, hace que cada herramienta sea precisa y duradera para el uso diario y los retoques rápidos en cualquier momento.\n- El paso previo que marca la diferencia: con las cejas bien definidas y la piel preparada, cualquier producto de maquillaje que apliques después queda significativamente mejor.\n- Ideal para principiantes que están definiendo su técnica y para quienes ya tienen una forma establecida y quieren mantenerla con retoques eficientes.",
+  category_new: "Nueva colección"
 },
 {
   id: "DT25",
@@ -2397,7 +2595,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Base - P103",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P103.jpg",
-  description: "Olvídate de esos días frustrantes donde te aplicas la base con los dedos y te quedan las manos pegajosas, o peor aún, usando herramientas que te dejan el rostro lleno de rayas, parches y líneas marcadas que arruinan por completo tu look. Lograr un lienzo perfecto, liso y súper natural ahora es una realidad que te tomará muy pocos minutos. Su tamaño ideal y su calidad premium la convertirán en tu favorita desde la primera pasada, haciendo que tu base favorita rinda muchísimo más. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportándole ese toque chic y costoso que tu tocador se merece. Sentirás cómo se desliza como una caricia mientras distribuye el maquillaje de forma homogénea por todo tu rostro."
+  description: "Olvídate de esos días frustrantes donde te aplicas la base con los dedos y te quedan las manos pegajosas, o peor aún, usando herramientas que te dejan el rostro lleno de rayas, parches y líneas marcadas que arruinan por completo tu look. Lograr un lienzo perfecto, liso y súper natural ahora es una realidad que te tomará muy pocos minutos. Su tamaño ideal y su calidad premium la convertirán en tu favorita desde la primera pasada, haciendo que tu base favorita rinda muchísimo más. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportándole ese toque chic y costoso que tu tocador se merece. Sentirás cómo se desliza como una caricia mientras distribuye el maquillaje de forma homogénea por todo tu rostro.",
+  category_new: "Nueva colección"
 },
 {
   id: "P209",
@@ -2406,7 +2605,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Cejas Y Pestañas - P209",
   price: 8000,
   image: "images/productos/Maquillaje/Accesorios/P209.jpg",
-  description: "No hay nada que arruine más un maquillaje hermoso que unas cejas despeinadas con parches de producto o unas pestañas llenas de grumos pegajosos que te hacen ver la mirada pesada y cansada. ¡Es hora de unirte al club de las miradas de impacto! Nuestra brocha 2 en 1 es el secreto mejor guardado que necesitas para que mantengas impecables todos los días tus cejas y pestañas sin esfuerzo. Por un lado, tienes una brocha angular ultra precisa ideal para rellenar y diseñar, y por el otro, un cepillo espectacular para peinar y difuminar. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportando todo el glamour y la elegancia que tu cosmetiquera se merece."
+  description: "No hay nada que arruine más un maquillaje hermoso que unas cejas despeinadas con parches de producto o unas pestañas llenas de grumos pegajosos que te hacen ver la mirada pesada y cansada. ¡Es hora de unirte al club de las miradas de impacto! Nuestra brocha 2 en 1 es el secreto mejor guardado que necesitas para que mantengas impecables todos los días tus cejas y pestañas sin esfuerzo. Por un lado, tienes una brocha angular ultra precisa ideal para rellenar y diseñar, y por el otro, un cepillo espectacular para peinar y difuminar. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportando todo el glamour y la elegancia que tu cosmetiquera se merece.",
+  category_new: "Nueva colección"
 },
 {
   id: "P208",
@@ -2415,7 +2615,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Cejas - P208",
   price: 8000,
   image: "images/productos/Maquillaje/Accesorios/P208.jpg",
-  description: "Si estás cansada de esos días caóticos donde intentas arreglar tus cejas con lápices toscos que te dejan un bloque oscuro, o peor aún, ver que los pelitos se despeinan a mitad del día haciéndote lucir cansada. ¡Llegó el momento de liberar tu mirada! Nuestra brocha 2 en 1 es perfecta para que mantengas tus cejas impecables todos los días sin pasar horas frente al espejo. Por un extremo, tienes una brocha angular con el corte perfecto y ultra delgado para diseñar trazos precisos, y por el otro, un cepillo espectacular para peinar y difuminar los excesos. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, convirtiéndose en el accesorio más sofisticado, elegante y chic de toda tu cosmetiquera."
+  description: "Si estás cansada de esos días caóticos donde intentas arreglar tus cejas con lápices toscos que te dejan un bloque oscuro, o peor aún, ver que los pelitos se despeinan a mitad del día haciéndote lucir cansada. ¡Llegó el momento de liberar tu mirada! Nuestra brocha 2 en 1 es perfecta para que mantengas tus cejas impecables todos los días sin pasar horas frente al espejo. Por un extremo, tienes una brocha angular con el corte perfecto y ultra delgado para diseñar trazos precisos, y por el otro, un cepillo espectacular para peinar y difuminar los excesos. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, convirtiéndose en el accesorio más sofisticado, elegante y chic de toda tu cosmetiquera.",
+  category_new: "Nueva colección"
 },
 {
   id: "P108",
@@ -2424,7 +2625,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Doble Angular Y Gota - P108",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P108.jpg",
-  description: "¿Cansada de abrir tu bolso de maquillaje y encontrar un desorden eterno de herramientas que te quitan espacio, o de tener que cargar mil brochas diferentes cuando viajas o sales de fiesta solo para un retoque express?. ¡Es hora de facilitarte la vida con inteligencia! Las brochas dobles siempre serán una alternativa que optimiza el espacio en tu cosmetiquera y te da los mejores acabados. Por un extremo tienes un cabezal en forma de gota perfecto para sellar y unificar zonas delicadas, y por el otro, un corte angular ideal para dar color y definir. Es una herramienta de calidad profesional, y es tan increíblemente suave al tacto con el rostro que sentirás una caricia deliciosa cada vez que la pases. Sus colores en negro y dorado la hacen ver muy luxury, aportando todo el estilo y glamour que te mereces en tu rutina diaria."
+  description: "¿Cansada de abrir tu bolso de maquillaje y encontrar un desorden eterno de herramientas que te quitan espacio, o de tener que cargar mil brochas diferentes cuando viajas o sales de fiesta solo para un retoque express?. ¡Es hora de facilitarte la vida con inteligencia! Las brochas dobles siempre serán una alternativa que optimiza el espacio en tu cosmetiquera y te da los mejores acabados. Por un extremo tienes un cabezal en forma de gota perfecto para sellar y unificar zonas delicadas, y por el otro, un corte angular ideal para dar color y definir. Es una herramienta de calidad profesional, y es tan increíblemente suave al tacto con el rostro que sentirás una caricia deliciosa cada vez que la pases. Sus colores en negro y dorado la hacen ver muy luxury, aportando todo el estilo y glamour que te mereces en tu rutina diaria.",
+  category_new: "Nueva colección"
 },
 {
   id: "P104",
@@ -2433,7 +2635,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Base Kabuki - P104",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P104.jpg",
-  description: "Comprar una base espectacular, ir a aplicártela por la mañana y ver que te queda el rostro lleno de rayas, líneas marcadas o parches pesados que te hacen ver acartonada y te arruinan todo el look. ¡Es hora de unirte al club de la piel de porcelana! Te presentamos tu nueva aliada infalible de diario. Esta brocha tipo kabuki es súper tupida y suave al tacto con el rostro, diseñada estratégicamente para pulir el maquillaje en segundos. Olvídate de batallar con esponjas que se tragan la mitad de tus productos; sus fibras premium distribuyen el maquillaje de forma homogénea sin dejar parches. Es una herramienta de calidad profesional, y sus hermosos colores en negro con detalles dorados la hacen ver muy luxury, aportando todo el glamour y la elegancia que tu tocador se merece."
+  description: "Comprar una base espectacular, ir a aplicártela por la mañana y ver que te queda el rostro lleno de rayas, líneas marcadas o parches pesados que te hacen ver acartonada y te arruinan todo el look. ¡Es hora de unirte al club de la piel de porcelana! Te presentamos tu nueva aliada infalible de diario. Esta brocha tipo kabuki es súper tupida y suave al tacto con el rostro, diseñada estratégicamente para pulir el maquillaje en segundos. Olvídate de batallar con esponjas que se tragan la mitad de tus productos; sus fibras premium distribuyen el maquillaje de forma homogénea sin dejar parches. Es una herramienta de calidad profesional, y sus hermosos colores en negro con detalles dorados la hacen ver muy luxury, aportando todo el glamour y la elegancia que tu tocador se merece.",
+  category_new: "Nueva colección"
 },
 {
   id: "P215",
@@ -2442,7 +2645,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Kabuki Rubor - P215",
   price: 10000,
   image: "images/productos/Maquillaje/Accesorios/P215.jpg",
-  description: "No hay nada más frustrante que comprar un rubor divino, ir a aplicártelo a las carreras por la mañana y terminar con un manchón súper marcado en la mejilla que arruina todo tu maquillaje y te hace ver acalorada. ¡Diles adiós a las batallas con el color! Te presentamos la brocha kabuki definitiva, diseñada estratégicamente para lograr acabados naturales, difuminados y ultra limpios en un abrir y cerrar de ojos. Al ser tipo kabuki, cuenta con una densidad perfecta de cerdas ultra suaves que atrapan la cantidad exacta de pigmento y lo esparcen de forma aérea, fundiéndolo con tu piel como por arte de magia. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportando ese toque sofisticado, costoso y chic que tu cosmetiquera se merece. Sentirás una caricia deliciosa en tu rostro mientras consigues ese 'glow' saludable que te acompaña todo el día."
+  description: "No hay nada más frustrante que comprar un rubor divino, ir a aplicártelo a las carreras por la mañana y terminar con un manchón súper marcado en la mejilla que arruina todo tu maquillaje y te hace ver acalorada. ¡Diles adiós a las batallas con el color! Te presentamos la brocha kabuki definitiva, diseñada estratégicamente para lograr acabados naturales, difuminados y ultra limpios en un abrir y cerrar de ojos. Al ser tipo kabuki, cuenta con una densidad perfecta de cerdas ultra suaves que atrapan la cantidad exacta de pigmento y lo esparcen de forma aérea, fundiéndolo con tu piel como por arte de magia. Es una herramienta de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, aportando ese toque sofisticado, costoso y chic que tu cosmetiquera se merece. Sentirás una caricia deliciosa en tu rostro mientras consigues ese 'glow' saludable que te acompaña todo el día.",
+  category_new: "Nueva colección"
 },
 {
   id: "P214",
@@ -2451,7 +2655,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Doble Kabuki Angular - P214",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P214.jpg",
-  description: "Dile adiós a esos días frustrantes donde abres tu cosmetiquera en medio de una emergencia y pasas minutos buscando entre un mar de herramientas sueltas que solo te quitan espacio, o peor aún, terminar con la piel llena de rayas y parches porque no tienes el aplicador correcto a la mano. ¡Es hora de simplificar tus mañanas! Te presentamos una infaltable para maquillajes increíbles en segundos. Esta brocha doble junta lo mejor de dos mundos: por un extremo tienes un cabezal kabuki recto ideal para unificar tu piel, y por el otro, un corte angular perfecto para dar dimensión. Es de calidad profesional, y sus colores en negro y plateado la hacen ver muy luxury, aportando todo el glamour y elegancia a tu tocador. Sentirás cómo se desliza como una nube mientras pule tus productos favoritos sin esfuerzo."
+  description: "Dile adiós a esos días frustrantes donde abres tu cosmetiquera en medio de una emergencia y pasas minutos buscando entre un mar de herramientas sueltas que solo te quitan espacio, o peor aún, terminar con la piel llena de rayas y parches porque no tienes el aplicador correcto a la mano. ¡Es hora de simplificar tus mañanas! Te presentamos una infaltable para maquillajes increíbles en segundos. Esta brocha doble junta lo mejor de dos mundos: por un extremo tienes un cabezal kabuki recto ideal para unificar tu piel, y por el otro, un corte angular perfecto para dar dimensión. Es de calidad profesional, y sus colores en negro y plateado la hacen ver muy luxury, aportando todo el glamour y elegancia a tu tocador. Sentirás cómo se desliza como una nube mientras pule tus productos favoritos sin esfuerzo.",
+  category_new: "Nueva colección"
 },
 {
   id: "P100",
@@ -2460,7 +2665,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Polvo Gigante - P100",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P100.jpg",
-  description: "Si estás cansada de que pasar media hora logrando una piel de porcelana con tu base líquida para que, al momento de sellar, uses una herramienta pequeña o tosca que te deje un manchón blanco, parches secos o que termine barriendo el maquillaje de abajo. ¡Es hora de cambiar las reglas del juego y experimentar un sellado de nube! Esta brocha gigante es una verdadera caricia gigante para tu rostro, diseñada con el tamaño XL perfecto para cubrir grandes zonas en un par de pasadas express. Su cabezal súper esponjoso es de calidad profesional y es extremadamente suave al tacto con el rostro, lo que evita rozaduras o texturas pesadas. Lo mejor de todo es que no vas a desperdiciar producto con ella; distribuye tus polvos de manera tan aérea y homogénea que tu maquillaje rendirá una eternidad. Sus colores en negro y dorado le dan ese toque luxury y costoso que tu tocador se merece."
+  description: "Si estás cansada de que pasar media hora logrando una piel de porcelana con tu base líquida para que, al momento de sellar, uses una herramienta pequeña o tosca que te deje un manchón blanco, parches secos o que termine barriendo el maquillaje de abajo. ¡Es hora de cambiar las reglas del juego y experimentar un sellado de nube! Esta brocha gigante es una verdadera caricia gigante para tu rostro, diseñada con el tamaño XL perfecto para cubrir grandes zonas en un par de pasadas express. Su cabezal súper esponjoso es de calidad profesional y es extremadamente suave al tacto con el rostro, lo que evita rozaduras o texturas pesadas. Lo mejor de todo es que no vas a desperdiciar producto con ella; distribuye tus polvos de manera tan aérea y homogénea que tu maquillaje rendirá una eternidad. Sus colores en negro y dorado le dan ese toque luxury y costoso que tu tocador se merece.",
+  category_new: "Nueva colección"
 },
 {
   id: "P111",
@@ -2469,7 +2675,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Kabuki Corrector - P111",
   price: 10000,
   image: "images/productos/Maquillaje/Accesorios/P111.jpg",
-  description: "Olvídate de esos días frustrantes donde te aplicas el corrector o tus contornos húmedos y terminas con líneas marcadas, zonas acumuladas o parches fatales que arruinan tu base. Te presentamos la brocha kabuki definitiva para aplicar y difuminar productos cremosos de forma impecable. Olvídate de batallar con esponjas que se tragan todo tu maquillaje; sus cerdas son ultra suaves, densas y tupidas, diseñadas estratégicamente para que no absorban producto, sino que te ayuden a distribuirlo y fundirlo correctamente con tu piel. Te deja un acabado aterciopelado divino y una cobertura media-alta digna de pasarela sin tanto esfuerzo. Además, es de calidad profesional y sus colores en negro con detalles dorados la hacen ver muy luxury, convirtiéndose en la joya más elegante de tu tocador."
+  description: "Olvídate de esos días frustrantes donde te aplicas el corrector o tus contornos húmedos y terminas con líneas marcadas, zonas acumuladas o parches fatales que arruinan tu base. Te presentamos la brocha kabuki definitiva para aplicar y difuminar productos cremosos de forma impecable. Olvídate de batallar con esponjas que se tragan todo tu maquillaje; sus cerdas son ultra suaves, densas y tupidas, diseñadas estratégicamente para que no absorban producto, sino que te ayuden a distribuirlo y fundirlo correctamente con tu piel. Te deja un acabado aterciopelado divino y una cobertura media-alta digna de pasarela sin tanto esfuerzo. Además, es de calidad profesional y sus colores en negro con detalles dorados la hacen ver muy luxury, convirtiéndose en la joya más elegante de tu tocador.",
+  category_new: "Nueva colección"
 },
 {
   id: "P102",
@@ -2496,7 +2703,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Polvo Ancha - P101",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P101.jpg",
-  description: "No hay nada más aburrido que terminar tu maquillaje, aplicar tus polvos con un pomo viejo o una brocha tosca y terminar con la cara blanca, pesada o llena de parches secos que te hacen ver acartonada y con diez años más. ¡Es hora de cambiar las reglas del juego! Te presentamos tu nueva aliada infalible para mantener los brillos a raya. Esta brocha ancha es una maravilla de calidad profesional, diseñada con un cabezal esponjoso que distribuye el producto de forma ultra ligera. Es extremadamente suave al tacto con el rostro, sintiéndose como una caricia de nubes cada vez que la pasas. Además, sus hermosos colores en negro con detalles dorados la hacen ver muy luxury, aportando elegancia y un toque costoso a tu tocador o a tu cosmetiquera de diario."
+  description: "No hay nada más aburrido que terminar tu maquillaje, aplicar tus polvos con un pomo viejo o una brocha tosca y terminar con la cara blanca, pesada o llena de parches secos que te hacen ver acartonada y con diez años más. ¡Es hora de cambiar las reglas del juego! Te presentamos tu nueva aliada infalible para mantener los brillos a raya. Esta brocha ancha es una maravilla de calidad profesional, diseñada con un cabezal esponjoso que distribuye el producto de forma ultra ligera. Es extremadamente suave al tacto con el rostro, sintiéndose como una caricia de nubes cada vez que la pasas. Además, sus hermosos colores en negro con detalles dorados la hacen ver muy luxury, aportando elegancia y un toque costoso a tu tocador o a tu cosmetiquera de diario.",
+  category_new: "Nueva colección"
 },
 {
   id: "P109",
@@ -2505,7 +2713,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Kabuki Pequeña - P109",
   price: 10000,
   image: "images/productos/Maquillaje/Accesorios/P109.jpg",
-  description: "Nada más frustrante que intentar usar esos rubores o contornos en crema que se ven divinos en redes, y que al aplicártelos con los dedos termines levantando la base que ya tenías abajo, o peor aún, que te quede un manchón súper marcado que arruina todo tu look. ¡Es hora de cambiar el drama por una piel de porcelana! Te presentamos a tu nueva mejor amiga para las texturas húmedas. Es ideal para difuminar rubor o contorno en crema gracias a su cabezal denso que absorbe el producto y lo funde con tu cutis al instante. Deja un acabado mate con cobertura alta pero sin pesadez, logrando ocultar imperfecciones mientras esculpes tus facciones. Es de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, dándole ese toque costoso y sofisticado que tu cosmetiquera se merece. ¡Sentirás que estás en manos de una maquilladora experta todas las mañanas!"
+  description: "Nada más frustrante que intentar usar esos rubores o contornos en crema que se ven divinos en redes, y que al aplicártelos con los dedos termines levantando la base que ya tenías abajo, o peor aún, que te quede un manchón súper marcado que arruina todo tu look. ¡Es hora de cambiar el drama por una piel de porcelana! Te presentamos a tu nueva mejor amiga para las texturas húmedas. Es ideal para difuminar rubor o contorno en crema gracias a su cabezal denso que absorbe el producto y lo funde con tu cutis al instante. Deja un acabado mate con cobertura alta pero sin pesadez, logrando ocultar imperfecciones mientras esculpes tus facciones. Es de calidad profesional, y sus colores en negro con detalles dorados la hacen ver muy luxury, dándole ese toque costoso y sofisticado que tu cosmetiquera se merece. ¡Sentirás que estás en manos de una maquilladora experta todas las mañanas!",
+  category_new: "Nueva colección"
 },
 {
   id: "P212",
@@ -2532,7 +2741,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Brocha Individual Doble Piel - P220",
   price: 15000,
   image: "images/productos/Maquillaje/Accesorios/P220.jpg",
-  description: "En Trendy te tenemos la solución definitiva para que dejes de encartarte con mil herramientas en el bolso. Esta brocha individual doble es perfecta para que realices un maquillaje de rostro completo con una sola herramienta, optimizando espacio y tiempo en tus mañanas. Olvídate de batallar cargando peso extra; su diseño inteligente te permite aplicar tus texturas líquidas, cremosas o en polvo dejando un acabado profesional sin tanto esfuerzo. Es el accesorio perfecto para el día a día de una Trendy lover que ama la practicidad pero no negocia un cutis perfecto. Disfruta de su calidad profesional con fibras ultra suaves que se sienten como una caricia en tu piel mientras logras una difuminación impecable."
+  description: "En Trendy te tenemos la solución definitiva para que dejes de encartarte con mil herramientas en el bolso. Esta brocha individual doble es perfecta para que realices un maquillaje de rostro completo con una sola herramienta, optimizando espacio y tiempo en tus mañanas. Olvídate de batallar cargando peso extra; su diseño inteligente te permite aplicar tus texturas líquidas, cremosas o en polvo dejando un acabado profesional sin tanto esfuerzo. Es el accesorio perfecto para el día a día de una Trendy lover que ama la practicidad pero no negocia un cutis perfecto. Disfruta de su calidad profesional con fibras ultra suaves que se sienten como una caricia en tu piel mientras logras una difuminación impecable.",
+  category_new: "Nueva colección"
 },
 {
   id: "P113",
@@ -2916,7 +3126,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Hair Clip Mariposa Grande - Hmg2327",
   price: 10000,
   image: "images/productos/Maquillaje/Capilar/Hmg2327.jpg",
-  description: "Sujeta todo tu cabello con total firmeza y un diseño que se robará todas las miradas. Esta pinza en formato grande con silueta de mariposa está pensada para recoger melenas abundantes o hacer moños completos de manera rápida, segura y sin halar el cuero cabelludo. Enrolla tu cabello, abre la pinza y engánchala en el centro del recogido. Haz un giro suave en tu cabello hacia arriba y sujétalo completo con la mariposa para un peinado veraniego en segundos."
+  description: "Sujeta todo tu cabello con total firmeza y un diseño que se robará todas las miradas. Esta pinza en formato grande con silueta de mariposa está pensada para recoger melenas abundantes o hacer moños completos de manera rápida, segura y sin halar el cuero cabelludo. Enrolla tu cabello, abre la pinza y engánchala en el centro del recogido. Haz un giro suave en tu cabello hacia arriba y sujétalo completo con la mariposa para un peinado veraniego en segundos.",
+  category_new: "Nueva colección"
 },
 {
   id: "Hct2329",
@@ -3195,7 +3406,8 @@ const PRODUCTS_MAQUILLAJE = [
   name: "Contorno En Barra Con Rubor - CS04",
   price: 15000,
   image: "images/productos/Maquillaje/Rostro/CS04.jpg",
-  description: "Contorno y rubor en barra en 1 solo producto"
+  description: "Contorno y rubor en barra en 1 solo producto",
+  category_new: "Nueva colección"
 },
 {
   id: "MTT2391",
@@ -3205,7 +3417,8 @@ const PRODUCTS_MAQUILLAJE = [
   price: 10000,
   image: "images/productos/Maquillaje/Rostro/MTT2391.jpg",
   description: "Ilumina y neutraliza las ojeras con el Corrector Rosado Barbie de Trendy.",
-  colaboracion: "Mattel"
+  colaboracion: "Mattel",
+  category_new: "Nueva colección"
 },
 {
   id: "CAM02",
@@ -3356,6 +3569,16 @@ const PRODUCTS_MAQUILLAJE = [
   image: "images/productos/Maquillaje/Accesorios/Dyt2519.jpg",
   description: "Mantén tus accesorios pequeños ordenados y libres de pérdidas con este encantador Monedero Stitch Mini. Es un accesorio superpráctico pensado para llevar siempre contigo, ya que tiene el tamaño perfecto para guardar pequeños esenciales como monedas, anillos o moños sin que se refundan en el bolso. Viene con un lindo diseño inspirado en Stitch, incluye un práctico charm para cargarlo o colgarlo con facilidad y trae 3 pinzas para el cabello con divertidos diseños de tus personajes favoritos de Stitch. Para usarlo, guarda tus pertenencias en el compartimento, cierra la cremallera y transporta el monedero usando el charm o peina tu cabello sujetándolo con las pinzas incluidas. Utiliza las pinzas decorativas para sujetar los mechones frontales de tu cabello mientras realizas tu rutina de cuidado facial. ¡Un supertip: cuida tu Monedero Redondo Stitch de la humedad y el contacto con líquidos guardándolo en un espacio seco para que te rinda al máximo y te dure muchísimo tiempo!",
   colaboracion: "Disney",
+  category_new: "Nueva colección"
+},
+{
+  id: "Bgk2835",
+  category: "maquillaje",
+  subcategory: "Accesorios",
+  name: "Brocha Golden Kabuki Piel - Bgk2835",
+  price: 20000,
+  image: "images/productos/Maquillaje/Accesorios/Bgk2835.jpg",
+  description: "Difumina correctores y productos en crema con la Brocha Golden Kabuki Doble de Trendy. Su diseño de dos extremos tipo kabuki, en diferentes tamaños, te permite trabajar con precisión tanto en zonas pequeñas como en áreas más amplias del rostro. El extremo pequeño es ideal para aplicar y difuminar producto en áreas específicas, como el contorno de ojos y otras zonas de difícil acceso. El más grande facilita distribuir el maquillaje en superficies amplias para conseguir un acabado uniforme y natural. Sus fibras extra suaves de calidad premium permiten trabajar los productos cómodamente, mientras que el mango metálico dorado aporta resistencia y un diseño elegante. ¡Dos tamaños para difuminar cada detalle de tu maquillaje!",
   category_new: "Nueva colección"
 },
 ];
